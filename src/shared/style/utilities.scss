@@ -1,0 +1,304 @@
+// Layout
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+
+  &-col {
+      @extend .flex;
+      flex-direction: column;
+
+      &.v-center {
+        justify-content: center;
+      }
+  }
+
+  &-fill {
+    flex: 1;
+  }
+}
+
+// Size
+
+.width {
+  &-full {
+    width: 100%;
+  }
+}
+
+.min-height {
+  &-screen {
+    min-height: 100vh;
+  }
+}
+
+.max-width {
+  &-screen {
+    &-sm {
+      max-width: $screenSizeSM;
+    }
+
+    &-md {
+      max-width: $screenSizeMD;
+    }
+
+    &-lg {
+      max-width: $screenSizeLG;
+    }
+
+    &-xl {
+      max-width: $screenSizeXL;
+    }
+  }
+}
+
+.text-size {
+  &-1 {
+    font-size: 1rem;
+  }
+
+  &-2 {
+    font-size: 2rem;
+  }
+
+  &-4 {
+    font-size: 4rem;
+  }
+}
+
+// Margins & Padding
+
+.m {
+  &l, &x {
+    &-1 {
+      margin-left: 1rem;
+    }
+    &-2 {
+      margin-left: 2rem;
+    }
+    &-4 {
+      margin-left: 4rem;
+    }
+    &-auto {
+      margin-left: auto;
+    }
+  }
+
+  &r, &x {
+    &-1 {
+      margin-right: 1rem;
+    }
+    &-2 {
+      margin-right: 2rem;
+    }
+    &-4 {
+      margin-right: 4rem;
+    }
+    &-auto {
+      margin-right: auto;
+    }
+  }
+
+  &t, &y {
+    &-1:not(:first-child) {
+      margin-top: 1rem;
+    }
+    &-2:not(:first-child) {
+      margin-top: 2rem;
+    }
+    &-4:not(:first-child) {
+      margin-top: 4rem;
+    }
+    &-auto {
+      margin-top: auto;
+    }
+  }
+
+  &b, &y {
+    &-1:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    &-2:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    &-4:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+    &-auto {
+      margin-bottom: auto;
+    }
+  }
+}
+
+.p {
+  &l, &x {
+    &-1 {
+      padding-left: 1rem;
+    }
+    &-2 {
+      padding-left: 2rem;
+    }
+    &-4 {
+      padding-left: 4rem;
+    }
+    &-auto {
+      padding-left: auto;
+    }
+  }
+
+  &r, &x {
+    &-1 {
+      padding-right: 1rem;
+    }
+    &-2 {
+      padding-right: 2rem;
+    }
+    &-4 {
+      padding-right: 4rem;
+    }
+    &-auto {
+      padding-right: auto;
+    }
+  }
+
+  &t, &y {
+    &-1 {
+      padding-top: 1rem;
+    }
+    &-2 {
+      padding-top: 2rem;
+    }
+    &-4 {
+      padding-top: 4rem;
+    }
+    &-auto {
+      padding-top: auto;
+    }
+  }
+
+  &b, &y {
+    &-1 {
+      padding-bottom: 1rem;
+    }
+    &-2 {
+      padding-bottom: 2rem;
+    }
+    &-4 {
+      padding-bottom: 4rem;
+    }
+    &-auto {
+      padding-bottom: auto;
+    }
+  }
+}
+
+// Typography
+
+.text {
+  // Font Family
+
+  &-sans {
+    font-family: sans-serif;
+  }
+
+  &-mono {
+    font-family: monospace;
+  }
+
+  &-fancy {
+    font-family: $fontFancy;
+  }
+
+  // Text Alignment
+
+  &-left {
+    text-align: left;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-justify {
+    text-align: justify;
+  }
+
+  // Miscellaneous
+
+  &-normal {
+    font-weight: normal;
+  }
+
+  &-bold {
+    font-weight: bold;
+  }
+
+  &-italic {
+    font-style: italic;
+  }
+
+  &-underline {
+    text-decoration: underline;
+  }
+
+  &-indent {
+    text-indent: 2rem;
+  }
+}
+
+// Colors
+
+.text {
+  &-light {
+    color: $colorLight;
+  }
+
+  &-dark {
+    color: $colorDark;
+  }
+
+  &-primary {
+    color: $colorPrimary
+  }
+
+  &-secondary {
+    color: $colorSecondary
+  }
+}
+
+.bg {
+  &-light {
+    background-color: $colorLight;
+  }
+
+  &-dark {
+    background-color: $colorDark;
+  }
+
+  &-primary {
+    background-color: $colorPrimary;
+  }
+
+  &-secondary {
+    background-color: $colorSecondary;
+  }
+}
+
+// Miscellaneous
+
+.cursor {
+  &-pointer {
+    cursor: pointer;
+  }
+}
+
+.no-select {
+  -webkit-user-select: none; // Chrome / Safari
+  -moz-user-select: none; // Firefox
+  -ms-user-select: none; // IE 10+
+  user-select: none; // Likely future
+}

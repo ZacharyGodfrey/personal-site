@@ -1,0 +1,22 @@
+{
+  "shared": {
+    "stylesheets": [
+      "/shared/style/variables.scss",
+      "/shared/style/reset.scss",
+      "/shared/style/utilities.scss",
+      "/shared/style/components.scss"
+    ],
+    "scripts": [],
+    "partials": {}
+  },
+  "pages": [
+    {
+      "url": "/",
+      "layout": "/shared/layout.html",
+      "content": "/home/index.html",
+      "data": {
+        "title": "Home"
+      }
+    }
+  ]
+}
