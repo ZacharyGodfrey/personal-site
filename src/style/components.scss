@@ -1,0 +1,88 @@
+.heading {
+  &-sm {
+    font-size: 1.50rem;
+    @extend .text-sans;
+    @extend .text-bold;
+    @extend .mb-1;
+  }
+
+  &-md {
+    font-size: 2.75rem;
+    @extend .text-sans;
+    @extend .text-bold;
+    @extend .mb-2;
+  }
+
+  &-lg {
+    font-size: 4.00rem;
+    @extend .text-sans;
+    @extend .text-bold;
+    @extend .mb-2;
+  }
+}
+
+.site-title {
+  @extend .heading-lg;
+  @extend .text-fancy;
+  @extend .mb-2;
+}
+
+.link {
+  @extend .text-underline;
+
+  &-primary {
+    @extend .link;
+    @extend .text-primary;
+  }
+}
+
+.panel {
+  min-height: 50vh;
+  @extend .flex-col;
+  @extend .v-center;
+  @extend .px-1;
+  @extend .py-2;
+
+  &-light {
+    @extend .panel;
+    @extend .bg-light;
+    @extend .text-dark;
+  }
+
+  &-dark {
+    @extend .panel;
+    @extend .bg-dark;
+    @extend .text-light;
+  }
+
+  &-primary {
+    @extend .panel;
+    @extend .bg-primary;
+    @extend .text-light;
+  }
+
+  &-content {
+    width: 100%;
+    max-width: $screenSizeSM;
+    @extend .mx-auto;
+  }
+}
+
+.panel-light + .panel-light {
+  border-top: 0.25rem solid $colorPrimary;
+}
+
+.columns {
+  display: grid;
+  grid-gap: 1rem;
+  align-items: center;
+
+  &-2 {
+    grid-template-columns: repeat(2, 1fr);
+    @extend .columns;
+  }
+}
+
+.img-border {
+  border: 0.25rem solid $colorLight;
+}
