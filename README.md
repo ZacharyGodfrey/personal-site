@@ -15,5 +15,6 @@ A redesign of my personal website.
 
 # Roadmap
 
+- Add 404 page
 - Add responsive CSS rules
 - Add blog post content
