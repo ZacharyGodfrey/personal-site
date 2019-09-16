@@ -1,0 +1,72 @@
+---
+uri: ""
+title: "Home"
+---
+
+<section class="panel-light">
+  <div class="panel-content">
+    <h2 class="heading-md text-primary">Hello!</h2>
+
+    <p class="text-indent">Hi, I'm Zach. I'm a Florida based software developer and I've been building and maintaining websites since 2013. Keep scrolling to see what I've been up to lately. You can also view my <a href="/resume.pdf" target="_blank" class="link-primary">resume</a> for more career details or send me an <a href="mailto:contact@zacharygodfrey.dev" class="link-primary">email</a> if you'd like to get in touch.</p>
+  </div>
+</section>
+
+<section class="panel-light">
+  <div class="panel-content">
+    <h2 class="heading-md text-primary">Projects</h2>
+
+    <div class="columns-2 mb-2">
+      <div class="text-center">
+        <img src="/images/projects/snake.png" class="img-border">
+      </div>
+
+      <div>
+        <h3 class="heading-sm text-primary">Snake Game</h3>
+
+        <p class="text-indent">I wanted to try my hand at game development, so I started with a classic: Snake. It's built using JavaScript and HTML5 Canvas.</p>
+
+        <br>
+
+        <p class="text-center">
+          <a href="https://zacharygodfrey.github.io/snake-js" target="_blank" class="link-primary">View the Site</a>
+          <span>&bull;</span>
+          <a href="https://github.com/ZacharyGodfrey/snake-js" target="_blank" class="link-primary">View the Code</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="columns-2 mb-2">
+      <div class="text-center">
+        <img src="/images/projects/code-breaker.png" class="img-border">
+      </div>
+
+      <div>
+        <h3 class="heading-sm text-primary">Code Breaker</h3>
+
+        <p class="text-indent">During my exploration of cryptography, I learned a lot about classic ciphers. I wanted to build a simple tool that would help me (and others) break some of these classic ciphers.</p>
+
+        <br>
+
+        <p class="text-center">
+          <a href="https://zg-code-breaker.netlify.com" target="_blank" class="link-primary">View the Site</a>
+          <span>&bull;</span>
+          <a href="https://github.com/ZacharyGodfrey/code-breaker" target="_blank" class="link-primary">View the Code</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="panel-light">
+  <div class="panel-content">
+    <h2 class="heading-md text-primary">Blog</h2>
+
+    {{#posts}}{{#meta}}{{#published}}{{#featured}}
+    {{> blogList}}
+    {{/featured}}{{/published}}{{/meta}}{{/posts}}
+
+    <p>
+      <a href="/blog" class="link-primary">See all blog posts</a>
+    </p>
+  </div>
+</section>
