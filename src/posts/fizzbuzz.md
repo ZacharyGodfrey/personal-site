@@ -26,13 +26,13 @@ The FizzBuzz problem can be broken down into three basic parts:
 Looping can be done in many ways, but in order to solve the problem in a functional way I'm going to create a function that takes a `start` number and an `end` number and returns the set of numbers between and including them. This will provide all the counting values we'll need.
 
 ```javascript
-function range(start, end){
+function range(start, end) {
   if (start > end) {
     // Handle the descending case
     return range(end, start).reverse();
   } else {
     // Handle the ascending case
-    return Array.from({ length: end - start + 1 }, function(value, index){
+    return Array.from({ length: end - start + 1 }, function(value, index) {
       return start + index;
     });
   }
@@ -44,7 +44,7 @@ function range(start, end){
 This is the heart of the problem. Given some `number` as input, we need to decide whether to output the number or a word - and which word is the appropriate one. Order matters here. Notice that we check the "FizzBuzz" case before checking for just "Fizz" or just "Buzz". If we did not do this, then numbers like 15 and 30 which are divisible by both three and five would be caught by whichever case you put first and would not return the appropriate value of "FizzBuzz".
 
 ```javascript
-function toFizzbuzz(number){
+function toFizzbuzz(number) {
   var isFizz = number % 3 == 0;
   var isBuzz = number % 5 == 0;
   var isFizzBuzz = isFizz && isBuzz;
@@ -63,7 +63,7 @@ function toFizzbuzz(number){
 In order to print a value to the screen in JavaScript, we simply log it to the console. I wrapped this in a custom function, however, because if we ever change how we want to output the values then we can simply change the implementation of this function without having to change the calling code.
 
 ```javascript
-function output(value){
+function output(value) {
   console.log(value);
 }
 ```
