@@ -86,3 +86,17 @@
 .img-border {
   border: 0.25rem solid $colorLight;
 }
+
+.blog-post {
+  h3, p, li, hr {
+    @extend .my-1;
+  }
+
+  h3 {
+    @extend .heading-sm;
+  }
+
+  a {
+    @extend .link-primary;
+  }
+}

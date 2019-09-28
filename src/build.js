@@ -42,6 +42,20 @@ const compileMD = (fileContent) => markdown(fileContent, {
   headerIds: false
 }).replace(/    /g, "\t");
 
+const byAscending = (fn) => {
+  return (left, right) => {
+    const l = fn(left), r = fn(right);
+    return l < r ? -1 : l > r ? 1 : 0;
+  }
+}
+
+const byDescending = (fn) => {
+  return (left, right) => {
+    const l = fn(left), r = fn(right);
+    return r < l ? -1 : r > l ? 1 : 0;
+  }
+}
+
 // Read Files
 
 const styles = compileSCSS([
@@ -54,23 +68,23 @@ const styles = compileSCSS([
 
 const shell = src('shell.html').replace('/* Styles */', styles);
 
-const partials = findFiles('partials/*.html').reduce((result, path) => {
+const partials = findFiles('partials/**/*.html').reduce((result, path) => {
   const file = src(path);
   const name = path.split('/').slice(-1)[0].replace('.html', '');
 
   return Object.assign(result, { [name]: file });
 }, {});
 
-const pages = findFiles('pages/*.html').map((path) => parseMetadata(src(path)));
+const pages = findFiles('pages/**/*.html').map((path) => parseMetadata(src(path)));
 
-const posts = findFiles('posts/*.md').reduce((result, path) => {
+const posts = findFiles('posts/**/*.md').reduce((result, path) => {
   const file = src(path);
   const parsed = parseMetadata(file);
 
   parsed.meta.timestamp = moment(parsed.meta.timestamp, 'YYYY-MM-DD').format('DD MMM YYYY');
 
   return parsed.meta.published ? result.concat(parsed) : result;
-}, []);
+}, []).sort(byDescending(x => x.meta.timestamp));
 
 // Write Files
 
