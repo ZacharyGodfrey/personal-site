@@ -6,5 +6,215 @@ title: "My Cipher v2"
 <section class="panel-light">
   <div class="panel-content">
     <h2 class="heading-md text-primary">{{page.title}}</h2>
+
+    <h3 class="heading-sm">Disclaimer</h3>
+
+    <p class="my-1">I created my own cipher for encrypting and decrypting data because I wanted to learn about cryptography. This is likely <strong>horribly insecure</strong> compared to modern methods of encryption. <strong>Please do not use this</strong> to secure any information you actually care about.</p>
+
+    <p class="my-1">That said, have fun playing around with my cipher!</p>
+
+    <hr>
+
+    <h3 class="heading-sm">Key</h3>
+
+    <div>
+        <textarea id="key"></textarea>
+    </div>
+
+    <h3 class="heading-sm">Action</h3>
+
+    <div>
+      <select id="action">
+        <option value="e">Encrypt</option>
+        <option value="d">Decrypt</option>
+      </select>
+    </div>
+
+    <h3 class="heading-sm">Input</h3>
+
+    <div>
+      <textarea id="input"></textarea>
+    </div>
+
+    <h3 class="heading-sm">Output</h3>
+
+    <p class="my-1 text-break-all" id="output"></p>
   </div>
 </section>
+
+<script>
+  const cipher = (function(){
+    function asciiAlphabet(){
+      return Array.from({ length: 256 }).fill().map(function(_, index){
+        return String.fromCharCode(index);
+      }).join("");
+    }
+
+    function charCodes(text){
+      return text.split("").map(function(char){
+        return char.charCodeAt(0);
+      });
+    }
+
+    function sortAscending(set, fn){
+      if (typeof fn !== "function"){
+        return set.slice(0).sort(function(left, right){
+          return left < right ? -1 : left > right ? 1 : 0;
+        });
+      } else {
+        return set.slice(0).sort(function(left, right){
+          var l = fn(left), r = fn(right);
+          return l < r ? -1 : l > r ? 1 : 0;
+        });
+      }
+    }
+
+    function leftPad(value, pad, length){
+      var padding = Array.from({ length: length }).fill(pad).join("");
+
+      return (padding + value).slice(-1 * length);
+    }
+
+    function nGram(number, digits, base){
+      var value = number % (base ** digits);
+
+      return leftPad(value.toString(base), "0", digits);
+    }
+
+    function splitToBlocksOfSize(size, text){
+      var values = [];
+      var index = 0;
+
+      while (index < text.length){
+        values.push(text.slice(index, index += size));
+      }
+
+      return values;
+    }
+
+    function toHash(salt, key){
+      var result = charCodes(key).reduce(function(value, code, index){
+        return ((salt * value * code) + index) % (16 ** 8);
+      }, salt);
+
+      return nGram(result, 8, 16);
+    }
+
+    function columnarTransposition(key, textBlock){
+      var columnLabels = key.split("").map(function(char, index){
+        return char + "" + index;
+      });
+
+      var sortedColumnLabels = sortAscending(columnLabels);
+      var characters = textBlock.split("");
+
+      return sortedColumnLabels.map(function(column){
+        var columnIndex = columnLabels.indexOf(column);
+
+        return characters.filter(function(char, charIndex){
+          return charIndex % columnLabels.length == columnIndex;
+        }).join("");
+      }).join("");
+    }
+
+    function undoTransposition(key, ciphertext){
+      var columnLabels = key.split("").map(function(char, index){
+        return char + "" + index;
+      });
+
+      var sortedColumnLabels = sortAscending(columnLabels);
+      var columnLength = ciphertext.length / columnLabels.length;
+
+      var columns = columnLabels.map(function(columnLabel){
+        var columnIndex = sortedColumnLabels.indexOf(columnLabel);
+        var textIndex = columnIndex * columnLength;
+
+        return ciphertext.slice(textIndex, textIndex + columnLength);
+      });
+
+      var rowIndex = 0;
+      var plaintext = "";
+
+      // Read across the rows
+      while (rowIndex < columnLength){
+        plaintext += columns.map(function(column){
+          return column[rowIndex];
+        }).join("");
+
+        rowIndex++;
+      }
+
+      return plaintext;
+    }
+
+    return {
+      encrypt: function(key, plaintext){
+        var k1 = toHash(11 * 13, key);
+        var k2 = toHash(13 * 17, key);
+        var k3 = toHash(17 * 19, key);
+        var alphabet = columnarTransposition(k1, asciiAlphabet());
+
+        // Convert ASCII character codes to 8 digits in base 2
+        var binaryBlock = plaintext.split("").map(function(char){
+          return nGram(alphabet.indexOf(char), 8, 2);
+        }).join("");
+
+        // Perform 2 rounds of columnar transposition
+        // using the products of adjacent primes as seed values
+        binaryBlock = columnarTransposition(k2, binaryBlock);
+        binaryBlock = columnarTransposition(k3, binaryBlock);
+
+        // Convert from 8 digits in base 2 to 2 digits in base 16
+        var ciphertext = splitToBlocksOfSize(8, binaryBlock).map(function(block){
+          var value = parseInt(block, 2);
+
+          return nGram(value, 2, 16);
+        }).join("");
+
+        return ciphertext;
+      },
+      decrypt: function(key, ciphertext){
+        var k1 = toHash(11 * 13, key);
+        var k2 = toHash(13 * 17, key);
+        var k3 = toHash(17 * 19, key);
+        var alphabet = columnarTransposition(k1, asciiAlphabet());
+
+        // Convert from 2 digits in base 16 to 8 digits in base 2
+        var binaryBlock = splitToBlocksOfSize(2, ciphertext).map(function(block){
+          var value = parseInt(block, 16);
+
+          return nGram(value, 8, 2);
+        }).join("");
+
+        // Undo the 2 rounds of columnar transposition
+        binaryBlock = undoTransposition(k3, binaryBlock);
+        binaryBlock = undoTransposition(k2, binaryBlock);
+
+        // Convert from 8 digit numbers in base 2 back to ASCII characters
+        var plaintext = splitToBlocksOfSize(8, binaryBlock).map(function(block){
+          var position = parseInt(block, 2);
+
+          return alphabet[position];
+        }).join("");
+
+        return plaintext;
+      }
+    }
+  })();
+
+  (() => {
+    const key = document.getElementById('key');
+    const action = document.getElementById('action');
+    const input = document.getElementById('input');
+    const output = document.getElementById('output');
+    const updateDOM = () => {
+      const method = action.value == 'e' ? cipher.encrypt: cipher.decrypt;
+
+      output.innerHTML = method(key.value, input.value);
+    };
+
+    key.addEventListener('input', updateDOM);
+    action.addEventListener('change', updateDOM);
+    input.addEventListener('input', updateDOM);
+  })();
+</script>

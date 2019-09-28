@@ -6,5 +6,248 @@ title: "My Cipher v1"
 <section class="panel-light">
   <div class="panel-content">
     <h2 class="heading-md text-primary">{{page.title}}</h2>
+
+    <h3 class="heading-sm">Disclaimer</h3>
+
+    <p class="my-1">I created my own cipher for encrypting and decrypting data because I wanted to learn about cryptography. This is likely <strong>horribly insecure</strong> compared to modern methods of encryption. <strong>Please do not use this</strong> to secure any information you actually care about.</p>
+
+    <p class="my-1">That said, have fun playing around with my cipher!</p>
+
+    <hr>
+
+    <h3 class="heading-sm">Key</h3>
+
+    <div>
+        <textarea id="key"></textarea>
+    </div>
+
+    <h3 class="heading-sm">Action</h3>
+
+    <div>
+      <select id="action">
+        <option value="e">Encrypt</option>
+        <option value="d">Decrypt</option>
+      </select>
+    </div>
+
+    <h3 class="heading-sm">Input</h3>
+
+    <div>
+      <textarea id="input"></textarea>
+    </div>
+
+    <h3 class="heading-sm">Output</h3>
+
+    <p class="my-1 text-break-all" id="output"></p>
   </div>
 </section>
+
+<script>
+  const cipher = (function(){
+    "use strict";
+
+    function alphabet(){
+      return "abcdefghijklmnopqrstuvwxyz";
+    }
+
+    // Sorts an array in ascending order
+    // by the value returned from a selector function
+    function sortAscending(set, fn){
+      if (typeof fn !== "function"){
+        return set.slice(0).sort(function(left, right){
+          return left < right ? -1 : left > right ? 1 : 0;
+        });
+      } else {
+        return set.slice(0).sort(function(left, right){
+          var l = fn(left), r = fn(right);
+          return l < r ? -1 : l > r ? 1 : 0;
+        });
+      }
+    }
+
+    // Returns the first occurrence of each value in an array
+    function deduplicate(values){
+      return values.filter(function(value, index){
+        return values.indexOf(value) == index;
+      });
+    }
+
+    // Converts a string into an array of ASCII character codes
+    function charCodes(str){
+      return str.split("").map(function(char){
+        return char.charCodeAt(0);
+      });
+    }
+
+    // Uses a key to arrange the 256 ASCII characters
+    // into a string that can be used as a 16x16 Polybius square
+    function createPolybiusSquare(key){
+      var shift = charCodes(key).reduce(function(sum, code, index){
+        return (sum + ((code ** 4) + index)) % 256;
+      }, 0);
+
+      return Array.from({ length: 256 }).fill().map(function(_, index){
+        return String.fromCharCode((index + shift) % 256);
+      }).join("");
+    }
+
+    // Uses a 16x16 Polybius square to encrypt a string of ASCII text
+    // as pairs of the first 16 letters of the alphabet
+    function polybiusSubstitution(key, plaintext){
+      var square = createPolybiusSquare(key);
+      var labels = alphabet().slice(0, 16);
+      var cipher = "";
+      var index = 0;
+
+      while (index < plaintext.length){
+        var code = square.indexOf(plaintext[index]);
+        var row = Math.floor(code / labels.length);
+        var column = code % labels.length;
+
+        cipher += labels[row] + labels[column];
+        index++;
+      }
+
+      return cipher;
+    }
+
+    // Pads the plaintext until it can be divided into columns
+    // of equal length for columnar transposition
+    function padForTransposition(key, plaintext){
+      var padChar = alphabet()[16];
+      var padded = "" + plaintext;
+
+      while (padded.length % key.length > 0){
+        padded += padChar;
+      }
+
+      return padded;
+    }
+
+    // Performs a columnar transposition on the text using the key
+    function columnarTransposition(key, plaintext){
+      var keyCodes = charCodes(key).map(function(code, index, set){
+        return ((code ** 2) + index) * set.length;
+      });
+
+      var sortedKeyCodes = sortAscending(keyCodes);
+      var characters = plaintext.split("");
+
+      // Transpose the columns and concatenate them
+      return sortedKeyCodes.map(function(keyCode){
+        var columnIndex = keyCodes.indexOf(keyCode);
+
+        return characters.filter(function(char, charIndex){
+          return charIndex % keyCodes.length == columnIndex;
+        }).join("");
+      }).join("");
+    }
+
+    function undoTransposition(key, ciphertext){
+      var keyCodes = charCodes(key).map(function(code, index, set){
+        return ((code ** 2) + index) * set.length;
+      });
+
+      var sortedKeyCodes = sortAscending(keyCodes);
+      var columnLength = ciphertext.length / keyCodes.length;
+
+      // Transpose the columns
+      var columns = keyCodes.map(function(keyCode){
+        var columnIndex = sortedKeyCodes.indexOf(keyCode);
+        var textIndex = columnIndex * columnLength;
+
+        return ciphertext.slice(textIndex, textIndex + columnLength);
+      });
+
+      var rowIndex = 0;
+      var plaintext = "";
+
+      // Read across the rows
+      while (rowIndex < columnLength){
+        plaintext += columns.map(function(column){
+          return column[rowIndex];
+        }).join("");
+
+        rowIndex++;
+      }
+
+      return plaintext;
+    }
+
+    function removePadding(ciphertext){
+      return ciphertext.split(alphabet()[16]).join("");
+    }
+
+    function undoSubstitution(key, ciphertext){
+      var square = createPolybiusSquare(key);
+      var labels = alphabet().slice(0, 16);
+      var index = 0;
+      var plaintext = "";
+
+      while (index < ciphertext.length){
+        var row = labels.indexOf(ciphertext[index]);
+        var column = labels.indexOf(ciphertext[index + 1]);
+
+        plaintext += square[(labels.length * row) + column];
+        index += 2;
+      }
+
+      return plaintext;
+    }
+
+    return {
+      encrypt: function(key, plaintext){
+        var ciphertext = "" + plaintext;
+
+        ciphertext = polybiusSubstitution(key, ciphertext);
+        ciphertext = padForTransposition(key, ciphertext);
+        ciphertext = columnarTransposition(key, ciphertext);
+        ciphertext = columnarTransposition(key, ciphertext);
+        ciphertext = columnarTransposition(key, ciphertext);
+        ciphertext = columnarTransposition(key, ciphertext);
+        ciphertext = ciphertext.toUpperCase();
+
+        return ciphertext;
+      },
+      decrypt: function(key, ciphertext){
+        var charset = alphabet().slice(0, 17).toUpperCase();
+
+        var isValid = ciphertext.split("").reduce(function(result, char){
+          return result && charset.indexOf(char) >= 0;
+        }, true);
+
+        if (!isValid){
+          return "";
+        }
+
+        var plaintext = "" + ciphertext;
+
+        plaintext = plaintext.toLowerCase();
+        plaintext = undoTransposition(key, plaintext);
+        plaintext = undoTransposition(key, plaintext);
+        plaintext = undoTransposition(key, plaintext);
+        plaintext = undoTransposition(key, plaintext);
+        plaintext = removePadding(plaintext);
+        plaintext = undoSubstitution(key, plaintext);
+
+        return plaintext;
+      }
+    }
+  })();
+
+  (() => {
+    const key = document.getElementById('key');
+    const action = document.getElementById('action');
+    const input = document.getElementById('input');
+    const output = document.getElementById('output');
+    const updateDOM = () => {
+      const method = action.value == 'e' ? cipher.encrypt: cipher.decrypt;
+
+      output.innerHTML = method(key.value, input.value);
+    };
+
+    key.addEventListener('input', updateDOM);
+    action.addEventListener('change', updateDOM);
+    input.addEventListener('input', updateDOM);
+  })();
+</script>

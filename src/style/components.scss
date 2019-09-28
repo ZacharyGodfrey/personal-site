@@ -3,28 +3,28 @@
     font-size: 1.50rem;
     @extend .text-sans;
     @extend .text-bold;
-    @extend .mb-1;
+    @extend .my-1;
   }
 
   &-md {
     font-size: 2.75rem;
     @extend .text-sans;
     @extend .text-bold;
-    @extend .mb-2;
+    @extend .my-2;
   }
 
   &-lg {
     font-size: 4.00rem;
     @extend .text-sans;
     @extend .text-bold;
-    @extend .mb-2;
+    @extend .my-2;
   }
 }
 
 .site-title {
   @extend .heading-lg;
   @extend .text-fancy;
-  @extend .mb-2;
+  @extend .my-2;
 }
 
 .link {

@@ -47,3 +47,15 @@ hr {
   outline: none;
   background: $colorDark;
 }
+
+textarea {
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 4rem;
+  padding: 0.5rem;
+  border: 2px solid $colorPrimary;
+  outline: none;
+  background: #FFFFFF;
+  border-radius: 0;
+}
