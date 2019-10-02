@@ -102,7 +102,7 @@ pages.forEach(page => {
     page: page.content
   });
 
-  const destination = `${page.meta.uri}/index.html`;
+  const destination = page.meta.uri == '404' ? '/404.html' : `${page.meta.uri}/index.html`;
   const rendered = mustache.render(shell, data, partialViews);
 
   dist(destination, rendered);

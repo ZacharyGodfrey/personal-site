@@ -214,6 +214,20 @@
   }
 }
 
+// Images
+
+.img {
+  &-circle {
+    min-width: 15rem;
+    width: 20vmin;
+    min-height: 15rem;
+    height: 20vmin;
+    overflow: hidden;
+    border: 0.25rem solid $colorDark;
+    border-radius: 2rem;
+  }
+}
+
 // Colors
 
 .text {
