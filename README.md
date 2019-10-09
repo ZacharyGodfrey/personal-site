@@ -12,9 +12,3 @@ A redesign of my personal website.
 
 - Build Command: `npm run build`
 - Output Directory: `dist`
-
-# Roadmap
-
-- Add 404 page
-- Add responsive CSS rules
-- Add blog post content
