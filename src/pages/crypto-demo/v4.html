@@ -1,0 +1,97 @@
+---
+uri: "crypto-demo/v3"
+title: "My Cipher v3"
+---
+
+<section class="panel-light">
+  <div class="panel-content">
+    <h2 class="heading-md text-primary">{{page.title}}</h2>
+
+    <h3 class="heading-sm">Disclaimer</h3>
+
+    <p class="my-1">I created my own cipher for encrypting and decrypting data because I wanted to learn about cryptography. This is likely <strong>horribly insecure</strong> compared to modern methods of encryption. <strong>Please do not use this</strong> to secure any information you actually care about.</p>
+
+    <p class="my-1">That said, have fun playing around with my cipher!</p>
+
+    <hr>
+
+    <h3 class="heading-sm">Key</h3>
+
+    <div>
+        <textarea id="key"></textarea>
+    </div>
+
+    <h3 class="heading-sm">Action</h3>
+
+    <div>
+      <select id="action">
+        <option value="e">Encrypt</option>
+        <option value="d">Decrypt</option>
+      </select>
+    </div>
+
+    <h3 class="heading-sm">Input</h3>
+
+    <div>
+      <textarea id="input"></textarea>
+    </div>
+
+    <h3 class="heading-sm">Output</h3>
+
+    <p class="my-1 text-break-all" id="output"></p>
+  </div>
+</section>
+
+<script>
+  const cipher = (() => {
+    const even = '02468';
+    const odd = '13579';
+    const charToBinary = (char) => `00000000${char.charCodeAt(0).toString(2)}`.slice(-8);
+    const binaryToChar = (binary) => String.fromCharCode(parseInt(binary, 2));
+    
+    const stringToBlocks = (text, blockSize) => {
+      return text.split('').reduce((blocks, char) => {
+        if (blocks[blocks.length - 1].length == blockSize) {
+          blocks.push([char]);
+        } else {
+          blocks[blocks.length - 1] += char;
+        }
+
+        return blocks;
+      }, ['']);
+    };
+
+    return {
+      encrypt: (key, text) => {
+        const binary = text.split('').map(charToBinary).join('');
+        
+        return binary.split('').map((binaryDigit, index) => {
+          return binaryDigit == '0' ? even[index % 5] : odd[index % 5];
+        }).join('');
+      },
+      decrypt: (key, text) => {
+        const binary = text.split('').map((digitChar) => {
+          return even.includes(digitChar) ? '0' : '1';
+        }).join('');
+
+        return stringToBlocks(binary, 8).map(binaryToChar).join('');
+      },
+    };
+  })();
+
+  (() => {
+    const key = document.getElementById('key');
+    const action = document.getElementById('action');
+    const input = document.getElementById('input');
+    const output = document.getElementById('output');
+    const updateDOM = () => {
+      const method = action.value == 'e' ? cipher.encrypt: cipher.decrypt;
+
+      output.innerHTML = method(key.value, input.value);
+    };
+
+    key.addEventListener('input', updateDOM);
+    action.addEventListener('change', updateDOM);
+    input.addEventListener('input', updateDOM);
+  })();
+</script>
