@@ -1,5 +1,5 @@
 exports.handler = (event, context, callback) => {
-    return {
+    callback({
         statusCode: 200,
         body: JSON.stringify({
             event,
@@ -8,5 +8,5 @@ exports.handler = (event, context, callback) => {
                 works: true
             }
         }, null, 2)
-    }
+    });
 };
