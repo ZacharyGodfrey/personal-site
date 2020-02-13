@@ -10,7 +10,7 @@ const test = (event, context) => {
 };
 
 exports.handler = (event, context, callback) => {
-    callback({
+    callback(null, {
         statusCode: 200,
         body: JSON.stringify(test(event, context))
     });
