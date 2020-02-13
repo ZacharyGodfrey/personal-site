@@ -1,8 +1,8 @@
 {
   "scripts": {
     "prebuild": "npm rebuild node-sass",
-    "build": "node ./src/build.js",
-    "watch": "watch 'npm run build' ./src",
+    "build": "node ./client/build.js",
+    "watch": "watch 'npm run build' ./client",
     "serve": "http-server ./dist -p 8080",
     "start": "concurrently 'npm run watch' 'npm run serve'"
   },

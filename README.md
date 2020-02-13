@@ -15,4 +15,5 @@ My personal website.
 This site is happily hosted on [Netlify](https://www.netlify.com/).
 
 - Build Command: `npm run build`
-- Output Directory: `dist`
+- Publish Directory: `dist`
+- Functions Directory: `api`

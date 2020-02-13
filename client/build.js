@@ -42,19 +42,15 @@ const compileMD = (fileContent) => markdown(fileContent, {
   headerIds: false
 }).replace(/    /g, "\t");
 
-const byAscending = (fn) => {
-  return (left, right) => {
-    const l = fn(left), r = fn(right);
-    return l < r ? -1 : l > r ? 1 : 0;
-  }
-}
+const byAscending = (fn) => (left, right) => {
+  const l = fn(left), r = fn(right);
+  return l < r ? -1 : l > r ? 1 : 0;
+};
 
-const byDescending = (fn) => {
-  return (left, right) => {
-    const l = fn(left), r = fn(right);
-    return r < l ? -1 : r > l ? 1 : 0;
-  }
-}
+const byDescending = (fn) => (left, right) => {
+  const l = fn(left), r = fn(right);
+  return r < l ? -1 : r > l ? 1 : 0;
+};
 
 // Read Files
 
