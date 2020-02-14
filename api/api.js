@@ -1,4 +1,5 @@
 const resources = require('./resources');
+const response = require('./core/response');
 
 const handleRequest = (request) => {
     const resourceList = Object.keys(resources);
