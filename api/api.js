@@ -21,12 +21,13 @@ const handleRequest = (request) => {
 
 const requestModel = (event) => {
     const pathSegments = event.path.split('/');
+    const base64Decode = (data) => new Buffer(data, 'base64').toString('ascii');
 
     return {
         resource: pathSegments.length < 5 ? 'index' : pathSegments[4].toLowerCase(),
         method: event.httpMethod.toLowerCase(),
         headers: event.headers,
-        body: event.isBase64Encoded ? atob(event.body) : event.body,
+        body: event.isBase64Encoded ? base64Decode(event.body) : event.body,
         query: event.queryStringParameters,
         isBase64: event.isBase64Encoded
     };
