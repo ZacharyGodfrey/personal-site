@@ -29,8 +29,7 @@ const requestModel = (event) => {
         method: event.httpMethod.toLowerCase(),
         headers: event.headers,
         body: event.isBase64Encoded ? base64Decode(event.body) : event.body,
-        query: event.queryStringParameters,
-        isBase64: event.isBase64Encoded
+        query: event.queryStringParameters
     };
 };
 
