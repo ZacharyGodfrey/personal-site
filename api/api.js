@@ -40,6 +40,6 @@ exports.handler = (event, context, callback) => {
     callback(null, {
         statusCode: response.status,
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ request, response: response.body }, null, 2)
+        body: JSON.stringify(response.body, null, 2)
     });
 };
