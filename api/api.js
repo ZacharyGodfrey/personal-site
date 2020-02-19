@@ -13,7 +13,7 @@ const handleRequest = (request) => {
         const methodExists = methodList.includes(request.method);
 
         if (!methodExists) {
-            return response.error(‘Resource ${request.resource} does not support method ${request.method}’
+            return response.error(`Resource ${request.resource} does not support method ${request.method}`);
         } else {
             return resource[request.method](request);
         }
