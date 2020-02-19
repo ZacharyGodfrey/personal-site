@@ -68,7 +68,8 @@
   }
 }
 
-.panel-light + .panel-light {
+.panel-light + .panel-light,
+.panel-light + .panel-dark {
   border-top: 0.25rem solid $colorPrimary;
 }
 
