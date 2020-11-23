@@ -26,9 +26,9 @@ const compileMD = (fileContent) => markdown(fileContent, {
 const page = readFile('./src/page.html');
 const favicon = readFile('./src/favicon.png', 'base64');
 const font = readFile('./src/Satisfy.ttf', 'base64');
-const content = compileMD(readFile('./src/content.md'));
 const style = compileSCSS(readFile('./src/style.scss'));
-const script = readFile('./src/script.js');
+const image = readFile('./src/image.jpg', 'base64');
+const resume = compileMD(readFile('./src/resume.md'));
 
 // Write Output
 
@@ -36,8 +36,8 @@ const index = page
     .replace('//favicon', favicon)
     .replace('//font', font)
     .replace('/* style */', style)
-    .replace('<!-- content -->', content)
-    .replace('/* script */', script);
+    .replace('//image', image)
+    .replace('<!-- resume -->', resume);
 
 emptyFolder('./dist');
 writeFile('./dist/index.html', index);

@@ -17,32 +17,78 @@
     </style>
   </head>
   <body>
-    <header>
+    <header class="section-primary">
       <div class="content text-center">
         <h1 class="font-custom">
           <a href="#">Zachary Godfrey</a>
         </h1>
 
-        <p>Software Engineer</p>
+        <h6>Software Engineer</h6>
+
+        <p>
+          <a href="#about">About</a>
+          <span>&bull;</span>
+          <a href="#career">Career</a>
+          <span>&bull;</span>
+          <a href="#contact">Contact</a>
+        </p>
       </div>
     </header>
 
     <main>
-      <div class="content">
-        <!-- content -->
-      </div>
+      <article class="section-dark" id="about">
+        <div class="content">
+          <div class="split">
+            <div class="split-side">
+              <h2 class="text-center">About Me</h2>
+
+              <p>Hey, my name is Zach. I'm a software engineer based in Florida and I've been building software since 2013. I'm currently working at <a href="https://bamtech.net">BAM Technologies</a> where I'm building serverless applications using Typescript and Amazon Web Services.</p>
+
+              <p>I have a beautiful wife, Claire, and a crazy dog named Tarzan. When I'm not working, you can usually find me hanging out with them or tinkering in my office with one of my various side projects.</p>
+            </div>
+
+            <div class="split-side">
+              <img id="profile-image" src="data:image/png;base64,//image">
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="section-light" id="career">
+        <div class="content">
+          <h2>Career</h2>
+
+          <p class="indent">My secret weapon is my ability to explain complex technical concepts in simple terms for non-technical people. The less my work gets called <em>magic</em> the better! I love bridging the gap between developers and non-developers because I've seen how much my teams benefit when everyone has a better understanding of what we do.</p>
+
+          <p class="indent">When it comes to code, I think the best quality metric is how easy the code is to understand. Efficiency is great too, but my main concern is the maintainability of the software. When code is easy to read and follow, it's easier to find and fix bugs and teams can onboard new members more quickly.</p>
+
+          <hr>
+
+          <h2>Work Experience</h2>
+
+          <!-- resume -->
+        </div>
+      </article>
+
+      <article class="section-dark" id="contact">
+        <div class="content">
+          <h2>Get In Touch</h2>
+
+          <p>I'm not currently looking for a new position, but I'd love to hear from you if you want to reach out to me.</p>
+
+          <p>
+            <a href="mailto:contact@zacharygodfrey.dev">Email</a>
+            <span>&bull;</span>
+            <a href="https://www.linkedin.com/in/zachary-godfrey">LinkedIn</a>
+            <span>&bull;</span>
+            <a href="https://github.com/ZacharyGodfrey">GitHub</a>
+          </p>
+        </div>
+      </article>
     </main>
 
-    <footer>
+    <footer class="section-primary">
       <div class="content text-center">
-        <p>
-          <a href="https://github.com/ZacharyGodfrey">GitHub</a>
-          <span>&bull;</span>
-          <a href="https://www.linkedin.com/in/zachary-godfrey">LinkedIn</a>
-          <span>&bull;</span>
-          <a href="mailto:contact@zacharygodfrey.dev">Email</a>
-        </p>
-
         <p>
           <span>&copy;</span>
           <span id="current-year">2020</span>
@@ -52,9 +98,7 @@
     </footer>
 
     <script>
-      document.getElementById('current-Year').innerHTML = new Date().getFullYear();
-
-      /* script */
+      document.getElementById('current-year').innerHTML = `${new Date().getFullYear()}`;
     </script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 $contentWidth: 80ch;
 $textSize: 16px;
-$fontFamily: monospace;
-$colorPrimary: rgb(100, 160, 100);
+$fontFamily: monospace, sans-serif;
+$colorPrimary: rgb(50, 120, 50);
 $colorLight: #FEFEFE;
 $colorGrey: #EAEAEA;
 $colorDark: #303030;
@@ -29,32 +29,28 @@ html, body {
   background: $colorLight;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   padding: 4rem 0;
-  color: $colorLight;
-  background-color: $colorPrimary;
 }
 
 main {
-  padding: 2rem 0 4rem 0;
-  color: $colorDark;
-  background-color: $colorLight;
+  flex: 1;
+}
+
+article {
+  padding: 2rem;
 }
 
 footer {
   padding: 4rem 0;
-  color: $colorLight;
-  background-color: $colorDark;
-  border-top: 0.5rem solid $colorPrimary;
 }
 
-.content {
-  margin: 0 auto;
-  padding: 1rem 2rem;
-  max-width: $contentWidth;
-}
-
-h1, h2, h3, h4, h5, h6, ul, ol, p, pre, hr {
+h1, h2, h3, h4, h5, h6, ul, ol, p, pre {
   display: block;
   margin: 0;
   padding: 0;
@@ -68,30 +64,27 @@ h1, h2, h3, h4, h5, h6, ul, ol, p, pre, hr {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
 h1 {
   font-size: 4rem;
   letter-spacing: -1px;
   font-weight: normal;
-  text-align: center;
 }
 
 h2 {
   font-size: 2.5rem;
-  letter-spacing: -1px;
-  font-weight: normal;
-  font-variant: small-caps;
 }
 
 h3 {
   font-size: 1.25rem;
-  letter-spacing: -1px;
-  font-weight: bold;
-  font-variant: small-caps;
 }
 
 h4, h5, h6 {
   font-size: 1.5rem;
-  font-weight: bold;
 }
 
 ul, ol {
@@ -161,12 +154,19 @@ code {
 
 hr {
   width: 100%;
-  height: 2px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 0.25rem;
+  margin: 2rem 0;
   border: none;
   outline: none;
   background: $colorPrimary;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 table {
@@ -202,10 +202,62 @@ table {
 
 // Helper Classes
 
+.section-primary {
+  color: $colorLight;
+  background-color: $colorPrimary;
+}
+
+.section-light {
+  color: $colorDark;
+  background-color: $colorLight;
+}
+
+.section-dark {
+  color: $colorLight;
+  background-color: $colorDark;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: $contentWidth;
+}
+
 .font-custom {
   font-family: "custom-font";
 }
 
 .text-center {
   text-align: center;
+}
+
+.indent {
+  text-indent: 2rem;
+}
+
+.split {
+  display: flex;
+  flex-direction: row;
+
+  .split-side {
+    flex: 1;
+  }
+}
+
+// Content-Specific Styles
+
+#profile-image {
+  display: block;
+  max-width: 100%;
+  max-height: 25rem;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  border: 0.25rem solid $colorLight;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
