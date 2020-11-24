@@ -226,12 +226,16 @@ table {
   font-family: "custom-font";
 }
 
+.indent {
+  text-indent: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
 
-.indent {
-  text-indent: 2rem;
+.text-justify {
+  text-align: justify;
 }
 
 .split {
