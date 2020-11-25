@@ -35,7 +35,7 @@ body {
 }
 
 header {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
 }
 
 main {
@@ -47,7 +47,7 @@ article {
 }
 
 footer {
-  padding: 4rem 0;
+  padding: 4rem 2rem;
 }
 
 h1, h2, h3, h4, h5, h6, ul, ol, p, pre {
@@ -209,7 +209,7 @@ table {
 
 .section-light {
   color: $colorDark;
-  background-color: $colorLight;
+  background-color: $colorGrey;
 }
 
 .section-dark {
@@ -244,6 +244,22 @@ table {
 
   .split-side {
     flex: 1;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid $colorPrimary;
+  color: $colorLight;
+  background: $colorPrimary;
+  text-decoration: none;
+
+  &:hover {
+    color: $colorPrimary;
+    background: transparent;
+    text-decoration: none;
   }
 }
 
