@@ -1,3 +1,7 @@
+## Work History
+
+---
+
 ### Oct 2018 - Present
 
 **Software Engineer** at [BAM Technologies](https://bamtech.net)
