@@ -10,11 +10,9 @@ An update to my personal website.
 
 ## Hosting
 
-This site is available [here](https://zg-personal2.netlify.app).
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ea8e6080-6311-4691-81a1-ae6d5d9301aa/deploy-status)](https://app.netlify.com/sites/zg-personal2/deploys)
-
-This site is hosted on [Netlify](https://netlify.com) with the following site settings:
+This site is available [here](https://zg-personal2.netlify.app) and is hosted on [Netlify](https://netlify.com) with the following site settings:
 
 - Build command: `npm run build`
 - Publish directory: `dist`
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ea8e6080-6311-4691-81a1-ae6d5d9301aa/deploy-status)](https://app.netlify.com/sites/zg-personal2/deploys)

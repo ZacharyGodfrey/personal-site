@@ -4,11 +4,12 @@ const path = require('path');
 const fs = require('fs-extra');
 const scss = require('node-sass');
 const markdown = require('marked');
+const glob = require('glob');
 
 // Helper Functions
 
 const resolve = (filePath) => path.resolve(path.join(__dirname, filePath));
-const listFiles = (folderPath) => fs.readdirSync(resolve(folderPath));
+const listFiles = (pattern) => glob.sync(pattern, { cwd: resolve('./') });
 const readFile = (filePath, encoding) => fs.readFileSync(resolve(filePath), { encoding: encoding || 'utf-8' });
 const writeFile = (filePath, content, encoding) => fs.outputFileSync(resolve(filePath), content, { encoding: encoding || 'utf-8' });
 const emptyFolder = (folderPath) => fs.emptyDirSync(resolve(folderPath));
@@ -22,8 +23,9 @@ const shell = readFile('./src/shell.html');
 const favicon = readFile('./src/favicon.png', 'base64');
 const font = readFile('./src/Satisfy.ttf', 'base64');
 const style = compileSCSS(readFile('./src/style.scss'));
-const pages = listFiles('./src/pages').map(fileName => {
-  const content = readFile(`./src/pages/${fileName}`);
+const pages = listFiles('./src/pages/**/*.*').map(filePath => {
+  const fileName = filePath.split('/src/pages/')[1];
+  const content = readFile(`./${filePath}`);
   const isMarkdown = fileName.includes('.md');
 
   return {
