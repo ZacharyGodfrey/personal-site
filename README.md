@@ -1,6 +1,6 @@
 # Personal Website
 
-An update to my personal website.
+My personal website.
 
 ## Running Locally
 
