@@ -69,7 +69,8 @@ h1, h2, h3, p, ul, hr {
   margin-block: var(--gutter);
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
+  line-height: 1.5;
   text-wrap: balance;
 }
 
@@ -123,6 +124,7 @@ img {
 
 .grid {
   display: grid;
+  margin-block: var(--gutter);
   gap: var(--gutter);
 }
 
