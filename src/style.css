@@ -38,12 +38,12 @@ main {
   background: var(--neutral);
 }
 
-section {
+header, section, footer {
   display: grid;
   grid-template-columns: minmax(var(--gutter), 1fr) minmax(min-content, var(--content-limit)) minmax(var(--gutter), 1fr);
 }
 
-section > * {
+header > *, section > *, footer > * {
   grid-column: 2;
 }
 
