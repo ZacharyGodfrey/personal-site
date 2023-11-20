@@ -48,6 +48,10 @@ main {
   background: var(--neutral);
 }
 
+section {
+  padding: 2rem var(--gutter);
+}
+
 footer {
   padding: 4rem var(--gutter);
 }
