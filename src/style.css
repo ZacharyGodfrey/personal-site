@@ -11,7 +11,7 @@
   --dark: #303030;
   --neutral: #E0E0E0;
   --gutter: 1rem;
-  --content-limit: 60ch;
+  --content-limit: 100ch;
   font-family: monospace;
   font-size: 16px;
 }
@@ -29,15 +29,6 @@ body {
   min-height: 100svh;
 }
 
-header {
-  padding: var(--gutter);
-}
-
-main {
-  color: var(--dark);
-  background: var(--neutral);
-}
-
 header, section, footer {
   display: grid;
   grid-template-columns: minmax(var(--gutter), 1fr) minmax(min-content, var(--content-limit)) minmax(var(--gutter), 1fr);
@@ -45,6 +36,15 @@ header, section, footer {
 
 header > *, section > *, footer > * {
   grid-column: 2;
+}
+
+header {
+  padding: var(--gutter);
+}
+
+main {
+  color: var(--dark);
+  background: var(--neutral);
 }
 
 footer {
@@ -92,9 +92,10 @@ a {
   background: var(--dark);
 }
 
+.grid, .gap { gap: var(--gutter); }
+
 .grid {
   display: grid;
-  gap: var(--gutter);
 }
 
 .grid.columns-2 {
