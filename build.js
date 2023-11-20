@@ -37,7 +37,7 @@ copyFolder('./src/static', './dist');
 pages.forEach(page => {
   const fileName = page.name.split('.').slice(0, -1).join('.');
   const filePath = `./dist/${fileName}.html`;
-  const fileContent = baseFile.replace('<!-- content -->', page.content);
+  const fileContent = baseFile.replace('/*content*/', page.content);
 
   writeFile(filePath, fileContent);
 });
