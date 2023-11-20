@@ -23,6 +23,8 @@
   --content-limit: 60rem;
   font-family: monospace;
   font-size: 16px;
+  color: var(--dark);
+  background: var(--neutral);
 }
 
 html, body {
@@ -43,14 +45,14 @@ header, section, footer {
 }
 
 header {
-  padding-block: 4rem 2rem;
+  position: sticky;
+  padding-block: 0.5rem;
+  border-bottom: 1px solid var(--dark);
 }
 
 main {
   display: flex;
   flex-direction: column;
-  color: var(--dark);
-  background: var(--neutral);
 }
 
 main > :last-child {
@@ -63,6 +65,7 @@ section {
 
 footer {
   padding-block: 4rem 2rem;
+  border-top: 1px solid var(--dark);
 }
 
 header > *, section > *, footer > * {
@@ -81,15 +84,15 @@ h1, h2, h3, p, li {
   text-wrap: balance;
 }
 
-h1 {
+h1, .h1 {
   font-size: 3rem;
 }
 
-h2 {
+h2, .h2 {
   font-size: 2.5rem;
 }
 
-h3 {
+h3, .h3 {
   font-size: 2rem;
 }
 
