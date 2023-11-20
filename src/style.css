@@ -16,6 +16,8 @@
 
 :root {
   --main:    hwb(120 20% 50%);
+  --lighter: hwb(120 30% 50%);
+  --darker:  hwb(120 20% 60%);
   --dark:    hwb(120 15% 85%);
   --neutral: hwb(120 85% 15%);
   --accent:  hwb(55  10% 5%);
@@ -23,8 +25,8 @@
   --content-limit: 60rem;
   font-family: monospace;
   font-size: 16px;
-  color: var(--dark);
-  background: var(--neutral);
+  color: var(--neutral);
+  background: linear-gradient(135deg, var(--main), var(--lighter));
 }
 
 html, body {
