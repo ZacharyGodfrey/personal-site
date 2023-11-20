@@ -30,17 +30,11 @@ body {
 }
 
 header, section, footer {
-  display: grid;
-  grid-template-columns: minmax(var(--gutter), 1fr) minmax(min-content, var(--content-limit)) minmax(var(--gutter), 1fr);
-  gap: var(--gutter);
-}
-
-header > *, section > *, footer > * {
-  grid-column: 2;
+  padding-inline: var(--gutter);
 }
 
 header {
-  padding: 2rem var(--gutter);
+  padding-block: 2rem;
 }
 
 main {
@@ -49,14 +43,23 @@ main {
 }
 
 section {
-  padding: 2rem var(--gutter);
+  padding-block: 2rem;
 }
 
 footer {
-  padding: 4rem var(--gutter);
+  padding-block: 4rem;
+}
+
+header > *, section > *, footer > * {
+  margin-inline: auto;
+  max-width: var(--content-limit);
 }
 
 /* Element Styles */
+
+h1, h2, h3, p, ul, hr {
+  margin-block: var(--gutter);
+}
 
 h1, h2, h3 {
   text-wrap: balance;
@@ -89,7 +92,7 @@ img {
   margin-inline: auto;
   max-width: 100%;
   max-height: 25rem;
-  border: 0.25rem solid var(--neutral);
+  border: 0.25rem solid white;
   border-radius: 1rem;
 }
 
