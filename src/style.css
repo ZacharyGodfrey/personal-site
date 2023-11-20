@@ -15,7 +15,8 @@
 }
 
 :root {
-  --main: rgb(50, 120, 50);
+  --main:   hwb(120 20% 50%);
+  --accent: hwb(55  10% 5%);
   --dark: #303030;
   --neutral: #E0E0E0;
   --gutter: 1rem;
@@ -98,7 +99,7 @@ a {
   text-decoration-thickness: 1px;
 }
 
-h1 a:not(:hover), h2 a:not(:hover), h3 a:not(:hover) {
+h1 a, h2 a, h3 a {
   text-decoration: none;
 }
 
@@ -122,7 +123,6 @@ ul, ol {
 .text-right { text-align: right; }
 
 .text-custom { font-family: 'custom-font'; }
-.text-no-decor { text-decoration: none; }
 
 .bg-main {
   color: white;
