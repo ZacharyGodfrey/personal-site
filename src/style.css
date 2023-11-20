@@ -18,7 +18,7 @@
   --main:   hwb(120 20% 50%);
   --accent: hwb(55  10% 5%);
   --dark: #303030;
-  --neutral: #E0E0E0;
+  --neutral: #EFEFEF;
   --gutter: 1rem;
   --content-limit: 60rem;
   font-family: monospace;
@@ -46,6 +46,7 @@ header, section, footer {
 
 header {
   position: sticky;
+  top: 0;
   padding-block: 0.5rem;
 }
 
