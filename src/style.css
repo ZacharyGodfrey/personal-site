@@ -70,8 +70,6 @@ h1, h2, h3, p, ul, hr {
 }
 
 h1, h2, h3 {
-  margin-inline: auto;
-  max-width: var(--content-limit);
   text-wrap: balance;
 }
 
