@@ -19,7 +19,7 @@
   --dark: #303030;
   --neutral: #E0E0E0;
   --gutter: 1rem;
-  --content-limit: 80rem;
+  --content-limit: 60rem;
   font-family: monospace;
   font-size: 16px;
 }
