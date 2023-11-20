@@ -15,10 +15,10 @@
 }
 
 :root {
-  --main:   hwb(120 20% 50%);
-  --accent: hwb(55  10% 5%);
-  --dark: #303030;
-  --neutral: #EFEFEF;
+  --main:    hwb(120 20% 50%);
+  --dark:    hwb(120 15% 85%);
+  --neutral: hwb(120 85% 15%);
+  --accent:  hwb(55  10% 5%);
   --gutter: 1rem;
   --content-limit: 60rem;
   font-family: monospace;
