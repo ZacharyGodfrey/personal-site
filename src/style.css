@@ -1,3 +1,5 @@
+/* Global Reset */
+
 * {
   position: relative;
   box-sizing: border-box;
@@ -5,11 +7,53 @@
 }
 
 :root {
+  --main: rgb(50, 120, 50);
+  --dark: #303030;
+  --neutral: #E0E0E0;
+  --gutter: 1rem;
+  --content-limit: 60ch;
   font-family: monospace;
   font-size: 16px;
 }
+
+html, body {
+  padding: 0;
+}
+
+/* Layout */
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+header {
+  padding: var(--gutter);
+}
+
+main {}
+
+section {}
+
+footer {
+  padding: 4rem var(--gutter);
+}
+
+/* Utility Classes */
 
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 
 .font-custom { font-family: 'custom-font'; }
+
+.bg-main {
+  color: white;
+  background: var(--main);
+}
+
+.bg-dark {
+  color: white;
+  background: var(--dark);
+}
