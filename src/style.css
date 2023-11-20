@@ -42,7 +42,7 @@ header, section, footer {
 }
 
 header {
-  padding-block: 2rem;
+  padding-block: 4rem 2rem;
 }
 
 main {
@@ -55,7 +55,7 @@ section {
 }
 
 footer {
-  padding-block: 4rem;
+  padding-block: 4rem 2rem;
 }
 
 header > *, section > *, footer > * {
