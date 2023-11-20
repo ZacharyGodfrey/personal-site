@@ -111,6 +111,10 @@ img {
   border-radius: 1rem;
 }
 
+ul, ol {
+  list-style-position: inside;
+}
+
 /* Utility Classes */
 
 .text-center { text-align: center; }
