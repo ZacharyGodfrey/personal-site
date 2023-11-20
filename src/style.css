@@ -89,8 +89,8 @@ img {
   margin-inline: auto;
   max-width: 100%;
   max-height: 25rem;
-  border: 2px solid var(--neutral);
-  border-radius: 0.5rem;
+  border: 0.25rem solid var(--neutral);
+  border-radius: 1rem;
 }
 
 /* Utility Classes */
