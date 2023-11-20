@@ -131,3 +131,9 @@ img {
 .grid.columns-2 {
   grid-template-columns: repeat(2, 1fr);
 }
+
+@media screen and (max-width: 800px) {
+  .grid.stack {
+    grid-template-columns: 1fr;
+  }
+}
