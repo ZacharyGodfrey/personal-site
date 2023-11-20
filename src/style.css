@@ -15,18 +15,19 @@
 }
 
 :root {
-  --main:    hwb(120 20% 50%);
-  --lighter: hwb(120 30% 50%);
-  --darker:  hwb(120 20% 60%);
-  --dark:    hwb(120 15% 85%);
-  --neutral: hwb(120 85% 15%);
+  --hue: 120;
+  --main:    hwb(var(--hue) 20% 50%);
+  --lighter: hwb(var(--hue) 30% 50%);
+  --darker:  hwb(var(--hue) 20% 60%);
+  --dark:    hwb(var(--hue) 15% 85%);
+  --neutral: hwb(var(--hue) 85% 15%);
   --accent:  hwb(55  10% 5%);
   --gutter: 1rem;
   --content-limit: 60rem;
   font-family: monospace;
   font-size: 16px;
-  color: var(--neutral);
-  background: linear-gradient(135deg, var(--main), var(--lighter));
+  color: white;
+  background: linear-gradient(90deg, var(--darker), var(--lighter) 30%, var(--lighter) 70%, var(--darker));
 }
 
 html, body {
@@ -99,13 +100,9 @@ h3, .h3 {
 }
 
 a {
-  color: var(--main);
+  color: var(--accent);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-}
-
-a:hover {
-  color: var(--accent);
 }
 
 h1 a, .h1 a,
