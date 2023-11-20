@@ -38,7 +38,14 @@ main {
   background: var(--neutral);
 }
 
-section {}
+section {
+  display: grid;
+  grid-template-columns: minmax(var(--gutter), 1fr) minmax(min-content, var(--content-limit)) minmax(var(--gutter), 1fr);
+}
+
+section > * {
+  grid-column: 2;
+}
 
 footer {
   padding: 4rem var(--gutter);
@@ -88,4 +95,8 @@ a {
 .grid {
   display: grid;
   gap: var(--gutter);
+}
+
+.grid.columns-2 {
+  grid-template-columns: repeat(2, 1fr);
 }
