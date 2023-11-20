@@ -33,7 +33,10 @@ header {
   padding: var(--gutter);
 }
 
-main {}
+main {
+  color: var(--dark);
+  background: var(--neutral);
+}
 
 section {}
 
