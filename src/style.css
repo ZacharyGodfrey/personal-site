@@ -32,6 +32,7 @@ body {
 header, section, footer {
   display: grid;
   grid-template-columns: minmax(var(--gutter), 1fr) minmax(min-content, var(--content-limit)) minmax(var(--gutter), 1fr);
+  gap: var(--gutter);
 }
 
 header > *, section > *, footer > * {
@@ -92,10 +93,9 @@ a {
   background: var(--dark);
 }
 
-.grid, .gap { gap: var(--gutter); }
-
 .grid {
   display: grid;
+  gap: var(--gutter);
 }
 
 .grid.columns-2 {
