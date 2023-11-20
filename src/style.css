@@ -97,18 +97,19 @@ h3, .h3 {
 }
 
 a {
-  color: inherit;
+  color: var(--main);
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
 
 a:hover {
-  color: var(--main);
+  color: var(--accent);
 }
 
 h1 a, .h1 a,
 h2 a, .h2 a,
 h3 a, .h3 a {
+  color: inherit;
   text-decoration: none;
 }
 
