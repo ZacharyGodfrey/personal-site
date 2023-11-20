@@ -76,6 +76,10 @@ a {
   text-decoration-thickness: 1px;
 }
 
+h1 a:not(:hover), h2 a:not(:hover), h3 a:not(:hover) {
+  text-decoration: none;
+}
+
 /* Utility Classes */
 
 .text-center { text-align: center; }
