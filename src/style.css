@@ -121,7 +121,8 @@ ul, ol {
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 
-.font-custom { font-family: 'custom-font'; }
+.text-custom { font-family: 'custom-font'; }
+.text-no-decor { text-decoration: none; }
 
 .bg-main {
   color: white;
