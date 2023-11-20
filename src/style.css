@@ -46,8 +46,14 @@ header {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
   color: var(--dark);
   background: var(--neutral);
+}
+
+main > :last-child {
+  flex: 1;
 }
 
 section {
