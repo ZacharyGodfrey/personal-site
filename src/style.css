@@ -130,7 +130,6 @@ ul, ol {
 
 .text-center { text-align: center; }
 .text-right { text-align: right; }
-
 .text-custom { font-family: 'custom-font'; }
 
 .bg-main {
@@ -149,16 +148,12 @@ ul, ol {
   gap: var(--gutter);
 }
 
-.grid.columns-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
+.grid.columns-2 { grid-template-columns: repeat(2, 1fr); }
 
-.grid > * {
-  margin: 0;
-}
+.grid.items-y-center { align-items: center; }
+
+.grid > * { margin: 0; }
 
 @media screen and (max-width: 800px) {
-  .grid.stack {
-    grid-template-columns: 1fr;
-  }
+  .grid.stack { grid-template-columns: 1fr; }
 }
