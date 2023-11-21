@@ -134,6 +134,9 @@ ul, ol {
 
 /* Utility Classes */
 
+.pad, .x-pad { padding-inline: var(--gutter); }
+.pad, .y-pad { padding-block: var(--gutter); }
+
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-custom { font-family: 'custom-font'; }
@@ -155,7 +158,10 @@ ul, ol {
   gap: var(--gutter);
 }
 
-.grid.sub { grid-template-columns: subgrid; }
+.grid.sub {
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+}
 
 .grid.columns-2 { grid-template-columns: repeat(2, 1fr); }
 .grid.columns-2.swap > :first-child { grid-row: 1; grid-column: 2; }
