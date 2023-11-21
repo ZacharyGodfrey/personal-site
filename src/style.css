@@ -165,8 +165,9 @@ ul, ol {
 }
 
 #logo {
-  padding: 2rem;
-  border: 0.5rem solid black;
-  color: black;
+  display: inline-block;
+  padding: 1rem;
+  border: 0.5rem solid white;
+  color: white;
   font-size: 2rem;
 }
