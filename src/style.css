@@ -36,17 +36,13 @@ html, body {
 
 body {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr auto;
   min-height: 100vh;
   min-height: 100svh;
 }
 
-header, section, footer {
+section, footer {
   padding-inline: var(--gutter);
-}
-
-header {
-  padding-block: 0.5rem;
 }
 
 main {
