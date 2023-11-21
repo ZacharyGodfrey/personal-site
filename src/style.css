@@ -16,14 +16,15 @@
 
 :root {
   --hue: 200;
-  --main:    hwb(var(--hue) 15% 45%);
+  --main:    hwb(var(--hue) 15% 50%);
   --dark:    hwb(var(--hue) 15% 85%);
   --accent:  hwb(55  10% 5%);
+  --text: white;
   --gutter: 1rem;
   --content-limit: 60rem;
   font-family: monospace;
   font-size: 16px;
-  color: white;
+  color: var(--text);
   background: var(--main);
 }
 
@@ -119,16 +120,7 @@ hr {
   height: 1px;
   border: none;
   outline: none;
-  background: var(--dark);
-}
-
-img {
-  display: block;
-  margin-inline: auto;
-  max-width: 100%;
-  max-height: 25rem;
-  border: 0.25rem solid white;
-  border-radius: 1rem;
+  background: var(--text);
 }
 
 ul, ol {
@@ -143,12 +135,12 @@ ul, ol {
 .text-custom { font-family: 'custom-font'; }
 
 .bg-main {
-  color: white;
+  color: var(--text);
   background: var(--main);
 }
 
 .bg-dark {
-  color: white;
+  color: var(--text);
   background: var(--dark);
 }
 
