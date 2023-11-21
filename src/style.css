@@ -153,6 +153,8 @@ summary {
 .text-accent { color: var(--accent); }
 
 a.external:after {
+  display: inline-block;
+  margin-inline-start: 2ch;
   content: "\21F1";
   transform: rotate(90deg);
 }
