@@ -17,8 +17,8 @@
 :root {
   --main:    hwb(200 15% 50%);
   --dark:    hwb(200 15% 65%);
-  --text:    hwb(200 90% 0%);
-  --link:    hwb(200 15% 25%);
+  --text:    hwb(200 95% 0%);
+  --link:    hwb(100 15% 30%);
   --accent:  hwb(55  10% 5%);
   --gutter: 1rem;
   --content-limit: 60rem;
