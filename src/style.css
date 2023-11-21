@@ -15,11 +15,11 @@
 }
 
 :root {
-  --hue: 200;
-  --main:    hwb(var(--hue) 15% 50%);
-  --dark:    hwb(var(--hue) 15% 65%);
+  --main:    hwb(200 15% 50%);
+  --dark:    hwb(200 15% 65%);
+  --text:    hwb(200 90% 0%);
+  --link:    hwb(200 15% 25%);
   --accent:  hwb(55  10% 5%);
-  --text: white;
   --gutter: 1rem;
   --content-limit: 60rem;
   font-family: monospace;
@@ -98,7 +98,7 @@ h3, .h3 {
 }
 
 a {
-  color: var(--accent);
+  color: var(--link);
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
@@ -112,6 +112,7 @@ h3 a, .h3 a {
 
 em {
   font-style: italic;
+  color: var(--accent);
 }
 
 hr {
