@@ -137,6 +137,10 @@ ul, ol {
   color: var(--accent);
 }
 
+summary {
+  cursor: pointer;
+}
+
 /* Utility Classes */
 
 .pad, .x-pad { padding-inline: var(--gutter); }
