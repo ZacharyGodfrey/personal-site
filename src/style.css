@@ -14,6 +14,11 @@
   margin-block-end: 0 !important;
 }
 
+::selection {
+  color: var(--dark);
+  background: var(--text);
+}
+
 :root {
   --main:    hwb(200 15% 50%);
   --dark:    hwb(200 15% 65%);
