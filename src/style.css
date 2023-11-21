@@ -156,8 +156,8 @@ ul, ol {
 
 .grid.columns-2 { grid-template-columns: repeat(2, 1fr); }
 
-.grid.columns-2.swap > :first-child { grid-column: 2; }
-.grid.columns-2.swap > :last-child { grid-column: 1; }
+.grid.columns-2.swap > :first-child { grid-row: 1; grid-column: 2; }
+.grid.columns-2.swap > :last-child { grid-row: 1; grid-column: 1; }
 
 .grid.items-y-center { align-items: center; }
 
