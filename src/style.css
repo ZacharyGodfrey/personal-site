@@ -17,7 +17,7 @@
 :root {
   --hue: 200;
   --main:    hwb(var(--hue) 15% 50%);
-  --dark:    hwb(var(--hue) 15% 85%);
+  --dark:    hwb(var(--hue) 15% 65%);
   --accent:  hwb(55  10% 5%);
   --text: white;
   --gutter: 1rem;
