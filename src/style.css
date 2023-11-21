@@ -137,6 +137,7 @@ ul, ol {
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-custom { font-family: 'custom-font'; }
+.text-accent { color: var(--accent); }
 
 .bg-main {
   color: var(--text);
@@ -155,9 +156,10 @@ ul, ol {
 }
 
 .grid.columns-2 { grid-template-columns: repeat(2, 1fr); }
-
 .grid.columns-2.swap > :first-child { grid-row: 1; grid-column: 2; }
 .grid.columns-2.swap > :last-child { grid-row: 1; grid-column: 1; }
+
+.grid.columns-auto-fill { grid-template-columns: auto 1fr; }
 
 .grid.items-y-center { align-items: center; }
 
