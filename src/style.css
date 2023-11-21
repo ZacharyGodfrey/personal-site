@@ -152,6 +152,11 @@ summary {
 .text-custom { font-family: 'custom-font'; }
 .text-accent { color: var(--accent); }
 
+a.external:after {
+  content: "&#x21F1;";
+  transform: rotate(90deg);
+}
+
 .bg-main {
   color: var(--text);
   background: var(--main);
