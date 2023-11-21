@@ -109,6 +109,10 @@ h3 a, .h3 a {
   text-decoration: none;
 }
 
+em {
+  font-style: italic;
+}
+
 hr {
   margin-inline: auto;
   width: 100%;
