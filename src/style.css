@@ -128,6 +128,10 @@ ul, ol {
   list-style-position: inside;
 }
 
+::marker {
+  color: var(--accent);
+}
+
 /* Utility Classes */
 
 .text-center { text-align: center; }
