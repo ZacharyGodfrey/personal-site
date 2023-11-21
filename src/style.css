@@ -185,10 +185,6 @@ a.external:after {
   background: var(--dark);
 }
 
-.grid.row-lines > :not(:last-child) {
-  border-block-end: 1px solid var(--text);
-}
-
 .grid.columns-2 { grid-template-columns: repeat(2, 1fr); }
 .grid.columns-2.swap > :first-child { grid-row: 1; grid-column: 2; }
 .grid.columns-2.swap > :last-child { grid-row: 1; grid-column: 1; }
