@@ -155,6 +155,8 @@ ul, ol {
   gap: var(--gutter);
 }
 
+.grid.sub { grid-template-columns: subgrid; }
+
 .grid.columns-2 { grid-template-columns: repeat(2, 1fr); }
 .grid.columns-2.swap > :first-child { grid-row: 1; grid-column: 2; }
 .grid.columns-2.swap > :last-child { grid-row: 1; grid-column: 1; }
