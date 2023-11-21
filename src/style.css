@@ -16,7 +16,7 @@
 
 :root {
   --hue: 200;
-  --main:    hwb(var(--hue) 30% 10%);
+  --main:    hwb(var(--hue) 30% 30%);
   --lighter: hwb(var(--hue) 30% 50%);
   --darker:  hwb(var(--hue) 20% 60%);
   --dark:    hwb(var(--hue) 15% 85%);
