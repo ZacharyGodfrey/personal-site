@@ -170,6 +170,8 @@ ul, ol {
 
 .grid.columns-auto-fill { grid-template-columns: auto 1fr; }
 
+.grid.columns-fill-auto-fill { grid-template-columns: 1fr auto 1fr; }
+
 .grid.items-y-center { align-items: center; }
 
 .grid > * { margin: 0; }
