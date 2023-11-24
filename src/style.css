@@ -16,15 +16,16 @@
 
 ::selection {
   color: var(--dark);
-  background: var(--text);
+  background: var(--light);
 }
 
 :root {
-  --main:    hwb(200 15% 50%);
-  --dark:    hwb(200 15% 65%);
-  --text:    hwb(200 95% 0%);
+  --main:    hwb(205 15% 45%);
+  --dark:    hwb(205 15% 70%);
+  --light:   hwb(205 95% 0%);
   --link:    hwb(100 15% 30%);
-  --accent:  hwb(55  10% 5%);
+  --accent:  hwb(55  5%  5%);
+  --text: var(--light);
   --gutter: 1rem;
   --content-limit: 60rem;
   font-family: monospace;
@@ -145,8 +146,9 @@ img {
   display: block;
   margin-inline: auto;
   max-width: 100%;
-  max-height: 50vh;
-  max-height: 50svh;
+  max-height: max(50vh, 25rem);
+  max-height: max(50svh, 25rem);
+  border-radius: 0.5rem;
 }
 
 /* Utility Classes */
@@ -168,13 +170,18 @@ a.external:after {
 }
 
 .bg-main {
-  color: var(--text);
+  color: var(--light);
   background: var(--main);
 }
 
 .bg-dark {
-  color: var(--text);
+  color: var(--light);
   background: var(--dark);
+}
+
+.bg-light {
+  color: var(--dark);
+  background: var(--light);
 }
 
 .grid {
