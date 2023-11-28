@@ -207,6 +207,10 @@ a.external:after {
   border-radius: 0.5rem;
 }
 
+.card a {
+  color: inherit;
+}
+
 .grid {
   display: grid;
   margin-block: var(--gutter);
