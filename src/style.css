@@ -30,8 +30,8 @@
   --content-limit: 60rem;
   font-family: monospace;
   font-size: 16px;
-  color: var(--text);
-  background: var(--main);
+  color: var(--dark);
+  background: var(--light);
 }
 
 html, body {
