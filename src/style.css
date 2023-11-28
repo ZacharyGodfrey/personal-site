@@ -184,6 +184,11 @@ a.external:after {
   background: var(--light);
 }
 
+.bg-accent {
+  color: var(--dark);
+  background: var(--accent);
+}
+
 .grid {
   display: grid;
   margin-block: var(--gutter);
