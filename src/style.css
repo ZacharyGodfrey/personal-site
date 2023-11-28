@@ -62,11 +62,11 @@ main > :last-child {
 }
 
 section {
-  padding-block: 2rem;
+  padding-block: calc(2 * var(--gutter));
 }
 
 footer {
-  padding-block: 4rem 2rem;
+  padding-block: calc(4 * var(--gutter)) calc(2 * var(--gutter));
 }
 
 header > *, section > *, footer > * {
