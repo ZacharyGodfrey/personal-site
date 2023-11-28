@@ -25,7 +25,7 @@
   --light:   hwb(205 95%  5%);
   --link:    hwb(100 15% 30%);
   --accent:  hwb(55   5%  5%);
-  --text: var(--light);
+  --text: var(--dark);
   --gutter: 1rem;
   --content-limit: 60rem;
   font-family: monospace;
