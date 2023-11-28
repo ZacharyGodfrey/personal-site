@@ -150,6 +150,7 @@ img {
   max-height: max(50vh, 25rem);
   max-height: max(50svh, 25rem);
   border-radius: 0.5rem;
+  border: 1px solid var(--dark);
 }
 
 /* Utility Classes */
