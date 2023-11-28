@@ -16,7 +16,7 @@
 
 ::selection {
   color: var(--dark);
-  background: var(--light);
+  background: var(--accent);
 }
 
 :root {
@@ -182,11 +182,6 @@ a.external:after {
 .bg-light {
   color: var(--dark);
   background: var(--light);
-}
-
-.bg-accent {
-  color: var(--dark);
-  background: var(--accent);
 }
 
 .grid {
