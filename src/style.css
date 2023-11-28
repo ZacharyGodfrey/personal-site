@@ -29,7 +29,7 @@
   --text: var(--light);
   --gutter: 1rem;
   --content-limit: 60rem;
-  font-family: monospace;
+  font-family: 'roboto-mono' monospace;
   font-size: 16px;
   color: var(--light);
   background: var(--main);
@@ -170,7 +170,7 @@ img, .no-select {
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-balance { text-wrap: balance; }
-.text-custom { font-family: 'custom-font'; }
+.text-custom { font-family: 'satisfy'; }
 .text-accent { color: var(--accent); }
 
 a.external:after {

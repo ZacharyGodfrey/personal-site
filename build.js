@@ -17,7 +17,8 @@ const copyFolder = (srcPath, destPath) => fs.copySync(resolve(srcPath), resolve(
 
 const shell = readFile('./src/shell.html');
 const favicon = readFile('./src/favicon.png', 'base64');
-const font = readFile('./src/Satisfy.ttf', 'base64');
+const fontSatisfy = readFile('./src/satisfy.ttf', 'base64');
+const fontRoboto = readFile('./src/roboto-mono.ttf', 'base64');
 const style = readFile('./src/style.css');
 const pages = listFiles('./src/pages/**/*.*').map(filePath => ({
   name: filePath.split('/src/pages/')[1],
@@ -26,7 +27,8 @@ const pages = listFiles('./src/pages/**/*.*').map(filePath => ({
 
 const baseFile = shell
   .replace('/*favicon*/', favicon)
-  .replace('/*font*/', font)
+  .replace('/*fontSatisfy*/', fontSatisfy)
+  .replace('/*fontRoboto*/', fontRoboto)
   .replace('/*style*/', style);
 
 // Write Output
