@@ -62,11 +62,11 @@ main > :last-child {
 }
 
 section {
-  padding-block: calc(2 * var(--gutter));
+  padding-block: 2rem;
 }
 
 footer {
-  padding-block: calc(4 * var(--gutter)) calc(2 * var(--gutter));
+  padding-block: 4rem 2rem;
 }
 
 header > *, section > *, footer > * {
@@ -133,6 +133,10 @@ hr {
 ul, ol {
   padding: 0;
   list-style-position: inside;
+}
+
+details {
+  margin-block: var(--gutter);
 }
 
 summary {
