@@ -186,6 +186,13 @@ a.external:after {
   background: var(--light);
 }
 
+.card {
+  padding: var(--gutter);
+  color: var(--dark);
+  background: white;
+  border-radius: 0.5rem;
+}
+
 .grid {
   display: grid;
   margin-block: var(--gutter);
