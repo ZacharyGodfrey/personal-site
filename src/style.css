@@ -135,10 +135,6 @@ ul, ol {
   list-style-position: inside;
 }
 
-/* ::marker {
-  color: var(--accent);
-} */
-
 summary {
   cursor: pointer;
 }
