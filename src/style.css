@@ -23,6 +23,7 @@
   --main:    hwb(205 15% 45%);
   --dark:    hwb(205 10% 90%);
   --light:   hwb(205 95%  5%);
+  --neutral: hwb(205 80% 20%);
   --accent:  hwb(55   5%  5%);
   --link: var(--accent);
   --text: var(--light);
@@ -30,8 +31,8 @@
   --content-limit: 60rem;
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
-  color: var(--light);
-  background: var(--main);
+  color: var(--dark);
+  background: var(--neutral);
 }
 
 html, body {
