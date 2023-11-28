@@ -151,6 +151,15 @@ img {
 
 /* Utility Classes */
 
+img, .no-select {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
 .pad, .x-pad { padding-inline: var(--gutter); }
 .pad, .y-pad { padding-block: var(--gutter); }
 
