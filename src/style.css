@@ -273,10 +273,20 @@ a.external:after {
 
 */
 
+.split {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: stretch; /* cell content x */
+  align-items: start; /* cell content y */
+  justify-content: stretch; /* columns x */
+  align-content: start; /* rows y */
+  gap: 1rem;
+}
+
 @media screen and (max-width: 800px) {
   main {
     padding: 0;
   }
 
-  .grid.stack { grid-template-columns: 1fr; }
+  .split.stack { grid-template-columns: 1fr; }
 }
