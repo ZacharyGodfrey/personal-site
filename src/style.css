@@ -54,6 +54,7 @@ main {
 }
 
 article {
+  flex: 1;
   margin-inline: auto;
   max-width: var(--x-limit);
   color: var(--dark);
