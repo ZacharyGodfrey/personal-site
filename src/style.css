@@ -20,17 +20,21 @@
 }
 
 :root {
-  --main:    hwb(205 15% 45%);
+  /* --main:    hwb(205 15% 45%);
   --dark:    hwb(205 10% 90%);
   --neutral: hwb(205 90% 10%);
   --light:   hwb(205 95%  5%);
-  --accent:  hwb(55   5%  5%);
+  --accent:  hwb(55   5%  5%); */
+  --main:    hwb(35,  0%, 20%);
+  --dark:    hwb(35, 15%, 45%);
+  --light:   hwb(45, 30%, 10%);
+  --lighter: hwb(35, 45%, 15%);
   --gutter: 1rem;
   --content-limit: 60rem;
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
   color: var(--dark);
-  background: var(--neutral);
+  background: var(--lighter);
 }
 
 html, body {
