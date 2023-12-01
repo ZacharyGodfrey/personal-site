@@ -73,7 +73,11 @@ header {
 
 nav {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20ch, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center; /* cell content x */
+  align-items: center; /* cell content y */
+  justify-content: center; /* columns x */
+  align-content: center; /* rows y */
   gap: 1rem;
   padding-block: 0.5rem;
   color: var(--light);
