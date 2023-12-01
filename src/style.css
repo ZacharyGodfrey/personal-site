@@ -69,6 +69,10 @@ header {
   background: var(--dark);
 }
 
+header a {
+  color: var(--accent);
+}
+
 nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -77,9 +81,6 @@ nav {
   justify-content: center; /* columns x */
   align-content: center; /* rows y */
   gap: 1rem;
-  padding-block: 0.5rem;
-  color: white;
-  background: var(--medium);
 }
 
 section {
