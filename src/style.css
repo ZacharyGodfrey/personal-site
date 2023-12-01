@@ -23,7 +23,7 @@
   --main:    hwb(205 15% 45%);
   --dark:    hwb(205 10% 90%);
   --light:   hwb(205 95%  5%);
-  --neutral: hwb(205 80% 20%);
+  --neutral: hwb(205 85% 15%);
   --accent:  hwb(55   5%  5%);
   --link: var(--accent);
   --text: var(--light);
