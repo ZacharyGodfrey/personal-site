@@ -197,6 +197,16 @@ img {
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
 
+.img-overlay {
+  background: var(--main);
+}
+
+.img-overlay > img {
+  object-fit: cover;
+  opacity: 0.5;
+  border: none;
+}
+
 /*
 
 .pad, .x-pad { padding-inline: var(--gutter); }
