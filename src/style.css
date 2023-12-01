@@ -64,13 +64,20 @@ article > * {
   padding-inline: 1rem;
 }
 
-header, section {
-  padding-block: 2rem;
-}
-
 header {
+  padding-block: 2rem;
   color: var(--lighter);
   background: var(--main);
+}
+
+nav {
+  padding-block: 0.5rem;
+  color: var(--lighter);
+  background: var(--dark);
+}
+
+section {
+  padding-block: 2rem;
 }
 
 footer {
