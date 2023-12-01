@@ -1,17 +1,11 @@
 /* Global Reset */
 
 :root {
+  --accent: #B75D69;
+  --main:   #ADB993;
   --light:  #B8E1FF;
   --medium: #084B83;
   --dark:   #493B2A;
-  --main:   #ADB993;
-  --accent: #B75D69;
-  /* --main:    hsl(205  50%  60%);
-  --lighter: hsl(205   0% 100%);
-  --light:   hsl(205   0%  95%);
-  --medium:  hsl(205   0%  80%);
-  --dark:    hsl(205   0%  40%);
-  --darker:  hsl(205   0%  20%); */
   --gutter: 1rem;
   --x-limit: 60rem;
   font-family: 'roboto-mono', monospace;
@@ -84,7 +78,7 @@ nav {
   gap: 1rem;
   padding-block: 0.5rem;
   color: white;
-  background: var(--light);
+  background: var(--dark);
 }
 
 section {
