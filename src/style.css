@@ -214,7 +214,7 @@ a.external:after {
 .card {
   padding: var(--gutter);
   color: var(--dark);
-  background: var(--light);
+  background: white;
   border-radius: 0.5rem;
 }
 
