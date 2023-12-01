@@ -201,9 +201,9 @@ a.external:after {
   background: var(--light);
 }
 
-.bg-white {
+.bg-neutral {
   color: var(--dark);
-  background: white;
+  background: var(--neutral);
 }
 
 .bg-accent {
