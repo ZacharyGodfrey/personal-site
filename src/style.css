@@ -25,8 +25,6 @@
   --neutral: hwb(85 90% 10%);
   --light:   hwb(85 95%  5%);
   --accent:  hwb(55   5%  5%);
-  --link: inherit;
-  --text: var(--dark);
   --gutter: 1rem;
   --content-limit: 60rem;
   font-family: 'roboto-mono', monospace;
@@ -104,7 +102,7 @@ h3, .h3 {
 }
 
 a {
-  color: var(--link);
+  color: inherit;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
@@ -116,9 +114,12 @@ h3 a, .h3 a {
   text-decoration: none;
 }
 
+strong {
+  font-weight: bold;
+}
+
 em {
   font-style: italic;
-  /* color: var(--accent); */
 }
 
 hr {
@@ -127,7 +128,7 @@ hr {
   height: 1px;
   border: none;
   outline: none;
-  background: var(--text);
+  background: var(--dark);
 }
 
 ul, ol {
@@ -201,19 +202,11 @@ a.external:after {
   background: var(--accent);
 }
 
-.bg-main a, .bg-dark a {
-  color: var(--accent);
-}
-
 .card {
   padding: var(--gutter);
   color: var(--dark);
   background: white;
   border-radius: 0.5rem;
-}
-
-.card a {
-  color: inherit;
 }
 
 .grid {
