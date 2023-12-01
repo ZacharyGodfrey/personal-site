@@ -83,7 +83,7 @@ nav {
   gap: 1rem;
   padding-block: 0.5rem;
   color: white;
-  background: var(--dark);
+  background: var(--medium);
 }
 
 section {
