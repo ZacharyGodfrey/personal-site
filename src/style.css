@@ -1,9 +1,31 @@
 /* Global Reset */
 
+:root {
+  /* --main:    hwb(205 15% 45%);
+  --dark:    hwb(205 10% 90%);
+  --neutral: hwb(205 90% 10%);
+  --light:   hwb(205 95%  5%);
+  --accent:  hwb(55   5%  5%); */
+  --main:    hsl(40 100% 40%);
+  --dark:    hsl(40 100% 20%);
+  --light:   hsl(40  60% 60%);
+  --lighter: hsl(40  60% 80%);
+  --accent:  hsl(40 100% 65%);
+  --gutter: 1rem;
+  --content-limit: 60rem;
+  --text: var(--dark);
+  --background: none;
+  font-family: 'roboto-mono', monospace;
+  font-size: 16px;
+  background: var(--lighter);
+}
+
 * {
   position: relative;
   box-sizing: border-box;
   margin: 0;
+  color: var(--text);
+  background: var(--background);
 }
 
 :first-child {
@@ -15,26 +37,8 @@
 }
 
 ::selection {
-  color: var(--dark);
+  --text: var(--dark);
   background: var(--accent);
-}
-
-:root {
-  /* --main:    hwb(205 15% 45%);
-  --dark:    hwb(205 10% 90%);
-  --neutral: hwb(205 90% 10%);
-  --light:   hwb(205 95%  5%);
-  --accent:  hwb(55   5%  5%); */
-  --main:    hwb(35  0% 20%);
-  --dark:    hwb(35 15% 45%);
-  --light:   hwb(45 30% 10%);
-  --lighter: hwb(35 45% 15%);
-  --gutter: 1rem;
-  --content-limit: 60rem;
-  font-family: 'roboto-mono', monospace;
-  font-size: 16px;
-  color: var(--dark);
-  background: var(--lighter);
 }
 
 html, body {
