@@ -39,7 +39,7 @@ html, body {
 
 /* Layout */
 
-/* body {
+body {
   display: grid;
   grid-template-rows: 1fr auto;
   min-height: 100vh;
@@ -70,7 +70,7 @@ footer {
 header > *, section > *, footer > * {
   margin-inline: auto;
   max-width: var(--content-limit);
-} */
+}
 
 /* Element Styles */
 
@@ -146,7 +146,7 @@ details {
 
 summary {
   cursor: pointer;
-}
+} */
 
 img {
   display: block;
@@ -156,7 +156,7 @@ img {
   max-height: max(50svh, 25rem);
   border-radius: 0.5rem;
   border: 1px solid var(--dark);
-} */
+}
 
 /* Utility Classes */
 
