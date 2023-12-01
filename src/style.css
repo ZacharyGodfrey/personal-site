@@ -71,7 +71,7 @@ article > * {
 header {
   padding-block: 2rem;
   color: white;
-  background: var(--main);
+  background: var(--light);
 }
 
 nav {
@@ -83,8 +83,8 @@ nav {
   align-content: center; /* rows y */
   gap: 1rem;
   padding-block: 0.5rem;
-  color: white;
-  background: var(--light);
+  /* color: white;
+  background: var(--light); */
 }
 
 section {
