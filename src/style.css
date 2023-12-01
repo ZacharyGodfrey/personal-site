@@ -61,8 +61,11 @@ article {
 }
 
 article > * {
-  padding-block: 2rem;
   padding-inline: 1rem;
+}
+
+header, section {
+  padding-block: 2rem;
 }
 
 header {
