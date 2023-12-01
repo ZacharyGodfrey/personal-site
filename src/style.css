@@ -93,6 +93,12 @@ footer > * {
 
 /* Element Styles */
 
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
 /*
 
 h1, h2, h3, p, ul, hr {
@@ -120,12 +126,6 @@ h2, .h2 {
 h3, .h3 {
   font-size: 2rem;
   font-weight: normal;
-}
-
-a {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
 }
 
 h1 a, .h1 a,
