@@ -66,13 +66,13 @@ article > * {
 
 header {
   padding-block: 2rem;
-  color: var(--lighter);
+  color: var(--light);
   background: var(--main);
 }
 
 nav {
   padding-block: 0.5rem;
-  color: var(--lighter);
+  color: var(--light);
   background: var(--dark);
 }
 
