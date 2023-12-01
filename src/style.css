@@ -1,12 +1,12 @@
 /* Global Reset */
 
 :root {
-  --lighter: hsl(205  0% 95%);
-  --light:   hsl(205  0% 90%);
-  --medium:  hsl(205  0% 80%);
-  --main:    hsl(205 30% 60%);
-  --dark:    hsl(205  0% 40%);
-  --darker:  hsl(205  0% 20%);
+  --lighter: hsl(205   0% 100%);
+  --light:   hsl(205   0%  95%);
+  --medium:  hsl(205   0%  80%);
+  --main:    hsl(205  30%  60%);
+  --dark:    hsl(205   0%  40%);
+  --darker:  hsl(205   0%  20%);
   --gutter: 1rem;
   --x-limit: 60rem;
   font-family: 'roboto-mono', monospace;
@@ -182,17 +182,16 @@ img {
   -webkit-touch-callout: none;
 }
 
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-balance { text-wrap: balance; }
+.text-custom { font-family: 'satisfy'; }
+
 /*
 
 .pad, .x-pad { padding-inline: var(--gutter); }
 .pad, .y-pad { padding-block: var(--gutter); }
 
-.text-center { text-align: center; }
-.text-right { text-align: right; }
-.text-justify { text-align: justify; }
-.text-balance { text-wrap: balance; }
-.text-custom { font-family: 'satisfy'; }
-.text-accent { color: var(--accent); }
 
 a.external:after {
   display: inline-block;
