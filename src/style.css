@@ -79,7 +79,7 @@ nav {
   gap: 1rem;
   padding-block: 0.5rem;
   color: white;
-  background: var(--dark);
+  background: var(--medium);
 }
 
 section {
@@ -96,6 +96,10 @@ footer > * {
   margin-inline: auto;
   padding-inline: 1rem;
   max-width: var(--x-limit);
+}
+
+footer a {
+  color: var(--accent);
 }
 
 /* Element Styles */
@@ -127,10 +131,6 @@ a {
   color: var(--link);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-}
-
-nav a, footer a {
-  color: var(--accent);
 }
 
 h1 a, h2 a, h3 a {
@@ -199,6 +199,10 @@ hr {
 .text-right { text-align: right; }
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
+
+.bg-light {
+  background: var(--light);
+}
 
 /*
 
