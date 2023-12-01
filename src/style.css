@@ -118,7 +118,7 @@ h3 a, .h3 a {
 
 em {
   font-style: italic;
-  color: var(--accent);
+  /* color: var(--accent); */
 }
 
 hr {
