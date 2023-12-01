@@ -4,14 +4,14 @@
   --accent: #B75D69;
   --main:   #ADB993;
   --light:  #B8E1FF;
-  --medium: #084B83;
+  --medium: #0D7AD3;
   --dark:   #493B2A;
   --gutter: 1rem;
   --x-limit: 60rem;
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
   color: black;
-  background: var(--light);
+  background: var(--main);
 }
 
 * {
