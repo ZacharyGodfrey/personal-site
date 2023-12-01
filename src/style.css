@@ -201,6 +201,11 @@ a.external:after {
   background: var(--light);
 }
 
+.bg-white {
+  color: var(--dark);
+  background: white;
+}
+
 .bg-accent {
   color: var(--dark);
   background: var(--accent);
