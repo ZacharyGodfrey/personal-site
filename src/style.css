@@ -12,7 +12,7 @@
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
   color: black;
-  background: var(--main);
+  background: var(--dark);
 }
 
 * {
