@@ -47,14 +47,11 @@ body {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
   padding: 2rem 1rem;
   background: var(--medium);
 }
 
 article {
-  flex: 1;
   margin-inline: auto;
   max-width: var(--x-limit);
   color: var(--dark);
