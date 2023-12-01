@@ -1,18 +1,22 @@
 /* Global Reset */
 
 :root {
-  --bold:    hsl(205  50%  60%);
-  --main:    hsl(205  30%  60%);
+  --light:  #EAE2D2;
+  --medium: #D5C3AA;
+  --dark:   #867666;
+  --main:   #E1B80D;
+  /* --main:    hsl(205  50%  60%);
   --lighter: hsl(205   0% 100%);
   --light:   hsl(205   0%  95%);
   --medium:  hsl(205   0%  80%);
   --dark:    hsl(205   0%  40%);
-  --darker:  hsl(205   0%  20%);
+  --darker:  hsl(205   0%  20%); */
   --gutter: 1rem;
   --x-limit: 60rem;
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
-  background: var(--medium);
+  color: black;
+  background: var(--light);
 }
 
 * {
@@ -49,14 +53,14 @@ body {
 
 main {
   padding: 2rem 1rem;
-  background: var(--main);
+  background: var(--light);
 }
 
 article {
   margin-inline: auto;
   max-width: var(--x-limit);
-  color: var(--dark);
-  background: var(--light);
+  color: black;
+  background: white;
 }
 
 article > * {
@@ -65,8 +69,8 @@ article > * {
 
 header {
   padding-block: 2rem;
-  color: var(--light);
-  background: var(--bold);
+  color: white;
+  background: var(--medium);
 }
 
 nav {
@@ -78,7 +82,7 @@ nav {
   align-content: center; /* rows y */
   gap: 1rem;
   padding-block: 0.5rem;
-  color: var(--light);
+  color: white;
   background: var(--dark);
 }
 
@@ -88,8 +92,8 @@ section {
 
 footer {
   padding-block: 4rem;
-  color: var(--light);
-  background: var(--darker);
+  color: white;
+  background: var(--dark);
 }
 
 footer > * {
