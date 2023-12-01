@@ -70,7 +70,7 @@ article > * {
 header {
   padding-block: 2rem;
   color: white;
-  background: var(--medium);
+  background: var(--main);
 }
 
 nav {
