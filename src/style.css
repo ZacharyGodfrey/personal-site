@@ -1,36 +1,23 @@
 /* Global Reset */
 
 :root {
-  /* --main:    hwb(205 15% 45%);
-  --dark:    hwb(205 10% 90%);
-  --neutral: hwb(205 90% 10%);
-  --light:   hwb(205 95%  5%);
-  --accent:  hwb(55   5%  5%); */
-  --hue: 30;
-  --main:    hsl(23, 54%, 52%);
-  --dark:    hsl(16, 45%, 33%);
-  --light:   hsl(37, 94%, 72%);
-  --lighter: hsl(34, 94%, 86%);
-  --accent:  hsl(var(--hue) 100%  65%);
+  --main:    hsl(205 30% 75%);
+  --lighter: hsl(205 10% 95%);
+  --light:   hsl(205 10% 85%);
+  --medium:  hsl(205 10% 75%);
+  --dark:    hsl(205 10% 35%);
+  --darker:  hsl(205 10% 25%);
   --gutter: 1rem;
-  --content-limit: 60rem;
-  --text: var(--dark);
-  --link: var(--accent);
-  --background: none;
+  --x-limit: 60rem;
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
+  background: var(--medium);
 }
 
 * {
   position: relative;
   box-sizing: border-box;
   margin: 0;
-  color: var(--text);
-  background: var(--background);
-}
-
-a {
-  color: var(--link);
 }
 
 :first-child {
@@ -42,9 +29,8 @@ a {
 }
 
 ::selection {
-  --text: var(--dark);
-  --link: var(--dark);
-  --background: var(--accent);
+  color: var(--dark);
+  background: var(--main);
 }
 
 html, body {
@@ -55,37 +41,39 @@ html, body {
 
 body {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 1fr auto;
   min-height: 100vh;
   min-height: 100svh;
-}
-
-header {}
-
-section, footer {
-  padding-inline: var(--gutter);
 }
 
 main {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  background: var(--medium);
 }
 
-main > :last-child {
-  flex: 1;
+article {
+  margin-inline: auto;
+  max-width: var(--x-limit);
+  color: var(--dark);
+  background: var(--light);
 }
 
 section {
   padding-block: 2rem;
+  padding-inline: 1rem;
 }
 
 footer {
-  padding-block: 4rem 2rem;
+  padding-block: 4rem;
+  color: var(--light);
+  background: var(--dark);
 }
 
-header > *, section > *, footer > * {
+footer > * {
   margin-inline: auto;
-  max-width: var(--content-limit);
+  max-width: var(--x-limit);
 }
 
 /* Element Styles */
@@ -179,28 +167,6 @@ img {
 }
 
 /* Utility Classes */
-
-.bg-main {
-  --text: var(--lighter);
-  --background: var(--main);
-}
-
-.bg-dark {
-  --text: var(--light);
-  --background: var(--dark);
-}
-
-.bg-light {
-  --text: var(--dark);
-  --link: var(--dark);
-  --background: var(--light);
-}
-
-.bg-lighter {
-  --text: var(--dark);
-  --link: var(--dark);
-  --background: var(--lighter);
-}
 
 .no-select {
   user-select: none;
