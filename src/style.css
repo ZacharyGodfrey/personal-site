@@ -6,18 +6,18 @@
   --neutral: hwb(205 90% 10%);
   --light:   hwb(205 95%  5%);
   --accent:  hwb(55   5%  5%); */
-  --main:    hsl(40 100% 40%);
-  --dark:    hsl(40 100% 20%);
-  --light:   hsl(40  60% 60%);
-  --lighter: hsl(40  60% 80%);
-  --accent:  hsl(40 100% 65%);
+  --main:    hsl(40 100%  40%);
+  --dark:    hsl(40 100%  20%);
+  --light:   hsl(40  60%  60%);
+  --lighter: hsl(40  60%  90%);
+  --accent:  hsl(40 100%  65%);
   --gutter: 1rem;
   --content-limit: 60rem;
   --text: var(--dark);
+  --link: var(--accent);
   --background: none;
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
-  background: var(--lighter);
 }
 
 * {
@@ -26,6 +26,10 @@
   margin: 0;
   color: var(--text);
   background: var(--background);
+}
+
+a {
+  color: var(--link);
 }
 
 :first-child {
@@ -38,7 +42,8 @@
 
 ::selection {
   --text: var(--dark);
-  background: var(--accent);
+  --link: var(--dark);
+  --background: var(--accent);
 }
 
 html, body {
@@ -49,10 +54,12 @@ html, body {
 
 body {
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   min-height: 100svh;
 }
+
+header {}
 
 section, footer {
   padding-inline: var(--gutter);
@@ -82,7 +89,9 @@ header > *, section > *, footer > * {
 
 /* Element Styles */
 
-/* h1, h2, h3, p, ul, hr {
+/*
+
+h1, h2, h3, p, ul, hr {
   margin-block: var(--gutter);
 }
 
@@ -154,7 +163,9 @@ details {
 
 summary {
   cursor: pointer;
-} */
+}
+
+*/
 
 img {
   display: block;
@@ -168,7 +179,29 @@ img {
 
 /* Utility Classes */
 
-/* img, .no-select {
+.bg-main {
+  --text: var(--lighter);
+  --background: var(--main);
+}
+
+.bg-dark {
+  --text: var(--light);
+  --background: var(--dark);
+}
+
+.bg-light {
+  --text: var(--dark);
+  --link: var(--dark);
+  --background: var(--light);
+}
+
+.bg-lighter {
+  --text: var(--dark);
+  --link: var(--dark);
+  --background: var(--lighter);
+}
+
+.no-select {
   user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;
@@ -176,6 +209,8 @@ img {
   -webkit-user-select: none;
   -webkit-touch-callout: none;
 }
+
+/*
 
 .pad, .x-pad { padding-inline: var(--gutter); }
 .pad, .y-pad { padding-block: var(--gutter); }
@@ -257,4 +292,6 @@ a.external:after {
 
 @media screen and (max-width: 800px) {
   .grid.stack { grid-template-columns: 1fr; }
-} */
+}
+
+*/
