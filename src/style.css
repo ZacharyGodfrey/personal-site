@@ -6,8 +6,8 @@
   --neutral: hwb(205 90% 10%);
   --light:   hwb(205 95%  5%);
   --accent:  hwb(55   5%  5%); */
-  --hue: 40;
-  --main:    hsl(var(--hue) 100%  40%);
+  --hue: 30;
+  --main:    hsl(var(--hue)  60%  50%);
   --dark:    hsl(var(--hue) 100%  20%);
   --light:   hsl(var(--hue)  60%  60%);
   --lighter: hsl(var(--hue)  60%  90%);
