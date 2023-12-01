@@ -1,10 +1,11 @@
 /* Global Reset */
 
 :root {
-  --light:  #EAE2D2;
-  --medium: #D5C3AA;
-  --dark:   #867666;
-  --main:   #E1B80D;
+  --light:  #B8E1FF;
+  --medium: #767B91;
+  --dark:   #493B2A;
+  --main:   #ADB993;
+  --accent: #B75D69;
   /* --main:    hsl(205  50%  60%);
   --lighter: hsl(205   0% 100%);
   --light:   hsl(205   0%  95%);
@@ -128,7 +129,7 @@ h3 {
 }
 
 a {
-  color: inherit;
+  color: var(--accent);
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
