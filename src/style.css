@@ -136,6 +136,10 @@ ul, ol {
   list-style-position: inside;
 }
 
+ul ul {
+  padding-inline-start: var(--gutter);
+}
+
 details {
   margin-block: var(--gutter);
 }
