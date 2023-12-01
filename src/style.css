@@ -1,6 +1,7 @@
 /* Global Reset */
 
 :root {
+  --bold:    hsl(205  50%  60%);
   --main:    hsl(205  30%  60%);
   --lighter: hsl(205   0% 100%);
   --light:   hsl(205   0%  95%);
@@ -65,7 +66,7 @@ article > * {
 header {
   padding-block: 2rem;
   color: var(--light);
-  background: var(--main);
+  background: var(--bold);
 }
 
 nav {
