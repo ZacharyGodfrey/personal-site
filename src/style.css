@@ -1,10 +1,10 @@
 /* Global Reset */
 
 :root {
+  --main:    hsl(205  30%  60%);
   --lighter: hsl(205   0% 100%);
   --light:   hsl(205   0%  95%);
   --medium:  hsl(205   0%  80%);
-  --main:    hsl(205  30%  60%);
   --dark:    hsl(205   0%  40%);
   --darker:  hsl(205   0%  20%);
   --gutter: 1rem;
@@ -48,7 +48,7 @@ body {
 
 main {
   padding: 2rem 1rem;
-  background-image: url('/background.jpg');
+  background: var(--main);
 }
 
 article {
