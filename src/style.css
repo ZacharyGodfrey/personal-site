@@ -48,7 +48,7 @@ body {
 
 main {
   padding: 2rem 1rem;
-  background: var(--medium);
+  background-image: url('/background.jpg');
 }
 
 article {
@@ -168,8 +168,6 @@ img {
   max-width: 100%;
   max-height: max(50vh, 25rem);
   max-height: max(50svh, 25rem);
-  border-radius: 0.5rem;
-  border: 1px solid var(--dark);
 }
 
 /* hr {
@@ -196,14 +194,6 @@ img {
 .text-right { text-align: right; }
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
-
-.img-overlay > img {
-  width:100%;
-  height: auto;
-  object-fit: cover;
-  opacity: 0.5;
-  border: none;
-}
 
 /*
 
