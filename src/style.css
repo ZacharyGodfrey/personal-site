@@ -54,7 +54,7 @@ body {
 
 main {
   padding: 2rem 1rem;
-  background: var(--light);
+  background: var(--main);
 }
 
 article {
@@ -84,7 +84,7 @@ nav {
   gap: 1rem;
   padding-block: 0.5rem;
   color: white;
-  background: var(--medium);
+  background: var(--light);
 }
 
 section {
