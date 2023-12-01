@@ -169,6 +169,7 @@ img, .no-select {
 
 .text-center { text-align: center; }
 .text-right { text-align: right; }
+.text-justify { text-align: justify; }
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
 .text-accent { color: var(--accent); }
