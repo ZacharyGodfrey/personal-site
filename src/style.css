@@ -65,10 +65,15 @@ article > * {
   padding-inline: 1rem;
 }
 
+header {
+  color: var(--lighter);
+  background: var(--main);
+}
+
 footer {
   padding-block: 4rem;
   color: var(--light);
-  background: var(--dark);
+  background: var(--darker);
 }
 
 footer > * {
