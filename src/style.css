@@ -12,7 +12,7 @@
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
   color: black;
-  background: var(--dark);
+  background: var(--main);
 }
 
 * {
@@ -30,7 +30,7 @@
 }
 
 ::selection {
-  color: var(--dark);
+  color: black;
   background: var(--accent);
 }
 
@@ -40,38 +40,38 @@ html, body {
 
 /* Layout */
 
-body {
+/* body {
   display: grid;
   grid-template-rows: 1fr auto;
   min-height: 100vh;
   min-height: 100svh;
-}
+} */
 
 main {
   padding: 2rem 1rem;
   background: var(--main);
 }
 
-article {
+/* article {
   margin-inline: auto;
   max-width: var(--x-limit);
   color: black;
   background: white;
-}
+} */
 
-article > * {
+/* article > * {
   padding-inline: 1rem;
-}
+} */
 
-header {
+/* header {
   padding-block: 2rem;
-}
+} */
 
 section {
   padding-block: 2rem;
 }
 
-footer {
+/* footer {
   padding-block: 4rem;
   color: white;
   background: var(--dark);
@@ -86,7 +86,7 @@ footer > * {
 footer a {
   color: var(--accent);
   border-color: var(--accent);
-}
+} */
 
 /* Element Styles */
 
