@@ -26,8 +26,7 @@
 }
 
 ::selection {
-  color: var(--dark);
-  background: var(--light);
+  background: black;
 }
 
 /* Layout */
@@ -148,7 +147,8 @@ hr {
 .text-custom { font-family: 'satisfy'; }
 
 .block-left {
-  border-left: 1rem solid var(--text);
+  padding-left: 1rem;
+  border-left: 0.5rem solid var(--text);
 }
 
 .split {
