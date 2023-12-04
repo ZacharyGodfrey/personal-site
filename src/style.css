@@ -73,8 +73,8 @@ h3 {
 }
 
 a {
-  color: var(--accent);
-  border-bottom: 1px dotted var(--accent);
+  color: var(--link);
+  border-bottom: 1px dotted var(--link);
   text-decoration: none;
 }
 
