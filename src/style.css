@@ -147,6 +147,10 @@ hr {
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
 
+.block-left {
+  border-left: 1rem solid var(--text);
+}
+
 .split {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
