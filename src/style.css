@@ -9,10 +9,11 @@
   --accent: #f3e03d;
   --gutter: 1rem;
   --x-limit: 60rem;
+  padding: 0;
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
-  color: black;
-  background: var(--main);
+  color: white;
+  background: hsl(205 50% 50%);
 }
 
 * {
@@ -34,17 +35,22 @@
   background: var(--accent);
 }
 
-html, body {
-  padding: 0;
-}
-
 /* Layout */
 
-section {
+body {
+  padding: 1rem;
+}
+
+main {
   max-width: var(--x-limit);
   margin-inline: auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: hsl(205 50% 30%);
+}
+
+section {
   padding-block: 2rem;
-  padding-inline: 1rem;
 }
 
 /* Element Styles */
