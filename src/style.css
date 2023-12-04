@@ -40,10 +40,10 @@ html, body {
   padding: 0;
 }
 
-main {
+body > * {
   max-width: var(--x-limit);
   margin-inline: auto;
-  padding: 1rem;
+  padding-inline: 1rem;
 }
 
 section {
