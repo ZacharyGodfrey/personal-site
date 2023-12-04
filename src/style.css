@@ -6,8 +6,9 @@
   --background: hsl(205 60% 30%);
   --content-width: 80ch;
   padding: 0;
-  font-family: 'roboto-mono', monospace;
   font-size: 20px;
+  font-family: 'roboto-mono', monospace;
+  text-align: justify;
   color: var(--text);
   background: var(--background);
 }
