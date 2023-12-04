@@ -159,3 +159,10 @@ hr {
 @media screen and (max-width: 800px) {
   .split.stack { grid-template-columns: 1fr; }
 }
+
+/* Specific Styles */
+
+#portrait {
+  border: 2px solid var(--text);
+  border-radius: 100%;
+}
