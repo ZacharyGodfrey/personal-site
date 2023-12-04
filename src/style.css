@@ -132,6 +132,7 @@ a {
   color: var(--link);
   text-decoration: underline;
   text-decoration-thickness: 1px;
+  text-decoration-style: dotted;
 }
 
 h1 a, h2 a, h3 a {
