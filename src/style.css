@@ -2,7 +2,8 @@
 
 :root {
   --dark: hsl(205 60% 30%);
-  --link: hsl(0   80% 60%);
+  /* --link: hsl(0   80% 60%); */
+  --link: white;
   --text: white;
   --x-limit: 80ch;
   padding: 0;
