@@ -156,6 +156,8 @@ hr {
   gap: 1rem;
 }
 
+.split.auto-fill { grid-template-columns: auto 1fr; }
+
 @media screen and (max-width: 800px) {
   .split.stack { grid-template-columns: 1fr; }
 }
