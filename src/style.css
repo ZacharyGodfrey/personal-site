@@ -1,9 +1,8 @@
 /* Global Reset */
 
 :root {
-  --dark:  hsl(205 60% 30%);
-  --light: hsl(205 30% 60%);
-  --link:  hsl(55  60% 60%);
+  --dark: hsl(205 60% 30%);
+  --link: hsl(0   80% 60%);
   --text: white;
   --x-limit: 80ch;
   font-family: 'roboto-mono', monospace;
@@ -39,9 +38,13 @@ html, body {
   min-height: 100svh;
 }
 
-section {
+body > * {
   max-width: var(--x-limit);
-  margin: 4rem auto;
+  margin-inline: auto;
+}
+
+section {
+  margin-block: 4rem;
   padding: 1rem;
 }
 
