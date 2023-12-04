@@ -5,6 +5,7 @@
   --link: hsl(0   80% 60%);
   --text: white;
   --x-limit: 80ch;
+  padding: 0;
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
   color: var(--text);
@@ -32,9 +33,12 @@
 /* Layout */
 
 html, body {
-  padding: 0;
   min-height: 100vh;
   min-height: 100svh;
+}
+
+body {
+  padding: 4rem 1rem;
 }
 
 body > * {
@@ -44,7 +48,6 @@ body > * {
 
 section {
   margin-block: 4rem;
-  padding: 1rem;
 }
 
 /* Element Styles */
