@@ -35,6 +35,13 @@
 
 html, body {
   padding: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 body > * {
