@@ -38,7 +38,7 @@
 /* Layout */
 
 body {
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 main {
@@ -79,8 +79,8 @@ h3 {
 }
 
 a {
-  color: var(--link);
-  border-bottom: 1px dotted var(--link);
+  color: var(--accent);
+  border-bottom: 1px dotted var(--accent);
   text-decoration: none;
 }
 
