@@ -1,18 +1,15 @@
 /* Global Reset */
 
 :root {
-  --main:   #C7CFB5;
-  --light:  #B8E1FF;
-  --medium: #5594c3;
-  --dark:   #493B2A;
-  --link:   #b84151;
-  --accent: #f3e03d;
-  --gutter: 1rem;
+  --surface:   hsl(205 60% 30%);
+  --selection: hsl(205 30% 60%);
+  --text:      hsl(205 60% 90%);
+  --link:      hsl(55  60% 60%);
   --x-limit: 60rem;
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
-  color: white;
-  background: hsl(205 50% 30%);
+  color: var(--text);
+  background: var(--surface);
 }
 
 * {
@@ -30,8 +27,8 @@
 }
 
 ::selection {
-  color: black;
-  background: var(--accent);
+  color: var(--surface);
+  background: var(--selection);
 }
 
 /* Layout */
@@ -76,8 +73,8 @@ h3 {
 }
 
 a {
-  color: var(--accent);
-  border-bottom: 1px dotted var(--accent);
+  color: var(--link);
+  border-bottom: 1px dotted var(--link);
   text-decoration: none;
 }
 
@@ -104,11 +101,11 @@ em {
 }
 
 ul ul {
-  padding-inline-start: var(--gutter);
+  padding-inline-start: 1rem;
 }
 
 details {
-  margin-block: var(--gutter);
+  margin-block: 1rem;
 }
 
 summary {
@@ -130,7 +127,7 @@ hr {
   height: 1px;
   border: none;
   outline: none;
-  background: var(--dark);
+  background: var(--text);
 }
 
 /* Utility Classes */
@@ -148,20 +145,6 @@ hr {
 .text-right { text-align: right; }
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
-
-.bg-light {
-  color: black;
-  background: var(--light);
-}
-
-.bg-accent {
-  color: black;
-  background: var(--accent);
-}
-
-.bg-accent a {
-  color: inherit;
-}
 
 .split {
   display: grid;
