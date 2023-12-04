@@ -1,16 +1,15 @@
 /* Global Reset */
 
 :root {
-  --dark: hsl(205 60% 30%);
-  /* --link: hsl(0   80% 60%); */
-  --link: white;
   --text: white;
-  --x-limit: 80ch;
+  --link: white;
+  --background: hsl(205 60% 30%);
+  --content-width: 80ch;
   padding: 0;
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
   color: var(--text);
-  background: var(--dark);
+  background: var(--background);
 }
 
 * {
@@ -43,7 +42,7 @@ body {
 }
 
 body > * {
-  max-width: var(--x-limit);
+  max-width: var(--content-width);
   margin-inline: auto;
 }
 
