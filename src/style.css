@@ -11,8 +11,8 @@
   --x-limit: 60rem;
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
-  color: black;
-  background: var(--main);
+  color: var(--main);
+  background: var(--dark);
 }
 
 * {
