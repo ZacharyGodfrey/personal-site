@@ -42,7 +42,7 @@ html, body {
 body {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, var(--x-limit)) minmax(0, 1fr);
-  gap: 4rem;
+  row-gap: 4rem;
 }
 
 body > * {
