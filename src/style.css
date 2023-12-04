@@ -1,15 +1,15 @@
 /* Global Reset */
 
 :root {
-  --surface:   hsl(205 60% 30%);
-  --selection: hsl(205 30% 60%);
-  --text:      hsl(205 60% 90%);
-  --link:      hsl(55  60% 60%);
+  --dark:  hsl(205 60% 30%);
+  --light: hsl(205 30% 60%);
+  --link:  hsl(55  60% 60%);
+  --text: white;
   --x-limit: 60rem;
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
   color: var(--text);
-  background: var(--surface);
+  background: var(--dark);
 }
 
 * {
@@ -27,8 +27,8 @@
 }
 
 ::selection {
-  color: var(--surface);
-  background: var(--selection);
+  color: var(--dark);
+  background: var(--light);
 }
 
 /* Layout */
