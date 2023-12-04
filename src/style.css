@@ -43,6 +43,10 @@ body {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, var(--x-limit)) minmax(0, 1fr);
   row-gap: 4rem;
+  justify-items: stretch; /* cell content X */
+  align-items: start; /* cell content Y */
+  justify-content: stretch; /* column spacing X */
+  align-content: start; /* row spacing Y */
 }
 
 body > * {
