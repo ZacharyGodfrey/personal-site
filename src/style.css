@@ -165,6 +165,7 @@ hr {
 /* Specific Styles */
 
 #portrait {
+  max-width: 10rem;
   border: 2px solid var(--text);
   border-radius: 100%;
 }
