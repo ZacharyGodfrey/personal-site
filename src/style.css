@@ -38,7 +38,7 @@ html, body {
 }
 
 body {
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
 }
 
 body > * {
@@ -47,7 +47,7 @@ body > * {
 }
 
 section {
-  margin-block: 4rem;
+  margin-block: 2rem;
 }
 
 /* Element Styles */
