@@ -39,21 +39,9 @@ html, body {
   min-height: 100svh;
 }
 
-body {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, var(--x-limit)) minmax(0, 1fr);
-  row-gap: 4rem;
-  justify-items: stretch; /* cell content X */
-  align-items: start; /* cell content Y */
-  justify-content: stretch; /* column spacing X */
-  align-content: start; /* row spacing Y */
-}
-
-body > * {
-  grid-column: 2;
-}
-
 section {
+  max-width: var(--x-limit);
+  margin: 4rem auto;
   padding: 1rem;
 }
 
