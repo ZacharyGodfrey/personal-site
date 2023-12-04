@@ -1,7 +1,7 @@
 /* Global Reset */
 
 :root {
-  --main:   #ADB993;
+  --main:   #C7CFB5;
   --light:  #B8E1FF;
   --medium: #5594c3;
   --dark:   #493B2A;
@@ -11,7 +11,7 @@
   --x-limit: 60rem;
   font-family: 'roboto-mono', monospace;
   font-size: 16px;
-  color: white;
+  color: black;
   background: var(--main);
 }
 
