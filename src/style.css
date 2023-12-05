@@ -130,14 +130,10 @@ img {
 hr {
   margin-inline: auto;
   width: 100%;
-  height: 0;
-  border-bottom: 1px solid var(--text);
+  height: 2px;
+  border: none;
   outline: none;
-  background: none;
-}
-
-hr.dashed {
-  border-bottom-style: dashed;
+  background: var(--text);
 }
 
 /* Utility Classes */
