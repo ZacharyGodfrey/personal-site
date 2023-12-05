@@ -136,6 +136,10 @@ hr {
   background: none;
 }
 
+hr.dashed {
+  border-bottom-style: dashed;
+}
+
 /* Utility Classes */
 
 .no-select {
