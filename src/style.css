@@ -56,7 +56,7 @@ section > * {
 
 /* Element Styles */
 
-h1, h2, h3, p, ul, hr, details {
+h1, h2, h3, p, ul, hr, details, summary {
   margin-block: 1rem;
 }
 
