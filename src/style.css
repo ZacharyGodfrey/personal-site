@@ -130,10 +130,10 @@ img {
 hr {
   margin-inline: auto;
   width: 100%;
-  height: 1px;
-  border: none;
+  height: 0;
+  border-bottom: 1px solid var(--text);
   outline: none;
-  background: var(--text);
+  background: none;
 }
 
 /* Utility Classes */
