@@ -50,11 +50,11 @@ section {
   margin-block: 4rem;
 }
 
-/* Element Styles */
-
-h1, h2, h3, p, ul, hr {
+section > * {
   margin-block: 1rem;
 }
+
+/* Element Styles */
 
 h1, h2, h3 {
   text-wrap: balance;
@@ -108,10 +108,6 @@ em {
 
 ul ul {
   padding-inline-start: 1rem;
-}
-
-details {
-  margin-block: 1rem;
 }
 
 summary {
