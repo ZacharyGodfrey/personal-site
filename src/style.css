@@ -6,7 +6,7 @@
   --background: hsl(205 60% 30%);
   --content-width: 60ch;
   padding: 0;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'roboto-mono', monospace;
   color: var(--text);
   background: var(--background);
