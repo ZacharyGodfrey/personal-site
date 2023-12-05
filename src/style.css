@@ -4,7 +4,7 @@
   --text: white;
   --link: white;
   --background: hsl(205 60% 30%);
-  --content-width: 80ch;
+  --content-width: 60ch;
   padding: 0;
   font-size: 20px;
   font-family: 'roboto-mono', monospace;
