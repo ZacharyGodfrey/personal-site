@@ -47,13 +47,13 @@ body > * {
 }
 
 section {
-  margin-block: 2rem;
+  margin-block: 4rem;
 }
 
 /* Element Styles */
 
 h1, h2, h3, p, ul, hr {
-  margin-block: 2rem;
+  margin-block: 1rem;
 }
 
 h1, h2, h3 {
@@ -69,11 +69,17 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: normal;
+  line-height: 2;
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: normal;
+  line-height: 2;
+}
+
+p, li {
+  line-height: 2;
 }
 
 a {
@@ -85,10 +91,6 @@ a {
 h1 a, h2 a, h3 a {
   color: inherit;
   border-bottom: none;
-}
-
-h1, h2, h3, p, li {
-  line-height: 2;
 }
 
 ul, ol {
