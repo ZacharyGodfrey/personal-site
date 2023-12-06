@@ -50,7 +50,7 @@ section {
   padding-block: 4rem;
 }
 
-section:not(:last-child) {
+body > *:not(:last-child) {
   border-bottom: 2px solid var(--text);
 }
 
