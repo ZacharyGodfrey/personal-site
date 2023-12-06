@@ -159,7 +159,6 @@ hr {
 .text-right { text-align: right; }
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
-.text-indent { text-indent: 4ch; }
 
 .block-left {
   padding-left: 1rem;
