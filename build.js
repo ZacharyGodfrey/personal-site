@@ -3,6 +3,8 @@
 const path = require('path');
 const fs = require('fs-extra');
 const glob = require('glob');
+const markdown = require('marked');
+const { render } = require('mustache');
 
 // Helper Functions
 
@@ -12,6 +14,7 @@ const readFile = (filePath, encoding) => fs.readFileSync(resolve(filePath), { en
 const writeFile = (filePath, content, encoding) => fs.outputFileSync(resolve(filePath), content, { encoding: encoding || 'utf-8' });
 const emptyFolder = (folderPath) => fs.emptyDirSync(resolve(folderPath));
 const copyFolder = (srcPath, destPath) => fs.copySync(resolve(srcPath), resolve(destPath));
+const compileMD = (fileContent) => markdown(fileContent, { gfm: true }).trim();
 
 // Read Input
 
@@ -20,10 +23,18 @@ const favicon = readFile('./src/favicon.png', 'base64');
 const fontSatisfy = readFile('./src/satisfy.ttf', 'base64');
 const fontRoboto = readFile('./src/roboto-mono.ttf', 'base64');
 const style = readFile('./src/style.css');
-const pages = listFiles('./src/pages/**/*.*').map(filePath => ({
-  name: filePath.split('/src/pages/')[1],
-  content: readFile(`./${filePath}`)
-}));
+const mdWrap = readFile('./src/partials/md-wrap.html');
+
+const pages = listFiles('./src/pages/**/*.*').map(filePath => {
+  const name = filePath.split('/src/pages/')[1];
+  const isMarkdown = name.includes('.md');
+  const content = readFile(`./${filePath}`);
+
+  return {
+    name,
+    content: isMarkdown ? render(mdWrap, {}, { content: compileMD(content) }) : content
+  };
+});
 
 const baseFile = shell
   .replace('/*favicon*/', favicon)
@@ -36,10 +47,10 @@ const baseFile = shell
 emptyFolder('./dist');
 copyFolder('./src/static', './dist');
 
-pages.forEach(page => {
-  const fileName = page.name.split('.').slice(0, -1).join('.');
+pages.forEach(({ name, content }) => {
+  const fileName = name.split('.').slice(0, -1).join('.');
   const filePath = `./dist/${fileName}.html`;
-  const fileContent = baseFile.replace('/*content*/', page.content);
+  const fileContent = baseFile.replace('/*content*/', content);
 
   writeFile(filePath, fileContent);
 });
