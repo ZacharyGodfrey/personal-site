@@ -3,7 +3,7 @@
 const path = require('path');
 const fs = require('fs-extra');
 const glob = require('glob');
-const markdown = require('marked');
+const { parse: markdown } = require('marked');
 const { render } = require('mustache');
 
 // Helper Functions
@@ -27,8 +27,6 @@ const mdWrap = readFile('./src/partials/md-wrap.html');
 
 const pages = listFiles('./src/pages/**/*.*').map(filePath => {
   const name = filePath.split('src/pages/')[1];
-  console.log('filePath: ', filePath);
-  console.log('name: ', name);
   const isMarkdown = name.includes('.md');
   const content = readFile(`./${filePath}`);
 
