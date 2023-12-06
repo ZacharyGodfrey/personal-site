@@ -27,6 +27,8 @@ const mdWrap = readFile('./src/partials/md-wrap.html');
 
 const pages = listFiles('./src/pages/**/*.*').map(filePath => {
   const name = filePath.split('/src/pages/')[1];
+  console.log('filePath: ', filePath);
+  console.log('name: ', name);
   const isMarkdown = name.includes('.md');
   const content = readFile(`./${filePath}`);
 
