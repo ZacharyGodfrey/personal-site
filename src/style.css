@@ -36,7 +36,7 @@ h1, h2, h3, p, ul, hr, details, details[open] > summary {
 }
 
 h1, h2, h3 {
-  /* text-wrap: balance; */
+  max-width: var(--content-width);
 }
 
 h1 {
