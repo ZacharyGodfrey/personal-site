@@ -39,9 +39,10 @@ html, body {
   min-height: 100svh;
 }
 
-body > * {
+main {
   max-width: var(--content-width);
   margin-inline: auto;
+  padding: 1rem;
 }
 
 section {
