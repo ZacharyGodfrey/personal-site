@@ -40,7 +40,8 @@ const baseFile = shell
   .replace('/*favicon*/', favicon)
   .replace('/*fontSatisfy*/', fontSatisfy)
   .replace('/*fontRoboto*/', fontRoboto)
-  .replace('/*style*/', style);
+  .replace('/*style*/', style)
+  .replace('/*portrait*/', readFile('./src/static/portrait.png', 'base64'));
 
 // Write Output
 
