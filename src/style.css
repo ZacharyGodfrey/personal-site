@@ -160,7 +160,7 @@ hr {
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
 
-.block-left {
+.left-bar {
   padding-left: 1rem;
   border-left: 0.5rem solid var(--text);
 }
