@@ -5,7 +5,6 @@
   --link: white;
   --background: hsl(205 60% 30%);
   --content-width: 60ch;
-  padding: 0;
   font-size: 18px;
   font-family: 'roboto-mono', monospace;
   color: var(--text);
@@ -33,12 +32,10 @@
 /* Layout */
 
 html, body {
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
   min-height: 100svh;
-}
-
-body {
-  padding: 0 1rem 4rem 1rem;
 }
 
 body > * {
@@ -47,12 +44,12 @@ body > * {
 }
 
 section {
-  padding-block: 1rem;
+  padding: 1rem;
 }
 
-section > * {
+/* section > * {
   margin-block: 1rem;
-}
+} */
 
 /* Element Styles */
 
