@@ -2,7 +2,7 @@
 
 :root {
   --text: white;
-  --link: #39e539;
+  --link:       hsl(55  80% 60%);
   --background: hsl(205 60% 30%);
   --content-width: 60ch;
   font-size: 18px;
