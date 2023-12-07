@@ -5,6 +5,7 @@
   --emphasis:   hsl(125 75% 90%);
   --link:       hsl(185 75% 50%);
   --background: hsl(205 60% 30%);
+  --dark:       hsl(205 60% 10%);
   --content-width: 75ch;
   font-size: 18px;
   font-family: 'roboto-mono', monospace;
@@ -149,7 +150,7 @@ section > * {
 .text-custom { font-family: 'satisfy'; }
 
 .bg-dark {
-  background: #303030;
+  background: var(--dark);
 }
 
 /* Specific Styles */
