@@ -46,16 +46,8 @@ body > * {
   margin-inline: auto;
 }
 
-body > *:not(:last-child) {
-  border-bottom: 2px solid var(--text);
-}
-
-nav {
-  padding-block: 1rem;
-}
-
 section {
-  padding-block: 2rem;
+  padding-block: 1rem;
 }
 
 section > * {
