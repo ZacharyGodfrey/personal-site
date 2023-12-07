@@ -5,7 +5,7 @@
   --emphasis:   hsl(125 75% 90%);
   --link:       hsl(185 75% 50%);
   --background: hsl(205 60% 30%);
-  --dark:       hsl(205 60% 10%);
+  --footer:     hsl(205 60% 10%);
   --content-width: 45rem;
   font-size: 18px;
   font-family: 'roboto-mono', monospace;
@@ -134,6 +134,10 @@ section > * {
   margin-inline: auto;
 }
 
+footer {
+  background: var(--footer);
+}
+
 /* Utility Classes */
 
 .no-select {
@@ -149,10 +153,6 @@ section > * {
 .text-right { text-align: right; }
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
-
-.bg-dark {
-  background: var(--dark);
-}
 
 /* Specific Styles */
 
