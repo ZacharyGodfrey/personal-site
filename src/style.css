@@ -2,6 +2,7 @@
 
 :root {
   --text: white;
+  --emphasis:   hsl(185 75% 80%);
   --link:       hsl(185 75% 50%);
   --background: hsl(205 60% 30%);
   --content-width: 75ch;
@@ -104,6 +105,7 @@ strong {
 
 em {
   font-style: italic;
+  color: var(--emphasis);
 }
 
 ul ul {
