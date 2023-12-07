@@ -47,10 +47,6 @@ section {
   padding: 1rem;
 }
 
-/* section > * {
-  margin-block: 1rem;
-} */
-
 /* Element Styles */
 
 section, h1, h2, h3, p, ul, hr, details, details[open] > summary {
@@ -92,10 +88,6 @@ a {
 a:hover {
   color: var(--link);
 }
-
-/* h1 a, h2 a, h3 a {
-  color: inherit;
-} */
 
 h1 a {
   border-bottom: none;
