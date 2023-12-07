@@ -1,4 +1,4 @@
-/* Global Reset */
+/* Element Styles */
 
 :root {
   --text: white;
@@ -29,27 +29,6 @@
 ::selection {
   background: black;
 }
-
-/* Layout */
-
-html, body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  min-height: 100svh;
-}
-
-main {
-  max-width: var(--content-width);
-  margin-inline: auto;
-  padding: 1rem;
-}
-
-main > * {
-  margin-block: 2rem;
-}
-
-/* Element Styles */
 
 h1, h2, h3, p, ul, hr, details, details[open] > summary {
   margin-block: 1rem;
@@ -135,6 +114,25 @@ hr {
   background: var(--text);
 }
 
+/* Layout */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+main {
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+main > * {
+  margin-block: 2rem;
+}
+
 /* Utility Classes */
 
 .no-select {
@@ -151,21 +149,20 @@ hr {
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
 
-.bar-x, .bar-left {
-  padding-left: 1rem;
-  border-left: 0.5rem solid var(--text);
-}
-
-.bar-x, .bar-right {
-  padding-right: 1rem;
-  border-right: 0.5rem solid var(--text);
-}
-
 /* Specific Styles */
 
 #portrait {
   max-width: 10rem;
   border: 2px solid var(--text);
   border-radius: 100%;
-  filter: sepia(1);
+  /* filter: sepia(1); */
+}
+
+#portrait::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--link);
+  mix-blend-mode: hue;
 }
