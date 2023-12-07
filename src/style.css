@@ -135,10 +135,6 @@ hr {
   background: var(--text);
 }
 
-hr.short {
-  width: 50%;
-}
-
 /* Utility Classes */
 
 .no-select {
@@ -155,25 +151,14 @@ hr.short {
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
 
-.left-bar {
+.bar-x, .bar-left {
   padding-left: 1rem;
   border-left: 0.5rem solid var(--text);
 }
 
-.split {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: stretch; /* cell content x */
-  align-items: start; /* cell content y */
-  justify-content: stretch; /* columns x */
-  align-content: start; /* rows y */
-  gap: 1rem;
-}
-
-.split.auto-fill { grid-template-columns: auto 1fr; }
-
-@media screen and (max-width: 800px) {
-  .split.stack { grid-template-columns: 1fr; }
+.bar-x, .bar-right {
+  padding-right: 1rem;
+  border-right: 0.5rem solid var(--text);
 }
 
 /* Specific Styles */
