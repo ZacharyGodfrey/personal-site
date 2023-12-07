@@ -84,14 +84,18 @@ p, li {
 }
 
 a {
-  color: var(--link);
+  color: inherit;
   border-bottom: 1px dotted var(--link);
   text-decoration: none;
 }
 
-h1 a, h2 a, h3 a {
-  color: inherit;
+a:hover {
+  color: var(--link);
 }
+
+/* h1 a, h2 a, h3 a {
+  color: inherit;
+} */
 
 h1 a {
   border-bottom: none;
