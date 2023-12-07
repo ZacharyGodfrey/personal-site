@@ -123,14 +123,13 @@ html, body {
   min-height: 100svh;
 }
 
-main {
-  max-width: var(--content-width);
-  margin-inline: auto;
-  padding: 1rem;
+section {
+  padding: 2rem 1rem;
 }
 
-main > * {
-  margin-block: 2rem;
+section > * {
+  max-width: var(--content-width);
+  margin-inline: auto;
 }
 
 /* Utility Classes */
@@ -148,6 +147,10 @@ main > * {
 .text-right { text-align: right; }
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
+
+.bg-dark {
+  background: #303030;
+}
 
 /* Specific Styles */
 
