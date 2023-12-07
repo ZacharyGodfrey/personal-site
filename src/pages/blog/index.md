@@ -1,3 +1,9 @@
 ## Blog Posts
 
-- [First Blog Post](/blog/0)
+---
+
+### [First Blog Post](/blog/0)
+
+An introduction, among other things.
+
+---
