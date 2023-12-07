@@ -154,8 +154,8 @@ footer {
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
 
-.border-under {
-  border-bottom: 1px solid var(--text);
+.bg-light {
+  background: hsl(205 60% 35%);
 }
 
 /* Specific Styles */
