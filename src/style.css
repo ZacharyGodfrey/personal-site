@@ -2,8 +2,8 @@
 
 :root {
   --text: white;
-  --link:       hsl(00  75% 65%);
-  --background: hsl(205 60% 30%);
+  --link:       hsl(160 75% 65%);
+  --background: hsl(205 60% 40%);
   --content-width: 60ch;
   font-size: 18px;
   font-family: 'roboto-mono', monospace;
