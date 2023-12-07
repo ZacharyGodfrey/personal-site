@@ -155,14 +155,5 @@ main > * {
   max-width: 10rem;
   border: 2px solid var(--text);
   border-radius: 100%;
-  /* filter: sepia(1); */
-}
-
-#portrait::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: var(--link);
-  mix-blend-mode: hue;
+  filter: sepia(1);
 }
