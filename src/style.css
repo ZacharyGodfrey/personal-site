@@ -6,7 +6,7 @@
   --link:       hsl(185 75% 50%);
   --background: hsl(205 60% 30%);
   --dark:       hsl(205 60% 10%);
-  --content-width: 60rem;
+  --content-width: 45rem;
   font-size: 18px;
   font-family: 'roboto-mono', monospace;
   color: var(--text);
@@ -118,6 +118,11 @@ html, body {
   padding: 0;
   min-height: 100vh;
   min-height: 100svh;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 section {
