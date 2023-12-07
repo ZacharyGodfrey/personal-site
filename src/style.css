@@ -2,9 +2,9 @@
 
 :root {
   --text: white;
-  --link:       hsl( 45 75% 50%);
+  --link:       hsl(185 75% 50%);
   --background: hsl(205 60% 30%);
-  --content-width: 60ch;
+  --content-width: 75ch;
   font-size: 18px;
   font-family: 'roboto-mono', monospace;
   color: var(--text);
