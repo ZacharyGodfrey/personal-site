@@ -5,5 +5,3 @@ Sometimes I have thoughts about software, axe throwing, and other things too. Th
 ### [First Blog Post](/blog/0)
 
 An introduction, among other things.
-
-[Read More](/blog/0)
