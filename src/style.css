@@ -154,10 +154,6 @@ footer {
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
 
-.bg-light {
-  background: hsl(205 60% 35%);
-}
-
 /* Specific Styles */
 
 #portrait {
