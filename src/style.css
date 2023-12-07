@@ -38,7 +38,7 @@ html, body {
 }
 
 body {
-  padding: 1rem;
+  padding: 0 1rem 4rem 1rem;
 }
 
 body > * {
@@ -55,7 +55,7 @@ nav {
 }
 
 section {
-  padding-block: 4rem;
+  padding-block: 2rem;
 }
 
 section > * {
