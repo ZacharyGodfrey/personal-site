@@ -6,4 +6,6 @@
 
 An introduction, among other things.
 
+[Read More](/blog/0)
+
 ---
