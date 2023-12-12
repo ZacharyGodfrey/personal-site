@@ -42,6 +42,7 @@ h1, h2, h3, p, ul, hr, details, details[open] > summary {
 }
 
 h1 {
+  font-family: 'satisfy';
   font-size: 3rem;
   font-weight: 500;
   line-height: 1;
