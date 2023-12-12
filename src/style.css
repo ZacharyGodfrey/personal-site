@@ -118,7 +118,8 @@ hr {
 }
 
 table, th, td {
-  border: 1px solid black;
+  color: var(--text);
+  border: 1px solid var(--text);
   border-collapse: collapse;
 }
 
@@ -179,8 +180,9 @@ section > * {
 .text-custom { font-family: 'satisfy'; }
 
 .card {
+  --text: var(--dark);
   padding: 1rem;
-  color: var(--dark);
+  color: var(--text);
   background: white;
   border-radius: 0.5rem;
 }
