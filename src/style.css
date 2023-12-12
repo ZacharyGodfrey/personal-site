@@ -120,7 +120,6 @@ hr {
 table, th, td {
   color: var(--text);
   border: 1px solid var(--text);
-  background: var(--dark);
   border-collapse: collapse;
 }
 
@@ -140,17 +139,16 @@ th {
 pre {
   display: block;
   max-width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
   overflow-x: auto;
+  color: var(--text);
+  background: var(--dark);
 }
 
 code {
-  display: inline-block;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
   font-family: inherit;
   font-weight: inherit;
-  color: var(--text);
-  background: var(--dark);
 }
 
 /* Layout */
