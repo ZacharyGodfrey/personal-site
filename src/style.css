@@ -143,6 +143,12 @@ pre {
 }
 
 code {
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-family: inherit;
+  font-weight: inherit;
+  color: var(--text);
   background: var(--dark);
 }
 
