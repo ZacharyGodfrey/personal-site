@@ -118,7 +118,7 @@ hr {
 }
 
 table {
-  max-width: 100%;
+  width: 100%;
 }
 
 th, td {
@@ -127,6 +127,7 @@ th, td {
 
 th {
   font-weight: bold;
+  text-align: center;
 }
 
 /* Layout */
