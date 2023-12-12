@@ -117,12 +117,18 @@ hr {
   background: var(--text);
 }
 
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
 table {
   width: 100%;
 }
 
 th, td {
   padding: 0.5rem;
+  text-align: left;
 }
 
 th {
