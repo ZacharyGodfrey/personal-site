@@ -33,7 +33,7 @@
 
 ::selection {
   color: var(--text);
-  background: black;
+  background: var(--dark);
 }
 
 h1, h2, h3, p, ul, hr, details, details[open] > summary {
