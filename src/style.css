@@ -141,7 +141,6 @@ pre {
   display: block;
   max-width: 100%;
   padding: 1rem;
-  border-radius: 0.5rem;
   overflow-x: auto;
   color: var(--text);
   background: var(--dark);
