@@ -9,12 +9,10 @@
   --emphasis:   var(--alt);
   --link:       var(--light);
   --background: var(--main);
-  --footer:     var(--dark);
   --content-width: 45rem;
   font-size: 18px;
   font-weight: 200;
   font-family: 'roboto-mono', monospace;
-  /* font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace; */
   color: var(--text);
   background: var(--background);
 }
@@ -128,16 +126,11 @@ html, body {
 }
 
 body {
-  display: grid;
-  grid-template-rows: 1fr auto;
-}
-
-main {
   display: flex;
   flex-direction: column;
 }
 
-main > :last-child {
+body > :last-child {
   flex: 1;
 }
 
@@ -148,10 +141,6 @@ section {
 section > * {
   max-width: var(--content-width);
   margin-inline: auto;
-}
-
-footer {
-  background: var(--footer);
 }
 
 /* Utility Classes */
