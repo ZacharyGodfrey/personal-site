@@ -36,7 +36,7 @@
   background: var(--dark);
 }
 
-h1, h2, h3, p, ul, hr, details, details[open] > summary {
+h1, h2, h3, p, ul, hr, table, details, details[open] > summary {
   margin-block: 1rem;
 }
 
@@ -115,6 +115,18 @@ hr {
   border: none;
   outline: none;
   background: var(--text);
+}
+
+table {
+  max-width: 100%;
+}
+
+th, td {
+  padding: 0.5rem;
+}
+
+th {
+  font-weight: bold;
 }
 
 /* Layout */
