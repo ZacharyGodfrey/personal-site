@@ -1,15 +1,11 @@
 /* Element Styles */
 
 :root {
-  --off-white:  hsl(205 100%  95%);
-  --light:      hsl(185  75%  50%);
-  --medium:     hsl(205  60%  30%);
-  --dark:       hsl(205  60%  10%);
-  --text:       var(--dark);
-  --emphasis:   hsl(125  75%  90%);
-  --link:       var(--light);
-  --background: var(--off-white);
-  --footer:     var(--dark);
+  --text: white;
+  --emphasis:   hsl(125 75% 90%);
+  --link:       hsl(185 75% 50%);
+  --background: hsl(205 60% 30%);
+  --footer:     hsl(205 60% 10%);
   --content-width: 45rem;
   font-size: 18px;
   font-weight: 200;
