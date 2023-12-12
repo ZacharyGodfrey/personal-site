@@ -159,6 +159,13 @@ section > * {
 .text-balance { text-wrap: balance; }
 .text-custom { font-family: 'satisfy'; }
 
+.card {
+  padding: 1rem;
+  color: var(--dark);
+  background: white;
+  border-radius: 0.5rem;
+}
+
 /* Specific Styles */
 
 #portrait {
