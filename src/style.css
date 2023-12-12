@@ -9,7 +9,8 @@
   --content-width: 45rem;
   font-size: 18px;
   font-weight: 200;
-  font-family: 'roboto-mono', monospace;
+  /* font-family: 'roboto-mono', monospace; */
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   color: var(--text);
   background: var(--background);
 }
