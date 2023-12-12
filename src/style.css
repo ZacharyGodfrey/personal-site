@@ -83,6 +83,15 @@ ul, ol {
   list-style-position: inside;
 }
 
+ul > li {
+  display: block;
+}
+
+ul > li:before {
+  display: block;
+  content: '&bull;'
+}
+
 strong {
   font-weight: bold;
 }
@@ -90,10 +99,6 @@ strong {
 em {
   font-style: italic;
   color: var(--emphasis);
-}
-
-ul ul {
-  padding-inline-start: 1rem;
 }
 
 summary {
