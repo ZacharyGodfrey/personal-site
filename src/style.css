@@ -36,7 +36,7 @@
   background: var(--dark);
 }
 
-h1, h2, h3, p, ul, hr, table, details, details[open] > summary {
+h1, h2, h3, p, ul, hr, table, pre, details, details[open] > summary {
   margin-block: 1rem;
 }
 
