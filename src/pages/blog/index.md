@@ -1,6 +1,6 @@
 ## Blog
 
-Sometimes I have thoughts about software, axe throwing, and other things too. They're collected here in case anyone might find them helpful.
+I often have thoughts. Sometimes I write them down. I hope you find them helpful.
 
 ### [First Blog Post](/blog/0)
 
