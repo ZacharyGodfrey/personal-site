@@ -131,6 +131,15 @@ body {
   grid-template-rows: 1fr auto;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+main > :last-child {
+  flex: 1;
+}
+
 section {
   padding: 2rem 1rem;
 }
