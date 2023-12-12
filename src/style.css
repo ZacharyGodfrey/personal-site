@@ -8,8 +8,8 @@
   --footer:     hsl(205 60% 10%);
   --content-width: 45rem;
   font-size: 18px;
-  font-family: system-ui, sans-serif;
-  /* font-family: 'roboto-mono', monospace; */
+  /* font-family: system-ui, sans-serif; */
+  font-family: 'roboto-mono', monospace;
   color: var(--text);
   background: var(--background);
 }
