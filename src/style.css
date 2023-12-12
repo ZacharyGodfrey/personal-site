@@ -136,6 +136,12 @@ th {
   font-weight: bold;
 }
 
+pre {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 /* Layout */
 
 html, body {
