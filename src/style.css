@@ -180,9 +180,8 @@ section > * {
 .text-custom { font-family: 'satisfy'; }
 
 .card {
-  --text: var(--dark);
   padding: 1rem;
-  color: var(--text);
+  color: var(--dark);
   background: white;
   border-radius: 0.5rem;
 }
