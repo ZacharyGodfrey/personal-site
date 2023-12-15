@@ -19,7 +19,7 @@ const compileMD = (fileContent) => markdown(fileContent, { gfm: true }).trim();
 // Read Input
 
 const shell = readFile('./src/shell.html');
-const favicon = readFile('./src/favicon.png', 'base64');
+const favicon = readFile('./src/terminal.png', 'base64');
 const fontSatisfy = readFile('./src/satisfy.ttf', 'base64');
 const fontRoboto = readFile('./src/roboto-mono.ttf', 'base64');
 const style = readFile('./src/style.css');
