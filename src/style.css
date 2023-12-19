@@ -187,4 +187,5 @@ main {
 img[alt="portrait"] {
   max-width: 10rem;
   border-radius: 100%;
+  filter: sepia(0.75);
 }
