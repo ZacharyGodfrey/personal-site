@@ -184,7 +184,7 @@ main {
 
 /* Specific Styles */
 
-#portrait {
+img[alt="portrait"] {
   max-width: 10rem;
   border-radius: 100%;
 }
