@@ -14,7 +14,7 @@
   font-size: 18px;
   font-family: 'roboto-mono', monospace;
   color: var(--text);
-  background: var(--background);
+  background-color: var(--background);
 }
 
 * {
@@ -164,8 +164,8 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-  body {
-    background: linear-gradient(90deg, var(--main-50), transparent 50%);
+  :root {
+    background-image: linear-gradient(90deg, var(--main-50), transparent 50%);
   }
 }
 
