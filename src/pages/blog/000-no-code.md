@@ -27,6 +27,6 @@ Google Forms and Google Sheets are both free, so using them costs the business o
 
 ## Conclusion
 
-In the end, I helped out a local business owner by using my knowledge of existing tools to build a free solution to a costly problem. I didn't have to write any custom code, and now he's saving over $100 per month *for the lifetime of his business*. I love helping people do more with less!
+In the end, I helped out a local business owner by using my knowledge of existing tools to build a free solution to a costly problem. I didn't have to write any custom code, and now he's saving over $100 per month *for the lifetime of his business*.
 
 *Posted on **{{meta.date}}***
