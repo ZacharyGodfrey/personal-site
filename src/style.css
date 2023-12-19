@@ -193,11 +193,26 @@ img[alt="portrait"] {
 /* Print Rules */
 
 @media print {
-  html, body {
-    color: black;
-    background: white;
+  :root {
     --text: black;
     --emphasis: black;
     --link: black;
+  }
+
+  html, body {
+    color: black;
+    background: white;
+  }
+
+  h1, h2, h3 {
+    color: var(--main);
+  }
+
+  p, li, a {
+    color: black;
+  }
+
+  footer, hr, img {
+    display: none;
   }
 }
