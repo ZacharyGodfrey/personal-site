@@ -73,17 +73,15 @@ a, em, strong, th {
 }
 
 a {
-  border-bottom: var(--line-thin) solid var(--link);
   text-decoration: none;
+}
+
+article a {
+  border-bottom: var(--line-thin) solid var(--link);
 }
 
 a:hover {
   color: var(--link);
-}
-
-header h1 a {
-  color: inherit;
-  border-bottom: none;
 }
 
 ul, ol {
