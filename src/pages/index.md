@@ -28,7 +28,7 @@ I often have thoughts. I occasionally write them down. I hope you find them help
 
 {{#posts}}
 
-## [{{meta.order}}: {{meta.title}}](/{{{uri}}})
+## [{{meta.title}}](/{{{uri}}})
 
 {{meta.description}}\
 {{meta.date}} [Read More](/{{{uri}}})
