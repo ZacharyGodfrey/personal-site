@@ -47,6 +47,7 @@ const favicon = readFile('./src/static/terminal.png', 'base64');
 const fontFancy = readFile('./src/static/satisfy.ttf', 'base64');
 const fontMono = readFile('./src/static/roboto-mono.ttf', 'base64');
 const style = readFile('./src/style.css');
+const hero = readFile('./src/static/family.jpg', 'base64');
 
 const pages = listFiles('./src/pages/**/*.md').map(filePath => {
   const uri = filePath.split('src/pages/')[1].replace('.md', '');
@@ -68,7 +69,7 @@ const posts = pages
 pages.forEach(({ uri, meta, content: rawContent }) => {
   const data = { config, posts, meta, hasPosts: posts.length > 0 };
   const content = compileMD(render(rawContent, data, {}));
-  const partials = { favicon, fontFancy, fontMono, style, content };
+  const partials = { favicon, fontFancy, fontMono, style, hero, content };
 
   writeFile(`./dist/${uri}.html`, render(shell, data, partials));
 });

@@ -17,6 +17,12 @@
   background-color: var(--background);
 }
 
+@media screen and (min-width: 600px) {
+  :root {
+    background-image: linear-gradient(90deg, var(--main-50), transparent 50%);
+  }
+}
+
 * {
   position: relative;
   box-sizing: border-box;
@@ -163,12 +169,6 @@ body {
   min-height: 100svh;
 }
 
-@media screen and (min-width: 600px) {
-  :root {
-    background-image: linear-gradient(90deg, var(--main-50), transparent 50%);
-  }
-}
-
 main {
   max-width: var(--content-width);
   margin-inline: auto;
@@ -182,7 +182,7 @@ main {
 
 /* Specific Styles */
 
-img[alt="portrait"] {
+img[alt="hero"] {
   max-width: 10rem;
   border-radius: 100%;
 }
