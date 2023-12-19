@@ -17,7 +17,7 @@ const readFile = (filePath, encoding) => fs.readFileSync(resolve(filePath), { en
 const writeFile = (filePath, content, encoding) => fs.outputFileSync(resolve(filePath), content, { encoding: encoding || 'utf-8' });
 const emptyFolder = (folderPath) => fs.emptyDirSync(resolve(folderPath));
 const copyFolder = (srcPath, destPath) => fs.copySync(resolve(srcPath), resolve(destPath));
-const compileMD = (fileContent) => markdown(fileContent, { gfm: true, headerIds: false });
+const compileMD = (fileContent) => markdown(fileContent, { gfm: true, headerIds: true });
 
 const parseMetadata = (fileContent) => {
   const { attributes: meta, body: content } = frontMatter(fileContent);
