@@ -12,7 +12,9 @@ date: "19 Dec 2023"
 
 ## The Problem
 
-A local axe throwing venue was spending over $100 per month for custom waiver software so that customers could fill out a waiver before throwing axes. I believed I could replace that software with a free solution that would eliminate the monthly cost, and the owner of the venue was intrigued. The software had the following requirements:
+A local axe throwing venue was spending over $100 per month for custom waiver software so that customers could fill out a waiver before throwing axes. I believed I could replace that software with a free solution that would eliminate the monthly cost, and the owner of the venue was intrigued.
+
+The software had the following requirements:
 
 1. The waiver form needs to be publicly accessible so that a QR code can be created for it
 1. The form needs to capture valid email addresses in a way that is easily exported (for follow-up emails)
@@ -25,6 +27,6 @@ Google Forms and Google Sheets are both free, so using them costs the business o
 
 ## Conclusion
 
-In the end, I helped out a local business owner by using my knowledge of existing tools to build a free solution to a costly situation. I didn't have to write any custom code, and now he's saving over $100 per month for the lifetime of his business.
+In the end, I helped out a local business owner by using my knowledge of existing tools to build a free solution to a costly problem. I didn't have to write any custom code, and now he's saving over $100 per month *for the lifetime of his business*. I love helping people do more with less!
 
 *Posted on **{{meta.date}}***
