@@ -4,7 +4,7 @@ title: ""
 description: ""
 ---
 
-![portrait](/family.png)
+![portrait](/family.jpg)
 
 Hey, I'm *Zach*. I'm a husband and father, [Senior Software Engineer](#work), and the [creator of Axe Charts](#axe-charts). I live in Florida with my wife, Claire. We have a son and a daughter. In my spare time, I throw axes competitively in the [IATF](https://axescores.com/player/1207260).
 
