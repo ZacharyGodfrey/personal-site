@@ -20,6 +20,8 @@ I created [Axe Charts](https://axecharts.com) to supplement the official stats w
 
 *Badges* provide fun performance milestones to work toward while chasing down that elusive 81 score and the *Axe Charts Rating (ACR)* is an alternative rating system based on overall accuracy rather than wins and losses.
 
+{{#hasPosts}}
+
 # Blog
 
 I often have thoughts. I occasionally write them down. I hope you find them helpful.
@@ -32,3 +34,5 @@ I often have thoughts. I occasionally write them down. I hope you find them help
 {{meta.date}} [Read More](/{{{uri}}})
 
 {{/posts}}
+
+{{/hasPosts}}

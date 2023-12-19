@@ -66,7 +66,7 @@ const posts = pages
   .sort(byAscending(x => x.meta.order));
 
 pages.forEach(({ uri, meta, content: rawContent }) => {
-  const data = { config, posts, meta };
+  const data = { config, posts, meta, hasPosts: posts.length > 0 };
   const content = compileMD(render(rawContent, data, {}));
   const partials = { favicon, fontFancy, fontMono, style, content };
 
