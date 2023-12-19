@@ -14,8 +14,8 @@ date: "19 Dec 2023"
 
 A local axe throwing venue was spending over $100 per month for custom waiver software so that customers could fill out a waiver before throwing axes. I believed I could replace that software with a free solution that would eliminate the monthly cost, and the owner of the venue was intrigued. The software had the following requirements:
 
-- The waiver form needs to be publicly accessible so that a QR code can be created for it
-- The form needs to capture valid email addresses in a way that is easily exported (for follow-up emails)
+1. The waiver form needs to be publicly accessible so that a QR code can be created for it
+1. The form needs to capture valid email addresses in a way that is easily exported (for follow-up emails)
 
 ## The Solution
 
