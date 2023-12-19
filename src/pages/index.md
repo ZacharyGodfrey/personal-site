@@ -6,7 +6,9 @@ description: ""
 
 ![hero](data:image/jpg;base64,{{>hero}})
 
-Hey, I'm *Zach*. I'm a husband and father, [Senior Software Engineer](#work), and the [creator of Axe Charts](#axe-charts). I live in Florida with my wife, Claire. We have a son and a daughter on the way. In my spare time, I throw axes competitively in the [IATF](https://axescores.com/player/1207260).
+Hey, I'm *Zach*. I'm a husband and father, [Senior Software Engineer](#work), and the [creator of Axe Charts](#axe-charts).
+
+I live in Florida with my wife, Claire. We have a son and a daughter on the way. In my spare time, I throw axes competitively in the [IATF](https://axescores.com/player/1207260). I also have a [blog](#blog) where I write very infrequently.
 
 # Work
 
@@ -24,7 +26,7 @@ I created [Axe Charts](https://axecharts.com) to supplement the official stats w
 
 # Blog
 
-I'm not much of a writer, and I don't write often. Still, I hope you find something of value in the topics below.
+I'm not much of a writer, and I don't write often. Still, I hope you find something of value in the topics listed below.
 
 {{#posts}}
 
