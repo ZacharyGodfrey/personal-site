@@ -2,9 +2,15 @@
 
 const path = require('path');
 const fs = require('fs-extra');
-const scss = require('node-sass');
-const markdown = require('marked');
 const glob = require('glob');
+const frontMatter = require('front-matter');
+const marked = require('marked');
+const { gfmHeadingId } = require('marked-gfm-heading-id')
+const { render } = require('mustache');
+
+const config = require('./src/config.json');
+
+marked.use(gfmHeadingId({ prefix: '' }));
 
 // Helper Functions
 
@@ -14,46 +20,56 @@ const readFile = (filePath, encoding) => fs.readFileSync(resolve(filePath), { en
 const writeFile = (filePath, content, encoding) => fs.outputFileSync(resolve(filePath), content, { encoding: encoding || 'utf-8' });
 const emptyFolder = (folderPath) => fs.emptyDirSync(resolve(folderPath));
 const copyFolder = (srcPath, destPath) => fs.copySync(resolve(srcPath), resolve(destPath));
-const compileSCSS = (fileContent) => scss.renderSync({ data: fileContent, outputStyle: 'compressed' }).css.toString().trim();
-const compileMD = (fileContent) => markdown(fileContent, { gfm: true }).trim();
+const compileMD = (fileContent) => marked.parse(fileContent, { gfm: true });
+
+const parseMetadata = (fileContent) => {
+  const { attributes: meta, body: content } = frontMatter(fileContent);
+
+  return { meta, content };
+};
+
+const byAscending = (fn) => (left, right) => {
+  const l = fn(left), r = fn(right);
+
+  return l < r ? -1 : l > r ? 1 : 0;
+};
+
+const byDescending = (fn) => (left, right) => {
+  const l = fn(left), r = fn(right);
+
+  return r < l ? -1 : r > l ? 1 : 0;
+};
 
 // Read Input
 
 const shell = readFile('./src/shell.html');
-const favicon = readFile('./src/favicon.png', 'base64');
-const font = readFile('./src/Satisfy.ttf', 'base64');
-const style = compileSCSS(readFile('./src/style.scss'));
-const pages = listFiles('./src/pages/**/*.*').map(filePath => {
-  const fileName = filePath.split('/src/pages/')[1];
-  const content = readFile(`./${filePath}`);
-  const isMarkdown = fileName.includes('.md');
+const favicon = readFile('./src/static/terminal.png', 'base64');
+const fontFancy = readFile('./src/static/satisfy.ttf', 'base64');
+const fontMono = readFile('./src/static/roboto-mono.ttf', 'base64');
+const style = readFile('./src/style.css');
+const hero = readFile('./src/static/family.jpg', 'base64');
 
-  return {
-    name: fileName,
-    content: !isMarkdown ? content : `
-      <article class="section-light">
-        <div class="content">
-          ${compileMD(content)}
-        </div>
-      </article>
-    `,
-  };
+const pages = listFiles('./src/pages/**/*.md').map(filePath => {
+  const uri = filePath.split('src/pages/')[1].replace('.md', '');
+  const fileContent = readFile(`./${filePath}`);
+  const { meta, content } = parseMetadata(fileContent);
+
+  return { uri, meta, content };
 });
-
-const baseFile = shell
-  .replace('//favicon', favicon)
-  .replace('//font', font)
-  .replace('/* style */', style);
 
 // Write Output
 
 emptyFolder('./dist');
 copyFolder('./src/static', './dist');
 
-pages.forEach(page => {
-  const fileName = page.name.split('.').slice(0, -1).join('.');
-  const filePath = `./dist/${fileName === 'home' ? 'index' : fileName}.html`;
-  const fileContent = baseFile.replace('<!-- content -->', page.content);
+const posts = pages
+  .filter(x => x.meta.type == 'post')
+  .sort(byAscending(x => x.meta.order));
 
-  writeFile(filePath, fileContent);
+pages.forEach(({ uri, meta, content: rawContent }) => {
+  const data = { config, posts, meta, hasPosts: posts.length > 0 };
+  const partials = { favicon, fontFancy, fontMono, style, hero };
+  const content = compileMD(render(rawContent, data, partials));
+
+  writeFile(`./dist/${uri}.html`, render(shell, data, { ...partials, content }));
 });

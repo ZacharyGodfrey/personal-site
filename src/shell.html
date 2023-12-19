@@ -3,54 +3,46 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Zachary Godfrey &bull; Software Engineer">
-    <title>Zachary Godfrey &bull; Senior Software Engineer</title>
-    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,//favicon">
+    {{^meta.description}}<meta name="description" content="{{config.description}}">{{/meta.description}}
+    {{#meta.description}}<meta name="description" content="{{meta.description}}">{{/meta.description}}
+    {{^meta.title}}<title>{{config.name}}</title>{{/meta.title}}
+    {{#meta.title}}<title>{{meta.title}} | {{config.name}}</title>{{/meta.title}}
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,{{>favicon}}">
     <style>
       @font-face {
-        font-family: "custom-font";
-        src: url(data:application/x-font-ttf;charset=utf-8;base64,//font);
+        font-family: 'satisfy';
+        src: url(data:application/x-font-ttf;charset=utf-8;base64,{{>fontFancy}});
       }
-    </style>
-    <style>
-      /* style */
+
+      @font-face {
+        font-family: 'roboto-mono';
+        src: url(data:application/x-font-ttf;charset=utf-8;base64,{{>fontMono}});
+      }
+
+      {{>style}}
     </style>
   </head>
   <body>
-    <header class="section-primary">
-      <div class="content text-center">
-        <h1 class="font-custom">
-          <a href="/">Zachary Godfrey</a>
-        </h1>
-
-        <h6>Senior Software Engineer</h6>
-
-        <p>
-          <a href="/#about">About</a>
-          <span>&bull;</span>
-          <a href="/#career">Career</a>
-          <span>&bull;</span>
-          <a href="/#contact">Contact</a>
-        </p>
-      </div>
-    </header>
-
     <main>
-      <!-- content -->
-    </main>
+      <header>
+        <h1 class="text-fancy text-center">
+          <a href="/">{{config.name}}</a>
+        </h1>
+      </header>
 
-    <footer class="section-primary">
-      <div class="content text-center">
+      <hr>
+
+      <article>
+        {{>content}}
+      </article>
+
+      <hr>
+
+      <footer class="text-right">
         <p>
-          <span>&copy;</span>
-          <span id="current-year">2020</span>
-          <span>Zachary Godfrey</span>
+          <a href="mailto:contact@zacharygodfrey.dev">Contact</a>
         </p>
-      </div>
-    </footer>
-
-    <script>
-      document.getElementById('current-year').innerHTML = `${new Date().getFullYear()}`;
-    </script>
+      </footer>
+    </main>
   </body>
 </html>

@@ -6,14 +6,16 @@
     "local": "concurrently \"npm run watch\" \"npm run serve\""
   },
   "dependencies": {
+    "front-matter": "^4.0.2",
     "fs-extra": "^9.0.1",
-    "glob": "^7.1.6",
-    "marked": "^1.1.0",
-    "node-sass": "^4.14.1"
+    "glob": "^10.3.10",
+    "marked": "^11.0.0",
+    "marked-gfm-heading-id": "^3.1.2",
+    "mustache": "^4.2.0"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
-    "http-server": "^0.12.3",
-    "watch": "^1.0.2"
+    "http-server": "^14.1.1",
+    "watch": "^0.13.0"
   }
 }
