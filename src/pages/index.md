@@ -24,7 +24,7 @@ I created [Axe Charts](https://axecharts.com) to supplement the official stats w
 
 # Blog
 
-I often have thoughts. I occasionally write them down. I hope you find them helpful.
+Sometimes I write things down. I hope you find some of them helpful.
 
 {{#posts}}
 
