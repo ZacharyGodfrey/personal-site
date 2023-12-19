@@ -30,8 +30,7 @@ I'm not much of a writer, and I don't write often. Still, I hope you find someth
 
 **[{{meta.order}}: {{meta.title}}](/{{{uri}}})**
 
-[{{meta.date}}] {{meta.description}}\
-[Read More](/{{{uri}}})
+{{meta.date}}: {{meta.description}} [Read More](/{{{uri}}})
 
 {{/posts}}
 
