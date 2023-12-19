@@ -208,8 +208,8 @@ img[alt="portrait"] {
     color: var(--main);
   }
 
-  p, li, a {
-    color: black;
+  p, li, th, td {
+    font-weight: normal;
   }
 
   footer, hr, img {
