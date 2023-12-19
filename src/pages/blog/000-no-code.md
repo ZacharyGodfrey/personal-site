@@ -19,9 +19,9 @@ A local axe throwing venue was spending over $100 per month for custom waiver so
 
 ## The Solution
 
-I created a Google Form for the waiver that was populated with the proper legal text and all of the form fields of the existing waiver. I set up the form so that submissions would be captured in a Google Sheets spreadsheet. I grabbed a photo of the venue from their website and used it in the header of the form so that it would be at least slightly branded for the business. Once I had the public URL for the Google Form, I generated a QR code that would link to it.
+I created a [Google Form](https://forms.google.com) for the waiver that was populated with the proper legal text and all of the form fields of the existing waiver. I set up the form so that submissions would be captured as rows in a [Google Sheets](https://sheets.google.com) spreadsheet. I grabbed a photo of the venue from their website and used it in the header of the form so that it would be at least slightly branded for the business. Once I had the public URL for the Google Form, I generated a [QR code](https://www.qr-code-generator.com) that would link to it.
 
-Google Forms and Google Sheets are both free, so using them costs the business owner nothing. I set up the form and sheet under his business Google account, and now he can easily go into the sheet and copy out all of the email addresses from a single column and import them into his existing automated email solution.
+Google Forms and Google Sheets are both free, so using them costs the business owner nothing. Now he can easily go into the spreadsheet and copy out all of the email addresses from a single column and import them into his existing automated email solution.
 
 ## Conclusion
 
