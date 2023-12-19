@@ -4,10 +4,13 @@ const path = require('path');
 const fs = require('fs-extra');
 const glob = require('glob');
 const frontMatter = require('front-matter');
-const { parse: markdown } = require('marked');
+const marked = require('marked');
+const { gfmHeadingId } = require('marked-gfm-heading-id')
 const { render } = require('mustache');
 
 const config = require('./src/config.json');
+
+marked.use(gfmHeadingId({ prefix: '' }));
 
 // Helper Functions
 
@@ -17,7 +20,7 @@ const readFile = (filePath, encoding) => fs.readFileSync(resolve(filePath), { en
 const writeFile = (filePath, content, encoding) => fs.outputFileSync(resolve(filePath), content, { encoding: encoding || 'utf-8' });
 const emptyFolder = (folderPath) => fs.emptyDirSync(resolve(folderPath));
 const copyFolder = (srcPath, destPath) => fs.copySync(resolve(srcPath), resolve(destPath));
-const compileMD = (fileContent) => markdown(fileContent, { gfm: true, headerIds: true });
+const compileMD = (fileContent) => marked.parse(fileContent, { gfm: true });
 
 const parseMetadata = (fileContent) => {
   const { attributes: meta, body: content } = frontMatter(fileContent);
