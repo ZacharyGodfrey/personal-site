@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "draft"
 title: "Hello, world!"
 description: "A brief introduction"
 order: "000"
