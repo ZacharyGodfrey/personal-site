@@ -3,37 +3,46 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zachary Godfrey</title>
-    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,/*favicon*/">
+    {{^meta.description}}<meta name="description" content="{{config.description}}">{{/meta.description}}
+    {{#meta.description}}<meta name="description" content="{{meta.description}}">{{/meta.description}}
+    {{^meta.title}}<title>{{config.name}}</title>{{/meta.title}}
+    {{#meta.title}}<title>{{meta.title}} | {{config.name}}</title>{{/meta.title}}
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,{{>favicon}}">
     <style>
       @font-face {
         font-family: 'satisfy';
-        src: url(data:application/x-font-ttf;charset=utf-8;base64,/*fontSatisfy*/);
+        src: url(data:application/x-font-ttf;charset=utf-8;base64,{{>fontFancy}});
       }
 
       @font-face {
         font-family: 'roboto-mono';
-        src: url(data:application/x-font-ttf;charset=utf-8;base64,/*fontRoboto*/);
+        src: url(data:application/x-font-ttf;charset=utf-8;base64,{{>fontMono}});
       }
 
-      /*style*/
+      {{>style}}
     </style>
   </head>
   <body>
-    <section>
-      <img src="data:image/png;base64,/*portrait*/" id="portrait" class="no-select">
+    <main>
+      <header>
+        <h1 class="text-fancy text-center">
+          <a href="/">{{config.name}}</a>
+        </h1>
+      </header>
 
-      <h1 class="text-center">
-        <a href="/">Zachary Godfrey</a>
-      </h1>
+      <hr>
 
-      <p class="text-center">
-        <a href="/">Home</a>
-        <span>&nbsp;</span>
-        <a href="/blog">Blog</a>
-      </p>
-    </section>
+      {{>content}}
 
-    /*content*/
+      <hr>
+
+      <footer class="text-center">
+        <p>
+          <a href="/">Home</a>
+          <strong>|</strong>
+          <a href="/style-guide">Style Guide</a>
+        </p>
+      </footer>
+    </main>
   </body>
 </html>
