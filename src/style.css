@@ -189,3 +189,15 @@ img[alt="portrait"] {
   border-radius: 100%;
   filter: sepia(0.75);
 }
+
+/* Print Rules */
+
+@media print {
+  html, body {
+    color: black;
+    background: white;
+    --text: black;
+    --emphasis: black;
+    --link: black;
+  }
+}
