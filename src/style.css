@@ -188,7 +188,7 @@ main {
   }
 }
 
-.fade-in, img {
+.fade-in, img, blockquote, table {
   scale: 0.5;
   opacity: 0;
   animation: fade-in linear forwards;
