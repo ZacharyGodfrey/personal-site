@@ -119,14 +119,6 @@ img {
   max-height: min(75svh, 40rem);
   filter: var(--shadow);
   user-select: none;
-  scale: 0.5; opacity: 0;
-  animation: image-fade-in linear forwards;
-  animation-timeline: view();
-  animation-range: entry;
-}
-
-@keyframes image-fade-in {
-  to { scale: 1; opacity: 1; }
 }
 
 hr {
@@ -188,6 +180,21 @@ main {
 .text-fancy { font-family: 'satisfy'; }
 
 /* Specific Styles */
+
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+.fade-in, img {
+  scale: 0.5;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: entry;
+}
 
 img[alt="hero"] {
   max-width: 10rem;
