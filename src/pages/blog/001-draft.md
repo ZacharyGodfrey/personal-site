@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "draft"
 title: "Draft"
 description: "TBD"
 order: "001"
