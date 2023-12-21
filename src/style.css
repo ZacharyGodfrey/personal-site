@@ -187,7 +187,7 @@ img[alt="hero"] {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  article > * {
+  article > img, blockquote, table {
     scale: 0.8;
     opacity: 0.2;
     animation: fade-in linear forwards;
