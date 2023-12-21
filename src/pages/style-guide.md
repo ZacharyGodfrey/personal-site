@@ -16,6 +16,10 @@ description: "This page demonstrates the styling of all available elements."
 
 Here is some *emphasis text*. Here is some **bold text**. Here is some `code`. Here is a [link](/). This is some more text that will hopefully be long enough to cause some wrapping and show off how a paragraph of text will look on the website.
 
+Here is an image:
+
+![alt text here](/trees.jpg)
+
 Here is a blockquote:
 
 > "And the end of all our exploring will be to arrive where we started and know the place for the first time."
@@ -41,7 +45,3 @@ Here is a table:
 | A1 | B1 | C1 |
 | A2 | B2 | C2 |
 | A3 | B3 | C3 |
-
-Here is an image:
-
-![alt text here](/trees.jpg)
