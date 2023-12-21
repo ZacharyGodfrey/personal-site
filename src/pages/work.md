@@ -11,7 +11,7 @@ description: ""
 Senior Software Engineer\
 [The Knot](https://theknot.com)
 
-Tech Stack:
+**Tech Stack**
 
 - NodeJS
 - GraphQL
@@ -24,7 +24,7 @@ Tech Stack:
 Senior Software Engineer\
 [BAM Technologies](https://bamtech.net)
 
-Tech Stack:
+**Tech Stack**
 
 - Angular
 - TypeScript
@@ -32,7 +32,7 @@ Tech Stack:
 - PostgreSQL
 - AWS Services: Lambda, S3, RDS, Elasticsearch, Step Functions, Simple Email Service
 
-Responsibilities:
+**Responsibilities**
 
 - Transitioned an existing government web application away from a Microsoft technology stack (C#, MSSQL) and onto a platform-agnostic technology stack (Angular, TypeScript, NodeJS, PostgreSQL) to prevent vendor-lock and enable a transition into the cloud
 - Facilitated the transition of the web application out of a government datacenter and into AWS GovCloud
@@ -48,7 +48,7 @@ Responsibilities:
 Application Developer\
 [Oyova Software](https://oyova.com)
 
-Tech Stack:
+**Tech Stack**
 
 - C#
 - ASP.NET MVC & WebAPI
@@ -59,7 +59,7 @@ Tech Stack:
 - JavaScript
 - jQuery
 
-Responsibilities:
+**Responsibilities**
 
 - Designed, developed, and tested new features and bug fixes for clients' websites
 - Communicated directly with clients daily via email and phone to gather requirements, discuss project timelines, and provide status updates
@@ -69,7 +69,7 @@ Responsibilities:
 Application Developer\
 [MECLABS](https://meclabs.com)
 
-Tech Stack:
+**Tech Stack**
 
 - C#
 - ASP.NET MVC & WebAPI
@@ -80,7 +80,7 @@ Tech Stack:
 - JavaScript
 - Angular 1
 
-Responsibilities:
+**Responsibilities**
 
 - Designed, developed, tested, documented, and maintained the company's core intranet application
 - Conducted regular meetings with stakeholders to gather new requirements, provide status updates, and demo new features
@@ -93,12 +93,12 @@ Responsibilities:
 Quality Assurance Specialist\
 [MECLABS](https://meclabs.com)
 
-Tech Stack:
+**Tech Stack**
 
 - Java
 - Selenium/WebDriver
 
-Responsibilities:
+**Responsibilities**
 
 - Performed manual user-acceptance testing of web applications
 - Audited the configuration of site analytics tools and A/B split tests
