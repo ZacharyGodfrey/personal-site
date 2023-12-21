@@ -181,24 +181,24 @@ main {
 
 /* Specific Styles */
 
-@keyframes fade-in {
-  to {
-    scale: 1;
-    opacity: 1;
-  }
+img[alt="hero"] {
+  max-width: 10rem;
+  border-radius: 100%;
 }
 
-.fade-in, img, blockquote, table {
-  scale: 0.5;
-  opacity: 0;
+article > * {
+  scale: 0.25;
+  opacity: 0.25;
   animation: fade-in linear forwards;
   animation-timeline: view();
   animation-range: entry;
 }
 
-img[alt="hero"] {
-  max-width: 10rem;
-  border-radius: 100%;
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 /* Print Rules */
