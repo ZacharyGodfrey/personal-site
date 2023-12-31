@@ -1,15 +1,20 @@
 ---
 type: "draft"
-title: "Draft"
-description: "TBD"
+title: "My Interests"
+description: "A list of things that interest me"
 order: "001"
-date: "19 Dec 2023"
+date: "30 Dec 2023"
 ---
 
 # {{meta.title}}
 
 {{meta.description}}
 
-The content goes here...
+- Chess
+- Rubik’s cubes
+- Cryptography
+- Firearm design
+- Rock climbing
+- Axe throwing
 
 *Posted on **{{meta.date}}***
