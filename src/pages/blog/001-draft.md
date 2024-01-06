@@ -10,6 +10,7 @@ date: "30 Dec 2023"
 
 {{meta.description}}
 
+- Game design (video games, board games, card games)
 - Chess
 - Rubik’s cubes
 - Cryptography
