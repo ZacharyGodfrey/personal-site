@@ -32,7 +32,7 @@ I'm not much of a writer, and I don't write often. Still, I hope you find someth
 
 **[{{meta.title}}](/{{{uri}}})**\
 {{meta.description}}\
-{{meta.date}} [Read More](/{{{uri}}})
+*{{meta.date}}*
 
 {{/posts}}
 
