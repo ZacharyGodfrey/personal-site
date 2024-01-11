@@ -11,7 +11,7 @@
   --line-thin: 1px;
   --line-thick: 4px;
   --shadow: drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.75rem);
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'roboto-mono', monospace;
   color: var(--text);
   background-color: var(--background);
