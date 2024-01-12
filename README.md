@@ -10,7 +10,7 @@ My personal website: https://zacharygodfrey.dev
 
 ## Hosting
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ea8e6080-6311-4691-81a1-ae6d5d9301aa/deploy-status)](https://app.netlify.com/sites/zg-personal2/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ea8e6080-6311-4691-81a1-ae6d5d9301aa/deploy-status)](https://app.netlify.com/sites/zg-personal/deploys)
 
 The site is hosted on [Netlify](https://netlify.com) with the following settings:
 
