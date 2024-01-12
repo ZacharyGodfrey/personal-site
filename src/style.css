@@ -79,14 +79,15 @@ a, em, strong, th {
 
 a {
   text-decoration: none;
-}
-
-article a {
   border-bottom: var(--line-thin) solid var(--link);
 }
 
 a:hover {
   color: var(--link);
+}
+
+h1 a {
+  border: none;
 }
 
 ul, ol {
