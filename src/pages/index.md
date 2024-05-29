@@ -4,7 +4,7 @@ title: ""
 description: ""
 ---
 
-![hero](data:image/jpg;base64,{{>hero}})
+<!-- ![hero](data:image/jpg;base64,{{>hero}}) -->
 
 ## Hey, I'm Zach.
 
