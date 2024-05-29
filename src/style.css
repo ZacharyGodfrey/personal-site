@@ -137,19 +137,19 @@ table, th, td {
 
 table {
   width: 100%;
-  border: var(--line-thickness) solid var(--main);
+  border: var(--line-thickness) solid var(--text);
   background: var(--background);
-  filter: var(--shadow);
+  /* filter: var(--shadow); */
 }
 
 th, td {
   padding: 0.5rem;
-  border: var(--line-thickness) dashed var(--main);
+  border: var(--line-thickness) dashed var(--text);
 }
 
 blockquote {
   padding: 1rem;
-  border: var(--line-thickness) solid var(--main);
+  border: var(--line-thickness) solid var(--text);
   background: var(--background);
   filter: var(--shadow);
 }
