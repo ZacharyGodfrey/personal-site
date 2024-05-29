@@ -143,7 +143,6 @@ blockquote {
   padding: 1rem;
   border: var(--line-thickness) solid var(--text);
   background: var(--background);
-  filter: var(--shadow);
 }
 
 /* Layout */
