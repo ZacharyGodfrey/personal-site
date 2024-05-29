@@ -146,6 +146,10 @@ th, td {
   border: var(--line-thickness) dashed var(--text);
 }
 
+th {
+  color: var(--main);
+}
+
 blockquote {
   padding: 1rem;
   border: var(--line-thickness) solid var(--text);
@@ -198,12 +202,13 @@ img[alt="hero"] {
     background: white;
   }
 
-  h1, h2, h3 {
+  h1, h2, h3, h4 {
     color: var(--main);
   }
 
   p, li, th, td {
     font-weight: normal;
+    color: var(--text);
   }
 
   footer, hr, img {

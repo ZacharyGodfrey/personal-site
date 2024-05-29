@@ -4,7 +4,7 @@ title: "Style Guide"
 description: "This page demonstrates the styling of all available elements."
 ---
 
-# {{meta.title}}
+## {{meta.title}}
 
 {{meta.description}}
 
@@ -13,6 +13,8 @@ description: "This page demonstrates the styling of all available elements."
 ## H2 Heading Text
 
 ### H3 Heading Text
+
+#### H4 Heading Text
 
 Here is some *emphasis text*. Here is some **bold text**. Here is some `code`. Here is a [link](/). This is some more text that will hopefully be long enough to cause some wrapping and show off how a paragraph of text will look on the website.
 

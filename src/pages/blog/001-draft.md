@@ -6,7 +6,7 @@ order: "001"
 date: "30 Dec 2023"
 ---
 
-# {{meta.title}}
+## {{meta.title}}
 
 {{meta.description}}
 

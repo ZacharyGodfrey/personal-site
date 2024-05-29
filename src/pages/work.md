@@ -4,9 +4,9 @@ title: "Work History"
 description: ""
 ---
 
-# Work History
+## Work History
 
-## Aug 2021 - Present
+### Aug 2021 - Present
 
 Senior Software Engineer\
 [The Knot](https://theknot.com)
@@ -19,7 +19,7 @@ Senior Software Engineer\
 - Redis
 - RabbitMQ
 
-## Oct 2018 - Jul 2021
+### Oct 2018 - Jul 2021
 
 Senior Software Engineer\
 [BAM Technologies](https://bamtech.net)
@@ -43,7 +43,7 @@ Senior Software Engineer\
 - Regularly conducted meetings with government stakeholders to demonstrate new features, gather feedback, and propose future changes
 - Met with non-government partner companies (and often their third-party development companies) to assist with getting their data into our system
 
-## Oct 2017 - Oct 2018
+### Oct 2017 - Oct 2018
 
 Application Developer\
 [Oyova Software](https://oyova.com)
@@ -64,7 +64,7 @@ Application Developer\
 - Designed, developed, and tested new features and bug fixes for clients' websites
 - Communicated directly with clients daily via email and phone to gather requirements, discuss project timelines, and provide status updates
 
-## Nov 2013 - Oct 2017
+### Nov 2013 - Oct 2017
 
 Application Developer\
 [MECLABS](https://meclabs.com)
@@ -88,7 +88,7 @@ Application Developer\
 - Developed and maintained pages for several clients including the New York Times
 - Ran A/B split tests on clients' websites
 
-## Jan 2013 - Nov 2013
+### Jan 2013 - Nov 2013
 
 Quality Assurance Specialist\
 [MECLABS](https://meclabs.com)
