@@ -3,7 +3,7 @@ type: "draft"
 title: "My Interests"
 description: "A list of things that interest me"
 order: "001"
-date: "30 Dec 2023"
+date: "2023 Dec 30"
 ---
 
 ## {{meta.title}}

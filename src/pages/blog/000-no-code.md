@@ -3,7 +3,7 @@ type: "post"
 title: "Solving Tech Problems Without Code"
 description: "I recently saved a small business owner over $100 per month by solving a tech problem without writing any code."
 order: "000"
-date: "19 Dec 2023"
+date: "2023 Dec 19"
 ---
 
 ## {{meta.title}}
