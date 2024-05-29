@@ -6,9 +6,9 @@ description: ""
 
 ![hero](data:image/jpg;base64,{{>hero}})
 
-Hey, I'm *Zach*. I'm a husband, father, and [Senior Software Engineer](#work).
+Hey, I'm *Zach*. I'm a husband, father, and [Senior Software Engineer](#work). {{#hasPosts}}I also have a [blog](#blog) where I write *very infrequently*.{{/hasPosts}}
 
-In my spare time, I throw axes competitively in the [IATF](https://axescores.com/player/1207260). {{#hasPosts}}I also have a [blog](#blog) where I write *very infrequently*.{{/hasPosts}}
+In my spare time, I throw axes competitively in the [IATF](https://axescores.com/player/1207260).
 
 ## Work
 
@@ -30,13 +30,13 @@ I created [Axe Charts](https://axecharts.com) to supplement the official stats w
 
 ## Blog
 
-I'm not much of a writer, and I don't write often. Still, I hope you find something of value in the topics listed below.
+I'm not much of a writer, and I don't write often. Still, I hope you find something of value in the topics below.
 
 {{#posts}}
 
 **[{{meta.title}}](/{{{uri}}})**\
-{{meta.description}}\
-*{{meta.date}}*
+*{{meta.date}}*\
+{{meta.description}}
 
 {{/posts}}
 
