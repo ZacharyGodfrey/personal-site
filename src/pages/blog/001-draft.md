@@ -1,5 +1,5 @@
 ---
-type: "post"
+type: "draft"
 title: "My Interests"
 description: "A list of things that interest me"
 order: "001"
