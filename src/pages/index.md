@@ -38,9 +38,17 @@ I'm not much of a writer, and I don't write often. Still, I hope you find someth
 
 {{#posts}}
 
-**[{{meta.title}}](/{{{uri}}})**\
-*{{meta.date}}*
+<div class="card">
+  <p>
+    <strong>[{{meta.title}}](/{{{uri}}})</strong>
+    <br>
+    <em>{{meta.date}}</em>
+  </p>
+</div>
 
 {{/posts}}
+
+<!-- **[{{meta.title}}](/{{{uri}}})**\
+*{{meta.date}}* -->
 
 {{/hasPosts}}

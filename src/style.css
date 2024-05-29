@@ -196,6 +196,16 @@ footer {
 .text-right { text-align: right; }
 .text-fancy { font-family: 'satisfy'; }
 
+.card {
+  --text: black;
+  --emphasis: black;
+  margin-block: 1rem;
+  padding: 1rem;
+  background: white;
+  filter: var(--shadow);
+  border-radius: 0.25rem;
+}
+
 /* Specific Styles */
 
 img[alt="hero"] {
