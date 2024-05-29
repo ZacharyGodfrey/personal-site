@@ -8,9 +8,7 @@ description: ""
 
 ## Hey, I'm Zach.
 
-I'm a husband and father, [Senior Software Engineer](#work), and [competitive axe thrower](https://axescores.com/player/1207260).
-
-More about me [here](/about).
+I'm a husband, father, and [Senior Software Engineer](#work).
 
 ## Work
 
