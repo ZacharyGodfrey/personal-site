@@ -25,24 +25,26 @@
   <body>
     <main>
       <header>
-        <h1 class="text-fancy text-center">
-          <a href="/">{{config.name}}</a>
-        </h1>
+        <section>
+          <h1 class="text-fancy text-center">
+            <a href="/">{{config.name}}</a>
+          </h1>
+        </section>
       </header>
 
-      <hr>
-
       <article>
-        {{>content}}
+        <section>
+          {{>content}}
+        </section>
       </article>
+    </main>
 
-      <hr>
-
-      <footer class="text-right">
+    <footer class="text-right">
+      <section>
         <p>
           <a href="mailto:contact@zacharygodfrey.dev">Contact</a>
         </p>
-      </footer>
-    </main>
+      </section>
+    </footer>
   </body>
 </html>
