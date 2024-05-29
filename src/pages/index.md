@@ -6,19 +6,13 @@ description: ""
 
 <div class="grid stack columns-2 items-y-center">
   <hgroup class="text-center">
-    <p>Hi, I'm Zach</p>
-    <h2>Zachary Godfrey</h2>
-    <p>Senior Software Engineer</p>
+    <h2>Hey, I'm Zach.</h2>
   </hgroup>
 
   <div>
     <img src="data:image/jpg;base64,{{>hero}}" alt="hero">
   </div>
 </div>
-
-<!-- ![hero](data:image/jpg;base64,{{>hero}}) -->
-
-## Hey, I'm Zach.
 
 I'm a husband, father, and [Senior Software Engineer](#work).
 
