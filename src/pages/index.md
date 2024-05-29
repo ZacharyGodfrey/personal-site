@@ -5,10 +5,10 @@ description: ""
 ---
 
 <div class="grid stack columns-2 items-y-center">
-  <hgroup>
-    <p>Hi, I'm</p>
-    <h2 class="text-center">{{config.name}}</h2>
-    <h3>Senior Software Engineer</h3>
+  <hgroup class="text-center">
+    <p>Hi, I'm Zach</p>
+    <h2>Zachary Godfrey</h2>
+    <p>Senior Software Engineer</p>
   </hgroup>
 
   <div>
