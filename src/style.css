@@ -5,7 +5,8 @@
   --link:       var(--main);
   --emphasis:   hsl(205 0% 100%);
   --text:       hsl(205 0% 90%);
-  --background: hsl(205, 50%, 20%);
+  --background: hsl(205 50% 20%);
+  --bg-dark:    hsl(205 50% 10%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --shadow: drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.75rem);
@@ -177,6 +178,10 @@ header, article, footer {
 section {
   max-width: var(--content-width);
   margin-inline: auto;
+}
+
+footer {
+  background: var(--bg-dark);
 }
 
 /* Utility Classes */
