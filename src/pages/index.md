@@ -39,8 +39,7 @@ I'm not much of a writer, and I don't write often. Still, I hope you find someth
 {{#posts}}
 
 **[{{meta.title}}](/{{{uri}}})**\
-*{{meta.date}}*\
-{{meta.description}}
+*{{meta.date}}*
 
 {{/posts}}
 
