@@ -4,6 +4,18 @@ title: ""
 description: ""
 ---
 
+<div class="grid stack columns-2 items-y-center">
+  <hgroup>
+    <p>Hi, I'm</p>
+    <h2 class="text-center">{{config.name}}</h2>
+    <h3>Senior Software Engineer</h3>
+  </hgroup>
+
+  <div>
+    <img src="data:image/jpg;base64,{{>hero}}" alt="hero">
+  </div>
+</div>
+
 <!-- ![hero](data:image/jpg;base64,{{>hero}}) -->
 
 ## Hey, I'm Zach.
