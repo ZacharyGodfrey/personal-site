@@ -10,11 +10,7 @@ description: ""
 
 I'm a husband and father, [Senior Software Engineer](#work), and [competitive axe thrower](https://axescores.com/player/1207260).
 
-{{#hasPosts}}
-
-I also have a [blog](#blog) where I write *very infrequently*.
-
-{{/hasPosts}}
+More about me [here](/about).
 
 ## My Work
 

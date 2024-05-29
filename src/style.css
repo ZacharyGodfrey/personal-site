@@ -58,6 +58,7 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
+  text-align: center;
 }
 
 h3 {
@@ -200,7 +201,8 @@ footer {
 
 img[alt="hero"] {
   max-width: 10rem;
-  border-radius: 100%;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 /* Print Rules */
