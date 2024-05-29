@@ -1,7 +1,7 @@
 /* Element Styles */
 
 :root {
-  --main:       hsl(205 60%  60%);
+  --main:       hsl(205 75%  60%);
   --link:       var(--main);
   --emphasis:   hsl(205 0% 100%);
   --text:       hsl(205 0% 90%);
@@ -38,14 +38,17 @@ header, footer, h1, h2, h3, p, ul, table, pre {
   margin-block: 2rem;
 }
 
-h1, h2, h3, p, li, th, td {
+h1, h2, h3, h4, p, li, th, td {
   line-height: 1.75;
 }
 
-h1, h2, h3 {
-  color: var(--emphasis);
+h1, h2, h3, h4 {
   letter-spacing: 1px;
   font-weight: 400;
+}
+
+h2, h3, h4 {
+  color: var(--main);
 }
 
 h1 {
@@ -53,10 +56,14 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
 }
 
 h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
   font-size: 1.25rem;
 }
 
