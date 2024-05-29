@@ -170,7 +170,7 @@ body {
   min-height: 100svh;
 }
 
-main {
+section {
   max-width: var(--content-width);
   margin-inline: auto;
 }
