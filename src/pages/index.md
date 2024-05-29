@@ -6,7 +6,9 @@ description: ""
 
 ![hero](data:image/jpg;base64,{{>hero}})
 
-Hey, I'm *Zach*. I'm a husband, father, and [Senior Software Engineer](#work). {{#hasPosts}}I also have a [blog](#blog) where I write *very infrequently*.{{/hasPosts}} In my spare time, I throw axes competitively in the [IATF](https://axescores.com/player/1207260).
+Hey, I'm *Zach*. I'm a husband, father, and [Senior Software Engineer](#work). {{#hasPosts}}I also have a [blog](#blog) where I write *very infrequently*.{{/hasPosts}}
+
+<!-- In my spare time, I throw axes competitively in the [IATF](https://axescores.com/player/1207260). -->
 
 ## Work
 
