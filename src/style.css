@@ -128,7 +128,7 @@ hr {
   height: var(--line-thickness);
   border: none;
   outline: none;
-  background: var(--text);
+  background: var(--main);
 }
 
 table, th, td {
