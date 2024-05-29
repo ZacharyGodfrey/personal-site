@@ -5,16 +5,14 @@ description: ""
 ---
 
 <div class="grid stack columns-2 items-y-center">
-  <hgroup class="text-center">
-    <h2>Hey, I'm Zach.</h2>
-  </hgroup>
-
   <div>
     <img src="data:image/jpg;base64,{{>hero}}" alt="hero">
   </div>
-</div>
 
-I'm a husband, father, and [Senior Software Engineer](#work).
+  <hgroup class="text-center">
+    <h2>Hey, I'm Zach.</h2>
+  </hgroup>
+</div>
 
 ## Work
 

@@ -7,7 +7,7 @@
   --text:       hsl(205 0% 90%);
   --background: hsl(205 50% 20%);
   --bg-dark:    hsl(205 50% 10%);
-  --content-width: 40rem;
+  --content-width: 50rem;
   --line-thickness: 2px;
   --shadow: drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.75rem);
   font-size: 20px;
