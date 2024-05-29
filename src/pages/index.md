@@ -16,7 +16,7 @@ I have over a decade of experience building and maintaining web applications in 
 
 I believe that the world is a better place when we understand how it works. The less my work gets called *magic* the better. I love explaining technical concepts to people in simple terms. I also love simplifying things and reducing complexity whenever possible.
 
-If you also value simplicity, understanding, and sharing knowledge then we'd probably make a great team! If you'd like to chat, I'm available on [LinkedIn](https://linkedin.com/in/zachary-godfrey) and via [email](mailto:contact@zacharygodfrey.dev). My personal code is on [GitHub](https://github.com/ZacharyGodfrey) and my full [work history](/work) is available if that interests you.
+If you also value simplicity, understanding, and sharing knowledge then we'd probably make a great team! If you'd like to chat, I'm available on [LinkedIn](https://linkedin.com/in/zachary-godfrey) and via [email](mailto:contact@zacharygodfrey.dev). My personal code is on [GitHub](https://github.com/ZacharyGodfrey) and my full [work history](/work) and [career story](/career) are available if those interest you.
 
 ## Personal Projects
 
