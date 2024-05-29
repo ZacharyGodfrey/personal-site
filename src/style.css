@@ -34,7 +34,7 @@
   background: var(--main);
 }
 
-header, footer, h1, h2, h3, p, ul, table, pre {
+h1, h2, h3, p, ul, table, pre {
   margin-block: 2rem;
 }
 
@@ -165,9 +165,13 @@ html {
 
 body {
   margin: 0;
-  padding: 2rem 1rem;
+  padding: 0;
   min-height: 100vh;
   min-height: 100svh;
+}
+
+header, article, footer {
+  padding: 2rem 1rem;
 }
 
 section {
