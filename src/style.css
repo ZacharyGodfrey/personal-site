@@ -3,9 +3,9 @@
 :root {
   --main:       hsl(205 60%  60%);
   --link:       var(--main);
-  --emphasis:   black;
-  --text:       #202020;
-  --background: #FEFEFE;
+  --emphasis:   hsl(205 0% 100%);
+  --text:       hsl(205 0% 90%);
+  --background: hsl(205 50% 20%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --shadow: drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.75rem);
