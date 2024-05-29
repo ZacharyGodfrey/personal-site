@@ -40,7 +40,9 @@ I'm not much of a writer, and I don't write often. Still, I hope you find someth
 
 <div class="card">
   <p>
-    <strong>[{{meta.title}}](/{{{uri}}})</strong>
+    <strong>
+      <a href="/{{{uri}}}">{{meta.title}}</a>
+    </strong>
     <br>
     <em>{{meta.date}}</em>
   </p>

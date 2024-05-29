@@ -199,7 +199,7 @@ footer {
 .card {
   --text: black;
   --emphasis: black;
-  margin-block: 1rem;
+  margin-block: 2rem;
   padding: 1rem;
   background: white;
   filter: var(--shadow);
