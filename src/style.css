@@ -1,15 +1,14 @@
 /* Element Styles */
 
 :root {
-  --main-50:    hsl(205 60%  60% / 50%);
+  /* --main-50:    hsl(205 60%  60% / 50%); */
   --main:       hsl(205 60%  60%);
   --link:       var(--main);
   --emphasis:   hsl(205  0% 100%);
   --text:       hsl(205  0% 100% / 80%);
-  --background: hsl(205 25%  10%);
+  --background: hsl(205 75% 40%);
   --content-width: 40rem;
-  --line-thin: 1px;
-  --line-thick: 4px;
+  --line-thickness: 1px;
   --shadow: drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.75rem);
   font-size: 20px;
   font-family: 'roboto-mono', monospace;
@@ -17,11 +16,11 @@
   background-color: var(--background);
 }
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
   :root {
     background-image: linear-gradient(90deg, var(--main-50), transparent 50%);
   }
-}
+} */
 
 * {
   position: relative;
@@ -79,7 +78,7 @@ a, em, strong, th {
 
 a {
   text-decoration: none;
-  border-bottom: var(--line-thin) solid var(--link);
+  border-bottom: var(--line-thickness) solid var(--link);
 }
 
 a:hover {
@@ -126,10 +125,10 @@ hr {
   margin-inline: auto;
   margin-block: 2rem;
   width: 100%;
-  height: var(--line-thin);
+  height: var(--line-thickness);
   border: none;
   outline: none;
-  background: var(--main);
+  background: var(--text);
 }
 
 table, th, td {
@@ -138,19 +137,19 @@ table, th, td {
 
 table {
   width: 100%;
-  border: var(--line-thin) solid var(--main);
+  border: var(--line-thickness) solid var(--main);
   background: var(--background);
   filter: var(--shadow);
 }
 
 th, td {
   padding: 0.5rem;
-  border: var(--line-thin) dashed var(--main);
+  border: var(--line-thickness) dashed var(--main);
 }
 
 blockquote {
   padding: 1rem;
-  border: var(--line-thin) solid var(--main);
+  border: var(--line-thickness) solid var(--main);
   background: var(--background);
   filter: var(--shadow);
 }
@@ -187,7 +186,7 @@ img[alt="hero"] {
   border-radius: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   img, blockquote, table {
     scale: 0.8;
     opacity: 0.2;
@@ -202,7 +201,7 @@ img[alt="hero"] {
       opacity: 1;
     }
   }
-}
+} */
 
 /* Print Rules */
 
