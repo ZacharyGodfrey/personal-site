@@ -6,7 +6,9 @@ description: ""
 
 ![hero](data:image/jpg;base64,{{>hero}})
 
-Hey, I'm *Zach*: husband and father, [Senior Software Engineer](#work), [competitive axe thrower](https://axescores.com/player/1207260).
+## Hey, I'm Zach.
+
+I'm a husband and father, [Senior Software Engineer](#work), and [competitive axe thrower](https://axescores.com/player/1207260).
 
 {{#hasPosts}}
 
@@ -14,7 +16,7 @@ I also have a [blog](#blog) where I write *very infrequently*.
 
 {{/hasPosts}}
 
-## Work
+## My Work
 
 I have over a decade of experience building and maintaining web applications in a variety of languages and tech stacks. I'm currently working at [The Knot](https://www.theknot.com).
 
@@ -32,7 +34,7 @@ I created [Axe Charts](https://axecharts.com) to supplement the official stats w
 
 {{#hasPosts}}
 
-## Blog
+## Blog Posts
 
 I'm not much of a writer, and I don't write often. Still, I hope you find something of value in the topics below.
 
