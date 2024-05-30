@@ -1,7 +1,7 @@
 ---
 type: "page"
 title: ""
-description: ""
+description: "The personal website of Zachary Godfrey"
 ---
 
 ![hero](data:image/jpg;base64,{{>hero}})
@@ -27,6 +27,8 @@ I created [Axe Charts](https://axecharts.com) to supplement the official stats w
 {{#hasPosts}}
 
 ## Blog
+
+Post Count: {{posts.length}}
 
 {{#posts}}
 

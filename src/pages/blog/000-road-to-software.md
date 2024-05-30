@@ -1,8 +1,7 @@
 ---
 type: "post"
 title: "My Road to Software Engineering"
-description: ""
-order: "000"
+order: "002"
 date: "2024 May 30"
 ---
 
