@@ -104,17 +104,13 @@ em {
   font-style: italic;
 }
 
-pre > code {
-  display: block;
-}
-
-code:not(pre > code) {
+code {
   display: inline-block;
   padding-inline: 0.5rem;
   border-radius: 0.5rem;
   font-family: inherit;
   color: white;
-  background: var(--main);
+  background: var(--bg-dark);
 }
 
 img {
