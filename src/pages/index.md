@@ -8,13 +8,13 @@ description: ""
 
 ## Hey, I'm Zach.
 
-I'm a [Senior Software Engineer](#work). I'm also a husband, father, and competitive [axe thrower](https://axescores.com/player/1207260).
+I'm a [Senior Software Engineer](#work), husband and father, and competitive [axe thrower](https://axescores.com/player/1207260). You can read more about me [here](/about).
 
 ## Work
 
-I believe that the world is a better place when we understand how it works: the less my work gets called *magic* the better. I love explaining technical concepts to people in simple terms. I also love simplifying things and reducing complexity whenever possible.
+I have over a decade of experience building and maintaining web applications in a variety of languages and tech stacks. I'm currently working at [The Knot](https://www.theknot.com). My personal code is on [GitHub](https://github.com/ZacharyGodfrey) and my full [work history](/work) is available if that interests you.
 
-I have over a decade of experience building and maintaining web applications in a variety of languages and tech stacks. I'm currently working at [The Knot](https://www.theknot.com). My personal code is on [GitHub](https://github.com/ZacharyGodfrey) and my full [work history](/work) and [career story](/career) are available if those interest you.
+I believe that the world is a better place when we understand how it works: the less my work gets called *magic* the better. I love explaining technical concepts to people in simple terms. I also love simplifying things and reducing complexity whenever possible.
 
 ## Personal Projects
 
