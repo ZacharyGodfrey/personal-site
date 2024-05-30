@@ -12,9 +12,9 @@ I'm a [Senior Software Engineer](#work), husband and father, and competitive [ax
 
 ## Work
 
-I have over a decade of experience building and maintaining web applications in a variety of languages and tech stacks. I'm currently working at [The Knot](https://www.theknot.com). My personal code is on [GitHub](https://github.com/ZacharyGodfrey) and my full [work history](/work) is available if that interests you.
+I believe that the world is a better place when we understand how it works: the less my work gets called *magic* the better. I love explaining technical concepts to people in simple terms. I'm constantly looking for opportunities to simplify things and reducing complexity.
 
-I believe that the world is a better place when we understand how it works: the less my work gets called *magic* the better. I love explaining technical concepts to people in simple terms. I also love simplifying things and reducing complexity whenever possible.
+I have over a decade of experience building and maintaining web applications in a variety of languages and tech stacks. I'm currently working at [The Knot](https://www.theknot.com). My full [work history](/work) is available if that interests you.
 
 ## Personal Projects
 
