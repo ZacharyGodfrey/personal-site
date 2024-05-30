@@ -14,7 +14,7 @@ I'm a [Senior Software Engineer](#work), husband and father, and a competitive [
 
 I have over a decade of experience building and maintaining web applications in a variety of languages and tech stacks. You can view my full [work history](/work) if that interests you.
 
-## Personal Projects
+## Projects
 
 Most of the time, my personal projects don't see the light of day. They're mostly a way for me to experiment with doing things differently - often opposing "industry best practices" - just to see if there's wisdom to be found where nobody is currently looking. Any projects listed here will be the ones that provide enough value to be shared with others.
 
