@@ -1,5 +1,5 @@
 ---
-type: "draft"
+type: "post"
 title: "My Road to Software Engineering"
 order: "002"
 date: "2024 May 30"
