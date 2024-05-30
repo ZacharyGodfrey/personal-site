@@ -24,8 +24,6 @@ I created [Axe Charts](https://axecharts.com) to supplement the official stats w
 
 *Badges* provide fun performance milestones to work toward while chasing down that elusive 81 score and the *Axe Charts Rating (ACR)* is an alternative rating system based on overall accuracy rather than wins and losses.
 
-Post Count: {{posts.length}}
-
 {{#posts.length}}
 
 ## Blog
