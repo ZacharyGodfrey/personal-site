@@ -10,8 +10,6 @@ description: ""
 
 I'm a [Senior Software Engineer](#work), husband and father, and competitive [axe thrower](https://axescores.com/player/1207260).
 
-You can read more about me [here](/about).
-
 ## Work
 
 I believe that the world is a better place when we understand how it works: the less my work gets called *magic* the better. I love explaining technical concepts to people in simple terms. I'm constantly looking for opportunities to simplify things and reducing complexity.
@@ -29,8 +27,6 @@ I created [Axe Charts](https://axecharts.com) to supplement the official stats w
 {{#hasPosts}}
 
 ## Blog
-
-I hope you find something of value in the topics below.
 
 {{#posts}}
 
