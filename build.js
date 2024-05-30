@@ -4,13 +4,18 @@ const path = require('path');
 const fs = require('fs-extra');
 const glob = require('glob');
 const frontMatter = require('front-matter');
-const marked = require('marked');
-const { gfmHeadingId } = require('marked-gfm-heading-id')
 const { render } = require('mustache');
+const Octokit = require('@octokit/rest');
+const marked = require('marked');
+const { gfmHeadingId } = require('marked-gfm-heading-id');
+const { markedEmoji } = require('marked-emoji');
 
 const config = require('./src/config.json');
 
+const { data: emojis } = await new Octokit().rest.emojis.get();
+
 marked.use(gfmHeadingId({ prefix: '' }));
+marked.use(markedEmoji({ emojis, renderer: (token) => `<img alt="${token.name}" src="${token.emoji}" class="marked-emoji-img">` }));
 
 // Helper Functions
 
