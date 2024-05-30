@@ -3,9 +3,9 @@
 :root {
   --main:       hsl(205, 75%, 50%);
   --link:       var(--main);
-  --emphasis:   hsl(0 0% 5%);
-  --text:       hsl(0 0% 10%);
-  --background: hsl(0 0% 95%);
+  --emphasis:   black;
+  --text:       black;
+  --background: white;
   --bg-dark:    hsl(0 0% 85%);
   --content-width: 40rem;
   --line-thickness: 2px;
