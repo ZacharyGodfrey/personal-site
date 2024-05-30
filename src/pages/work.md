@@ -1,14 +1,8 @@
 ---
 type: "page"
-title: "Work"
+title: "Work History"
 description: ""
 ---
-
-## Work
-
-I have over a decade of experience building and maintaining web applications in a variety of languages and tech stacks.
-
-I believe that the world is a better place when we understand how it works. The less my work gets called *magic* the better. I love explaining technical concepts to people in simple terms. I'm constantly looking for opportunities to simplify things and reduce complexity.
 
 ## Work History
 
