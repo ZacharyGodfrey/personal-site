@@ -4,15 +4,11 @@ title: ""
 description: ""
 ---
 
-<div class="grid stack columns-2 items-y-center">
-  <div>
-    <img src="data:image/jpg;base64,{{>hero}}" alt="hero">
-  </div>
+![hero](data:image/jpg;base64,{{>hero}})
 
-  <hgroup class="text-center">
-    <h2>Hey, I'm Zach.</h2>
-  </hgroup>
-</div>
+## Hey, I'm Zach.
+
+Something brief about me goes here.
 
 ## Work
 
