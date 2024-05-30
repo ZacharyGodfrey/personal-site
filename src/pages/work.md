@@ -1,15 +1,20 @@
 ---
 type: "page"
-title: "Work History"
+title: "Work"
 description: ""
 ---
+
+## Work
+
+I have over a decade of experience building and maintaining web applications in a variety of languages and tech stacks.
+
+I believe that the world is a better place when we understand how it works. The less my work gets called *magic* the better. I love explaining technical concepts to people in simple terms. I'm constantly looking for opportunities to simplify things and reduce complexity.
 
 ## Work History
 
 ### Aug 2021 - Present
 
-Senior Software Engineer\
-[The Knot](https://theknot.com)
+Senior Software Engineer at [The Knot](https://theknot.com)
 
 **Tech Stack**
 
@@ -21,8 +26,7 @@ Senior Software Engineer\
 
 ### Oct 2018 - Jul 2021
 
-Senior Software Engineer\
-[BAM Technologies](https://bamtech.net)
+Senior Software Engineer at [BAM Technologies](https://bamtech.net)
 
 **Tech Stack**
 
@@ -45,8 +49,7 @@ Senior Software Engineer\
 
 ### Oct 2017 - Oct 2018
 
-Application Developer\
-[Oyova Software](https://oyova.com)
+Application Developer at [Oyova Software](https://oyova.com)
 
 **Tech Stack**
 
@@ -66,8 +69,7 @@ Application Developer\
 
 ### Nov 2013 - Oct 2017
 
-Application Developer\
-[MECLABS](https://meclabs.com)
+Application Developer at [MECLABS](https://meclabs.com)
 
 **Tech Stack**
 
@@ -90,8 +92,7 @@ Application Developer\
 
 ### Jan 2013 - Nov 2013
 
-Quality Assurance Specialist\
-[MECLABS](https://meclabs.com)
+Quality Assurance Specialist at [MECLABS](https://meclabs.com)
 
 **Tech Stack**
 
