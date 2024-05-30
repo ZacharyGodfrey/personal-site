@@ -10,11 +10,15 @@ description: "The personal website of Zachary Godfrey"
 
 I'm a [Senior Software Engineer](#work), husband and father, and competitive [axe thrower](https://axescores.com/player/1207260).
 
+## [Blog](/blog)
+
+I'm not much of a writer, and I don't write often. Read at your own risk, I guess.
+
 ## Work
 
 I have over a decade of experience building and maintaining web applications in a variety of languages and tech stacks.
 
-I believe that the world is a better place when we understand how it works: the less my work gets called *magic* the better. I love explaining technical concepts to people in simple terms. I'm constantly looking for opportunities to simplify things and reduce complexity.
+I believe that the world is a better place when we understand how it works. The less my work gets called *magic* the better. I love explaining technical concepts to people in simple terms. I'm constantly looking for opportunities to simplify things and reduce complexity.
 
 I'm currently working at [The Knot](https://www.theknot.com) and my full [work history](/work) is available if that interests you.
 
