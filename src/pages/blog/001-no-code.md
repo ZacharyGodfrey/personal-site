@@ -1,14 +1,16 @@
 ---
-type: "draft"
+type: "post"
 title: "Solving Tech Problems Without Code"
-description: "I recently saved a small business owner over $100 per month by solving a tech problem without writing any code."
-order: "000"
+description: ""
+order: "001"
 date: "2023 Dec 19"
 ---
 
 ## {{meta.title}}
 
-{{meta.description}}
+*Posted on **{{meta.date}}***
+
+I recently saved a small business owner over $100 per month by solving their tech problem without writing any code.
 
 ### The Problem
 
@@ -28,5 +30,3 @@ Google Forms and Google Sheets are both free, so using them costs the business o
 ### Conclusion
 
 In the end, I helped out a local business owner by using my knowledge of existing tools to build a free solution to a costly problem. I didn't have to write any custom code, and now he's saving over $100 per month *for the lifetime of his business*.
-
-*Posted on **{{meta.date}}***
