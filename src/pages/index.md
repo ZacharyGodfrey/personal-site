@@ -12,9 +12,9 @@ I'm a [Senior Software Engineer](#work), husband and father, and competitive [ax
 
 ## Work
 
-I believe that the world is a better place when we understand how it works: the less my work gets called *magic* the better. I love explaining technical concepts to people in simple terms. I'm constantly looking for opportunities to simplify things and reducing complexity.
+I have over a decade of experience building and maintaining web applications in a variety of languages and tech stacks. I believe that the world is a better place when we understand how it works: the less my work gets called *magic* the better. I love explaining technical concepts to people in simple terms. I'm constantly looking for opportunities to simplify things and reduce complexity.
 
-I have over a decade of experience building and maintaining web applications in a variety of languages and tech stacks. I'm currently working at [The Knot](https://www.theknot.com). My full [work history](/work) is available if that interests you.
+I'm currently working at [The Knot](https://www.theknot.com) and my full [work history](/work) is available if that interests you.
 
 ## Personal Projects
 

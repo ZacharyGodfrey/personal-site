@@ -1,5 +1,5 @@
 ---
-type: "draft"
+type: "post"
 title: "Solving Tech Problems Without Code"
 order: "001"
 date: "2023 Dec 19"
