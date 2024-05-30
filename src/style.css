@@ -1,12 +1,12 @@
 /* Element Styles */
 
 :root {
-  --main:       hsl(205, 90%, 40%);
+  --main:       hsl(205, 75%, 60%);
   --link:       var(--main);
-  --emphasis:   black;
-  --text:       black;
-  --background: hsl(205 90% 95%);
-  --bg-dark:    hsl(145, 35%, 65%);
+  --emphasis:   hsl(205 0% 100%);
+  --text:       hsl(205 0% 90%);
+  --background: hsl(205 50% 20%);
+  --bg-dark:    hsl(205 50% 10%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --shadow: drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.75rem);
@@ -59,10 +59,12 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+  text-indent: 1rem;
 }
 
 h4 {
   font-size: 1.25rem;
+  text-indent: 2rem;
 }
 
 hgroup > * {

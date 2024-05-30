@@ -30,7 +30,7 @@ I created [Axe Charts](https://axecharts.com) to supplement the official stats w
 
 {{#posts}}
 
-**[{{meta.title}}](/{{{uri}}})**\
+[{{meta.title}}](/{{{uri}}})\
 *{{meta.date}}*
 
 {{/posts}}
