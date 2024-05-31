@@ -3,10 +3,9 @@
 :root {
   --main:       hsl(205, 75%, 35%);
   --link:       var(--main);
-  --emphasis:   hsl(205 0% 10%);
-  --text:       hsl(205 0% 20%);
-  --background: hsl(205 0% 95%);
-  --bg-light:   hsl(205 0% 100%);
+  --text:       hsl(205 0% 100%);
+  --background: hsl(205 50% 25%);
+  --bg-alt:     hsl(205 50% 15%);
   --content-width: 50rem;
   --line-thickness: 2px;
   --shadow: drop-shadow(rgb(0 0 0 / 0.25) 0 0 0.5rem);
@@ -31,7 +30,6 @@
 }
 
 ::selection {
-  color:      var(--emphasis);
   background: var(--main);
 }
 
@@ -73,10 +71,6 @@ h4 {
 p, li, th, td {
   font-size: 1rem;
   font-weight: normal;
-}
-
-a, em, strong, th {
-  color: var(--emphasis);
 }
 
 a {
@@ -195,7 +189,7 @@ article {
 
 footer {
   padding: 2rem 1rem;
-  background: var(--bg-light);
+  background: var(--bg-alt);
 }
 
 /* Utility Classes */
@@ -216,7 +210,6 @@ img[alt="hero"] {
 @media print {
   :root {
     --text: black;
-    --emphasis: black;
     --link: black;
   }
 
