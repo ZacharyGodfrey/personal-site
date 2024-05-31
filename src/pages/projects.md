@@ -4,7 +4,11 @@ title: "Personal Projects"
 description: ""
 ---
 
-## Axe Charts
+## Personal Projects
+
+---
+
+### Axe Charts
 
 I created [Axe Charts](https://axecharts.com) to supplement the official stats website for IATF axe throwing. In addition to providing in-depth performance statistics for Premier axe throwers, the site also implements some key feature requests from the axe throwing community:
 

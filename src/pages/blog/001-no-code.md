@@ -7,7 +7,9 @@ date: "Dec 19, 2023"
 
 ## {{meta.title}}
 
-*Posted on **{{meta.date}}***
+*Posted on {{meta.date}}*
+
+---
 
 I recently saved a small business owner over $100 per month by solving their tech problem without writing any code.
 
