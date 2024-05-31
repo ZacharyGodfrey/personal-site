@@ -6,13 +6,13 @@ description: "The personal website of Zachary Godfrey"
 
 ![hero](data:image/jpg;base64,{{>hero}})
 
-I'm a [Senior Software Engineer](#work), husband and father, and a competitive [axe thrower](https://axescores.com/player/1207260) in my limited free time.
+## Hey! I'm Zach.
 
-## Work
+I'm a [Senior Software Engineer](#work) with over a decade of experience building and maintaining web applications in a variety of languages and tech stacks.
 
-I have over a decade of experience building and maintaining web applications in a variety of languages and tech stacks. I'm currently working at [The Knot](https://theknot.com).
+I'm also a husband and father and a competitive [axe thrower](https://axescores.com/player/1207260).
 
-My personal code is on [GitHub](https://github.com/ZacharyGodfrey) and you can view my full [work history](/work) if that interests you.
+I'm currently working at [The Knot](https://theknot.com). My personal code is on [GitHub](https://github.com/ZacharyGodfrey) and you can view my full [work history](/work) if that interests you.
 
 ## Projects
 
