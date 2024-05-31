@@ -1,11 +1,11 @@
 /* Element Styles */
 
 :root {
-  --primary:     hsl(205, 80%, 40%);
+  --primary:     hsl(150, 75%, 35%);
   --bg-header:   white;
-  --bg-body:     hsl(205 10% 95%);
-  --bg-footer:   hsl(70, 50%, 25%);
-  --text:        hsl(205 10% 10%);
+  --bg-body:     hsl(150 10% 95%);
+  --bg-footer:   hsl(35, 40%, 30%);
+  --text:        hsl(150 10% 10%);
   --text-footer: white;
   --link:          var(--primary);
   --content-width: 40rem;
@@ -171,9 +171,9 @@ section {
 }
 
 header {
-  position: sticky;
+  /* position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 1; */
   padding: 1rem;
   background: var(--bg-header);
   border-bottom: 1px solid hsla(0 0 0 / 0.2);
