@@ -3,8 +3,8 @@
 :root {
   --primary:     hsl(150 75% 35%);
   --bg-header:   white;
-  --bg-body:     hsl(205 35% 95%);
-  --bg-footer:   hsl(35 40% 30%);
+  --bg-body:     hsl(150 35% 95%);
+  --bg-footer:   hsl(35 45% 28%);
   --text:        hsl(150 10% 10%);
   --text-footer: white;
   --link:          var(--primary);
