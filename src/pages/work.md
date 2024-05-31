@@ -10,7 +10,7 @@ description: ""
 
 ### Senior Software Engineer
 
-Aug 2021 - Present at [The Knot](https://theknot.com)
+*Aug 2021 - Present* at [The Knot](https://theknot.com)
 
 **Tech Stack:** NodeJS, GraphQL, Elasticsearch, Redis, RabbitMQ
 
@@ -18,7 +18,7 @@ Aug 2021 - Present at [The Knot](https://theknot.com)
 
 ### Senior Software Engineer
 
-Oct 2018 - Jul 2021 at [BAM Technologies](https://bamtech.net)
+*Oct 2018 - Jul 2021* at [BAM Technologies](https://bamtech.net)
 
 **Tech Stack:** Angular, TypeScript, NodeJS, PostgreSQL
 
@@ -37,7 +37,7 @@ Oct 2018 - Jul 2021 at [BAM Technologies](https://bamtech.net)
 
 ### Application Developer
 
-Oct 2017 - Oct 2018 at [Oyova Software](https://oyova.com)
+*Oct 2017 - Oct 2018* at [Oyova Software](https://oyova.com)
 
 **Tech Stack:** C#, ASP.NET MVC and WebAPI, Dapper ORM, Oracle database, HTML5, CSS3, JavaScript, jQuery
 
@@ -48,7 +48,7 @@ Oct 2017 - Oct 2018 at [Oyova Software](https://oyova.com)
 
 ### Application Developer
 
-Nov 2013 - Oct 2017 at [MECLABS](https://meclabs.com)
+*Nov 2013 - Oct 2017* at [MECLABS](https://meclabs.com)
 
 **Tech Stack:** C#, ASP.NET MVC and WebAPI, Entity Framework, MSSQL database, HTML5, CSS3, JavaScript, Angular 1
 
@@ -62,7 +62,7 @@ Nov 2013 - Oct 2017 at [MECLABS](https://meclabs.com)
 
 ### Quality Assurance Specialist
 
-Jan 2013 - Nov 2013 at [MECLABS](https://meclabs.com)
+*Jan 2013 - Nov 2013* at [MECLABS](https://meclabs.com)
 
 **Tech Stack:** Java, Selenium/WebDriver
 
