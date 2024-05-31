@@ -9,11 +9,14 @@ description: "The personal website of Zachary Godfrey"
     <img src="data:image/jpg;base64,{{>hero}}" alt="hero">
   </div>
 
-  <div>
+  <div class="text-center">
     <h2>Hello!</h2>
-    <p>I'm a Senior Software Engineer, husband and father, and competitive axe thrower.</p>
+    <h3>I'm Zach</h3>
+    <h4>Senior Software Engineer</h4>
   </div>
 </div>
+
+I'm also a husband and father and a competitive axe thrower.
 
 <!--
 ![hero](data:image/jpg;base64,{{>hero}})

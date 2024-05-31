@@ -6,31 +6,23 @@ description: ""
 
 ## Work History
 
-### Aug 2021 - Present
+---
 
-Senior Software Engineer at [The Knot](https://theknot.com)
+### Senior Software Engineer
 
-**Tech Stack**
+Aug 2021 - Present at [The Knot](https://theknot.com)
 
-- NodeJS
-- GraphQL
-- Elasticsearch
-- Redis
-- RabbitMQ
+**Tech Stack**: NodeJS, GraphQL, Elasticsearch, Redis, RabbitMQ
 
-### Oct 2018 - Jul 2021
+---
 
-Senior Software Engineer at [BAM Technologies](https://bamtech.net)
+### Senior Software Engineer
 
-**Tech Stack**
+Oct 2018 - Jul 2021 at [BAM Technologies](https://bamtech.net)
 
-- Angular
-- TypeScript
-- NodeJS
-- PostgreSQL
-- AWS Services: Lambda, S3, RDS, Elasticsearch, Step Functions, Simple Email Service
+**Tech Stack**: Angular, TypeScript, NodeJS, PostgreSQL
 
-**Responsibilities**
+**AWS Services**: Lambda, S3, RDS, Elasticsearch, Step Functions, Simple Email Service
 
 - Transitioned an existing government web application away from a Microsoft technology stack (C#, MSSQL) and onto a platform-agnostic technology stack (Angular, TypeScript, NodeJS, PostgreSQL) to prevent vendor-lock and enable a transition into the cloud
 - Facilitated the transition of the web application out of a government datacenter and into AWS GovCloud
@@ -41,42 +33,24 @@ Senior Software Engineer at [BAM Technologies](https://bamtech.net)
 - Regularly conducted meetings with government stakeholders to demonstrate new features, gather feedback, and propose future changes
 - Met with non-government partner companies (and often their third-party development companies) to assist with getting their data into our system
 
-### Oct 2017 - Oct 2018
+---
 
-Application Developer at [Oyova Software](https://oyova.com)
+### Application Developer
 
-**Tech Stack**
+Oct 2017 - Oct 2018 at [Oyova Software](https://oyova.com)
 
-- C#
-- ASP.NET MVC & WebAPI
-- Dapper ORM
-- Oracle database
-- HTML5
-- CSS3
-- JavaScript
-- jQuery
-
-**Responsibilities**
+**Tech Stack**: C#, ASP.NET MVC and WebAPI, Dapper ORM, Oracle database, HTML5, CSS3, JavaScript, jQuery
 
 - Designed, developed, and tested new features and bug fixes for clients' websites
 - Communicated directly with clients daily via email and phone to gather requirements, discuss project timelines, and provide status updates
 
-### Nov 2013 - Oct 2017
+---
 
-Application Developer at [MECLABS](https://meclabs.com)
+### Application Developer
 
-**Tech Stack**
+Nov 2013 - Oct 2017 at [MECLABS](https://meclabs.com)
 
-- C#
-- ASP.NET MVC & WebAPI
-- Entity Framework
-- MSSQL database
-- HTML5
-- CSS3
-- JavaScript
-- Angular 1
-
-**Responsibilities**
+**Tech Stack**: C#, ASP.NET MVC and WebAPI, Entity Framework, MSSQL database, HTML5, CSS3, JavaScript, Angular 1
 
 - Designed, developed, tested, documented, and maintained the company's core intranet application
 - Conducted regular meetings with stakeholders to gather new requirements, provide status updates, and demo new features
@@ -84,16 +58,13 @@ Application Developer at [MECLABS](https://meclabs.com)
 - Developed and maintained pages for several clients including the New York Times
 - Ran A/B split tests on clients' websites
 
-### Jan 2013 - Nov 2013
+---
 
-Quality Assurance Specialist at [MECLABS](https://meclabs.com)
+### Quality Assurance Specialist
 
-**Tech Stack**
+Jan 2013 - Nov 2013 at [MECLABS](https://meclabs.com)
 
-- Java
-- Selenium/WebDriver
-
-**Responsibilities**
+**Tech Stack**: Java, Selenium/WebDriver
 
 - Performed manual user-acceptance testing of web applications
 - Audited the configuration of site analytics tools and A/B split tests
