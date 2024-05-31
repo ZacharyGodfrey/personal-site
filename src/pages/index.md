@@ -12,9 +12,11 @@ I'm a **Senior Software Engineer**, husband and father, and competitive axe thro
 
 ## Work
 
-I have over a decade of experience building and maintaining software in a variety of languages and tech stacks. My main goal is the ruthless elimination of complexity. I'm currently working at [The Knot](https://theknot.com).
+I have over a decade of experience building and maintaining software in a variety of languages and tech stacks.
 
-My full [work history](/work) is available if that interests you.
+I believe that the less my work gets called *magic* the better. I take it as a compliment, of course, but my goal is that everyone, regardless of technical knowledge, can understand how things are working. I love explaining technical concepts in simple terms for people. When I'm in the code, my main goal is the ruthless elimination of complexity.
+
+I'm currently working at [The Knot](https://theknot.com) and my full [work history](/work) is available if that interests you.
 
 ## Play
 
