@@ -5,7 +5,7 @@
   --link:       var(--main);
   --emphasis:   hsl(205 0% 10%);
   --text:       hsl(205 0% 20%);
-  --background: hsl(205 20% 95%);
+  --background: hsl(205 75% 90%);
   --bg-light:   hsl(205 0% 100%);
   --content-width: 50rem;
   --line-thickness: 2px;
@@ -186,7 +186,6 @@ section {
 
 header {
   padding: 1rem;
-  background: var(--bg-light);
 }
 
 article {
