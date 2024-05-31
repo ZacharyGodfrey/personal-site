@@ -1,7 +1,7 @@
 /* Element Styles */
 
 :root {
-  --primary:     hsl(205, 75%, 50%);
+  --primary:     hsl(205, 80%, 40%);
   --bg-header:   white;
   --bg-body:     hsl(205 10% 95%);
   --bg-footer:   hsl(205 50% 25%);
