@@ -10,10 +10,8 @@ description: "The personal website of Zachary Godfrey"
   </div>
 
   <div>
-    <p>
-      <strong>Hey, I'm Zach.</strong>
-    </p>
-    <p>I'm a Senior Software Engineer, husband and father, and a competitive axe thrower.</p>
+    <h2>Welcome!</h2>
+    <p><strong>Hey, I'm Zach.</strong> I'm a Senior Software Engineer, husband and father, and a competitive axe thrower.</p>
   </div>
 </div>
 
