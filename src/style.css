@@ -179,6 +179,7 @@ section {
 
 header {
   padding: 2rem 1rem;
+  background: var(--bg-header);
 }
 
 article {
