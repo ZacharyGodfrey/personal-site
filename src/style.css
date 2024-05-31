@@ -5,7 +5,7 @@
   --bg-header:   white;
   --bg-body:     hsl(205 10% 95%);
   --bg-footer:   hsl(205 50% 25%);
-  --text:        black;
+  --text:        hsl(205 10% 10%);
   --text-footer: white;
   --link:          var(--primary);
   --content-width: 40rem;
