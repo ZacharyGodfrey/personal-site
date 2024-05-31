@@ -2,7 +2,7 @@
 
 :root {
   --primary:   hsl(205, 75%, 60%);
-  --bg-body:   hsl(205 0% 75%);
+  --bg-body:     var(--primary);
   --bg-main:   hsl(205 50% 25%);
   --bg-footer: hsl(205 50% 15%);
   --text:      hsl(205 0% 95%);
@@ -161,7 +161,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 1rem;
+  padding: 2rem 1rem;
   min-height: 100vh;
   min-height: 100svh;
 }
