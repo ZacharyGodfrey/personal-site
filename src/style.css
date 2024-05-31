@@ -184,6 +184,7 @@ section {
 header {
   padding: 1rem;
   background: var(--bg-light);
+  filter: var(--shadow);
 }
 
 article {
@@ -192,8 +193,9 @@ article {
 }
 
 footer {
-  padding: 1rem 1rem 4rem 1rem;
+  padding: 4rem 1rem;
   background: var(--bg-light);
+  filter: var(--shadow);
 }
 
 /* Utility Classes */
