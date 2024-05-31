@@ -201,7 +201,7 @@ footer {
 /* CSS Grid */
 
 .grid {
-  --gutter: 1rem;
+  --gutter: 2rem;
   display: grid;
   column-gap: var(--gutter);
   row-gap: var(--gutter);
