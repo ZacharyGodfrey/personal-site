@@ -1,18 +1,20 @@
 /* Element Styles */
 
 :root {
-  --main:       hsl(205, 75%, 60%);
-  --link:       var(--main);
-  --text:       hsl(205 0% 100%);
-  --background: hsl(205 50% 25%);
-  --bg-alt:     hsl(205 50% 15%);
+  --primary:   hsl(205, 75%, 60%);
+  --bg-body:   hsl(205 50% 25%);
+  --bg-main:   hsl(205 0% 95%);
+  --bg-footer: hsl(205 50% 15%);
+  --text:      hsl(205 0% 20%);
+  --text-footer: var(--bg-main);
+  --link:        var(--primary);
   --content-width: 50rem;
   --line-thickness: 2px;
   --shadow: drop-shadow(rgb(0 0 0 / 0.25) 0 0 0.5rem);
   font-size: 20px;
   font-family: 'roboto-mono', monospace;
   color: var(--text);
-  background-color: var(--background);
+  background: var(--bg-body);
 }
 
 * {
@@ -30,7 +32,7 @@
 }
 
 ::selection {
-  background: var(--main);
+  background: var(--primary);
 }
 
 h1, h2, h3, h4, p, ul, table, pre {
@@ -106,7 +108,7 @@ code {
   border-radius: 0.5rem;
   font-family: inherit;
   color: var(--text);
-  background: var(--main);
+  background: var(--primary);
 }
 
 img {
@@ -126,7 +128,7 @@ hr {
   height: var(--line-thickness);
   border: none;
   outline: none;
-  background: var(--main);
+  background: var(--primary);
 }
 
 table, th, td {
@@ -136,7 +138,6 @@ table, th, td {
 table {
   width: 100%;
   border: var(--line-thickness) solid var(--text);
-  background: var(--background);
 }
 
 th, td {
@@ -147,7 +148,6 @@ th, td {
 blockquote {
   padding: 1rem;
   border: var(--line-thickness) solid var(--text);
-  background: var(--background);
 }
 
 /* Layout */
@@ -161,18 +161,19 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   min-height: 100vh;
   min-height: 100svh;
 }
 
-header, article, footer {
-  padding: 2rem 1rem;
-}
-
-section {
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   max-width: var(--content-width);
   margin-inline: auto;
+  background: var(--bg-main);
+  filter: var(--shadow);
 }
 
 header {
@@ -180,13 +181,14 @@ header {
 }
 
 article {
-  padding: 4rem 1rem;
   flex: 1;
+  padding: 4rem 1rem;
 }
 
 footer {
   padding: 2rem 1rem;
-  background: var(--bg-alt);
+  color: var(--text-footer);
+  background: var(--bg-footer);
 }
 
 /* Utility Classes */
