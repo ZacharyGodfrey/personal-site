@@ -8,7 +8,11 @@ description: "The personal website of Zachary Godfrey"
 
 ## Hey! I'm Zach.
 
-I'm a *Senior Software Engineer* with over a decade of experience building and maintaining web applications in a variety of languages and tech stacks. I'm currently working at [The Knot](https://theknot.com).
+I'm a *Senior Software Engineer*, *husband and father*, and competitive *axe thrower*.
+
+## Work
+
+I have over a decade of experience building and maintaining web applications in a variety of languages and tech stacks. I'm currently working at [The Knot](https://theknot.com).
 
 ## Links
 
