@@ -9,10 +9,9 @@ description: "The personal website of Zachary Godfrey"
     <img src="data:image/jpg;base64,{{>hero}}" alt="hero">
   </div>
 
-  <div class="text-center">
-    <h2>Hello!</h2>
-    <h3>I'm Zach</h3>
-    <h4>Senior Software Engineer</h4>
+  <div>
+    <h2>Hey, I'm Zach</h3>
+    <h3>Senior Software Engineer</h3>
   </div>
 </div>
 
