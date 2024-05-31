@@ -31,11 +31,15 @@ I believe that the less my work gets called *magic* the better. I take it as a c
 
 I'm currently working at [The Knot](https://theknot.com) and my full [work history](/work) is available if that interests you.
 
+---
+
 ## Play
 
 I believe that playing is the act of learning. My personal projects almost never see the light of day because they're almost exclusively the product of my playing around with code. I love to run in the opposite direction of "industry best practices" to see if there's wisdom to be found where nobody else is looking. My personal code is on [GitHub](https://github.com/ZacharyGodfrey) if you're curious.
 
 Outside of code, I throw axes in the IATF under the alias [REDACTED](https://axescores.com/player/1207260). In my first year in the sport, I qualified for and competed in the **2023 International Axe Throwing Championship**. From a global population of 20,000 throwers, the top 256 were selected to compete in the event. I placed 97th overall, which is in the top half for the tournament and the top 0.5% globally.
+
+---
 
 ## Contact
 
