@@ -8,7 +8,7 @@ description: "The personal website of Zachary Godfrey"
 
 ## Hey! I'm Zach.
 
-I'm a *Senior Software Engineer*, *husband and father*, and competitive *axe thrower*.
+I'm a **Senior Software Engineer**, husband and father, and competitive axe thrower.
 
 ## Work
 
