@@ -232,21 +232,6 @@ footer {
 
 .grid > * { margin: 0 !important; }
 
-.grid > .span-2 { grid-column: span 2; }
-.grid > .span-3 { grid-column: span 3; }
-
-.grid > .shift { grid-column-start: 2; }
-.grid > .shift-2 { grid-column-start: 3; }
-
-.grid.sub {
-  grid-template-columns: subgrid;
-  grid-column: 1 / -1;
-  justify-items: inherit;
-  align-items: inherit;
-  justify-content: inherit;
-  align-content: inherit;
-}
-
 /* Specific Styles */
 
 img[alt="hero"] {
