@@ -2,9 +2,10 @@
 
 :root {
   --primary:   hsl(205, 75%, 60%);
-  --bg-body:   hsl(205 50% 25%);
-  --bg-footer: hsl(205 50% 15%);
-  --text:      white;
+  --bg-body:   hsl(205 50% 95%);
+  --bg-footer: hsl(205 50% 25%);
+  --text:        black;
+  --text-footer: white;
   --link:        var(--primary);
   --content-width: 50rem;
   --line-thickness: 2px;
@@ -185,6 +186,7 @@ article {
 
 footer {
   padding: 2rem 1rem;
+  color: var(--text-footer);
   background: var(--bg-footer);
 }
 
