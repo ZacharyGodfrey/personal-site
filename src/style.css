@@ -1,7 +1,7 @@
 /* Element Styles */
 
 :root {
-  --primary:     hsl(205, 75%, 60%);
+  --primary:     hsl(205, 75%, 50%);
   --bg-body:     white;
   --bg-footer:   hsl(205 50% 25%);
   --text:        black;
@@ -32,7 +32,7 @@
 }
 
 ::selection {
-  color: var(--text);
+  color: white;
   background: var(--primary);
 }
 
