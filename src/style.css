@@ -176,10 +176,6 @@ body {
   min-height: 100svh;
 }
 
-main {
-  flex: 1;
-}
-
 header, article, footer {
   padding: 2rem 1rem;
 }
@@ -187,6 +183,10 @@ header, article, footer {
 section {
   max-width: var(--content-width);
   margin-inline: auto;
+}
+
+article {
+  flex: 1;
 }
 
 footer {
