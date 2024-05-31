@@ -43,6 +43,8 @@ You can reach me on [LinkedIn](https://linkedin.com/in/zachary-godfrey) or conta
 
 {{#posts.length}}
 
+---
+
 ## Blog
 
 {{#posts}}
