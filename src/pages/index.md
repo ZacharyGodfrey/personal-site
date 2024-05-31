@@ -10,12 +10,12 @@ description: "The personal website of Zachary Godfrey"
   </div>
 
   <div>
-    <h2>Hey, I'm Zach</h3>
-    <h3>Senior Software Engineer</h3>
+    <p>
+      <strong>Hey, I'm Zach.</strong>
+    </p>
+    <p>I'm a Senior Software Engineer, husband and father, and a competitive axe thrower.</p>
   </div>
 </div>
-
-I'm also a husband and father and a competitive axe thrower.
 
 <!--
 ![hero](data:image/jpg;base64,{{>hero}})
