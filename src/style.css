@@ -1,7 +1,7 @@
 /* Element Styles */
 
 :root {
-  --main:       hsl(205, 75%, 35%);
+  --main:       hsl(205, 75%, 60%);
   --link:       var(--main);
   --text:       hsl(205 0% 100%);
   --background: hsl(205 50% 25%);
