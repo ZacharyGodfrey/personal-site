@@ -12,9 +12,11 @@ I'm a *Senior Software Engineer* with over a decade of experience building and m
 
 <!-- [Projects](/projects) [GitHub](https://github.com/ZacharyGodfrey) [Work History](/work) -->
 
-## Contact
+## Links
 
-I'm available on [LinkedIn](https://linkedin.com/in/zachary-godfrey) and via [email](mailto:contact@zacharygodfrey.dev) if you'd like to chat.
+- My personal code is on [GitHub](https://github.com/ZacharyGodfrey)
+- My full [work history](/work) is available if that interests you
+- I'm available on [LinkedIn](https://linkedin.com/in/zachary-godfrey) and via [email](mailto:contact@zacharygodfrey.dev) if you'd like to chat
 
 {{#posts.length}}
 
