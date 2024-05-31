@@ -8,7 +8,7 @@ description: "The personal website of Zachary Godfrey"
 
 ## Hey! I'm Zach.
 
-I'm a **Senior Software Engineer** with over a decade of experience building and maintaining web applications in a variety of languages and tech stacks. I'm currently working at [The Knot](https://theknot.com).
+I'm a *Senior Software Engineer* with over a decade of experience building and maintaining web applications in a variety of languages and tech stacks. I'm currently working at [The Knot](https://theknot.com).
 
 ## Projects
 
@@ -16,9 +16,10 @@ Most of my personal projects never see the light of day. They're mostly used to 
 
 ### Axe Charts
 
-I created [Axe Charts](https://axecharts.com) to supplement the official stats website for IATF axe throwing. In addition to providing in-depth performance statistics for Premier axe throwers, the site also addresses some key requests from the axe throwing community.
+I created [Axe Charts](https://axecharts.com) to supplement the official stats website for IATF axe throwing. In addition to providing in-depth performance statistics for Premier axe throwers, the site also implements some key feature requests from the axe throwing community:
 
-*Badges* provide fun performance milestones to work toward while chasing down that elusive 81 score and the *Axe Charts Rating (ACR)* is an alternative rating system based on overall accuracy rather than wins and losses.
+- *Badges* provide fun performance milestones to work toward while chasing down that elusive 81 score.
+- The *Axe Charts Rating (ACR)* is an alternative rating system based on overall accuracy rather than wins and losses.
 
 {{#posts.length}}
 
