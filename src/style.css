@@ -1,11 +1,11 @@
 /* Element Styles */
 
 :root {
-  --main:       hsl(205, 75%, 50%);
+  --main:       hsl(205, 75%, 35%);
   --link:       var(--main);
   --emphasis:   hsl(205 0% 10%);
   --text:       hsl(205 0% 20%);
-  --background: hsl(205 75% 90%);
+  --background: hsl(205 0% 95%);
   --bg-light:   hsl(205 0% 100%);
   --content-width: 50rem;
   --line-thickness: 2px;
