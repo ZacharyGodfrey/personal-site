@@ -15,11 +15,13 @@ description: "The personal website of Zachary Godfrey"
   </div>
 </div>
 
-<!-- ![hero](data:image/jpg;base64,{{>hero}}) -->
+<!--
+![hero](data:image/jpg;base64,{{>hero}})
 
-<!-- ## Hey! I'm Zach. -->
+## Hey! I'm Zach.
 
-<!-- I'm a Senior Software Engineer, husband and father, and competitive axe thrower. -->
+I'm a Senior Software Engineer, husband and father, and competitive axe thrower.
+-->
 
 ## Work
 
