@@ -23,6 +23,8 @@ description: "The personal website of Zachary Godfrey"
 I'm a Senior Software Engineer, husband and father, and competitive axe thrower.
 -->
 
+---
+
 ## Work
 
 I have over a decade of experience building and maintaining software in a variety of languages and tech stacks.

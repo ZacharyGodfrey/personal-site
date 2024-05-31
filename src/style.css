@@ -149,7 +149,7 @@ th, td {
 
 blockquote {
   padding: 1rem;
-  border: var(--line-thickness) solid var(--text);
+  border: var(--line-thickness) solid var(--primary);
 }
 
 /* Layout */
