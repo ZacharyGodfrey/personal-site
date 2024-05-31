@@ -179,11 +179,10 @@ header {
 article {
   flex: 1;
   padding: 4rem 1rem;
-  filter: var(--shadow);
 }
 
 footer {
-  padding: 4rem 1rem 2rem 1rem;
+  padding: 4rem 1rem;
   color: var(--text-footer);
   background: var(--bg-footer);
 }
