@@ -5,8 +5,8 @@
   --link:       var(--main);
   --emphasis:   hsl(205 0% 10%);
   --text:       hsl(205 0% 20%);
-  --background: hsl(205 0% 90%);
-  --bg-light:   hsl(205 0% 100%);
+  --background: hsl(115 10% 85%);
+  --bg-light:   hsl(60 10% 95%);
   --content-width: 60rem;
   --line-thickness: 2px;
   --shadow: drop-shadow(rgb(0 0 0 / 0.25) 0 0 0.5rem);
