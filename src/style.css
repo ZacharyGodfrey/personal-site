@@ -43,17 +43,13 @@ h1, h2, h3, h4, p, ul, table, pre, .grid {
 
 h1, h2, h3, h4 {
   line-height: 1.2;
+  letter-spacing: 1px;
+  font-weight: normal;
   color: var(--primary);
 }
 
 p, li, th, td {
   line-height: 1.8;
-}
-
-h1, h2, h3, h4 {
-  letter-spacing: 1px;
-  font-weight: normal;
-  text-align: left;
 }
 
 h1 {
