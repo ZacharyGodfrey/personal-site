@@ -8,15 +8,11 @@ description: "The personal website of Zachary Godfrey"
 
 ## Hey! I'm Zach.
 
-I'm a [Senior Software Engineer](#work) with over a decade of experience building and maintaining web applications in a variety of languages and tech stacks.
-
-I'm also a husband and father and a competitive [axe thrower](https://axescores.com/player/1207260).
-
-I'm currently working at [The Knot](https://theknot.com). My personal code is on [GitHub](https://github.com/ZacharyGodfrey) and you can view my full [work history](/work) if that interests you.
+I'm a **Senior Software Engineer** with over a decade of experience building and maintaining web applications in a variety of languages and tech stacks. I'm currently working at [The Knot](https://theknot.com).
 
 ## Projects
 
-Most of the time, my personal projects don't see the light of day. They're mostly a way for me to experiment with doing things differently - often opposing "industry best practices" - just to see if there's wisdom to be found where nobody is currently looking. Any projects listed here will be the ones that provide enough value to be shared with others.
+Most of my personal projects never see the light of day. They're mostly used to experiment with doing things differently (often opposing "industry best practices") to see if there's wisdom to be found where nobody else is looking. Any projects listed here will be ones that provide enough value to be shared with others.
 
 ### Axe Charts
 
