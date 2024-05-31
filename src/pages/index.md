@@ -4,11 +4,22 @@ title: ""
 description: "The personal website of Zachary Godfrey"
 ---
 
-![hero](data:image/jpg;base64,{{>hero}})
+<div class="grid columns-fill-auto items-y-center">
+  <div>
+    <h2>Hey! I'm Zach.</h2>
+    <p>I'm a Senior Software Engineer, husband and father, and competitive axe thrower.</p>
+  </div>
 
-## Hey! I'm Zach.
+  <div>
+    <img src="data:image/jpg;base64,{{>hero}}" alt="hero">
+  </div>
+</div>
 
-I'm a Senior Software Engineer, husband and father, and competitive axe thrower.
+<!-- ![hero](data:image/jpg;base64,{{>hero}}) -->
+
+<!-- ## Hey! I'm Zach. -->
+
+<!-- I'm a Senior Software Engineer, husband and father, and competitive axe thrower. -->
 
 ## Work
 
