@@ -1,12 +1,12 @@
 /* Element Styles */
 
 :root {
-  --primary:   hsl(205, 75%, 60%);
-  --bg-body:   hsl(205 50% 95%);
-  --bg-footer: hsl(205 50% 25%);
+  --primary:     hsl(205, 75%, 60%);
+  --bg-body:     white;
+  --bg-footer:   hsl(205 50% 25%);
   --text:        black;
   --text-footer: white;
-  --link:        var(--primary);
+  --link:          var(--primary);
   --content-width: 50rem;
   --line-thickness: 2px;
   --shadow: drop-shadow(rgb(0 0 0 / 0.25) 0 0 0.5rem);
