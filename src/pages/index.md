@@ -4,7 +4,7 @@ title: ""
 description: "The personal website of Zachary Godfrey"
 ---
 
-<div class="grid columns-fill-auto items-y-center">
+<div class="grid stack columns-fill-auto items-y-center">
   <div>
     <h2>Hey! I'm Zach.</h2>
     <p>I'm a Senior Software Engineer, husband and father, and competitive axe thrower.</p>
