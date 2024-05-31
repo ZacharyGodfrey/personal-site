@@ -2,7 +2,7 @@
 type: "draft"
 title: "Solving Tech Problems Without Code"
 order: "001"
-date: "2023 Dec 19"
+date: "Dec 19, 2023"
 ---
 
 ## {{meta.title}}
