@@ -194,6 +194,7 @@ footer {
 
 .text-center { text-align: center; }
 .text-right { text-align: right; }
+.text-justify { text-align: justify; }
 .text-fancy { font-family: 'satisfy'; }
 
 /* Specific Styles */
