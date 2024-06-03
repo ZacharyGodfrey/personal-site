@@ -239,7 +239,7 @@ footer {
 
 img[alt="hero"] {
   max-width: 15rem;
-  border-radius: 100%;
+  border-radius: 0.75rem;
 }
 
 /* Small Screens */
