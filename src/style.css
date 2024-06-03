@@ -2,11 +2,11 @@
 
 :root {
   --primary:     hsl(205 75% 35%);
-  --bg-header:   white;
+  --bg-header:   hsl(205 0% 100%);
   --bg-body:     hsl(205 25% 95%);
-  --bg-footer:   hsl(35 45% 28%);
+  --bg-footer:   hsl(205 50% 15%);
   --text:        hsl(205 10% 10%);
-  --text-footer: white;
+  --text-footer: hsl(205 0% 100%);
   --link:          var(--primary);
   --highlight: hsl(55 75% 75%);
   --content-width: 40rem;
