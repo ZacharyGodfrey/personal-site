@@ -1,12 +1,12 @@
 /* Element Styles */
 
 :root {
-  --primary:     hsl(205 75%  35%);
+  --primary:     hsl(205 75%  50%);
   --highlight:   hsl(55  75%  75%);
   --bg-header:   hsl(205 75% 100%);
-  --bg-body:     hsl(205 75%  95%);
+  --bg-body:     hsl(205 75%  98%);
   --bg-footer:   hsl(205 75%  25%);
-  --text:        hsl(205 75%  10%);
+  --text:        hsl(205 75%  15%);
   --text-footer: hsl(205 75% 100%);
   --link:          var(--primary);
   --content-width: 40rem;
