@@ -10,8 +10,6 @@ description: "The personal website of Zachary Godfrey"
 
 **Hey, I'm Zach.** I'm a Senior Software Engineer at [The Knot](https://theknot.com). I'm also a husband and father and a competitive axe thrower.
 
----
-
 ### About
 
 I have *over a decade* of [experience](/work) building and maintaining software in a variety of languages and tech stacks.

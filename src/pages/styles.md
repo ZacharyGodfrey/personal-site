@@ -18,17 +18,11 @@ description: "This page demonstrates the styling of all available elements."
 
 #### H4 Heading Text
 
----
-
 Here is some *emphasis text*. Here is some **bold text**. Here is some `code`. Here is an [internal link](/) and an [external link](https://github.com). This is some more text that will hopefully be long enough to cause some wrapping and show off how a paragraph of text will look on the website.
-
----
 
 Here is an image:
 
 ![alt text here](/trees.jpg)
-
----
 
 Here is a blockquote:
 
@@ -36,23 +30,17 @@ Here is a blockquote:
 >
 > \- T.S. Eliot
 
----
-
 Here's a list without order:
 
 - Item One
 - Item Two
 - Item Three
 
----
-
 Here's a list with order:
 
 1. Item One
 1. Item Two
 1. Item Three
-
----
 
 Here is a table:
 
