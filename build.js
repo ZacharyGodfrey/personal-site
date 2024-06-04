@@ -8,6 +8,7 @@ const { render } = require('mustache');
 const marked = require('marked');
 const { gfmHeadingId } = require('marked-gfm-heading-id');
 const postcss = require('postcss');
+const cssnano = require('cssnano');
 const config = require('./src/config.json');
 
 marked.use(gfmHeadingId({ prefix: '' }));
@@ -21,17 +22,12 @@ const writeFile = (filePath, content, encoding) => fs.outputFileSync(resolve(fil
 const emptyFolder = (folderPath) => fs.emptyDirSync(resolve(folderPath));
 const copyFolder = (srcPath, destPath) => fs.copySync(resolve(srcPath), resolve(destPath));
 const compileMD = (fileContent) => marked.parse(fileContent, { gfm: true });
+const minifyCSS = async (fileContent) => await postcss([cssnano]).process(fileContent).then(({ css }) => css);
 
 const parseMetadata = (fileContent) => {
   const { attributes: meta, body: content } = frontMatter(fileContent);
 
   return { meta, content };
-};
-
-const minifyCSS = async (fileContent) => {
-  const { css } = await postcss([]).process(fileContent, { from: '', to: '' });
-
-  return css;
 };
 
 const byAscending = (fn) => (left, right) => {

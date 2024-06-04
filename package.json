@@ -6,6 +6,7 @@
     "local": "concurrently \"npm run watch\" \"npm run serve\""
   },
   "dependencies": {
+    "cssnano": "^7.0.1",
     "front-matter": "^4.0.2",
     "fs-extra": "^9.0.1",
     "glob": "^10.3.10",
