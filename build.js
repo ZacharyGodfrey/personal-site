@@ -56,6 +56,8 @@ const byDescending = (fn) => (left, right) => {
   const style = await minifyCSS(readFile('./src/style.css'));
   const hero = readFile('./src/static/family.jpg', 'base64');
 
+  console.log(style);
+
   const pages = listFiles('./src/pages/**/*.md').map(filePath => {
     const uri = filePath.split('src/pages/')[1].replace('.md', '');
     const fileContent = readFile(`./${filePath}`);
