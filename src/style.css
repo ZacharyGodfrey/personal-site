@@ -194,6 +194,5 @@ footer {
 /* Specific Styles */
 
 img[alt="hero"] {
-  max-width: 10rem;
-  border-radius: 100%;
+  border-radius: 50%;
 }
