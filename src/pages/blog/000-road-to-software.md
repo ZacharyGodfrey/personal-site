@@ -1,17 +1,19 @@
 ---
 type: "post"
 title: "My Road to Software Engineering"
-order: "002"
-date: "2024 May 30"
+order: "000"
+date: "May 30, 2024"
 ---
 
 ## {{meta.title}}
 
-*Posted on **{{meta.date}}***
+*Posted on {{meta.date}}*
+
+---
 
 When I graduated from high school, I had a lot of interests but didn't know which one I wanted to focus on in college. I decided to take a year off from school to figure it out. During that year, I had lunch with a few of my dad's coworkers who were web developers to ask them what it's like to do their job every day. I had an interest in programming, but I wanted to know what the job was really like. I loved what I heard and decided that was the career for me.
 
-They told me about an open position at their company in Quality Assurance and that it'd be a great starting point for learning web development. I knew absolutely nothing about it, but I interviewed anyway. They liked how eager I was to learn, and I got the job. I quickly learned how to do the QA job and immediately started learning to write code. I watched YouTube videos, read online documentation and tutorials, asked my new coworkers *a lot* of questions, and went through tons of trial and error.
+They told me about an open position in Quality Assurance at their company and that it'd be a great starting point for learning web development. I knew absolutely nothing about it, but I interviewed anyway. They liked how eager I was to learn, and I got the job. I quickly learned how to do the QA job and immediately started learning to write code. I watched YouTube videos, read online documentation and tutorials, asked my new coworkers *a lot* of questions, and went through tons of trial and error.
 
 I learned HTML, CSS, JavaScript, and PHP and built the very first iteration of my personal website. I also learned Java so that I could rewrite an automated testing tool that had been neglected for a few years and desperately needed an update.
 

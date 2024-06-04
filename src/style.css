@@ -1,19 +1,20 @@
 /* Element Styles */
 
 :root {
-  --main:       hsl(205, 75%, 60%);
-  --link:       var(--main);
-  --emphasis:   hsl(205 0% 100%);
-  --text:       hsl(205 0% 90%);
-  --background: hsl(205 50% 20%);
-  --bg-dark:    hsl(205 50% 10%);
+  --text:   hsl(55  30% 85%);
+  --accent: hsl(85  30% 45%);
+  --light:  hsl(205 15% 35%);
+  --medium: hsl(205 15% 25%);
+  --dark:   hsl(205 15% 15%);
   --content-width: 40rem;
   --line-thickness: 2px;
-  --shadow: drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.75rem);
+  --radius: 0.5rem;
+  --image-effects: sepia(35%) drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.75rem);
   font-size: 20px;
   font-family: 'roboto-mono', monospace;
+  font-weight: normal;
   color: var(--text);
-  background-color: var(--background);
+  background: var(--medium);
 }
 
 * {
@@ -22,73 +23,69 @@
   margin: 0;
 }
 
-:first-child {
-  margin-block-start: 0 !important;
-}
-
-:last-child {
-  margin-block-end: 0 !important;
-}
+:first-child { margin-block-start: 0 !important; }
+:last-child  {   margin-block-end: 0 !important; }
 
 ::selection {
-  color:      var(--emphasis);
-  background: var(--main);
+  color: var(--dark);
+  background: var(--text);
 }
 
-hgroup, h1, h2, h3, h4, p, ul, table, pre {
-  margin-block: 2rem;
-}
-
-h1, h2, h3, h4, p, li, th, td {
-  line-height: 1.75;
-}
-
-h1, h2, h3, h4 {
-  color: var(--main);
-  letter-spacing: 1px;
-  font-weight: 400;
-}
-
-h1 {
-  font-size: 2.25rem;
-}
-
-h2 {
-  font-size: 2.25rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-hgroup > * {
-  margin-block: 0 !important;
+p, ul, ol, img {
+  margin-block: 1rem;
 }
 
 p, li, th, td {
   font-size: 1rem;
-  font-weight: 200;
+  line-height: 1.5;
 }
 
-a, em, strong, th {
-  color: var(--emphasis);
+h1, h2, h3, h4 {
+  line-height: 1.5;
+}
+
+h2, h3, h4 {
+  margin-block: 4rem 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-family: 'satisfy', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 a {
+  color: inherit;
   text-decoration: none;
-  border-bottom: var(--line-thickness) solid var(--link);
 }
 
-a:hover {
-  color: var(--link);
+a:not(h1 > a) {
+  border-bottom: var(--line-thickness) solid var(--accent);
 }
 
-h1 a {
-  border: none;
+a:not(h1 > a):hover {
+  color: var(--accent);
+}
+
+a[href^="http"], a[href^="mailto:"] { /* External Links */
+  border-bottom-style: dashed;
 }
 
 ul, ol {
@@ -105,32 +102,31 @@ em {
 }
 
 code {
-  display: inline-block;
-  padding-inline: 0.5rem;
-  border-radius: 0.5rem;
+  padding-inline: 0.25rem;
   font-family: inherit;
-  color: white;
-  background: var(--bg-dark);
+  color: var(--dark);
+  background: var(--accent);
+  border-radius: 0.25rem;
 }
 
 img {
   display: block;
-  margin-inline: auto;
+  margin: 2rem auto;
   max-width: min(100%, 40rem);
   max-height: min(75vh, 40rem);
   max-height: min(75svh, 40rem);
-  filter: var(--shadow);
   user-select: none;
+  border-radius: var(--radius);
+  filter: var(--image-effects);
 }
 
 hr {
-  margin-inline: auto;
-  margin-block: 2rem;
+  margin: 4rem auto;
   width: 100%;
   height: var(--line-thickness);
   border: none;
   outline: none;
-  background: var(--main);
+  background: var(--text);
 }
 
 table, th, td {
@@ -139,47 +135,36 @@ table, th, td {
 
 table {
   width: 100%;
+  margin-block: 2rem;
+  background: var(--light);
   border: var(--line-thickness) solid var(--text);
-  background: var(--background);
 }
 
 th, td {
   padding: 0.5rem;
-  border: var(--line-thickness) dashed var(--text);
-}
-
-th {
-  color: var(--main);
+  border: var(--line-thickness) solid var(--text);
 }
 
 blockquote {
+  margin-block: 2rem;
   padding: 1rem;
+  background: var(--light);
+  border-radius: var(--radius);
   border: var(--line-thickness) solid var(--text);
-  background: var(--background);
 }
 
 /* Layout */
 
-html {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
+html, body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
   min-height: 100svh;
 }
 
-main {
-  flex: 1;
-}
-
-header, article, footer {
-  padding: 2rem 1rem;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 section {
@@ -187,47 +172,29 @@ section {
   margin-inline: auto;
 }
 
+header {
+  padding: 1rem;
+  background: var(--light);
+}
+
+article {
+  flex: 1;
+  padding: 4rem 1rem;
+}
+
 footer {
-  background: var(--bg-dark);
+  padding: 1rem;
+  background: var(--dark);
 }
 
 /* Utility Classes */
 
 .text-center { text-align: center; }
 .text-right { text-align: right; }
-.text-fancy { font-family: 'satisfy'; }
+.text-justify { text-align: justify; }
 
 /* Specific Styles */
 
 img[alt="hero"] {
-  max-width: 10rem;
-  border-radius: 100%;
-}
-
-/* Print Rules */
-
-@media print {
-  :root {
-    --text: black;
-    --emphasis: black;
-    --link: black;
-  }
-
-  html, body {
-    color: black;
-    background: white;
-  }
-
-  h1, h2, h3, h4 {
-    color: var(--main);
-  }
-
-  p, li, th, td {
-    font-weight: normal;
-    color: var(--text);
-  }
-
-  footer, hr, img {
-    display: none;
-  }
+  border-radius: 50%;
 }
