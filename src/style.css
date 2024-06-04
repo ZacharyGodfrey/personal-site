@@ -9,7 +9,7 @@
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
-  --image-effects: sepia(60%) drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.75rem);
+  --image-effects: sepia(35%) drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.75rem);
   font-size: 20px;
   font-family: 'roboto-mono', monospace;
   font-weight: normal;
@@ -109,7 +109,7 @@ code {
 
 img {
   display: block;
-  margin-inline: auto;
+  margin: 2rem auto;
   max-width: min(100%, 40rem);
   max-height: min(75vh, 40rem);
   max-height: min(75svh, 40rem);
