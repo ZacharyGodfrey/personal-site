@@ -7,6 +7,7 @@ const frontMatter = require('front-matter');
 const { render } = require('mustache');
 const marked = require('marked');
 const { gfmHeadingId } = require('marked-gfm-heading-id');
+const postcss = require('postcss');
 
 const config = require('./src/config.json');
 
@@ -28,6 +29,12 @@ const parseMetadata = (fileContent) => {
   return { meta, content };
 };
 
+const minifyCSS = async (fileContent) => {
+  const { css } = await postcss([]).process(fileContent, { from: '', to: '' });
+
+  return css;
+};
+
 const byAscending = (fn) => (left, right) => {
   const l = fn(left), r = fn(right);
 
@@ -46,7 +53,7 @@ const shell = readFile('./src/shell.html');
 const favicon = readFile('./src/static/terminal.png', 'base64');
 const fontFancy = readFile('./src/static/satisfy.ttf', 'base64');
 const fontMono = readFile('./src/static/roboto-mono.ttf', 'base64');
-const style = readFile('./src/style.css');
+const style = await minifyCSS(readFile('./src/style.css'));
 const hero = readFile('./src/static/family.jpg', 'base64');
 
 const pages = listFiles('./src/pages/**/*.md').map(filePath => {
