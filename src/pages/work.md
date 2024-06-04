@@ -8,7 +8,7 @@ description: ""
 
 ---
 
-### Senior Software Engineer
+**Senior Software Engineer**
 
 *Aug 2021 - Present* at [The Knot](https://theknot.com)
 
@@ -16,7 +16,7 @@ description: ""
 
 ---
 
-### Senior Software Engineer
+**Senior Software Engineer**
 
 *Oct 2018 - Jul 2021* at [BAM Technologies](https://bamtech.net)
 
@@ -35,7 +35,7 @@ description: ""
 
 ---
 
-### Application Developer
+**Application Developer**
 
 *Oct 2017 - Oct 2018* at [Oyova Software](https://oyova.com)
 
@@ -46,7 +46,7 @@ description: ""
 
 ---
 
-### Application Developer
+**Application Developer**
 
 *Nov 2013 - Oct 2017* at [MECLABS](https://meclabs.com)
 
@@ -60,7 +60,7 @@ description: ""
 
 ---
 
-### Quality Assurance Specialist
+**Quality Assurance Specialist**
 
 *Jan 2013 - Nov 2013* at [MECLABS](https://meclabs.com)
 
