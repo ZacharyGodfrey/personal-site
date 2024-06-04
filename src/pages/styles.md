@@ -26,9 +26,9 @@ Here is an image:
 
 Here is a blockquote:
 
-> "And the end of all our exploring will be to arrive where we started and know the place for the first time."
+> "You can't believe everything you read on the internet."
 >
-> \- T.S. Eliot
+> \- Abraham Lincoln
 
 Here's a list without order:
 
