@@ -56,8 +56,14 @@ In my previous jobs, I've seen the negative effects of vendor-lock: you want to 
 
 ### Authoring Content
 
-Every page on my website, and every blog post, is a Markdown file in the `src/pages` directory in the repository. Using the directory structure and file names to build the URLs keeps things organized and incredibly simple. At the top of each document, I can specify metadata for each page using a simple YAML syntax. This allows me to set up things like the page title and description, a blog post's publish date, etc. The Markdown syntax is far more lightweight than writing the HTML by hand, but it's also expressive enough for me to author almost all of the content I need. For anything that has to be more complex than Markdown can handle, I can still write the necessary HTML in place directly in the Markdown document and it will be preserved during rendering. If I need to include reusable snippets of HTML, or render some JSON data into the HTML, I can use 
+Every page on my website, and every blog post, is a Markdown file in the `src/pages` directory in the repository. Using the directory structure and file names to build the URLs keeps things organized and incredibly simple.
 
----
+At the top of each document, I can specify metadata for the page using a simple YAML syntax. This allows me to set up things like the page title and description, a blog post's publish date, etc.
+
+The content is written in Markdown, which is so much faster than writing the HTML by hand but is also expressive enough for me to author almost all of the content I need. For anything that has to be more complex than what Markdown can handle, I can still write the necessary HTML in place and it will be preserved during rendering.
+
+I can also inject some data and logic into my content using Mustache tags. The combination of Mustache, Markdown, and Frontmatter make authoring content incredibly easy.
+
+### Conclusion
 
 All of the code for my website is available on [GitHub](https://github.com/ZacharyGodfrey/personal-site) if you'd like to use it as a starting point for your own website.
