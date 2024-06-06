@@ -1,11 +1,11 @@
 /* Element Styles */
 
 :root {
-  --text:   hsl(55  30% 85%);
-  --accent: hsl(85  30% 45%);
-  --light:  hsl(205 15% 35%);
-  --medium: hsl(205 15% 25%);
-  --dark:   hsl(205 15% 15%);
+  --text:   hsl(205 50% 25%);
+  --accent: hsl(0   50% 45%);
+  --light:  hsl(205 50% 95%);
+  --medium: hsl(205 50% 75%);
+  --dark:   hsl(205 50% 55%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
@@ -14,7 +14,7 @@
   font-family: 'roboto-mono', monospace;
   font-weight: normal;
   color: var(--text);
-  background: var(--medium);
+  background: var(--light);
 }
 
 * {
@@ -174,7 +174,7 @@ section {
 
 header {
   padding: 1rem;
-  background: var(--light);
+  background: var(--medium);
 }
 
 article {
