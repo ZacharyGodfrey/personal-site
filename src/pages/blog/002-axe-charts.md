@@ -9,6 +9,4 @@ date: "TBD"
 
 *Posted on {{meta.date}}*
 
----
-
 Content is TBD. Come back later.

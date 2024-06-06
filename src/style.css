@@ -1,20 +1,20 @@
 /* Element Styles */
 
 :root {
-  --text:   hsl(55  30% 85%);
-  --accent: hsl(85  30% 45%);
-  --light:  hsl(205 15% 35%);
-  --medium: hsl(205 15% 25%);
-  --dark:   hsl(205 15% 15%);
+  --light:     hsl(55 15% 90%);
+  --medium:    hsl(85 15% 60%);
+  --dark:      hsl(85 15% 30%);
+  --text:      hsl(85 15% 15%);
+  --accent:    hsl(0  45% 45%);
+  --highlight: hsl(55 75% 75%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
-  --image-effects: sepia(15%) drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.75rem);
   font-size: 20px;
   font-family: 'roboto-mono', monospace;
   font-weight: normal;
   color: var(--text);
-  background: var(--medium);
+  background: var(--light);
 }
 
 * {
@@ -27,8 +27,8 @@
 :last-child  {   margin-block-end: 0 !important; }
 
 ::selection {
-  color: var(--dark);
-  background: var(--text);
+  color: var(--text);
+  background: var(--highlight);
 }
 
 p, ul, ol, img {
@@ -53,7 +53,6 @@ h1 {
   letter-spacing: 1px;
   font-weight: normal;
   font-family: 'satisfy', sans-serif;
-  text-align: center;
 }
 
 h2 {
@@ -104,8 +103,8 @@ em {
 code {
   padding-inline: 0.25rem;
   font-family: inherit;
-  color: var(--dark);
-  background: var(--accent);
+  color: var(--light);
+  background: var(--medium);
   border-radius: 0.25rem;
 }
 
@@ -117,7 +116,7 @@ img {
   max-height: min(75svh, 40rem);
   user-select: none;
   border-radius: var(--radius);
-  filter: var(--image-effects);
+  box-shadow: 0px 0px 1rem -0.25rem hsla(0, 0%, 0%, 50%);
 }
 
 hr {
@@ -136,7 +135,6 @@ table, th, td {
 table {
   width: 100%;
   margin-block: 2rem;
-  background: var(--light);
   border: var(--line-thickness) solid var(--text);
 }
 
@@ -148,7 +146,6 @@ th, td {
 blockquote {
   margin-block: 2rem;
   padding: 1rem;
-  background: var(--light);
   border-radius: var(--radius);
   border: var(--line-thickness) solid var(--text);
 }
@@ -174,7 +171,7 @@ section {
 
 header {
   padding: 1rem;
-  background: var(--light);
+  background: var(--medium);
 }
 
 article {
@@ -184,7 +181,7 @@ article {
 
 footer {
   padding: 1rem;
-  background: var(--dark);
+  background: var(--medium);
 }
 
 /* Utility Classes */
