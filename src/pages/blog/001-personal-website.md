@@ -45,9 +45,7 @@ Because my website is just a collection of static HTML documents, hosting my web
 
 I'm hosting my website on [Netlify](https://www.netlify.com)'s CDN. I'm not sponsored by them in any way, I just really enjoy using their service. The setup is extremely easy as well: connect to your GitHub repository, specify a build command and the expected output directory, and choose which branch to deploy. When you push a change to that branch in GitHub, Netlify will automatically pull the latest code, run the build command, upload the files in the output directory to the CDN, and your updates are live!
 
-### The Benefits
-
-#### Fast!
+### Fast
 
 The speed of a website can be broken down into several steps that take time:
 
@@ -56,7 +54,7 @@ The speed of a website can be broken down into several steps that take time:
 3. The response data travels from the server back to the browser
 4. The browser renders the response data
 
-The travel time for the request and response data is minimized when the server is physically close to the user's location. 
+The travel time for the request and response data is minimized when the server is physically close to the user's location.
 
 When a server receives a request, it has to compute the correct response to send back. This usually involves fetching some dynamic data from a database and rendering that data into the HTML. Computers are fast, but computations do take some time and network roundtrips to the database take time too. The fastest way for a server to respond to a request is for it to already have a fully rendered HTML page ready to go with no computation necessary. My website is composed of static content that doesn't change often. This means that I can render every page one time with a build step, upload the generated HTML files to the CDN, and they can be served to users without any computation time on each request. I only have to rebuild the pages when the content changes.
 
@@ -64,13 +62,13 @@ Once the browser has downloaded the HTML document from the server, it then has t
 
 In summary: short trip to the server, zero computation, short trip back to the browser, no additional requests, fast rendering.
 
-#### Free!
+### Free
 
 Because my content is authored in Markdown, which is basically plaintext, I can write my content in a simple text editor: no expensive tools needed. The code is under version control in GitHub, which is also free. In fact, my website is so simple I can just use GitHub's web interface to edit my content files and push updates to the website.
 
 I'm hosting my website for free using [Netlify](https://www.netlify.com)'s CDN. I'm not sponsored in any way by them, I just really enjoy using their service and can't believe that companies like them offer CDN hosting at no cost. The setup is extremely easy as well: connect to your GitHub repository, specify a build command and the expected output directory, and choose which branch to deploy. When you push a change to that branch in GitHub, Netlify will automatically pull the latest code, run the build command, upload the files in the output directory to the CDN, and your updates are live!
 
-#### Portable!
+### Portable
 
 In my previous jobs, I've seen the negative effects of vendor-lock: you want to switch from one service provider to another, but you're stuck because you're using some proprietary technology from the current provider that won't be available after the switch. I built my website to be entirely indifferent to the hosting environment. I'm not making use of any proprietary services or databases. I could easily deploy my website with any number of other hosting providers without any changes to my code or data.
 
