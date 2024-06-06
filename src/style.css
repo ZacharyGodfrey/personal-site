@@ -2,9 +2,9 @@
 
 :root {
   --light:     hsl(85 25% 98%);
-  --medium:    hsl(85 25% 75%);
-  --dark:      hsl(85 25% 50%);
-  --text:      hsl(85 25% 25%);
+  --medium:    hsl(85 25% 60%);
+  --dark:      hsl(85 25% 30%);
+  --text:      hsl(85 25% 15%);
   --accent:      var(--dark);
   --highlight: hsl(55 75% 75%);
   --content-width: 40rem;
