@@ -1,11 +1,12 @@
 /* Element Styles */
 
 :root {
-  --text:   hsl(205 50% 25%);
-  --accent: hsl(0   50% 45%);
-  --light:  hsl(205 50% 98%);
-  --medium: hsl(205 50% 75%);
-  --dark:   hsl(205 50% 55%);
+  --text:      hsl(205 50% 25%);
+  --accent:    hsl(0   50% 45%);
+  --highlight: hsl(55  50% 75%);
+  --light:     hsl(205 50% 98%);
+  --medium:    hsl(205 50% 75%);
+  --dark:      hsl(205 50% 55%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
@@ -27,8 +28,8 @@
 :last-child  {   margin-block-end: 0 !important; }
 
 ::selection {
-  color: var(--dark);
-  background: var(--text);
+  color: var(--text);
+  background: var(--highlight);
 }
 
 p, ul, ol, img {
