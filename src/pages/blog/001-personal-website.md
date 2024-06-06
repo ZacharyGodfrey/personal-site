@@ -9,8 +9,6 @@ date: "TBD"
 
 *Posted on {{meta.date}}*
 
----
-
 My personal website is intentionally simple; it's also fast, free, and portable. In short, what I've built is a statically generated website, hosted on a CDN, and authored using Markdown. The rest of this post will explain each of those parts and how they work together to achieve the listed benefits.
 
 ### Nothing Fancy
