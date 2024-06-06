@@ -1,11 +1,11 @@
 /* Element Styles */
 
 :root {
-  --light:     hsl(85 25% 98%);
-  --medium:    hsl(85 25% 60%);
-  --dark:      hsl(85 25% 30%);
-  --text:      hsl(85 25% 15%);
-  --accent:      var(--dark);
+  --light:     hsl(85 20% 98%);
+  --medium:    hsl(85 20% 60%);
+  --dark:      hsl(85 20% 30%);
+  --text:      hsl(85 20% 15%);
+  --accent:    hsl(0  20% 50%);
   --highlight: hsl(55 75% 75%);
   --content-width: 40rem;
   --line-thickness: 2px;
