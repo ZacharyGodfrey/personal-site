@@ -104,8 +104,7 @@ em {
 code {
   padding-inline: 0.25rem;
   font-family: inherit;
-  /* color: var(--dark); */
-  background: var(--accent);
+  background: var(--medium);
   border-radius: 0.25rem;
 }
 
@@ -184,7 +183,7 @@ article {
 
 footer {
   padding: 1rem;
-  background: var(--dark);
+  background: var(--medium);
 }
 
 /* Utility Classes */
