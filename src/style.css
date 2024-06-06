@@ -10,7 +10,6 @@
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
-  --image-effects: drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.5rem);
   font-size: 20px;
   font-family: 'roboto-mono', monospace;
   font-weight: normal;
@@ -116,7 +115,7 @@ img {
   max-height: min(75svh, 40rem);
   user-select: none;
   border-radius: var(--radius);
-  filter: var(--image-effects);
+  box-shadow: 0px 0px 1rem -0.25rem var(--dark);
 }
 
 hr {
