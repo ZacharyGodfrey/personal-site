@@ -2,7 +2,7 @@
 
 :root {
   --text:   hsl(205 50% 25%);
-  --accent: hsl(0   50% 45%);
+  --accent: hsl(85  50% 45%);
   --light:  hsl(205 50% 98%);
   --medium: hsl(205 50% 75%);
   --dark:   hsl(205 50% 55%);
