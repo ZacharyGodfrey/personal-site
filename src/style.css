@@ -3,13 +3,13 @@
 :root {
   --text:   hsl(205 50% 25%);
   --accent: hsl(0   50% 45%);
-  --light:  hsl(205 50% 95%);
+  --light:  hsl(205 50% 98%);
   --medium: hsl(205 50% 75%);
   --dark:   hsl(205 50% 55%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
-  --image-effects: sepia(15%) drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.75rem);
+  /* --image-effects: sepia(15%) drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.75rem); */
   font-size: 20px;
   font-family: 'roboto-mono', monospace;
   font-weight: normal;
@@ -136,7 +136,7 @@ table, th, td {
 table {
   width: 100%;
   margin-block: 2rem;
-  background: var(--light);
+  background: var(--medium);
   border: var(--line-thickness) solid var(--text);
 }
 
@@ -148,7 +148,7 @@ th, td {
 blockquote {
   margin-block: 2rem;
   padding: 1rem;
-  background: var(--light);
+  background: var(--medium);
   border-radius: var(--radius);
   border: var(--line-thickness) solid var(--text);
 }
