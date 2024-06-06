@@ -2,14 +2,14 @@
 
 :root {
   --text:   hsl(205 50% 25%);
-  --accent: hsl(85  50% 45%);
+  --accent: hsl(0   50% 45%);
   --light:  hsl(205 50% 98%);
   --medium: hsl(205 50% 75%);
   --dark:   hsl(205 50% 55%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
-  /* --image-effects: sepia(15%) drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.75rem); */
+  --image-effects: drop-shadow(rgb(0 0 0 / 0.5) 0 0 0.5rem);
   font-size: 20px;
   font-family: 'roboto-mono', monospace;
   font-weight: normal;
