@@ -136,7 +136,6 @@ table, th, td {
 table {
   width: 100%;
   margin-block: 2rem;
-  background: var(--medium);
   border: var(--line-thickness) solid var(--text);
 }
 
@@ -148,7 +147,6 @@ th, td {
 blockquote {
   margin-block: 2rem;
   padding: 1rem;
-  background: var(--medium);
   border-radius: var(--radius);
   border: var(--line-thickness) solid var(--text);
 }
