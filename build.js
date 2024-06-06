@@ -49,10 +49,8 @@ const byDescending = (fn) => (left, right) => {
   const favicon = readFile('./src/static/terminal.png', 'base64');
   const fontFancy = readFile('./src/static/satisfy.ttf', 'base64');
   const fontMono = readFile('./src/static/roboto-mono.ttf', 'base64');
-  const style = await minifyCSS(readFile('./src/style.css'));
+  const style = readFile('./src/style.css'); // await minifyCSS(readFile('./src/style.css'));
   const hero = readFile('./src/static/family.jpg', 'base64');
-
-  console.log(style);
 
   const pages = listFiles('./src/pages/**/*.md').map(filePath => {
     const uri = filePath.split('src/pages/')[1].replace('.md', '');
