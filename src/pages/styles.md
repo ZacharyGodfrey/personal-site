@@ -12,7 +12,7 @@ description: "This page demonstrates the styling of all available elements."
 
 # H1 Site Name
 
-## H2 Page Heading
+## H2 Page Title
 
 ### H3 Section Heading
 
