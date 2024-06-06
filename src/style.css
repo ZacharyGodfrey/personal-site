@@ -104,7 +104,7 @@ code {
   padding-inline: 0.25rem;
   font-family: inherit;
   color: var(--light);
-  background: var(--dark);
+  background: var(--medium);
   border-radius: 0.25rem;
 }
 
