@@ -115,7 +115,7 @@ img {
   max-height: min(75svh, 40rem);
   user-select: none;
   border-radius: var(--radius);
-  box-shadow: 0px 0px 1rem -0.25rem hsl(0 0% 0% / 50%);
+  box-shadow: 0px 0px 1rem -0.25rem hsla(0, 0%, 0%, 50%);
 }
 
 hr {
