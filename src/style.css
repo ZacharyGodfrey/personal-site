@@ -103,7 +103,8 @@ em {
 code {
   padding-inline: 0.25rem;
   font-family: inherit;
-  background: var(--medium);
+  color: var(--light);
+  background: var(--dark);
   border-radius: 0.25rem;
 }
 
