@@ -1,8 +1,8 @@
 ---
-type: "draft"
+type: "post"
 title: "How I Built My Personal Website"
 order: "001"
-date: "TBD"
+date: "June 10, 2024"
 ---
 
 ## {{meta.title}}
@@ -62,7 +62,7 @@ In summary: short trip to the server, zero computation, short trip back to the b
 
 ### Free
 
-Because my content is authored in Markdown, which is basically plaintext, I can write my content in a simple text editor: no expensive tools needed. The code is under version control in GitHub, which is also free. In fact, my website is so simple I can just use GitHub's web interface to edit my content files and push updates to the website. That's what I'm doing right now, in fact.
+Because my content is authored in Markdown, which is basically plaintext, I can write my content in a simple text editor: no expensive tools needed. The code is under version control in GitHub, which is also free. In fact, my website is so simple I can just use GitHub's web interface to edit my content files and push updates to the website.
 
 I'm hosting my website for free using [Netlify](https://www.netlify.com)'s CDN. That's right, in addition to offering simplicity and a massive speed benefit, they will also host static websites like mine at absolutely no cost! Like I said, they aren't sponsoring this content, I just can't believe that companies like them have such a great free tier.
 
