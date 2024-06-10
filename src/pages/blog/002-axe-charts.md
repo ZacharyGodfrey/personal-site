@@ -1,6 +1,6 @@
 ---
 type: "draft"
-title: "Axe Charts"
+title: "Why and How I Built Axe Charts"
 order: "002"
 date: "TBD"
 ---
