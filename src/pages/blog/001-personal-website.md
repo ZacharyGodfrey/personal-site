@@ -52,23 +52,25 @@ The speed of a website can be broken down into several steps that take time:
 3. The response data travels from the server back to the browser
 4. The browser renders the response data
 
-The travel time for the request and response data is minimized when the server is physically close to the user's location.
+With a static content website, there is no computation time. The server just responds with the requested file or the 404 page if a matching file doesn't exist: simple and fast!
 
-When a server receives a request, it has to compute the correct response to send back. This usually involves fetching some dynamic data from a database and rendering that data into the HTML. Computers are fast, but computations do take some time and network roundtrips to the database take time too. The fastest way for a server to respond to a request is for it to already have a fully rendered HTML page ready to go with no computation necessary. My website is composed of static content that doesn't change often. This means that I can render every page one time with a build step, upload the generated HTML files to the CDN, and they can be served to users without any computation time on each request. I only have to rebuild the pages when the content changes.
+Because my website is hosted on a global CDN, the request will always be handled by the server that is closest to the user in physical space. This minimizes the amount of time that the data spends traveling back and forth on the network.
 
-Once the browser has downloaded the HTML document from the server, it then has to parse a list of other files that are needed for rendering (fonts, images, CSS files, etc.), issue additional network requests for all that data, wait for all of the responses, and then render the final content. During my build step, I minify and inline my stylesheet and base-64 encode and inline my fonts to reduce the number of network requests and speed up the browser's rendering. In most cases, each page on my website can render with only the single network request for the HTML. The main exceptions to this are the images which are stored as separate static assets (also on the CDN).
+With the first three points optimized, let's talk about that last point: rendering. Once the browser has downloaded the HTML document from the server, it then has to parse a list of other files that are needed for rendering (fonts, images, CSS files, etc.), issue additional network requests for all that data, wait for all of the responses, and then render the final content. During my build step, I minify and inline my stylesheet and base-64 encode and inline my fonts to reduce the number of network requests and speed up the browser's rendering. In most cases, each page on my website can render immediately with no additional network requests. The main exceptions to this are the images which are stored as separate static assets (also on the CDN).
 
 In summary: short trip to the server, zero computation, short trip back to the browser, no additional requests, fast rendering.
 
 ### Free
 
-Because my content is authored in Markdown, which is basically plaintext, I can write my content in a simple text editor: no expensive tools needed. The code is under version control in GitHub, which is also free. In fact, my website is so simple I can just use GitHub's web interface to edit my content files and push updates to the website.
+Because my content is authored in Markdown, which is basically plaintext, I can write my content in a simple text editor: no expensive tools needed. The code is under version control in GitHub, which is also free. In fact, my website is so simple I can just use GitHub's web interface to edit my content files and push updates to the website. That's what I'm doing right now, in fact.
 
-I'm hosting my website for free using [Netlify](https://www.netlify.com)'s CDN. I'm not sponsored in any way by them, I just really enjoy using their service and can't believe that companies like them offer CDN hosting at no cost. The setup is extremely easy as well: connect to your GitHub repository, specify a build command and the expected output directory, and choose which branch to deploy. When you push a change to that branch in GitHub, Netlify will automatically pull the latest code, run the build command, upload the files in the output directory to the CDN, and your updates are live!
+I'm hosting my website for free using [Netlify](https://www.netlify.com)'s CDN. That's right, in addition to offering simplicity and a massive speed benefit, they will also host static websites like mine at absolutely no cost! Like I said, they aren't sponsoring this content, I just can't believe that companies like them have such a great free tier.
 
 ### Portable
 
 In my previous jobs, I've seen the negative effects of vendor-lock: you want to switch from one service provider to another, but you're stuck because you're using some proprietary technology from the current provider that won't be available after the switch. I built my website to be entirely indifferent to the hosting environment. I'm not making use of any proprietary services or databases. I could easily deploy my website with any number of other hosting providers without any changes to my code or data.
+
+Having an entirely portable website is great for my peace of mind. If, for example, Netlify goes out of business or removes their free tier, I can easily and quickly get my website up and running with a different hosting provider.
 
 ### Conclusion
 
