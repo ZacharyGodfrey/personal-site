@@ -196,4 +196,5 @@ footer {
 
 img[alt="hero"] {
   border-radius: 50%;
+  max-width: 10rem;
 }
