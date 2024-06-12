@@ -12,9 +12,9 @@ description: "The personal website of Zachary Godfrey"
 
 ### About
 
-I have *over a decade* of [experience](/work) building and maintaining software in a variety of languages and tech stacks.
+I have *over a decade* of [experience](/work) building and maintaining software in a variety of languages and tech stacks. Most of my professional work has been on internal systems that cannot be shared or backend systems that aren't visible. Because of this, I don't have a portfolio of work to show. You can check out my personal [projects](/projects) to see what I've built outside of work.
 
-Outside of work, I [throw axes](https://axescores.com/player/1207260) in the IATF. In my first year in the sport, I qualified for and competed in the *2023 International Axe Throwing Championship*. From more than 20,000 throwers worldwide, the top 256 were selected to compete in the event. I placed 97th overall, which is in the top half for the tournament and the top 0.5% globally.
+I also [throw axes](https://axescores.com/player/1207260) competitively in the IATF. In my first year in the sport, I qualified for and competed in the *2023 International Axe Throwing Championship*. From more than 20,000 throwers worldwide, the top 256 were selected to compete in the event. I placed 97th overall, which is in the top half for the tournament and the top 0.5% globally.
 
 {{#posts.length}}
 
@@ -28,7 +28,3 @@ Outside of work, I [throw axes](https://axescores.com/player/1207260) in the IAT
 {{/posts}}
 
 {{/posts.length}}
-
-### Contact
-
-You can reach me on [LinkedIn](https://linkedin.com/in/zachary-godfrey) or contact me directly via [email](mailto:contact@zacharygodfrey.dev) if you'd like to chat.
