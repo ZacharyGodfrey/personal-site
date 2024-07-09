@@ -6,7 +6,7 @@
   --highlight:  hsl(55 75% 75%);
   --text:       hsl(85 15% 15%);
   --background: hsl(55 15% 95%);
-  --neutral:    hsl(55  0% 85%);
+  --neutral:    hsl(55  0% 90%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
@@ -148,8 +148,6 @@ th, td {
 pre, blockquote {
   margin-block: 2rem;
   padding: 1rem;
-  border: var(--line-thickness) solid var(--text);
-  border-radius: var(--radius);
 }
 
 pre {
@@ -157,6 +155,11 @@ pre {
   font-size: 1rem;
   white-space: pre-line;
   background: var(--neutral);
+}
+
+blockquote {
+  border: var(--line-thickness) solid var(--text);
+  border-radius: var(--radius);
 }
 
 /* Layout */
