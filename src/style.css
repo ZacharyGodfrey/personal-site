@@ -152,6 +152,7 @@ thead tr:not(:has(th:not(:empty))) {
 pre, blockquote {
   margin-block: 2rem;
   padding: 1rem;
+  border-radius: var(--radius);
 }
 
 pre {
@@ -163,7 +164,6 @@ pre {
 
 blockquote {
   border: var(--line-thickness) solid var(--text);
-  border-radius: var(--radius);
 }
 
 /* Layout */
