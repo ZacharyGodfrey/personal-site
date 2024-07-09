@@ -150,7 +150,6 @@ blockquote {
   padding: 1rem;
   border-radius: var(--radius);
   border: var(--line-thickness) solid var(--text);
-  white-space: pre-wrap;
 }
 
 /* Layout */
