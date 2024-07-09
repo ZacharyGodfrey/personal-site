@@ -47,6 +47,11 @@ Here's a list with order:
 1. Item Two
 1. Item Three
 
+Here is a checklist:
+
+- [x] Complete item
+- [ ] Incomplete item
+
 Here is a table:
 
 |Column A | Column B | Column C |
