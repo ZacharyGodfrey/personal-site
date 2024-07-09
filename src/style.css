@@ -94,6 +94,10 @@ ul, ol {
   list-style-position: inside;
 }
 
+ul li:has(input[type="checkbox"]:disabled) {
+  list-style-type: none;
+}
+
 th, strong {
   font-weight: bold;
 }
