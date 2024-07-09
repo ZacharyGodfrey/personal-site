@@ -1,7 +1,7 @@
 /* Element Styles */
 
 :root {
-  --primary:    hsl(85 15% 60%);
+  --primary:    hsl(85 30% 45%); /* hsl(85 15% 60%); */
   --accent:     hsl(0  45% 45%);
   --highlight:  hsl(55 75% 75%);
   --text:       hsl(85 15% 15%);
@@ -118,7 +118,6 @@ img {
   user-select: none;
   border-radius: var(--radius);
   filter: var(--image-effects);
-  /* box-shadow: 0px 0px 1rem hsla(0, 0%, 0%, 50%); */
 }
 
 hr {
