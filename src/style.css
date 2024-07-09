@@ -101,12 +101,20 @@ em {
   font-style: italic;
 }
 
-code {
+p > code {
   padding-inline: 0.25rem;
   font-family: inherit;
   color: var(--light);
   background: var(--medium);
   border-radius: 0.25rem;
+}
+
+pre > code {
+  padding: 0.5rem;
+  font-family: 'roboto-mono', monospace;
+  font-size: 1rem;
+  border: var(--line-thickness) solid var(--text);
+  border-radius: var(--radius);
 }
 
 img {
