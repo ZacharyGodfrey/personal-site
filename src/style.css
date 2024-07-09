@@ -145,6 +145,10 @@ th, td {
   border: var(--line-thickness) solid var(--text);
 }
 
+thead > th:empty ~ th:empty {
+  display: none;
+}
+
 pre, blockquote {
   margin-block: 2rem;
   padding: 1rem;
