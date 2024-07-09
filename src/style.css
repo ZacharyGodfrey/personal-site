@@ -1,13 +1,12 @@
 /* Element Styles */
 
 :root {
-  --light:     hsl(55 15% 95%);
-  --medium:    hsl(85 15% 60%);
-  --dark:      hsl(85 15% 30%);
-  --neutral:   hsl(85  0% 60%);
-  --text:      hsl(85 15% 15%);
-  --accent:    hsl(0  45% 45%);
-  --highlight: hsl(55 75% 75%);
+  --primary:    hsl(85 15% 60%);
+  --accent:     hsl(0  45% 45%);
+  --highlight:  hsl(55 75% 75%);
+  --text:       hsl(85 15% 15%);
+  --background: hsl(55 15% 95%);
+  --neutral:    hsl(55  0% 80%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
@@ -16,7 +15,7 @@
   font-family: 'roboto-mono', monospace;
   font-weight: normal;
   color: var(--text);
-  background: var(--light);
+  background: var(--background);
 }
 
 * {
@@ -104,9 +103,9 @@ em {
 
 p > code {
   padding-inline: 0.25rem;
-  font-family: inherit;
-  color: var(--light);
-  background: var(--medium);
+  font-family: 'roboto-mono', monospace;
+  color: inherit;
+  background: var(--neutral);
   border-radius: 0.25rem;
 }
 
@@ -181,7 +180,7 @@ section {
 
 header {
   padding: 1rem;
-  background: var(--medium);
+  background: var(--primary);
 }
 
 article {
@@ -191,7 +190,7 @@ article {
 
 footer {
   padding: 1rem;
-  background: var(--medium);
+  background: var(--primary);
 }
 
 /* Utility Classes */
