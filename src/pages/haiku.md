@@ -13,13 +13,3 @@ description: "A handful of ramblings in the 575 format."
 This is a first line\
 Followed by a second line\
 And a final line
-
----
-
-||
-|:-:|
-|This is a first line|
-|Followed by a second line|
-|And a final line|
-
----
