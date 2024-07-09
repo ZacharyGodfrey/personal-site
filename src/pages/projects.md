@@ -10,6 +10,8 @@ I believe that playing is the act of learning. My personal projects almost never
 
 My personal code is on [GitHub](https://github.com/ZacharyGodfrey) if you're curious.
 
+---
+
 ### Axe Charts
 
 I created [Axe Charts](https://axecharts.com) to supplement the official stats website for IATF axe throwing. In addition to providing in-depth performance statistics for Premier axe throwers, the site also implements some key feature requests from the axe throwing community:
