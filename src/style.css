@@ -118,7 +118,7 @@ img {
   user-select: none;
   border-radius: var(--radius);
   filter: var(--image-effects);
-  box-shadow: 0px 0px 1rem hsla(0, 0%, 0%, 50%);
+  /* box-shadow: 0px 0px 1rem hsla(0, 0%, 0%, 50%); */
 }
 
 hr {
