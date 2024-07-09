@@ -145,7 +145,7 @@ th, td {
   border: var(--line-thickness) solid var(--text);
 }
 
-thead th:empty:not(:has(~th:not(:empty))) {
+thead tr:not(:has(th:not(:empty))) {
   display: none;
 }
 
