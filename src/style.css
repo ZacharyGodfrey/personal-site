@@ -4,6 +4,7 @@
   --light:     hsl(55 15% 95%);
   --medium:    hsl(85 15% 60%);
   --dark:      hsl(85 15% 30%);
+  --neutral:   hsl(85  0% 60%);
   --text:      hsl(85 15% 15%);
   --accent:    hsl(0  45% 45%);
   --highlight: hsl(55 75% 75%);
@@ -101,18 +102,6 @@ em {
   font-style: italic;
 }
 
-pre {
-  font-family: 'roboto-mono', monospace;
-  font-size: 1rem;
-  white-space: pre-line;
-}
-
-pre:has(> code) {
-  padding: 0.5rem;
-  border: var(--line-thickness) solid var(--text);
-  border-radius: var(--radius);
-}
-
 p > code {
   padding-inline: 0.25rem;
   font-family: inherit;
@@ -157,11 +146,18 @@ th, td {
   border: var(--line-thickness) solid var(--text);
 }
 
-blockquote {
+pre, blockquote {
   margin-block: 2rem;
   padding: 1rem;
-  border-radius: var(--radius);
   border: var(--line-thickness) solid var(--text);
+  border-radius: var(--radius);
+}
+
+pre {
+  font-family: 'roboto-mono', monospace;
+  font-size: 1rem;
+  white-space: pre-line;
+  background: var(--neutral);
 }
 
 /* Layout */
