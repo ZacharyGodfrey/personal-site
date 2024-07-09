@@ -1,7 +1,7 @@
 /* Element Styles */
 
 :root {
-  --primary:    hsl(85 30% 45%); /* hsl(85 15% 60%); */
+  --primary:    hsl(85 30% 60%);
   --accent:     hsl(0  45% 45%);
   --highlight:  hsl(55 75% 75%);
   --text:       hsl(85 15% 15%);
@@ -84,7 +84,8 @@ a:not(h1 > a):hover {
   color: var(--accent);
 }
 
-a[href^="http"], a[href^="mailto:"] { /* External Links */
+/* External Links */
+a[href^="http"], a[href^="mailto:"] {
   border-bottom-style: dashed;
 }
 
