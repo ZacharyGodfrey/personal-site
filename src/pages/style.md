@@ -55,17 +55,15 @@ Here is a table:
 | A2      | B2       | C2       |
 | A3      | B3       | C3       |
 
-```
-&#9812; White Chess King
-&#9813; White Chess Queen
-&#9814; White Chess Rook
-&#9815; White Chess Bishop
-&#9816; White Chess Knight
-&#9817; White Chess Pawn
-&#9818; Black Chess King
-&#9819; Black Chess Queen
-&#9820; Black Chess Rook
-&#9821; Black Chess Bishop
-&#9822; Black Chess Knight
+&#9812; White Chess King\
+&#9813; White Chess Queen\
+&#9814; White Chess Rook\
+&#9815; White Chess Bishop\
+&#9816; White Chess Knight\
+&#9817; White Chess Pawn\
+&#9818; Black Chess King\
+&#9819; Black Chess Queen\
+&#9820; Black Chess Rook\
+&#9821; Black Chess Bishop\
+&#9822; Black Chess Knight\
 &#9823; Black Chess Pawn
-```
