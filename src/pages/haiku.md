@@ -10,20 +10,8 @@ description: "A handful of ramblings in the 575 format."
 
 ---
 
-This is the first line\
-Followed by a second one\
-A final line here
+This is a first line\
+Followed by a second line\
+And a final line
 
 ---
-
-> This is the first line
-> Followed by a second one
-> A final line here
-
----
-
-```
-This is the first line
-Followed by a second one
-A final line here
-```
