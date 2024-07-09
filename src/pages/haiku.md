@@ -1,7 +1,7 @@
 ---
 type: "page"
 title: "Haiku"
-description: "A handful of ramblings in the 575 format."
+description: "A handful of ramblings in the 5/7/5 syllable format."
 ---
 
 ## {{meta.title}}
