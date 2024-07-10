@@ -1,12 +1,12 @@
 /* Element Styles */
 
 :root {
-  --light:     hsl(55 15% 95%);
-  --medium:    hsl(85 15% 60%);
-  --dark:      hsl(85 15% 30%);
-  --text:      hsl(85 15% 15%);
-  --accent:    hsl(0  45% 45%);
-  --highlight: hsl(55 75% 75%);
+  --primary:    hsl(85 15% 50%);
+  --accent:     hsl(0  50% 50%);
+  --highlight:  hsl(55 75% 75%);
+  --text:       hsl(85 15% 15%);
+  --background: hsl(55 15% 95%);
+  --neutral:    hsl(55  0% 90%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
@@ -15,7 +15,7 @@
   font-family: 'roboto-mono', monospace;
   font-weight: normal;
   color: var(--text);
-  background: var(--light);
+  background: var(--background);
 }
 
 * {
@@ -84,13 +84,22 @@ a:not(h1 > a):hover {
   color: var(--accent);
 }
 
-a[href^="http"], a[href^="mailto:"] { /* External Links */
+/* External Links */
+a[href^="http"], a[href^="mailto:"] {
   border-bottom-style: dashed;
 }
 
 ul, ol {
   padding: 0;
   list-style-position: inside;
+}
+
+li:has(input[type="checkbox"]:disabled) {
+  list-style-type: none;
+}
+
+li:has(input[type="checkbox"]:disabled:checked) {
+  font-style: italic;
 }
 
 th, strong {
@@ -101,11 +110,11 @@ em {
   font-style: italic;
 }
 
-code {
+p > code {
   padding-inline: 0.25rem;
-  font-family: inherit;
-  color: var(--light);
-  background: var(--medium);
+  font-family: 'roboto-mono', monospace;
+  color: inherit;
+  background: var(--neutral);
   border-radius: 0.25rem;
 }
 
@@ -118,7 +127,6 @@ img {
   user-select: none;
   border-radius: var(--radius);
   filter: var(--image-effects);
-  box-shadow: 0px 0px 1rem hsla(0, 0%, 0%, 50%);
 }
 
 hr {
@@ -145,10 +153,24 @@ th, td {
   border: var(--line-thickness) solid var(--text);
 }
 
-blockquote {
+thead tr:not(:has(th:not(:empty))) {
+  display: none;
+}
+
+pre, blockquote {
   margin-block: 2rem;
   padding: 1rem;
   border-radius: var(--radius);
+}
+
+pre {
+  font-family: 'roboto-mono', monospace;
+  font-size: 1rem;
+  white-space: pre-line;
+  background: var(--neutral);
+}
+
+blockquote {
   border: var(--line-thickness) solid var(--text);
 }
 
@@ -173,7 +195,7 @@ section {
 
 header {
   padding: 1rem;
-  background: var(--medium);
+  background: var(--primary);
 }
 
 article {
@@ -183,7 +205,7 @@ article {
 
 footer {
   padding: 1rem;
-  background: var(--medium);
+  background: var(--primary);
 }
 
 /* Utility Classes */
