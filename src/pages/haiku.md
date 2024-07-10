@@ -14,6 +14,8 @@ description: "A handful of ramblings in the 5-7-5 syllable format."
 Four eighteen I'm a teapot\
 Will not brew coffee
 
+**08 Jul 2024**
+
 [418]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418
 
 ---
@@ -22,6 +24,8 @@ Will not brew coffee
 My battery is now low\
 And it's getting dark
 
+**09 Jul 2024**
+
 [oppy]: https://en.wikipedia.org/wiki/Opportunity_(rover)#Legacy_and_honors
 
 ---
@@ -29,5 +33,7 @@ And it's getting dark
 [Hippopotamus][hippo]\
 A majestic river horse\
 Great chess opening
+
+**10 Jul 2024**
 
 [hippo]: https://en.wikipedia.org/wiki/Hippopotamus_Defence
