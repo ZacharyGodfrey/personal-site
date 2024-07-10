@@ -99,8 +99,7 @@ li:has(input[type="checkbox"]:disabled) {
 }
 
 li:has(input[type="checkbox"]:disabled:checked) {
-  text-decoration: line-through;
-  text-decoration-color: var(--accent);
+  font-style: italic;
 }
 
 th, strong {
