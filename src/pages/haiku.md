@@ -23,3 +23,11 @@ My battery is now low\
 And it's getting dark
 
 [oppy]: https://en.wikipedia.org/wiki/Opportunity_(rover)#Legacy_and_honors
+
+---
+
+[Hippopotamus][hippo]\
+A majestic river horse\
+Great chess opening
+
+[hippo]: https://en.wikipedia.org/wiki/Hippopotamus_Defence
