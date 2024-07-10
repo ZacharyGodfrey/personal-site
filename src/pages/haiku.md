@@ -16,6 +16,6 @@ Will not brew coffee
 
 ---
 
-> The last transmission:
-> My battery is now low
-> And it's getting dark
+The last transmission:\
+My battery is now low\
+And it's getting dark
