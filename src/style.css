@@ -94,8 +94,12 @@ ul, ol {
   list-style-position: inside;
 }
 
-ul li:has(input[type="checkbox"]:disabled) {
+li:has(input[type="checkbox"]:disabled) {
   list-style-type: none;
+}
+
+li:has(input[type="checkbox"]:disabled:checked) {
+  text-decoration: line-through;
 }
 
 th, strong {
