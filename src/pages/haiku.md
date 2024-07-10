@@ -1,7 +1,7 @@
 ---
 type: "page"
 title: "Haiku"
-description: "A handful of ramblings in the 5/7/5 syllable format."
+description: "A handful of ramblings in the 5-7-5 syllable format."
 ---
 
 ## {{meta.title}}
@@ -10,6 +10,6 @@ description: "A handful of ramblings in the 5/7/5 syllable format."
 
 ---
 
-This is a first line\
-Followed by a second line\
-And a final line
+Status four eighteen\
+I'm a teapot: short and stout\
+April Fool's Day joke
