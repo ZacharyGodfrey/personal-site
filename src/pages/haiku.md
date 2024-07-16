@@ -36,7 +36,7 @@ Great chess opening
 
 *July 10, 2024*
 
-[hippo]: https://en.wikipedia.org/wiki/Hippopotamus_Defence
+[hippo]: https://www.youtube.com/watch?v=pdAthyBbN7c
 
 ---
 
