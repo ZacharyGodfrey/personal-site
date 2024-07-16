@@ -18,7 +18,7 @@ I have *over a decade* of [experience](/work) building and maintaining software 
 
 I [throw axes](https://axescores.com/player/1207260) competitively in the IATF. In my first year in the sport, I qualified for and competed in the *2023 International Axe Throwing Championship*. From more than 20,000 throwers worldwide, the top 256 were selected to compete in the event. I placed 97th overall, which is in the top half for the tournament and the top 0.5% globally.
 
-I like to use [Haiku](/haiku) poems to share things I find interesting: each contains a 17 syllable summary and a link to learn more about the subject.
+I like to use [Haiku](/haiku) poems to share topics that I find interesting. Each one is a 17 syllable summary in the 5-7-5 format with a link to learn more about the subject.
 
 {{#posts.length}}
 
