@@ -6,7 +6,7 @@ description: "A handful of ramblings in the 5-7-5 syllable format."
 
 ## {{meta.title}}
 
-{{meta.description}}
+I like to use Haiku poems to share topics that I find interesting. Each one is a 17 syllable summary in the 5-7-5 format with a link to learn more about the subject.
 
 ---
 
@@ -40,10 +40,10 @@ Great chess opening
 
 ---
 
-[Microservice app][dhh-monolith]\
+[Microservice app][monolith]\
 Longing for a monolith\
 Simplicity missed
 
 *July 16, 2024*
 
-[dhh-monolith]: https://world.hey.com/dhh/how-to-recover-from-microservices-ce3803cc
+[monolith]: https://world.hey.com/dhh/how-to-recover-from-microservices-ce3803cc
