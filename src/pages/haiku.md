@@ -37,3 +37,13 @@ Great chess opening
 *July 10, 2024*
 
 [hippo]: https://en.wikipedia.org/wiki/Hippopotamus_Defence
+
+---
+
+[Microservice app][dhh-monolith]\
+Longing for a monolith\
+Simplicity missed
+
+*July 16, 2024*
+
+[dhh-monolith]: https://world.hey.com/dhh/how-to-recover-from-microservices-ce3803cc
