@@ -42,6 +42,8 @@ Here is a second line.
 - [x] Complete item
 - [ ] Incomplete item
 
+[Emoji](https://gist.github.com/rxaviers/7360908): :sunglasses: :white_check_mark: :100: :signal_strength: :thumbsup:
+
 |Column A | Column B | Column C |
 |:--------|:--------:|---------:|
 | A1      | B1       | C1       |
