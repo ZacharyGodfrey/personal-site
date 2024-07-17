@@ -47,3 +47,13 @@ Simplicity missed
 *July 16, 2024*
 
 [monolith]: https://world.hey.com/dhh/how-to-recover-from-microservices-ce3803cc
+
+---
+
+[The first rule of holes][holes]:\
+If you're in one, stop digging.\
+Cool quote, sage advice.
+
+*July 17, 2024*
+
+[holes]: https://en.wikipedia.org/wiki/Law_of_holes
