@@ -1,10 +1,10 @@
 /* Element Styles */
 
 :root {
-  --primary:    hsl(85 15% 50%);
+  --primary:    hsl(205 25% 50%);
   --accent:     hsl(0  50% 50%);
   --highlight:  hsl(55 75% 75%);
-  --text:       hsl(85 15% 15%);
+  --text:       hsl(205 25% 15%);
   --background: hsl(55 15% 95%);
   --neutral:    hsl(55  0% 90%);
   --content-width: 40rem;
