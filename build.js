@@ -15,7 +15,7 @@ marked.use(gfmHeadingId({ prefix: '' }));
 
 // Helper Functions
 
-const resolve = (filePath) => path.resolve(path.join(__dirname, filePath));
+const resolve = (filePath) => path.resolve(filePath);
 const listFiles = (pattern) => glob.sync(pattern, { cwd: resolve('./') });
 const readFile = (filePath, encoding) => fs.readFileSync(resolve(filePath), { encoding: encoding || 'utf-8' });
 const writeFile = (filePath, content, encoding) => fs.outputFileSync(resolve(filePath), content, { encoding: encoding || 'utf-8' });
