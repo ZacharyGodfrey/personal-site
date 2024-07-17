@@ -19,5 +19,14 @@
     "concurrently": "^5.2.0",
     "http-server": "^14.1.1",
     "watch": "^0.13.0"
+  },
+  "cssnano": {
+    "preset": [
+      "default",
+      {
+        "colormin": false,
+        "discardUnused": true
+      }
+    ]
   }
 }
