@@ -2,11 +2,11 @@
 
 :root {
   --primary:    hsl(205 25% 50%);
-  --accent:     hsl(0  50% 50%);
-  --highlight:  hsl(55 75% 75%);
+  --accent:     hsl(  0 50% 50%);
+  --highlight:  hsl( 55 75% 75%);
   --text:       hsl(205 25% 15%);
-  --background: hsl(55 15% 95%);
-  --neutral:    hsl(55  0% 90%);
+  --background: hsl(205 15% 95%);
+  --neutral:    hsl(205  0% 90%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
