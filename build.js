@@ -22,7 +22,7 @@ const readFile = (filePath, encoding) => fs.readFileSync(resolve(filePath), { en
 const writeFile = (filePath, content, encoding) => fs.outputFileSync(resolve(filePath), content, { encoding: encoding || 'utf-8' });
 const emptyFolder = (folderPath) => fs.emptyDirSync(resolve(folderPath));
 const copyFolder = (srcPath, destPath) => fs.copySync(resolve(srcPath), resolve(destPath));
-const compileMD = (fileContent) => marked.parse(fileContent, { gfm: true });
+const compileMD = (fileContent) => marked.parse(emoji.emojify(fileContent), { gfm: true });
 
 const minifyCSS = async (fileContent) => {
   return await postcss([cssnano]).process(fileContent, {
