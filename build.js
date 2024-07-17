@@ -1,12 +1,8 @@
-// Dependencies
-
 const config = require('./src/config.json');
 
 const { readFile, listFiles, emptyFolder, copyFolder, writeFile } = require('./lib/file.js');
 const { compileMD, minifyCSS, parseMetadata, renderHTML } = require('./lib/transform.js');
-// const { emojify } = require('./lib/emoji.js');
-
-// Helper Functions
+const { emojify } = require('./lib/emoji.js');
 
 const byAscending = (fn) => (left, right) => {
   const l = fn(left), r = fn(right);
@@ -15,8 +11,6 @@ const byAscending = (fn) => (left, right) => {
 };
 
 (async () => {
-  // Read Input
-
   const shell = readFile('./src/shell.html');
   const favicon = readFile('./src/static/terminal.png', 'base64');
   const fontFancy = readFile('./src/static/satisfy.ttf', 'base64');
@@ -32,8 +26,6 @@ const byAscending = (fn) => (left, right) => {
     return { uri, meta, content };
   });
 
-  // Write Output
-
   emptyFolder('./dist');
   copyFolder('./src/static', './dist');
 
@@ -44,7 +36,7 @@ const byAscending = (fn) => (left, right) => {
   pages.forEach(({ uri, meta, content: rawContent }) => {
     const data = { config, posts, meta };
     const partials = { favicon, fontFancy, fontMono, style, hero };
-    const content = compileMD(renderHTML(rawContent, data, partials));
+    const content = compileMD(renderHTML(emojify(rawContent), data, partials));
     const fileName = `./dist/${uri}.html`;
 
     console.log(`Writing File: ${fileName}`);
