@@ -42,7 +42,7 @@ Here is a second line.
 - [x] Complete item
 - [ ] Incomplete item
 
-[Emoji](https://gist.github.com/rxaviers/7360908): :sunglasses: :white_check_mark: :100: :signal_strength: :thumbsup:
+[Emoji](https://www.npmjs.com/package/node-emoji): :sunglasses: :white_check_mark: :100: :signal_strength: :+1:
 
 |Column A | Column B | Column C |
 |:--------|:--------:|---------:|
