@@ -25,6 +25,8 @@ const emojify = (() => {
     return result;
   }, {});
 
+  console.log(JSON.stringify(data, null, 2));
+
   return (input) => input.replace(/:[\w\-+]+:/g, (name) => {
     return data[name] || name;
   });
@@ -93,7 +95,10 @@ const byDescending = (fn) => (left, right) => {
     const data = { config, posts, meta };
     const partials = { favicon, fontFancy, fontMono, style, hero };
     const content = compileMD(render(rawContent, data, partials));
+    const fileName = `./dist/${uri}.html`;
 
-    writeFile(`./dist/${uri}.html`, render(shell, data, { ...partials, content }));
+    console.log(`Writing File: ${fileName}`);
+
+    writeFile(fileName, render(shell, data, { ...partials, content }));
   });
 })();
