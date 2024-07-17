@@ -19,17 +19,13 @@ marked.use(gfmHeadingId({ prefix: '' }));
 const emojify = (() => {
   const data = Object.entries(emojiData).reduce((result, [char, names]) => {
     names.forEach((name) => {
-      result[name] = char;
+      result[`:${name}:`] = char;
     });
 
     return result;
   }, {});
 
-  console.log(JSON.stringify(data, null, 2));
-
-  return (input) => input.replace(/:[\w\-+]+:/g, (name) => {
-    return data[name] || name;
-  });
+  return (input) => input.replace(/:[\w\-+]+:/g, (tag) => data[tag] || tag);
 })();
 
 const resolve = (filePath) => path.resolve(filePath);
