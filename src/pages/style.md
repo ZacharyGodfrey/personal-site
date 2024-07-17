@@ -43,7 +43,7 @@ Here is a second line.
 - [ ] Incomplete item
 
 [Emoji](https://github.com/muan/emojilib/blob/main/dist/emoji-en-US.json):\
-:sunglasses: :white_check_mark: :100: :signal_strength: :+1:
+:sunglasses: :white_check_mark: :100: :signal_strength: :+1: :tada:
 
 |Column A | Column B | Column C |
 |:--------|:--------:|---------:|
