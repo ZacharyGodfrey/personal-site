@@ -44,11 +44,11 @@ const byAscending = (fn) => (left, right) => {
   pages.forEach(({ uri, meta, content: rawContent }) => {
     const data = { config, posts, meta };
     const partials = { favicon, fontFancy, fontMono, style, hero };
-    const content = compileMD(render(rawContent, data, partials));
+    const content = compileMD(renderHTML(rawContent, data, partials));
     const fileName = `./dist/${uri}.html`;
 
     console.log(`Writing File: ${fileName}`);
 
-    writeFile(fileName, render(shell, data, { ...partials, content }));
+    writeFile(fileName, renderHTML(shell, data, { ...partials, content }));
   });
 })();
