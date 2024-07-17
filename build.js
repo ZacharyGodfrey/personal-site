@@ -1,63 +1,17 @@
 // Dependencies
 
-const path = require('path');
-const fs = require('fs-extra');
-const glob = require('glob');
-const frontMatter = require('front-matter');
-const { render } = require('mustache');
-const marked = require('marked');
-const { gfmHeadingId } = require('marked-gfm-heading-id');
-const postcss = require('postcss');
-const cssnano = require('cssnano');
-const emojiData = require('emojilib');
 const config = require('./src/config.json');
 
-marked.use(gfmHeadingId({ prefix: '' }));
+const { readFile, listFiles, emptyFolder, copyFolder, writeFile } = require('./lib/file.js');
+const { compileMD, minifyCSS, parseMetadata, renderHTML } = require('./lib/transform.js');
+// const { emojify } = require('./lib/emoji.js');
 
 // Helper Functions
-
-const emojify = (() => {
-  const data = Object.entries(emojiData).reduce((result, [char, names]) => {
-    names.forEach((name) => {
-      result[`:${name}:`] = char;
-    });
-
-    return result;
-  }, {});
-
-  return (input) => input.replace(/:[\w\-+]+:/g, (tag) => data[tag] || tag);
-})();
-
-const resolve = (filePath) => path.resolve(filePath);
-const listFiles = (pattern) => glob.sync(pattern, { cwd: resolve('./') });
-const readFile = (filePath, encoding) => fs.readFileSync(resolve(filePath), { encoding: encoding || 'utf-8' });
-const writeFile = (filePath, content, encoding) => fs.outputFileSync(resolve(filePath), content, { encoding: encoding || 'utf-8' });
-const emptyFolder = (folderPath) => fs.emptyDirSync(resolve(folderPath));
-const copyFolder = (srcPath, destPath) => fs.copySync(resolve(srcPath), resolve(destPath));
-const compileMD = (fileContent) => marked.parse(emojify(fileContent), { gfm: true });
-
-const minifyCSS = async (fileContent) => {
-  return await postcss([cssnano]).process(fileContent, {
-    from: undefined
-  }).then(({ css }) => css);
-};
-
-const parseMetadata = (fileContent) => {
-  const { attributes: meta, body: content } = frontMatter(fileContent);
-
-  return { meta, content };
-};
 
 const byAscending = (fn) => (left, right) => {
   const l = fn(left), r = fn(right);
 
   return l < r ? -1 : l > r ? 1 : 0;
-};
-
-const byDescending = (fn) => (left, right) => {
-  const l = fn(left), r = fn(right);
-
-  return r < l ? -1 : r > l ? 1 : 0;
 };
 
 (async () => {
