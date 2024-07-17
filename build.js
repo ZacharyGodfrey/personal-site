@@ -7,6 +7,7 @@ const frontMatter = require('front-matter');
 const { render } = require('mustache');
 const marked = require('marked');
 const { gfmHeadingId } = require('marked-gfm-heading-id');
+const emoji = require('node-emoji');
 const postcss = require('postcss');
 const cssnano = require('cssnano');
 const config = require('./src/config.json');
