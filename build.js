@@ -7,14 +7,28 @@ const frontMatter = require('front-matter');
 const { render } = require('mustache');
 const marked = require('marked');
 const { gfmHeadingId } = require('marked-gfm-heading-id');
-const emoji = require('node-emoji');
 const postcss = require('postcss');
 const cssnano = require('cssnano');
+const emojiData = require('emojilib');
 const config = require('./src/config.json');
 
 marked.use(gfmHeadingId({ prefix: '' }));
 
 // Helper Functions
+
+const emojify = (() => {
+  const data = Object.entries(emojiData).reduce((result, [char, names]) => {
+    names.forEach((name) => {
+      result[name] = char;
+    });
+
+    return result;
+  }, {});
+
+  return (input) => input.replace(/:[\w\-+]+:/g, (name) => {
+    return data[name] || name;
+  });
+})();
 
 const resolve = (filePath) => path.resolve(filePath);
 const listFiles = (pattern) => glob.sync(pattern, { cwd: resolve('./') });
@@ -22,7 +36,7 @@ const readFile = (filePath, encoding) => fs.readFileSync(resolve(filePath), { en
 const writeFile = (filePath, content, encoding) => fs.outputFileSync(resolve(filePath), content, { encoding: encoding || 'utf-8' });
 const emptyFolder = (folderPath) => fs.emptyDirSync(resolve(folderPath));
 const copyFolder = (srcPath, destPath) => fs.copySync(resolve(srcPath), resolve(destPath));
-const compileMD = (fileContent) => marked.parse(emoji.emojify(fileContent), { gfm: true });
+const compileMD = (fileContent) => marked.parse(emojify(fileContent), { gfm: true });
 
 const minifyCSS = async (fileContent) => {
   return await postcss([cssnano]).process(fileContent, {
