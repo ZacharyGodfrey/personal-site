@@ -73,7 +73,7 @@ h4 {
 
 a {
   color: inherit;
-  text-decoration: underline var(--line-thickness) var(--accent);
+  text-decoration: underline solid var(--line-thickness);
 }
 
 h1 > a {
@@ -84,8 +84,8 @@ a:not(h1 > a):hover {
   color: var(--accent);
 }
 
-header a, footer a {
-  text-decoration-color: inherit;
+article a {
+  text-decoration-color: var(--accent);
 }
 
 ul, ol {
