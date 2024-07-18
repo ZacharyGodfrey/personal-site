@@ -1,7 +1,7 @@
 /* Element Styles */
 
 :root {
-  --primary:    hsl( 85 15% 50%);
+  --primary:    hsl( 45 15% 50%);
   --accent:     hsl(  0 50% 50%);
   --highlight:  hsl( 55 75% 75%);
   --text:       hsl( 45 75% 50%);
