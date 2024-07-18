@@ -20,6 +20,10 @@ I [throw axes](https://axescores.com/player/1207260) competitively in the IATF. 
 
 I like to use [Haiku](/haiku) poems to share topics that I find interesting. Each one is a 17 syllable summary in the 5-7-5 format with a link to learn more about the subject.
 
+- *ABC*
+- [DEF](/)
+- GHI
+
 {{#posts.length}}
 
 ### :speech_balloon: Blog
