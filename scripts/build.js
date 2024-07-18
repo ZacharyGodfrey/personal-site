@@ -10,15 +10,15 @@ const byAscending = (fn) => (left, right) => {
 
 const wrapEmoji = (x) => `<span style="font-family:emoji,serif;">${x}</span>`;
 
-const shell = readFile('./src/shell.html');
-const favicon = readFile('./src/static/terminal.png', 'base64');
-const fontFancy = readFile('./src/static/satisfy.ttf', 'base64');
-const fontMono = readFile('./src/static/roboto-mono.ttf', 'base64');
-const style = await minifyCSS(readFile('./src/style.css'));
-const hero = readFile('./src/static/animated.png', 'base64');
+const shell = readFile('./assets/shell.html');
+const favicon = readFile('./assets/terminal.png', 'base64');
+const fontFancy = readFile('./assets/satisfy.ttf', 'base64');
+const fontMono = readFile('./assets/roboto-mono.ttf', 'base64');
+const style = await minifyCSS(readFile('./assets/style.css'));
+const hero = readFile('./static/animated.png', 'base64');
 
-const pages = listFiles('./src/pages/**/*.md').map(filePath => {
-  const uri = filePath.split('src/pages/')[1].replace('.md', '');
+const pages = listFiles('./pages/**/*.md').map(filePath => {
+  const uri = filePath.split('pages/')[1].replace('.md', '');
   const fileContent = readFile(`./${filePath}`);
   const { meta, content } = parseMetadata(fileContent);
 
@@ -26,7 +26,7 @@ const pages = listFiles('./src/pages/**/*.md').map(filePath => {
 });
 
 emptyFolder('./dist');
-copyFolder('./src/static', './dist');
+copyFolder('./static', './dist');
 
 const posts = pages
   .filter(x => x.meta.type == 'post')
