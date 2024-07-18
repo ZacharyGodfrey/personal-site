@@ -1,6 +1,6 @@
-import { readFile, listFiles, emptyFolder, copyFolder, writeFile } = from './lib/file.js';
-import { compileMD, minifyCSS, parseMetadata, renderHTML } = from './lib/transform.js';
-import { emojify } = from './lib/emoji.js';
+import { readFile, listFiles, emptyFolder, copyFolder, writeFile } from './lib/file.js';
+import { compileMD, minifyCSS, parseMetadata, renderHTML } from './lib/transform.js';
+import { emojify } from './lib/emoji.js';
 
 const byAscending = (fn) => (left, right) => {
   const l = fn(left), r = fn(right);
