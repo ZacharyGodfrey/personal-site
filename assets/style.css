@@ -2,9 +2,9 @@
 
 :root {
   --primary:    hsl(85 15% 45%);
-  --accent:     hsl( 0 75% 45%);
+  --accent:     hsl( 0 45% 45%);
   --highlight:  hsl(55 75% 75%);
-  --text:       hsl(85 30% 15%);
+  --text:       hsl(85 15% 30%);
   --background: hsl(85  5% 95%);
   --neutral:    hsl(85  5% 75%);
   --content-width: 40rem;
