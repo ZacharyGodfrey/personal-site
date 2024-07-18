@@ -22,9 +22,10 @@ Here is some *emphasis text*. Here is some **bold text**. Here is some `inline c
 
 ![alt text here](/trees.jpg)
 
-```
-This is a code block.
-Here is a second line.
+```js
+const test = () => {
+  console.log('it works!');
+};
 ```
 
 > "You can't believe everything you read on the internet."
@@ -41,6 +42,9 @@ Here is a second line.
 
 - [x] Complete item
 - [ ] Incomplete item
+
+[Emoji](https://github.com/muan/emojilib/blob/main/dist/emoji-en-US.json):\
+:sunglasses: :white_check_mark: :100: :signal_strength: :+1: :tada:
 
 |Column A | Column B | Column C |
 |:--------|:--------:|---------:|
