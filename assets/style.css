@@ -2,11 +2,11 @@
 
 :root {
   --primary:    hsl(200 60% 60%);
-  --accent:     hsl(  0 50% 50%);
-  --highlight:  hsl( 45 75% 75%);
-  --text:       hsl( 45 75% 15%);
-  --background: hsl( 45  5% 90%);
-  --neutral:    hsl( 45  5% 75%);
+  --accent:     hsl(  0 60% 60%);
+  --highlight:  hsl(200 75% 75%);
+  --text:       hsl(200 75% 15%);
+  --background: hsl(200  5% 90%);
+  --neutral:    hsl(200  5% 75%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
@@ -82,10 +82,6 @@ h1 > a {
 
 a:not(h1 > a):hover {
   color: var(--accent);
-}
-
-article a {
-  text-decoration-color: var(--accent);
 }
 
 ul, ol {
@@ -191,6 +187,7 @@ section {
 header {
   padding: 1rem;
   background: var(--primary);
+  color: var(--neutral);
 }
 
 article {
@@ -198,9 +195,14 @@ article {
   padding: 4rem 1rem;
 }
 
+article a {
+  text-decoration-color: var(--accent);
+}
+
 footer {
   padding: 1rem;
   background: var(--primary);
+  color: var(--neutral);
 }
 
 /* Utility Classes */
