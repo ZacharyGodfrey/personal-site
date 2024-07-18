@@ -73,11 +73,11 @@ h4 {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline var(--line-thickness) var(--accent);
 }
 
-a:not(h1 > a) {
-  border-bottom: var(--line-thickness) solid var(--accent);
+h1 > a {
+  text-decoration: none;
 }
 
 a:not(h1 > a):hover {
@@ -86,7 +86,7 @@ a:not(h1 > a):hover {
 
 /* External Links */
 a[href^="http"], a[href^="mailto:"] {
-  border-bottom-style: dashed;
+  text-decoration-style: dashed;
 }
 
 ul, ol {
