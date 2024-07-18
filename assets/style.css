@@ -1,12 +1,12 @@
 /* Element Styles */
 
 :root {
-  --primary:    hsl(195 45% 30%);
+  --primary:    hsl(200 45% 30%);
   --accent:     hsl(  0 75% 45%);
-  --highlight:  hsl(195 75% 75%);
-  --text:       hsl(195 75% 15%);
-  --background: hsl(195  5% 90%);
-  --neutral:    hsl(195  5% 75%);
+  --highlight:  hsl( 55 75% 75%);
+  --text:       hsl(200 75% 15%);
+  --background: hsl(200  5% 95%);
+  --neutral:    hsl(200  5% 75%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
@@ -190,6 +190,7 @@ section {
 
 header {
   padding: 1rem;
+  color: var(--background);
   background: var(--primary);
 }
 
@@ -200,6 +201,7 @@ article {
 
 footer {
   padding: 1rem;
+  color: var(--background);
   background: var(--primary);
 }
 
