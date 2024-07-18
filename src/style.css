@@ -84,6 +84,10 @@ a:not(h1 > a):hover {
   color: var(--accent);
 }
 
+header a, footer a {
+  text-decoration-color: inherit;
+}
+
 /* External Links */
 a[href^="http"], a[href^="mailto:"] {
   text-decoration-style: dashed;
