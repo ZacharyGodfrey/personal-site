@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "cssnano": "^7.0.1",
-    "emojilib": "^3.0.12",
     "front-matter": "^4.0.2",
     "fs-extra": "^9.0.1",
     "glob": "^10.3.10",
