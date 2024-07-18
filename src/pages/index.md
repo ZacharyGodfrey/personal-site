@@ -28,8 +28,7 @@ I don't write often, but my long-form thoughts are here if you're interested. I 
 
 {{#posts}}
 
-- [{{meta.title}}](/{{{uri}}})\
-*{{meta.date}}*
+- [{{meta.title}}](/{{{uri}}})
 
 {{/posts}}
 
