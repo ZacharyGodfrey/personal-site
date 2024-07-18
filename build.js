@@ -35,7 +35,7 @@ const posts = pages
 pages.forEach(({ uri, meta, content: rawContent }) => {
   const data = { meta, posts };
   const partials = { favicon, fontFancy, fontMono, style, hero };
-  const content = compileMD(renderMustache(emojify(rawContent, wrapEmoji), data, partials));
+  const content = emojify(compileMD(renderMustache(rawContent, data, partials)), wrapEmoji);
   const fileName = `./dist/${uri}.html`;
 
   console.log(`Writing File: ${fileName}`);
