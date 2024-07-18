@@ -1,5 +1,5 @@
 import { readFile, listFiles, emptyFolder, copyFolder, writeFile } from './lib/file.js';
-import { compileMD, minifyCSS, parseMetadata, renderHTML } from './lib/transform.js';
+import { compileMD, minifyCSS, parseMetadata, renderMustache } from './lib/transform.js';
 import { emojify } from './lib/emoji.js';
 
 const byAscending = (fn) => (left, right) => {
@@ -7,6 +7,8 @@ const byAscending = (fn) => (left, right) => {
 
   return l < r ? -1 : l > r ? 1 : 0;
 };
+
+const wrapEmoji = (x) => `<span style="font-family:emoji,serif;">${x}</span>`;
 
 const shell = readFile('./src/shell.html');
 const favicon = readFile('./src/static/terminal.png', 'base64');
@@ -33,10 +35,10 @@ const posts = pages
 pages.forEach(({ uri, meta, content: rawContent }) => {
   const data = { meta, posts };
   const partials = { favicon, fontFancy, fontMono, style, hero };
-  const content = compileMD(renderHTML(emojify(rawContent), data, partials));
+  const content = emojify(compileMD(renderMustache(rawContent, data, partials)), wrapEmoji);
   const fileName = `./dist/${uri}.html`;
 
   console.log(`Writing File: ${fileName}`);
 
-  writeFile(fileName, renderHTML(shell, data, { ...partials, content }));
+  writeFile(fileName, renderMustache(shell, data, { ...partials, content }));
 });
