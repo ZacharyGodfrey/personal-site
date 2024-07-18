@@ -20,9 +20,9 @@ I [throw axes](https://axescores.com/player/1207260) competitively in the IATF. 
 
 I like to use [Haiku](/haiku) poems to share topics that I find interesting. Each one is a 17 syllable summary in the 5-7-5 format with a link to learn more about the subject.
 
-- *ABC*
+- [ABC](/)
 - [DEF](/)
-- GHI
+- [GHI](/)
 
 {{#posts.length}}
 
@@ -31,9 +31,7 @@ I like to use [Haiku](/haiku) poems to share topics that I find interesting. Eac
 I don't write often, but my long-form thoughts are here if you're interested. I hope you find something of value in the topics below.
 
 {{#posts}}
-
 - [{{meta.title}}](/{{{uri}}})
-
 {{/posts}}
 
 {{/posts.length}}
