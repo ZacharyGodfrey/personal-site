@@ -10,12 +10,12 @@ const byAscending = (fn) => (left, right) => {
 
 const wrapEmoji = (x) => `<span style="font-family:emoji,serif;">${x}</span>`;
 
-const shell = readFile('./assets/shell.html');
-const favicon = readFile('./assets/terminal.png', 'base64');
-const fontFancy = readFile('./assets/satisfy.ttf', 'base64');
-const fontMono = readFile('./assets/roboto-mono.ttf', 'base64');
-const style = await minifyCSS(readFile('./assets/style.css'));
-const hero = readFile('./static/animated.png', 'base64');
+const shell = readFile('assets/shell.html');
+const favicon = readFile('assets/terminal.png', 'base64');
+const fontFancy = readFile('assets/satisfy.ttf', 'base64');
+const fontMono = readFile('assets/roboto-mono.ttf', 'base64');
+const style = await minifyCSS(readFile('assets/style.css'));
+const hero = readFile('static/animated.png', 'base64');
 
 const pages = listFiles('./pages/**/*.md').map(filePath => {
   const uri = filePath.split('pages/')[1].replace('.md', '');
