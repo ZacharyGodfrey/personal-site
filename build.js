@@ -17,7 +17,7 @@ const fontMono = readFile('assets/roboto-mono.ttf', 'base64');
 const style = await minifyCSS(readFile('assets/style.css'));
 const hero = readFile('static/animated.png', 'base64');
 
-const pages = listFiles('./pages/**/*.md').map(filePath => {
+const pages = listFiles('pages/**/*.md').map(filePath => {
   const uri = filePath.split('pages/')[1].replace('.md', '');
   const fileContent = readFile(`./${filePath}`);
   const { meta, content } = parseMetadata(fileContent);
@@ -29,14 +29,15 @@ const posts = pages
   .filter(x => x.meta.type == 'post')
   .sort(byAscending(x => x.meta.order));
 
-emptyFolder('./dist');
-copyFolder('./static', './dist');
+const partials = { favicon, fontFancy, fontMono, style, hero };
+
+emptyFolder('dist');
+copyFolder('static', 'dist');
 
 pages.forEach(({ uri, meta, content: rawContent }) => {
+  const fileName = `dist/${uri}.html`;
   const data = { meta, posts };
-  const partials = { favicon, fontFancy, fontMono, style, hero };
-  const content = renderEmoji(renderMD(renderMustache(rawContent, data, partials)));
-  const fileName = `./dist/${uri}.html`;
+  const content = renderEmoji(renderMD(rawContent));
 
   console.log(`Writing File: ${fileName}`);
 
