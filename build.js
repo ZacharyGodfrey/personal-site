@@ -1,14 +1,14 @@
 import { readFile, listFiles, emptyFolder, copyFolder, writeFile } from './lib/file.js';
-import { compileMD, minifyCSS, parseMetadata, renderMustache } from './lib/transform.js';
-import { emojify } from './lib/emoji.js';
+import { renderMD, minifyCSS, parseMetadata, renderMustache } from './lib/transform.js';
+import { renderEmoji } from './lib/emoji.js';
+
+const START = Date.now();
 
 const byAscending = (fn) => (left, right) => {
   const l = fn(left), r = fn(right);
 
   return l < r ? -1 : l > r ? 1 : 0;
 };
-
-const wrapEmoji = (x) => `<span style="font-family:emoji,serif;">${x}</span>`;
 
 const shell = readFile('assets/shell.html');
 const favicon = readFile('assets/terminal.png', 'base64');
@@ -25,20 +25,22 @@ const pages = listFiles('./pages/**/*.md').map(filePath => {
   return { uri, meta, content };
 });
 
-emptyFolder('./dist');
-copyFolder('./static', './dist');
-
 const posts = pages
   .filter(x => x.meta.type == 'post')
   .sort(byAscending(x => x.meta.order));
 
+emptyFolder('./dist');
+copyFolder('./static', './dist');
+
 pages.forEach(({ uri, meta, content: rawContent }) => {
   const data = { meta, posts };
   const partials = { favicon, fontFancy, fontMono, style, hero };
-  const content = emojify(compileMD(renderMustache(rawContent, data, partials)), wrapEmoji);
+  const content = renderEmoji(renderMD(renderMustache(rawContent, data, partials)));
   const fileName = `./dist/${uri}.html`;
 
   console.log(`Writing File: ${fileName}`);
 
   writeFile(fileName, renderMustache(shell, data, { ...partials, content }));
 });
+
+console.log(`Running Time: ${Date.now() - START}`);
