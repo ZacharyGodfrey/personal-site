@@ -73,7 +73,8 @@ h4 {
 
 a {
   color: inherit;
-  text-decoration: underline solid var(--line-thickness);
+  text-decoration: underline;
+  text-decoration-thickness: var(--line-thickness);
 }
 
 h1 > a {
