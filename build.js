@@ -37,11 +37,11 @@ copyFolder('static', 'dist');
 pages.forEach(({ uri, meta, content: rawContent }) => {
   const fileName = `dist/${uri}.html`;
   const data = { meta, posts };
-  const content = renderEmoji(renderMD(rawContent));
+  const content = renderEmoji(renderMD(renderMustache(rawContent, data, partials)));
 
   console.log(`Writing File: ${fileName}`);
 
   writeFile(fileName, renderMustache(shell, data, { ...partials, content }));
 });
 
-console.log(`Running Time: ${Date.now() - START}`);
+console.log(`Running Time: ${Date.now() - START}ms`);
