@@ -1,6 +1,6 @@
-import { readFile, listFiles, emptyFolder, copyFolder, writeFile } from './lib/file.js';
-import { renderMD, minifyCSS, parseMetadata, renderMustache } from './lib/transform.js';
-import { renderEmoji } from './lib/emoji.js';
+import { readFile, listFiles, emptyFolder, copyFolder, writeFile } from '../lib/file.js';
+import { renderMD, minifyCSS, parseMetadata, renderMustache } from '../lib/transform.js';
+import { renderEmoji } from '../lib/emoji.js';
 
 const START = Date.now();
 
@@ -10,14 +10,14 @@ const byAscending = (fn) => (left, right) => {
   return l < r ? -1 : l > r ? 1 : 0;
 };
 
-const shell = readFile('assets/shell.html');
-const favicon = readFile('assets/terminal.png', 'base64');
-const fontFancy = readFile('assets/satisfy.ttf', 'base64');
-const fontMono = readFile('assets/roboto-mono.ttf', 'base64');
-const style = await minifyCSS(readFile('assets/style.css'));
-const hero = readFile('static/animated.png', 'base64');
+const shell = readFile('src/assets/shell.html');
+const favicon = readFile('src/assets/terminal.png', 'base64');
+const fontFancy = readFile('src/assets/satisfy.ttf', 'base64');
+const fontMono = readFile('src/assets/roboto-mono.ttf', 'base64');
+const style = await minifyCSS(readFile('src/assets/style.css'));
+const hero = readFile('src/static/animated.png', 'base64');
 
-const pages = listFiles('pages/**/*.md').map(filePath => {
+const pages = listFiles('src/pages/**/*.md').map(filePath => {
   const uri = filePath.split('pages/')[1].replace('.md', '');
   const fileContent = readFile(`./${filePath}`);
   const { meta, content } = parseMetadata(fileContent);
@@ -32,7 +32,7 @@ const posts = pages
 const partials = { favicon, fontFancy, fontMono, style, hero };
 
 emptyFolder('dist');
-copyFolder('static', 'dist');
+copyFolder('src/static', 'dist');
 
 pages.forEach(({ uri, meta, content: rawContent }) => {
   const fileName = `dist/${uri}.html`;
