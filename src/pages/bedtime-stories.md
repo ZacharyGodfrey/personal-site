@@ -11,3 +11,6 @@ description: "A collection of original stories for my kids."
 ---
 
 - [Freddie the Forklift](/bts/freddie)
+- [Eddie the Excavator](/bts/eddie)
+- [Animals and the Tractor](/bts/tractor)
+- [Vacuum and the Dog](/bts/vacuum)
