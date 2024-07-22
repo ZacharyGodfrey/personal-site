@@ -11,3 +11,7 @@ A [bedtime story](/bedtime-stories)
 ---
 
 :exclamation: This story has not been written down yet.
+
+<!-- Once upon a time...
+
+The end. -->
