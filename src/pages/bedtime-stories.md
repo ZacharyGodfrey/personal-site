@@ -1,7 +1,7 @@
 ---
 type: "page"
 title: "Bedtime Stories"
-description: "A collection of original stories for my kids."
+description: "A collection of original bedtime stories for my kids."
 ---
 
 ## {{meta.title}}
