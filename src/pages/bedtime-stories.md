@@ -11,6 +11,6 @@ description: "A collection of original bedtime stories for my kids."
 ---
 
 - [Freddie the Forklift](/bts/freddie)
-- [Eddie the Excavator](/bts/eddie)
-- [Animals and the Tractor](/bts/tractor)
-- [Vacuum and the Dog](/bts/vacuum)
+<!-- - [Eddie the Excavator](/bts/eddie) -->
+<!-- - [Animals and the Tractor](/bts/tractor) -->
+<!-- - [Vacuum and the Dog](/bts/vacuum) -->
