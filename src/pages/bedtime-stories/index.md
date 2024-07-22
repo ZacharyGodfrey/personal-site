@@ -23,8 +23,8 @@ When I started flossing and brushing my son's teeth at bedtime, he was very unco
 
 ### Format
 
-Each story starts and ends the same way. This is intentional: it makes story time a very consistent part of our nightly routine and lets my son know when it's time to sit still and when he can jump up and move on to the next thing. It's not very original, but it serves our purposes quite well.
-
 1. **Once upon a time...**
 2. [Story]
 3. **The end.**
+
+Each story starts and ends the same way. This is intentional: it makes story time a very consistent part of our nightly routine and lets my son know when it's time to sit still and when he can jump up and move on to the next thing. It's not very original, but it serves our purposes quite well.
