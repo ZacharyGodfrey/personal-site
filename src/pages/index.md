@@ -28,7 +28,7 @@ description: "The personal website of Zachary Godfrey"
 
 {{#posts.length}}
 
-:speech_balloon: I write [blog posts](/blog) very infrequently.
+:speech_balloon: I write blog posts *very infrequently*. Still, I hope you find some value in the topics below.
 
 {{#posts}}
 - [{{meta.title}}](/{{{uri}}})
