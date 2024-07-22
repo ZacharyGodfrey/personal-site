@@ -218,8 +218,3 @@ img[alt="hero"] {
   border-radius: 50%;
   max-width: 10rem;
 }
-
-/* Markdown Styling */
-
-.md-indent { display: none; }
-.md-indent + p { text-indent: 2rem; }
