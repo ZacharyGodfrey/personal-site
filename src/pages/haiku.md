@@ -6,7 +6,7 @@ description: "A handful of ramblings in the 5-7-5 syllable format."
 
 ## {{meta.title}}
 
-I like to use Haiku poems to share topics that I find interesting. Each one is a 17 syllable summary in the 5-7-5 format with a link to learn more about the subject.
+I like to use Haiku poems to introduce topics that I find interesting. Each one is a 17 syllable summary in the 5-7-5 format with a link to learn more about the subject.
 
 ---
 

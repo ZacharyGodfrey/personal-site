@@ -12,9 +12,9 @@ description: "The personal website of Zachary Godfrey"
 
 ### Work
 
-:computer: I have *over a decade* of [experience](/work) building and maintaining software in a variety of languages and tech stacks. Most of my professional work has been on internal systems that cannot be shared or backend systems that aren't visible.
+:computer: I have *over a decade* of [experience](/work) building and maintaining software in a variety of languages and tech stacks. Most of my professional work has been on internal systems that cannot be shared or backend systems that aren't visible. Because of this, I don't have a portfolio of work to show.
 
-:sunny: Because of this, I don't have a portfolio of work to show. You can check out my personal [projects](/projects) to see what I've built outside of work.
+:sunny: You can check out my personal [projects](/projects) to see what I've built outside of work.
 
 ### Play
 
@@ -22,7 +22,7 @@ description: "The personal website of Zachary Godfrey"
 
 ### Writing
 
-:thought_balloon: I like to use [Haiku](/haiku) poems to introduce topics that I find interesting. Each one is a 17 syllable summary in the 5-7-5 format with a link to learn more about the subject.
+:thought_balloon: I like to use [Haiku](/haiku) poems to introduce topics that I find interesting.
 
 :teddy_bear: I've made up a few original [bedtime stories](/bedtime-stories) for my kids.
 
