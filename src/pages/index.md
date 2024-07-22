@@ -24,7 +24,7 @@ description: "The personal website of Zachary Godfrey"
 
 :thought_balloon: I like to use [Haiku](/haiku) poems to share topics that I find interesting. Each one is a 17 syllable summary in the 5-7-5 format with a link to learn more about the subject.
 
-:book: I've made up a few original [bedtime stories](/bedtime-stories) for my toddler that he really enjoys hearing while I brush his teeth before bed.
+:teddy_bear: I've made up a few original [bedtime stories](/bedtime-stories) for my toddler that he really enjoys hearing while I floss and brush his teeth before bed.
 
 {{#posts.length}}
 

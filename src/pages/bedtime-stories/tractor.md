@@ -10,4 +10,4 @@ A [bedtime story](/bedtime-stories)
 
 ---
 
-Once upon a time...
+:exclamation: This story has not been written down yet.
