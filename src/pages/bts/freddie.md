@@ -8,9 +8,7 @@ description: "An original bedtime story."
 
 ---
 
-Once upon a time...
-
-There was a little forklift named Freddie. He was the smallest forklift in the warehouse, but he had a dream. Freddie wanted to be the first forklift to lift a crate of forks.
+Once upon a time, there was a little forklift named Freddie. He was the smallest forklift in the warehouse, but he had a dream. Freddie wanted to be the first forklift to lift a crate of forks.
 
 Every day, Freddie would work in the warehouse picking up crates and putting them on shelves. He would always read the labels to see what was in the crates that he was lifting, but none of them had forks inside.
 
