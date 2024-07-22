@@ -10,7 +10,7 @@ A [bedtime story](/bedtime-stories)
 
 ---
 
-Once upon a time...
+*Once upon a time...*
 
 There was a little forklift named Freddie. He was the smallest forklift in the warehouse, but he had a dream. Freddie wanted to be the first forklift to lift a crate of forks.
 
@@ -30,4 +30,4 @@ Then, on a random Tuesday morning, Freddie came into the warehouse and told the 
 
 Freddie held the crate of forks over his head and carried it to the shelf as he continued to shout, "I know I can! I know I can! I know I can!" He placed the crate on the shelf and let out a big, deep breath. The shelf creaked under the weight. The other forklifts cheered and congratulated him. Freddie had done it, his dream had come true!
 
-The end.
+*The end.*

@@ -10,8 +10,8 @@ A [bedtime story](/bedtime-stories)
 
 ---
 
-:exclamation: This story has not been written down yet.
+*Once upon a time...*
 
-<!-- Once upon a time...
+:warning: This story has not been written down yet.
 
-The end. -->
+*The end.*
