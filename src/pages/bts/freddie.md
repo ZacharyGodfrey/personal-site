@@ -6,6 +6,8 @@ description: "An original bedtime story."
 
 ## {{meta.title}}
 
+A [bedtime story](/bedtime-stories)
+
 ---
 
 Once upon a time, there was a little forklift named Freddie. He was the smallest forklift in the warehouse, but he had a dream. Freddie wanted to be the first forklift to lift a crate of forks.
