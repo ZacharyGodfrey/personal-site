@@ -12,7 +12,7 @@
   --radius: 0.5rem;
   --image-effects: saturate(60%);
   font-size: 20px;
-  font-family: 'roboto-mono', monospace;
+  font-family: sans-serif;
   font-weight: normal;
   color: var(--text);
   background: var(--background);
@@ -107,9 +107,12 @@ em {
   font-style: italic;
 }
 
+code {
+  font-family: 'roboto-mono', monospace;
+}
+
 p > code {
   padding-inline: 0.25rem;
-  font-family: 'roboto-mono', monospace;
   color: inherit;
   background: var(--neutral);
   border-radius: 0.25rem;
@@ -161,7 +164,6 @@ pre, blockquote {
 }
 
 pre {
-  font-family: 'roboto-mono', monospace;
   font-size: 1rem;
   white-space: pre-line;
   background: var(--neutral);
