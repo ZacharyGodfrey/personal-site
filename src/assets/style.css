@@ -12,7 +12,7 @@
   --radius: 0.5rem;
   --image-effects: saturate(60%);
   font-size: 20px;
-  font-family: 'roboto-mono', monospace;
+  font-family: monospace;
   font-weight: normal;
   color: var(--text);
   background: var(--background);
@@ -108,7 +108,7 @@ em {
 }
 
 code {
-  font-family: 'roboto-mono', monospace;
+  font-family: monospace;
 }
 
 p > code {
