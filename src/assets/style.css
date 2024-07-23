@@ -12,7 +12,7 @@
   --radius: 0.5rem;
   --image-effects: saturate(60%);
   font-size: 20px;
-  font-family: 'roboto-mono', monospace;
+  font-family: monospace;
   font-weight: normal;
   color: var(--text);
   background: var(--background);
@@ -47,6 +47,7 @@ h1, h2, h3, h4 {
 
 h2, h3, h4 {
   margin-block: 4rem 1rem;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -57,7 +58,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: normal;
 }
 
@@ -106,9 +107,12 @@ em {
   font-style: italic;
 }
 
+code {
+  font-family: monospace;
+}
+
 p > code {
   padding-inline: 0.25rem;
-  font-family: 'roboto-mono', monospace;
   color: inherit;
   background: var(--neutral);
   border-radius: 0.25rem;
@@ -160,7 +164,6 @@ pre, blockquote {
 }
 
 pre {
-  font-family: 'roboto-mono', monospace;
   font-size: 1rem;
   white-space: pre-line;
   background: var(--neutral);
@@ -209,8 +212,6 @@ footer {
 /* Utility Classes */
 
 .text-center { text-align: center; }
-.text-right { text-align: right; }
-.text-justify { text-align: justify; }
 
 /* Specific Styles */
 
