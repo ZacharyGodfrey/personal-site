@@ -8,7 +8,6 @@ const START = Date.now();
 const shell = readFile('src/assets/shell.html');
 const favicon = readFile('src/assets/terminal.png', 'base64');
 const fontFancy = readFile('src/assets/satisfy.ttf', 'base64');
-// const fontMono = readFile('src/assets/roboto-mono.ttf', 'base64');
 const style = await minifyCSS(readFile('src/assets/style.css'));
 const hero = readFile('src/static/animated.png', 'base64');
 const partials = { favicon, fontFancy, style, hero };
