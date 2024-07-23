@@ -18,7 +18,7 @@ One day, Eddie was listening to music while he worked and he got a little carrie
 
 Eddie called out to his friends for help, "Guys! Help! I'm stuck in here."
 
-The other trucks stopped working and came to see how they could help Eddie. Crane Truck said, "Maybe I can lift you out with my boom." He lowered his boom down into the hole and Eddie grabbed it with his scoop. Crane Truck raised his boom and pulled has hard as he could, but he couldn't lift Eddie out of the hole, "I'm sorry Eddie, but you're too heavy to lift."
+The other trucks stopped working and came to see how they could help Eddie. Crane Truck said, "Maybe I can lift you out with my boom." He lowered his boom down into the hole and Eddie grabbed it with his scoop. Crane Truck raised his boom and pulled as hard as he could, but he couldn't lift Eddie out of the hole, "I'm sorry Eddie, but you're too heavy to lift."
 
 The other trucks thought about how they could work together to get Eddie out of the hole. Dump Truck said, "I could get some dirt and dump it at the edge of the hole, and then Bulldozer can push the dirt into the hole to make a ramp on one side." Eddie responded, "Great idea! Then I can drive up the dirt ramp and out of the hole!"
 
