@@ -21,7 +21,7 @@ const partials = listFiles('src/partials/*.html').reduce((obj, filePath) => {
 
 const pages = listFiles('src/pages/**/*.md').map(filePath => {
   const uri = filePath.split('pages/')[1].replace('.md', '');
-  const fileContent = readFile(`./${filePath}`);
+  const fileContent = `\n${readFile(`./${filePath}`)}\n`;
   const { meta, content } = parseMetadata(fileContent);
 
   return { uri, meta, content };
