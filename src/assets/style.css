@@ -62,20 +62,10 @@ main > :first-child, footer {
 
 nav {
   padding: 1rem;
-  text-align: center;
 }
 
 header, section, footer {
   padding: 8rem 1rem;
-}
-
-header {
-  /* min-height: 100vh;
-  min-height: 100svh; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 
 nav > *, header > *, section > *, footer > * {
@@ -103,6 +93,7 @@ h1 {
   letter-spacing: 1px;
   font-weight: normal;
   font-family: 'satisfy', sans-serif;
+  text-align: center;
 }
 
 h2, h3, h4 {
