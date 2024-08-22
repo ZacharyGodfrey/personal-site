@@ -87,7 +87,6 @@ h1 {
   letter-spacing: 1px;
   font-weight: normal;
   font-family: 'satisfy', sans-serif;
-  text-align: center;
 }
 
 h2, h3, h4 {
@@ -197,6 +196,7 @@ thead tr:not(:has(th:not(:empty))) {
 
 /* Helper Classes */
 
+.text-center { text-align: center; }
 .text-right { text-align: right; }
 
 .text-fancy {
