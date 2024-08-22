@@ -47,6 +47,11 @@ main {
   flex: 1;
 }
 
+nav {
+  color: white;
+  background: var(--primary);
+}
+
 header, section, footer {
   padding: 8rem 1rem;
 }
@@ -132,6 +137,10 @@ img {
 /* Helper Classes */
 
 .text-right { text-align: right; }
+
+.text-fancy {
+  font-family: 'satisfy', sans-serif;
+}
 
 /* Specific Styles */
 
