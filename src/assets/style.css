@@ -47,17 +47,17 @@ main {
   flex: 1;
 }
 
-main > :first-child, body > :last-child {
-  color: white;
-  background: var(--primary);
-}
-
 main > :nth-child(even) {
   background: var(--background);
 }
 
-main > :nth-child(odd):not(:first-child) {
+main > :nth-child(odd) {
   background: var(--neutral);
+}
+
+main > :first-child, footer {
+  color: white;
+  background: var(--primary);
 }
 
 nav {
@@ -124,7 +124,24 @@ h1 > a {
   text-decoration: none;
 }
 
+th, strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
 /* Other Elements */
+
+ul, ol {
+  padding: 0;
+  list-style-position: inside;
+}
+
+li:has(input[type="checkbox"]:disabled) {
+  list-style-type: none;
+}
 
 img {
   display: block;
@@ -138,6 +155,34 @@ img {
 
 p:has(img:only-child) {
   margin-block: 2rem;
+}
+
+hr {
+  margin: 4rem auto;
+  width: 100%;
+  height: var(--line-thickness);
+  border: none;
+  outline: none;
+  background: var(--text);
+}
+
+table, th, td {
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+  margin-block: 2rem;
+  border: var(--line-thickness) solid var(--text);
+}
+
+th, td {
+  padding: 0.5rem;
+  border: var(--line-thickness) solid var(--text);
+}
+
+thead tr:not(:has(th:not(:empty))) {
+  display: none;
 }
 
 /* Helper Classes */
