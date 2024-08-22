@@ -28,7 +28,13 @@ copyFolder('src/static', 'dist');
 pages.forEach(({ uri, meta, content: rawContent }) => {
   const fileName = `dist/${uri}.html`;
   const data = { meta, posts };
-  const content = renderEmoji(renderMD(renderMustache(rawContent, data, partials)));
+  const content = renderEmoji(
+    renderSections(
+      renderMD(
+        renderMustache(rawContent, data, partials)
+      )
+    )
+  );
 
   console.log(`Writing File: ${fileName}`);
 

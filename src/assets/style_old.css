@@ -1,0 +1,221 @@
+/* Element Styles */
+
+:root {
+  --primary:    hsl(85 15% 45%);
+  --accent:     hsl( 0 45% 45%);
+  --highlight:  hsl(55 75% 75%);
+  --text:       hsl(85 15% 30%);
+  --background: hsl(85  5% 95%);
+  --neutral:    hsl(85  5% 90%);
+  --content-width: 40rem;
+  --line-thickness: 2px;
+  --radius: 0.5rem;
+  --image-effects: saturate(60%);
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: normal;
+  color: var(--text);
+  background: var(--background);
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:first-child { margin-block-start: 0 !important; }
+:last-child  {   margin-block-end: 0 !important; }
+
+::selection {
+  color: var(--text);
+  background: var(--highlight);
+}
+
+p, ul, ol, img {
+  margin-block: 1rem;
+}
+
+p, li, th, td {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.5;
+}
+
+h2, h3, h4 {
+  margin-block: 4rem 1rem;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-family: 'satisfy', sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: var(--line-thickness);
+}
+
+h1 > a {
+  text-decoration: none;
+}
+
+a:not(h1 > a):hover {
+  color: var(--accent);
+}
+
+article a {
+  text-decoration-color: var(--accent);
+}
+
+ul, ol {
+  padding: 0;
+  list-style-position: inside;
+}
+
+li:has(input[type="checkbox"]:disabled) {
+  list-style-type: none;
+}
+
+th, strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+code {
+  font-family: monospace;
+}
+
+p > code {
+  padding-inline: 0.25rem;
+  color: inherit;
+  background: var(--neutral);
+  border-radius: 0.25rem;
+}
+
+img {
+  display: block;
+  margin: 2rem auto;
+  max-width: min(100%, 40rem);
+  max-height: min(75vh, 40rem);
+  max-height: min(75svh, 40rem);
+  user-select: none;
+  border-radius: var(--radius);
+  filter: var(--image-effects);
+}
+
+hr {
+  margin: 4rem auto;
+  width: 100%;
+  height: var(--line-thickness);
+  border: none;
+  outline: none;
+  background: var(--text);
+}
+
+table, th, td {
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+  margin-block: 2rem;
+  border: var(--line-thickness) solid var(--text);
+}
+
+th, td {
+  padding: 0.5rem;
+  border: var(--line-thickness) solid var(--text);
+}
+
+thead tr:not(:has(th:not(:empty))) {
+  display: none;
+}
+
+pre, blockquote {
+  margin-block: 2rem;
+  padding: 1rem;
+  border-radius: var(--radius);
+}
+
+pre {
+  font-size: 1rem;
+  white-space: pre-line;
+  background: var(--neutral);
+}
+
+blockquote {
+  border: var(--line-thickness) solid var(--text);
+}
+
+/* Layout */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  max-width: var(--content-width);
+  margin-inline: auto;
+}
+
+header {
+  padding: 1rem;
+  color: var(--background);
+  background: var(--primary);
+}
+
+article {
+  flex: 1;
+  padding: 4rem 1rem;
+}
+
+footer {
+  padding: 1rem;
+  color: var(--background);
+  background: var(--primary);
+}
+
+/* Utility Classes */
+
+.text-center { text-align: center; }
+
+/* Specific Styles */
+
+img[alt="hero"] {
+  border-radius: 50%;
+  max-width: 10rem;
+}
