@@ -60,9 +60,13 @@ const test = () => {
 - Item Two
 - Item Three
 
+---
+
 1. Item One
 1. Item Two
 1. Item Three
+
+---
 
 - [x] Complete item
 - [ ] Incomplete item
