@@ -8,7 +8,7 @@
   --background: hsl(85  5% 95%);
   --neutral:    white;
   --content-width: 50rem;
-  --line-thickness: 2px;
+  --line-thickness: 1px;
   --radius: 0.5rem;
   font-size: 16px;
   font-family: monospace;
@@ -115,6 +115,14 @@ th, strong {
 
 em {
   font-style: italic;
+}
+
+p > code {
+  display: inline-block;
+  padding: 0.5rem;
+  color: var(--neutral);
+  background: var(--primary);
+  border-radius: var(--radius);
 }
 
 pre, blockquote {
