@@ -50,7 +50,7 @@ main {
 footer {
   padding: 4rem 1rem;
   color: white;
-  background: black;
+  background: var(--primary);
 }
 
 main > :nth-child(even) {
@@ -135,6 +135,10 @@ img {
   user-select: none;
   border-radius: var(--radius);
 }
+
+/* Helper Classes */
+
+.text-right { text-align: right; }
 
 /* Specific Styles */
 
