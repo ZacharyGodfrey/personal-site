@@ -109,3 +109,27 @@ h4 {
 p, ul, ol, img {
   margin-block: 1rem;
 }
+
+/* Other Elements */
+
+img {
+  display: block;
+  margin: 2rem auto;
+  max-width: min(100%, 40rem);
+  max-height: min(75vh, 40rem);
+  max-height: min(75svh, 40rem);
+  user-select: none;
+  border-radius: var(--radius);
+  filter: var(--image-effects);
+}
+
+/* Specific Styles */
+
+header > h1 {
+  font-size: 4rem;
+}
+
+img[alt="hero"] {
+  border-radius: 50%;
+  max-width: 10rem;
+}
