@@ -18,19 +18,11 @@
   </head>
   <body>
     <main>
-      {{^meta.title}}
-      <header>
-        <h1>Zachary Godfrey</h1>
-      </header>
-      {{/meta.title}}
-
-      {{#meta.title}}
       <nav>
         <h1>
           <a href="/">Zachary Godfrey</a>
         </h1>
       </nav>
-      {{/meta.title}}
 
       {{>content}}
     </main>

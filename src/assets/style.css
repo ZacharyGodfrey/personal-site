@@ -60,15 +60,11 @@ main > :first-child, footer {
   background: var(--primary);
 }
 
-nav {
-  padding: 1rem;
-}
-
-header, section, footer {
+nav, section, footer {
   padding: 8rem 1rem;
 }
 
-nav > *, header > *, section > *, footer > * {
+nav > *, section > *, footer > * {
   max-width: var(--content-width);
   margin-inline: auto;
 }
