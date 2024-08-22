@@ -16,7 +16,7 @@ description: "The personal website of Zachary Godfrey"
 
 (~
 
-## Work
+### Work
 
 :computer: I have *over a decade* of [experience](/work) building and maintaining software in a variety of languages and tech stacks. Most of my professional work has been on internal systems that cannot be shared or backend systems that aren't visible. Because of this, I don't have a portfolio of work to show.
 
@@ -26,7 +26,7 @@ description: "The personal website of Zachary Godfrey"
 
 (~
 
-## Writing
+### Writing
 
 :thought_balloon: I like to use [Haiku](/haiku) poems to introduce topics that I find interesting.
 
