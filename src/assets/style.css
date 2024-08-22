@@ -12,8 +12,8 @@
   --radius: 0.5rem;
   font-size: 16px;
   font-family: monospace;
-  color: black;
-  background: white;
+  color: var(--text);
+  background: var(--primary);
 }
 
 * {
@@ -65,6 +65,10 @@ header {
 section > *, footer > * {
   max-width: var(--content-width);
   margin-inline: auto;
+}
+
+section {
+  background: white;
 }
 
 section:nth-of-type(even) {
