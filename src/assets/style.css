@@ -51,7 +51,7 @@ footer {
 }
 
 main > :nth-child(even) {
-  background: #FEFEFE;
+  background: #F0F0F0;
 }
 
 header, section {
@@ -65,4 +65,9 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+section > *, footer > * {
+  max-width: var(--content-width);
+  margin-inline: auto;
 }
