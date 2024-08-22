@@ -50,8 +50,8 @@ footer {
   background: black;
 }
 
-main > :nth-child(2n+1) {
-  background: #EEEEEE;
+main > :nth-child(even) {
+  background: #FEFEFE;
 }
 
 header, section {
