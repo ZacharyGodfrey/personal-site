@@ -10,14 +10,14 @@ description: "The personal website of Zachary Godfrey"
   <p>Husband, Father, Senior Software Engineer</p>
 </header>
 
-<~
+(~
 
 This is section one.
 
-~>
+~)
 
-<~
+(~
 
 This is section two.
 
-~>
+~)
