@@ -47,10 +47,6 @@ main {
   flex: 1;
 }
 
-main > :nth-child(even) {
-  background: #F0F0F0;
-}
-
 header, section, footer {
   padding: 8rem 1rem;
 }
@@ -69,6 +65,10 @@ header {
 section > *, footer > * {
   max-width: var(--content-width);
   margin-inline: auto;
+}
+
+section:nth-child(even) {
+  background: #F0F0F0;
 }
 
 footer {
