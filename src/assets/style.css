@@ -67,7 +67,7 @@ section > *, footer > * {
   margin-inline: auto;
 }
 
-section:nth-child(even) {
+section:nth-of-type(even) {
   background: #F0F0F0;
 }
 
