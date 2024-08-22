@@ -1,5 +1,5 @@
 import { readFile, listFiles, emptyFolder, copyFolder, writeFile } from '../lib/file.js';
-import { renderMD, minifyCSS, parseMetadata, renderMustache } from '../lib/transform.js';
+import { renderMD, renderSections, minifyCSS, parseMetadata, renderMustache } from '../lib/transform.js';
 import { renderEmoji } from '../lib/emoji.js';
 import { byAscending } from '../lib/misc.js';
 
