@@ -7,7 +7,7 @@
   --text:       hsl(85 15% 30%);
   --background: hsl(85  5% 95%);
   --neutral:    hsl(85  5% 90%);
-  --content-width: 60rem;
+  --content-width: 50rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
   font-size: 16px;
@@ -62,6 +62,8 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  color: white;
+  background: var(--primary);
 }
 
 section > *, footer > * {
@@ -131,5 +133,5 @@ img {
 
 img[alt="hero"] {
   border-radius: 50%;
-  max-width: 10rem;
+  max-width: 12rem;
 }
