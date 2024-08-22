@@ -6,7 +6,7 @@
   --highlight:  hsl(55 75% 75%);
   --text:       hsl(85 15% 30%);
   --background: hsl(85  5% 95%);
-  --neutral:    hsl(85  5% 90%);
+  --neutral:    white;
   --content-width: 50rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
@@ -44,7 +44,7 @@ body {
 }
 
 nav, footer {
-  color: white;
+  color: var(--neutral);
   background: var(--primary);
 }
 
