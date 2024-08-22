@@ -95,8 +95,11 @@ h2, h3 {
 a {
   color: inherit;
   text-decoration: underline;
-  text-decoration-color: var(--accent);
   text-decoration-thickness: var(--line-thickness);
+}
+
+article a {
+  text-decoration-color: var(--accent);
 }
 
 a:not(h1 > a):hover {
