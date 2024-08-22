@@ -75,11 +75,11 @@ nav > *, section > *, footer > * {
 }
 
 section {
-  background: white;
+  background: var(--background);
 }
 
 section:nth-of-type(even) {
-  background: #F0F0F0;
+  background: var(--neutral);
 }
 
 footer {
