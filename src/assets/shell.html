@@ -18,6 +18,14 @@
   </head>
   <body>
     <main>
+      {{^meta.title}}
+      {{>header}}
+      {{/meta.title}}
+
+      {{#meta.title}}
+      {{>nav}}
+      {{/meta.title}}
+
       {{>content}}
     </main>
 

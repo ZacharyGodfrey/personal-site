@@ -4,8 +4,6 @@ title: ""
 description: "The personal website of Zachary Godfrey"
 ---
 
-{{>header}}
-
 (~
 
 ![hero](data:image/png;base64,{{>hero}})
