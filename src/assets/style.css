@@ -120,17 +120,18 @@ em {
 pre, blockquote {
   margin-block: 2rem;
   padding: 1rem;
-  border-radius: var(--radius);
 }
 
 pre {
   font-size: 1rem;
   white-space: pre-line;
-  background: var(--neutral);
+  border-top: var(--line-thickness) solid var(--text);
+  border-bottom: var(--line-thickness) solid var(--text);
 }
 
 blockquote {
-  border: var(--line-thickness) solid var(--text);
+  border-left: var(--line-thickness) solid var(--text);
+  border-right: var(--line-thickness) solid var(--text);
 }
 
 /* Other Elements */
