@@ -47,11 +47,22 @@ main {
   flex: 1;
 }
 
+main > :first-child, body > :last-child {
+  color: white;
+  background: var(--primary);
+}
+
+main > :nth-child(even) {
+  background: var(--background);
+}
+
+main > :nth-child(odd) {
+  background: var(--neutral);
+}
+
 nav {
   padding: 1rem;
   text-align: center;
-  color: white;
-  background: var(--primary);
 }
 
 header, section, footer {
@@ -65,26 +76,11 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  color: white;
-  background: var(--primary);
 }
 
-nav > *, section > *, footer > * {
+nav > *, header > *, section > *, footer > * {
   max-width: var(--content-width);
   margin-inline: auto;
-}
-
-section {
-  background: var(--background);
-}
-
-section:nth-of-type(even) {
-  background: var(--neutral);
-}
-
-footer {
-  color: white;
-  background: var(--primary);
 }
 
 /* Text Elements */
