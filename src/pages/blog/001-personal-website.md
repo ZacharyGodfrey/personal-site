@@ -5,17 +5,25 @@ order: "001"
 date: "June 10, 2024"
 ---
 
+(~
+
 ## {{meta.title}}
 
 *Posted on {{meta.date}}*
 
----
-
 My personal website is intentionally simple; it's also fast, free, and portable. In short, what I've built is a statically generated website, hosted on a CDN, and authored using Markdown. The rest of this post will explain each of those parts and how they work together to achieve the listed benefits.
+
+~)
+
+(~
 
 ### Nothing Fancy
 
 First, a quick aside. When I'm building software, simplicity is my top priority. I prefer to use small, single-purpose tools over heavy, all-in-one frameworks. With these small tools, I can compose a solution that is just big enough to solve the problem at hand without introducing any unnecessary complexity. If my requirements change in the future, I can swap out each individual tool as needed without having to reconfigure the entire project.
+
+~)
+
+(~
 
 ### Authoring Content
 
@@ -26,6 +34,10 @@ At the top of each document, I can specify metadata for the page using a simple 
 The main content is written in Markdown, which is so much faster than writing the HTML by hand but is also expressive enough for me to author almost all of the content I need. For anything that has to be more complex than what Markdown can handle, I can still write the necessary HTML in place and it will be preserved during rendering. I can also inject some data and logic into my content using Mustache tags.
 
 The combination of Frontmatter, Markdown, and Mustache make authoring content incredibly fast and easy.
+
+~)
+
+(~
 
 ### Static Site Generation
 
@@ -39,11 +51,19 @@ I could have used an existing static site generator to do the build, but most of
 - [marked](https://github.com/markedjs/marked) renders Markdown content into HTML
 - [mustache](https://github.com/janl/mustache.js) composes HTML templates and JSON data together
 
+~)
+
+(~
+
 ### CDN Hosting
 
 Because my website is just a collection of static HTML documents, hosting my website can be as simple as having a computer on the internet that serves the files out of a folder. Since the content is not dynamic, there could also be several computers hosting their own copy of the pages. A CDN (content delivery network) is exactly that: a global network of servers that each have their own copy of your static web pages.
 
 I'm hosting my website on [Netlify](https://www.netlify.com)'s CDN. I'm not sponsored by them in any way, I just really enjoy using their service. The setup is extremely easy as well: connect to your GitHub repository, specify a build command and the expected output directory, and choose which branch to deploy. When you push a change to that branch in GitHub, Netlify will automatically pull the latest code, run the build command, upload the files in the output directory to the CDN, and your updates are live!
+
+~)
+
+(~
 
 ### Fast
 
@@ -62,17 +82,29 @@ With the first three points optimized, let's talk about that last point: renderi
 
 In summary: short trip to the server, zero computation, short trip back to the browser, no additional requests, fast rendering.
 
+~)
+
+(~
+
 ### Free
 
 Because my content is authored in Markdown, which is basically plaintext, I can write my content in a simple text editor: no expensive tools needed. The code is under version control in GitHub, which is also free. In fact, my website is so simple I can just use GitHub's web interface to edit my content files and push updates to the website.
 
 I'm hosting my website for free using [Netlify](https://www.netlify.com)'s CDN. That's right, in addition to offering simplicity and a massive speed benefit, they will also host static websites like mine at absolutely no cost! Like I said, they aren't sponsoring this content, I just can't believe that companies like them have such a great free tier.
 
+~)
+
+(~
+
 ### Portable
 
 In my previous jobs, I've seen the negative effects of vendor-lock: you want to switch from one service provider to another, but you're stuck because you're using some proprietary technology from the current provider that won't be available after the switch. I built my website to be entirely indifferent to the hosting environment. I'm not making use of any proprietary services or databases. I could easily deploy my website with any number of other hosting providers without any changes to my code or data.
 
 Having an entirely portable website is great for my peace of mind. If, for example, Netlify goes out of business or removes their free tier, I can easily and quickly get my website up and running with a different hosting provider.
+
+~)
+
+(~
 
 ### Conclusion
 
@@ -81,3 +113,5 @@ Not every website can benefit from the setup I've described, but I'd be willing 
 All of the code for my website is available on [GitHub](https://github.com/ZacharyGodfrey/personal-site) if you'd like to use it as a starting point for your own website.
 
 This was a long post; if you made it this far, thanks so much for reading!
+
+~)
