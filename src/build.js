@@ -6,7 +6,7 @@ import { byAscending } from '../lib/misc.js';
 const START = Date.now();
 
 const shell = readFile('src/assets/shell.html');
-const partials = listFiles('src/partials/*.html').reduce(obj, filePath => {
+const partials = listFiles('src/partials/*.html').reduce((obj, filePath) => {
   const name = filePath.split('partials/')[1].replace('.html', '');
 
   obj[name] = readFile(`./${filePath}`);
