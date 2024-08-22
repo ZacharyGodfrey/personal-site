@@ -44,6 +44,7 @@ body {
 }
 
 nav, footer {
+  padding: 4rem 1rem;
   color: var(--neutral);
   background: var(--primary);
 }
@@ -54,12 +55,12 @@ article {
   background: var(--background);
 }
 
-section:nth-child(even) {
-  background: var(--neutral);
+section {
+  padding: 8rem 1rem;
 }
 
-nav, section, footer {
-  padding: 8rem 1rem;
+section:nth-child(even) {
+  background: var(--neutral);
 }
 
 nav > *, section > *, footer > * {
