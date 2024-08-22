@@ -10,7 +10,7 @@
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
-  font-size: 20px;
+  font-size: 16px;
   font-family: monospace;
   color: black;
   background: white;
@@ -47,18 +47,12 @@ main {
   flex: 1;
 }
 
-footer {
-  padding: 4rem 1rem;
-  color: white;
-  background: var(--primary);
-}
-
 main > :nth-child(even) {
   background: #F0F0F0;
 }
 
-header, section {
-  padding: 4rem 1rem;
+header, section, footer {
+  padding: 8rem 1rem;
 }
 
 header {
@@ -75,6 +69,11 @@ section > *, footer > * {
   margin-inline: auto;
 }
 
+footer {
+  color: white;
+  background: var(--primary);
+}
+
 /* Text Elements */
 
 h1, h2, h3, h4, p, li, th, td {
@@ -82,7 +81,7 @@ h1, h2, h3, h4, p, li, th, td {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 6rem;
   letter-spacing: 1px;
   font-weight: normal;
   font-family: 'satisfy', sans-serif;
@@ -141,10 +140,6 @@ img {
 .text-right { text-align: right; }
 
 /* Specific Styles */
-
-header > h1 {
-  font-size: 4rem;
-}
 
 img[alt="hero"] {
   border-radius: 50%;
