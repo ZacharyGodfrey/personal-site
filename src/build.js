@@ -9,7 +9,7 @@ const shell = readFile('src/assets/shell.html');
 const partials = listFiles('src/partials/*.html').reduce((obj, filePath) => {
   const name = filePath.split('partials/')[1].replace('.html', '');
 
-  obj[name] = readFile(`./${filePath}`);
+  obj[name] = `\n${readFile(`./${filePath}`)}\n`;
 
   return obj;
 }, {
@@ -21,7 +21,7 @@ const partials = listFiles('src/partials/*.html').reduce((obj, filePath) => {
 
 const pages = listFiles('src/pages/**/*.md').map(filePath => {
   const uri = filePath.split('pages/')[1].replace('.md', '');
-  const fileContent = `\n${readFile(`./${filePath}`)}\n`;
+  const fileContent = readFile(`./${filePath}`);
   const { meta, content } = parseMetadata(fileContent);
 
   return { uri, meta, content };
