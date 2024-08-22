@@ -136,12 +136,16 @@ h1 > a {
 
 img {
   display: block;
-  margin: 2rem auto;
+  margin-inline: auto;
   max-width: min(100%, 40rem);
   max-height: min(75vh, 40rem);
   max-height: min(75svh, 40rem);
   user-select: none;
   border-radius: var(--radius);
+}
+
+p:has(img:only-child) {
+  margin-block: 2rem;
 }
 
 /* Helper Classes */
