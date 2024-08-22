@@ -71,3 +71,5 @@ section > *, footer > * {
   max-width: var(--content-width);
   margin-inline: auto;
 }
+
+/* Text Elements */

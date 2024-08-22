@@ -6,11 +6,18 @@ import { byAscending } from '../lib/misc.js';
 const START = Date.now();
 
 const shell = readFile('src/assets/shell.html');
-const favicon = readFile('src/assets/terminal.png', 'base64');
-const fontFancy = readFile('src/assets/satisfy.ttf', 'base64');
-const style = await minifyCSS(readFile('src/assets/style.css'));
-const hero = readFile('src/static/animated.png', 'base64');
-const partials = { favicon, fontFancy, style, hero };
+const partials = listFiles('src/partials/*.html').reduce(obj, filePath => {
+  const name = filePath.split('partials/')[1].replace('.html', '');
+
+  obj[name] = readFile(`./${filePath}`);
+
+  return obj;
+}, {
+  favicon: readFile('src/assets/terminal.png', 'base64'),
+  fontFancy: readFile('src/assets/satisfy.ttf', 'base64'),
+  style: await minifyCSS(readFile('src/assets/style.css')),
+  hero: readFile('src/static/animated.png', 'base64')
+});
 
 const pages = listFiles('src/pages/**/*.md').map(filePath => {
   const uri = filePath.split('pages/')[1].replace('.md', '');
