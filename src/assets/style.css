@@ -119,7 +119,7 @@ em {
 
 p > code {
   display: inline-block;
-  padding: 0.5rem;
+  padding: 0.25rem;
   color: var(--neutral);
   background: var(--primary);
   border-radius: var(--radius);
