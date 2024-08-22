@@ -48,6 +48,8 @@ main {
 }
 
 nav {
+  padding: 1rem;
+  text-align: center;
   color: white;
   background: var(--primary);
 }
@@ -67,7 +69,7 @@ header {
   background: var(--primary);
 }
 
-section > *, footer > * {
+nav > *, section > *, footer > * {
   max-width: var(--content-width);
   margin-inline: auto;
 }
@@ -120,6 +122,10 @@ a {
 
 a:hover {
   color: var(--accent);
+}
+
+h1 > a {
+  text-decoration: none;
 }
 
 /* Other Elements */
