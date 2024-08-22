@@ -105,6 +105,10 @@ h1 {
   font-family: 'satisfy', sans-serif;
 }
 
+nav > h1 {
+  font-size: 2rem;
+}
+
 h2, h3, h4 {
   font-family: sans-serif;
 }
@@ -120,7 +124,7 @@ a {
   text-decoration-thickness: var(--line-thickness);
 }
 
-a:hover {
+a:not(h1 > a):hover {
   color: var(--accent);
 }
 
