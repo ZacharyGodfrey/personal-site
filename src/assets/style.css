@@ -43,21 +43,19 @@ body {
   flex-direction: column;
 }
 
-main {
-  flex: 1;
+nav, footer {
+  color: white;
+  background: var(--primary);
 }
 
-main > :nth-child(even) {
+article {
+  flex: 1;
+  color: var(--text);
   background: var(--background);
 }
 
-main > :nth-child(odd) {
+section:nth-child(even) {
   background: var(--neutral);
-}
-
-main > :first-child, footer {
-  color: white;
-  background: var(--primary);
 }
 
 nav, section, footer {
