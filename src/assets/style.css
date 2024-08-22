@@ -110,6 +110,17 @@ p, ul, ol, img {
   margin-block: 1rem;
 }
 
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: var(--line-thickness);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
 /* Other Elements */
 
 img {
