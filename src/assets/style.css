@@ -10,7 +10,7 @@
   --content-width: 50rem;
   --line-thickness: 1px;
   --radius: 0.5rem;
-  font-size: 16px;
+  font-size: 18px;
   font-family: monospace;
   color: var(--text);
   background: var(--primary);
