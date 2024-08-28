@@ -4,9 +4,13 @@ title: "Work History"
 description: ""
 ---
 
-## Work History
+(~
 
----
+## {{meta.title}}
+
+~)
+
+(~
 
 **Senior Software Engineer**
 
@@ -69,3 +73,5 @@ description: ""
 <!-- - Performed manual user-acceptance testing of web applications
 - Audited the configuration of site analytics tools and A/B split tests
 - Created an automated testing tool and wrote a suite of automated user-acceptance tests using Selenium/WebDriver -->
+
+~)
