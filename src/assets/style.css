@@ -10,7 +10,7 @@
   --content-width: 40rem;
   --line-thickness: 1px;
   --radius: 0.5rem;
-  font-size: 20px;
+  font-size: 18px;
   font-family: monospace;
   color: var(--text);
   background: var(--primary);
@@ -44,7 +44,7 @@ body {
 }
 
 nav, footer {
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
   color: var(--neutral);
   background: var(--primary);
 }
