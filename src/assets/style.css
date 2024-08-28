@@ -7,10 +7,10 @@
   --text:       hsl(85 15% 30%);
   --background: hsl(85  5% 95%);
   --neutral:    white;
-  --content-width: 50rem;
+  --content-width: 40rem;
   --line-thickness: 1px;
   --radius: 0.5rem;
-  font-size: 18px;
+  font-size: 20px;
   font-family: monospace;
   color: var(--text);
   background: var(--primary);
