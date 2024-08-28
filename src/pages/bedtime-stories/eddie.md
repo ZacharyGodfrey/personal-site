@@ -4,11 +4,15 @@ title: "Eddie the Excavator"
 description: "An original bedtime story."
 ---
 
+(~
+
 ## {{meta.title}}
 
 A [bedtime story](/bedtime-stories)
 
----
+~)
+
+(~
 
 **Once upon a time...**
 
@@ -31,3 +35,5 @@ Crane Truck found another way to help Eddie, "I can help pull you up the ramp as
 With the help of all his friends, Eddie was able to get out of the deep hole, "Thanks guys! You saved me!"
 
 **The end.**
+
+~)
