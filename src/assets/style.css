@@ -7,10 +7,10 @@
   --text:       hsl(85 15% 30%);
   --background: hsl(85  5% 95%);
   --neutral:    white;
-  --content-width: 50rem;
-  --line-thickness: 1px;
+  --content-width: 40rem;
+  --line-thickness: 2px;
   --radius: 0.5rem;
-  font-size: 16px;
+  font-size: 18px;
   font-family: monospace;
   color: var(--text);
   background: var(--primary);
@@ -44,9 +44,12 @@ body {
 }
 
 nav, footer {
-  padding: 4rem 1rem;
   color: var(--neutral);
   background: var(--primary);
+}
+
+nav {
+  padding: 1rem;
 }
 
 article {
@@ -56,11 +59,15 @@ article {
 }
 
 section {
-  padding: 8rem 1rem;
+  padding: 4rem 1rem;
 }
 
 section:nth-child(even) {
   background: var(--neutral);
+}
+
+footer {
+  padding: 2rem 1rem;
 }
 
 nav > *, section > *, footer > * {
@@ -134,7 +141,6 @@ pre, blockquote {
 
 pre {
   font-size: 1rem;
-  white-space: pre-line;
   border-top: var(--line-thickness) solid var(--text);
   border-bottom: var(--line-thickness) solid var(--text);
 }
@@ -211,4 +217,5 @@ thead tr:not(:has(th:not(:empty))) {
 img[alt="hero"] {
   border-radius: 50%;
   max-width: 12rem;
+  filter: saturate(60%);
 }
