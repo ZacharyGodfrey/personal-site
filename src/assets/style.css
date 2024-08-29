@@ -218,4 +218,5 @@ thead tr:not(:has(th:not(:empty))) {
 img[alt="hero"] {
   border-radius: 50%;
   max-width: 12rem;
+  filter: saturate(60%);
 }
