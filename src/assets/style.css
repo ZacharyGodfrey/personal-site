@@ -43,12 +43,12 @@ body {
   flex-direction: column;
 }
 
-nav, footer {
+header, footer {
   color: var(--neutral);
   background: var(--primary);
 }
 
-nav {
+header {
   padding: 1rem;
 }
 
@@ -70,7 +70,7 @@ footer {
   padding: 2rem 1rem;
 }
 
-nav > *, section > *, footer > * {
+header > *, section > *, footer > * {
   max-width: var(--content-width);
   margin-inline: auto;
 }
