@@ -202,6 +202,7 @@ thead tr:not(:has(th:not(:empty))) {
 
 /* Helper Classes */
 
+.text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-fancy { font-family: 'satisfy', sans-serif; }
 
