@@ -83,13 +83,18 @@ h1, h2, h3, p, ul, ol, img, pre, blockquote, hr, table {
   margin-block: var(--margin);
 }
 
-h1, h2, h3, p, li, th, td {
-  line-height: 1.5;
+p, li, th, td {
+  line-height: 1.6;
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2.5rem; }
-h3 { font-size: 2rem; }
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4, h5, h6 { font-size: 1rem; }
 
 h1 {
   letter-spacing: 1px;
