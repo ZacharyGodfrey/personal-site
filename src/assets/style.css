@@ -2,17 +2,17 @@
 
 :root {
   --primary:    hsl(85 15% 45%);
-  --accent:     hsl( 0 45% 45%);
-  --highlight:  hsl(55 75% 75%);
-  --text:       hsl(85 15% 30%);
-  --background: hsl(85  5% 95%);
-  --neutral:    white;
+  --accent:     hsl( 0 60% 45%);
+  --highlight:  hsl(50 90% 60%);
+  --text:       black;
+  --background: white;
+  --neutral:    hsl( 0  0% 90%);
   --content-width: 40rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
   --margin: 2rem;
   --padding: 1rem;
-  font-size: 18px;
+  font-size: 16px;
   font-family: monospace;
   color: var(--text);
   background: var(--primary);
