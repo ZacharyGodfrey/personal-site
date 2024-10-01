@@ -79,7 +79,7 @@ header > *, section > *, footer > * {
 
 /* Elements */
 
-h1, h2, h3, p, ul, ol, img, pre, blockquote, hr, table {
+h1, h2, h3, h4, h5, h6, p, ul, ol, img, pre, blockquote, hr, table {
   margin-block: var(--margin);
 }
 
@@ -87,7 +87,7 @@ p, li, th, td {
   line-height: 1.6;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
@@ -202,7 +202,6 @@ thead tr:not(:has(th:not(:empty))) {
 
 /* Helper Classes */
 
-.text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-fancy { font-family: 'satisfy', sans-serif; }
 

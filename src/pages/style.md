@@ -20,11 +20,11 @@ description: "This page demonstrates the styling of all available elements."
 
 ### H3 Section Heading
 
-#### H4 Do Not Use
+#### H4 Section Subheading
 
-##### H5 Do Not Use
+##### H5 Not Used
 
-###### H6 Do Not Use
+###### H6 Not Used
 
 ~)
 
