@@ -20,6 +20,12 @@ description: "This page demonstrates the styling of all available elements."
 
 ### H3 Section Heading
 
+#### H4 Section Subheading
+
+##### H5 Not Used
+
+###### H6 Not Used
+
 ~)
 
 (~

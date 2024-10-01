@@ -2,15 +2,17 @@
 
 :root {
   --primary:    hsl(85 15% 45%);
-  --accent:     hsl( 0 45% 45%);
-  --highlight:  hsl(55 75% 75%);
-  --text:       hsl(85 15% 30%);
-  --background: hsl(85  5% 95%);
-  --neutral:    white;
-  --content-width: 40rem;
+  --accent:     hsl( 0 60% 45%);
+  --highlight:  hsl(50 90% 60%);
+  --text:       black;
+  --background: white;
+  --neutral:    hsl(85  5% 95%);
+  --content-width: 45rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
-  font-size: 18px;
+  --margin: 2rem;
+  --padding: 1rem;
+  font-size: 16px;
   font-family: monospace;
   color: var(--text);
   background: var(--primary);
@@ -43,13 +45,13 @@ body {
   flex-direction: column;
 }
 
-nav, footer {
-  color: var(--neutral);
+header, footer {
+  color: white;
   background: var(--primary);
 }
 
-nav {
-  padding: 1rem;
+header {
+  padding: var(--padding);
 }
 
 article {
@@ -59,38 +61,42 @@ article {
 }
 
 section {
-  padding: 4rem 1rem;
+  padding: calc(4 * var(--padding)) var(--padding);
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   background: var(--neutral);
 }
 
 footer {
-  padding: 2rem 1rem;
+  padding: calc(2 * var(--padding)) var(--padding);
 }
 
-nav > *, section > *, footer > * {
+header > *, section > *, footer > * {
   max-width: var(--content-width);
   margin-inline: auto;
 }
 
-/* Text Elements */
+/* Elements */
 
-h1, h2, h3, p, ul, ol, img {
-  margin-block: 1rem;
+h1, h2, h3, h4, h5, h6, p, ul, ol, img, pre, blockquote, hr, table {
+  margin-block: var(--margin);
 }
 
-h1, h2, h3, p, li, th, td {
-  line-height: 1.5;
+p, li, th, td {
+  line-height: 1.6;
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2.5rem; }
-h3 { font-size: 2rem; }
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4, h5, h6 { font-size: 1rem; }
 
 h1 {
-  margin-block: 1rem;
   letter-spacing: 1px;
   font-weight: normal;
   font-family: 'satisfy', sans-serif;
@@ -128,15 +134,14 @@ em {
 
 p > code {
   display: inline-block;
-  padding: 0.25rem;
-  color: var(--neutral);
+  padding: calc(var(--padding) / 4);
+  color: white;
   background: var(--primary);
   border-radius: var(--radius);
 }
 
 pre, blockquote {
-  margin-block: 2rem;
-  padding: 1rem;
+  padding: var(--padding);
 }
 
 pre {
@@ -149,8 +154,6 @@ blockquote {
   border-left: var(--line-thickness) solid var(--text);
   border-right: var(--line-thickness) solid var(--text);
 }
-
-/* Other Elements */
 
 ul, ol {
   padding: 0;
@@ -171,12 +174,7 @@ img {
   border-radius: var(--radius);
 }
 
-p:has(img:only-child) {
-  margin-block: 2rem;
-}
-
 hr {
-  margin: 4rem auto;
   width: 100%;
   height: var(--line-thickness);
   border: none;
@@ -190,12 +188,11 @@ table, th, td {
 
 table {
   width: 100%;
-  margin-block: 2rem;
   border: var(--line-thickness) solid var(--text);
 }
 
 th, td {
-  padding: 0.5rem;
+  padding: calc(var(--padding) / 2);
   border: var(--line-thickness) solid var(--text);
 }
 
@@ -207,10 +204,7 @@ thead tr:not(:has(th:not(:empty))) {
 
 .text-center { text-align: center; }
 .text-right { text-align: right; }
-
-.text-fancy {
-  font-family: 'satisfy', sans-serif;
-}
+.text-fancy { font-family: 'satisfy', sans-serif; }
 
 /* Specific Styles */
 
