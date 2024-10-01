@@ -7,7 +7,7 @@
   --text:       black;
   --background: white;
   --neutral:    hsl( 0  0% 90%);
-  --content-width: 40rem;
+  --content-width: 60rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
   --margin: 2rem;
@@ -46,7 +46,7 @@ body {
 }
 
 header, footer {
-  color: var(--neutral);
+  color: white;
   background: var(--primary);
 }
 
@@ -135,7 +135,7 @@ em {
 p > code {
   display: inline-block;
   padding: calc(var(--padding) / 4);
-  color: var(--neutral);
+  color: white;
   background: var(--primary);
   border-radius: var(--radius);
 }
