@@ -24,3 +24,11 @@ I created [Axe Charts](https://axecharts.com) to supplement the official stats w
 - The [Axe Charts Rating (ACR)](https://axecharts.com/rating-system) is an alternative rating system based on overall accuracy rather than wins and losses.
 
 ~)
+
+(~
+
+### PubSubs
+
+I made this [simple page](https://pubsubs.netlify.app) to display whether Publix Chicken Tender Subs are on sale. They're a local favorite item, and I thought it would be a fun little project that makes use of a publicly available API.
+
+~)
