@@ -18,6 +18,7 @@ description: "A collection of original bedtime stories for my kids."
 
 - [Freddie the Forklift](/bedtime-stories/freddie)
 - [Eddie the Excavator](/bedtime-stories/eddie)
+- [Gary the Grader](/bedtime-stories/gary)
 - [The Animals and the Tractor](/bedtime-stories/tractor)
 - [The Vacuum and the Dog](/bedtime-stories/vacuum)
 
