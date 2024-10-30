@@ -33,7 +33,9 @@ View the code on [GitHub](https://github.com/ZacharyGodfrey/axe-charts).
 
 I made this [simple page](https://pubsubs.netlify.app) to display whether Publix Chicken Tender Subs are on sale. They're a local favorite item, and I thought it would be a fun little project that makes use of a publicly available API.
 
-The project uses a GitHub action triggered on a cron schedule to hit the API endpoint once a week when the sales week starts. The JSON response from the API endpoint is stored as a file in the repository. When the GitHub action pushes the JSON file change back to the repository, it triggers a new build of the site in Netlify. The single, static web page then gets rendered by the build script using the data from the JSON file. The site keeps itself up to date with no manual intervention, costs me nothing, and is as simple as a single static web page.
+The project uses a GitHub action triggered on a cron schedule to hit the API endpoint once a week when the sales week starts. The JSON response from the API endpoint is stored as a file in the repository.
+
+When the GitHub action pushes the JSON file change back to the repository, it triggers a new build of the site in Netlify. The site keeps itself up to date with no manual intervention, costs me nothing, and is as simple as a single static web page.
 
 View the code on [GitHub](https://github.com/ZacharyGodfrey/pubsubs).
 
