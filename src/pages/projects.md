@@ -27,7 +27,7 @@ I created [Axe Charts](https://axecharts.com) to supplement the official stats w
 
 (~
 
-### PubSubs
+### Pub Subs
 
 I made this [simple page](https://pubsubs.netlify.app) to display whether Publix Chicken Tender Subs are on sale. They're a local favorite item, and I thought it would be a fun little project that makes use of a publicly available API.
 
