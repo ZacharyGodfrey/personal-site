@@ -63,8 +63,8 @@ section {
   padding: calc(4 * var(--padding)) var(--padding);
 }
 
-section:nth-child(odd) {
-  background: hsla(0, 0%, 100%, 5%);
+section:nth-child(even) {
+  background: hsla(0, 0%, 100%, 4%);
 }
 
 footer {
