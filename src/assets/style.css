@@ -2,8 +2,8 @@
 
 :root {
   --text:       white;
-  --background: hsl(90, 60%, 15%);
-  --highlight:  hsl(90, 75%, 30%);
+  --background: hsl(200, 60%, 15%);
+  --highlight:  hsl(200, 75%, 30%);
   --action:     hsl(180, 90%, 45%);
   --content-width: 45rem;
   --line-thickness: 1px;
