@@ -4,9 +4,9 @@
   --primary:    hsl(200, 50%, 50%);
   --accent:     hsl(  0, 50%, 50%);
   --highlight:  hsl( 50, 75%, 75%);
-  --neutral:    hsl(200, 5%, 95%);
-  --text:       black;
-  --background: white;
+  --neutral:    hsl(200,  5%, 95%);
+  --text:       white;
+  --background: black;
   --content-width: 45rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
