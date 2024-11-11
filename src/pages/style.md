@@ -30,6 +30,8 @@ description: "This page demonstrates the styling of all available elements."
 
 (~
 
+Hamburger Menu Icon: ===
+
 Here is some *emphasis text*. Here is some **bold text**. Here is some `inline code`. Here is an [internal link](/) and an [external link](https://github.com). This is some more text that will hopefully be long enough to cause some wrapping and show off how a paragraph of text will look on the website.
 
 ~)

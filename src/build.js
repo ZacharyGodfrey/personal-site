@@ -10,6 +10,7 @@ const shell = readFile('src/assets/shell.html');
 const partials = {
   favicon: readFile('src/assets/terminal.png', 'base64'),
   fontFancy: readFile('src/assets/satisfy.ttf', 'base64'),
+  fontMono: readFile('src/assets/fira-code-variable.ttf', 'base64'),
   style: await minifyCSS(readFile('src/assets/style.css')),
   hero: readFile('src/static/animated.png', 'base64')
 };
