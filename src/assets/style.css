@@ -5,6 +5,7 @@
   --background: hsl(200, 100%, 15%);
   --highlight:  hsl(200, 100%, 45%);
   --action:     hsl(175, 100%, 45%);
+  --footer:     hsl(200, 100%, 10%);
   --content-width: 45rem;
   --line-thickness: 1px;
   --radius: 0.5rem;
@@ -65,6 +66,7 @@ section {
 
 footer {
   padding: calc(2 * var(--padding)) var(--padding);
+  background: var(--footer);
 }
 
 header > *, section > *, footer > * {
