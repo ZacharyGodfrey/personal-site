@@ -1,10 +1,11 @@
 /* Pseudo Elements */
 
 :root {
+  --text:       white;
+  --background: hsl(  0,  0%, 30%);
+  --action:     hsl(  0, 50%, 50%);
   --primary:    hsl(210, 50%, 50%);
   --accent:     hsl(150, 50%, 50%);
-  --text:       white;
-  --background: hsl(210, 50%, 25%);
   --content-width: 45rem;
   --line-thickness: 1px;
   --radius: 0.5rem;
@@ -103,16 +104,16 @@ h2, h3 {
   font-family: sans-serif;
 }
 
-h1 a, h2 a, h3 a {
-  color: inherit;
+a {
   text-decoration: none;
 }
 
-a:not(h1 a, h2 a, h3 a) {
-  color: var(--accent);
-  text-decoration: underline;
-  text-decoration-color: var(--accent);
-  text-decoration-thickness: var(--line-thickness);
+h1 a, h2 a, h3 a {
+  color: inherit;
+}
+
+a:not(h1 a, h2 a, h3 a), a:hover {
+  color: var(--action);
 }
 
 th, strong {
