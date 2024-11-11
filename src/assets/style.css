@@ -1,12 +1,12 @@
 /* Pseudo Elements */
 
 :root {
-  --primary:    hsl(215, 50%, 50%);
+  --primary:    hsl(200, 50%, 50%);
   --accent:     hsl(150, 50%, 50%);
-  --text:       hsla(215, 0%, 100%, 75%);
-  --background: hsl(215, 50%, 25%);
+  --text:       hsla(200, 0%, 100%, 80%);
+  --background: hsl(200, 50%, 20%);
   --content-width: 45rem;
-  --line-thickness: 2px;
+  --line-thickness: 1px;
   --radius: 0.5rem;
   --margin: 2rem;
   --padding: 1rem;
