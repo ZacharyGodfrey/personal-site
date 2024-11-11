@@ -162,7 +162,7 @@ li:has(input[type="checkbox"]:disabled) {
   list-style-type: none;
 }
 
-ul > li:marker {
+ul > li::marker {
   content: '=>'
 }
 
