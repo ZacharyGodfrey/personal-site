@@ -3,7 +3,7 @@
 :root {
   --text:       black;
   --background: white;
-  --action:     hsl(  0, 90%, 45%);
+  --action:     hsl( 85, 45%, 45%);
   --highlight:  hsl( 55, 90%, 60%);
   --info:       hsl(205, 90%, 45%);
   --footer:     hsl(205, 90%, 15%);
