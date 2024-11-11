@@ -1,10 +1,10 @@
 /* Pseudo Elements */
 
 :root {
-  --primary:    hsl(200, 45%, 45%);
-  --accent:     hsl(150, 60%, 60%);
-  --text:       hsla(200, 0%, 100%, 75%);
-  --background: hsl(200, 45%, 30%);
+  --primary:    hsl(215, 50%, 50%);
+  --accent:     hsl(150, 50%, 50%);
+  --text:       hsla(215, 0%, 100%, 75%);
+  --background: hsl(215, 50%, 25%);
   --content-width: 45rem;
   --line-thickness: 2px;
   --radius: 0.5rem;
@@ -26,8 +26,7 @@
 :last-child  {   margin-block-end: 0 !important; }
 
 ::selection {
-  color: var(--primary);
-  background: var(--accent);
+  background: var(--primary);
 }
 
 /* Layout */
