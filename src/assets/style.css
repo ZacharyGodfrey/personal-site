@@ -68,7 +68,7 @@ section {
 footer {
   padding: calc(2 * var(--padding)) var(--padding);
   color: white;
-  background: var(--info);
+  background: var(--footer);
 }
 
 header > *, section > *, footer > * {
@@ -160,10 +160,6 @@ li {
 
 li:has(input[type="checkbox"]:disabled) {
   list-style-type: none;
-}
-
-ul > li::marker {
-  content: '=>'
 }
 
 img {
