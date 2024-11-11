@@ -3,7 +3,7 @@
 :root {
   --primary:    hsl(200, 45%, 45%);
   --accent:     hsl(150, 60%, 60%);
-  --text:       hsl(200, 15%, 75%);
+  --text:       hsl(200, 30%, 90%);
   --background: hsl(200, 45%, 30%);
   --content-width: 45rem;
   --line-thickness: 2px;
@@ -45,7 +45,6 @@ body {
 }
 
 header, footer {
-  color: white;
   background: var(--primary);
 }
 
@@ -128,7 +127,6 @@ em {
 p > code {
   display: inline-block;
   padding: calc(var(--padding) / 4);
-  color: white;
   background: var(--primary);
   border-radius: var(--radius);
 }
