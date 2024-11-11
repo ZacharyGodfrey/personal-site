@@ -1,11 +1,11 @@
 /* Pseudo Elements */
 
 :root {
+  --text:       black;
+  --background: white;
   --action:     hsl(  0, 90%, 45%);
   --highlight:  hsl( 55, 90%, 60%);
   --info:       hsl(205, 90%, 45%);
-  --text:       hsl(  0,  0%,  5%);
-  --background: hsl(  0,  0%, 95%);
   --footer:     hsl(  0,  0%, 75%);
   --content-width: 45rem;
   --line-thickness: 1px;
@@ -67,8 +67,7 @@ section {
 
 footer {
   padding: calc(2 * var(--padding)) var(--padding);
-  color: var(--background);
-  background: var(--text);
+  background: var(--footer);
 }
 
 header > *, section > *, footer > * {
