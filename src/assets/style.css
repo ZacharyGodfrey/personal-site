@@ -2,10 +2,10 @@
 
 :root {
   --text:       white;
-  --action:     hsl(185, 75%, 80%);
-  --highlight:  hsl(185, 75%, 40%);
-  --background: hsl(185, 75%, 20%);
-  --footer:     hsl(185, 75%, 10%);
+  --action:     hsl(205, 75%, 80%);
+  --highlight:  hsl(205, 75%, 40%);
+  --background: hsl(205, 75%, 20%);
+  --footer:     hsl(205, 75%, 10%);
   --content-width: 45rem;
   --line-thickness: 1px;
   --radius: 0.5rem;
