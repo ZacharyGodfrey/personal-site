@@ -2,9 +2,9 @@
 
 :root {
   --text:       white;
-  --background: hsl(210, 50%, 25%);
-  --action:     hsl(210, 50%, 50%);
-  --highlight:  hsl(150, 50%, 50%);
+  --background: hsl(210, 60%, 20%);
+  --highlight:  hsl(210, 80%, 60%);
+  --action:     hsl(150, 50%, 50%);
   --content-width: 45rem;
   --line-thickness: 1px;
   --radius: 0.5rem;
