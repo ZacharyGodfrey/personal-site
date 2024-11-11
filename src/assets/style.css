@@ -1,10 +1,10 @@
 /* Pseudo Elements */
 
 :root {
-  --primary:    hsl(205, 50%, 50%);
+  --primary:    hsl(200, 50%, 50%);
   --accent:     hsl(  0, 50%, 50%);
   --highlight:  hsl( 50, 75%, 75%);
-  --neutral:    hsl(205, 90%, 98%);
+  --neutral:    hsl(200, 90%, 98%);
   --text:       black;
   --background: white;
   --content-width: 45rem;
