@@ -105,22 +105,16 @@ h2, h3 {
   font-family: sans-serif;
 }
 
-a {
+h1 a, h2 a, h3 a {
   color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: var(--line-thickness);
-}
-
-article a {
-  text-decoration-color: var(--accent);
-}
-
-a:not(h1 > a):hover {
-  color: var(--accent);
-}
-
-h1 > a {
   text-decoration: none;
+}
+
+a:not(h1 a, h2 a, h3 a) {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: var(--line-thickness);
 }
 
 th, strong {
