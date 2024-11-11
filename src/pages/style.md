@@ -47,7 +47,7 @@ Here is some *emphasis text*. Here is some **bold text**. Here is some `inline c
 ```js
 
 const test = () => {
-  console.log('it works!');
+  console.log(1 <= 2); // true
 };
 
 ```

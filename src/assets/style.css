@@ -112,6 +112,10 @@ em {
   font-style: italic;
 }
 
+code {
+  font-family: 'fira', monospace;
+}
+
 p > code {
   display: inline-block;
   padding: calc(var(--padding) / 4);
