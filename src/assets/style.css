@@ -2,7 +2,7 @@
 
 :root {
   --text:       white;
-  --background: hsl(85, 15%, 45%);
+  --background: hsl(85, 15%, 15%);
   --highlight:  hsl(85, 90%, 30%);
   --action:     hsl(200, 90%, 45%);
   --content-width: 45rem;
