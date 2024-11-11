@@ -4,6 +4,7 @@
   --text:       white;
   --background: hsl(  0,  0%, 30%);
   --action:     hsl(  0, 50%, 50%);
+  --highlight:  hsl( 50, 90%, 70%);
   --primary:    hsl(210, 50%, 50%);
   --accent:     hsl(150, 50%, 50%);
   --content-width: 45rem;
