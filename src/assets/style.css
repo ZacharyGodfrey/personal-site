@@ -2,9 +2,8 @@
 
 :root {
   --primary:    hsl(200, 45%, 45%);
-  --accent:     hsl(185, 75%, 45%);
+  --accent:     hsl(150, 60%, 60%);
   --highlight:  hsl( 50, 75%, 75%);
-  /* --neutral:    hsl(200,  5%, 95%); */
   --text:       hsl(200, 15%, 75%);
   --background: hsl(200, 45%, 30%);
   --content-width: 45rem;
@@ -64,9 +63,9 @@ section {
   padding: calc(4 * var(--padding)) var(--padding);
 }
 
-/* section:nth-child(odd) {
-  background: var(--neutral);
-} */
+section:nth-child(odd) {
+  background: hsla(0, 0%, 100%, 5%);
+}
 
 footer {
   padding: calc(2 * var(--padding)) var(--padding);
