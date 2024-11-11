@@ -4,8 +4,8 @@
   --text:       white;
   --action:     hsl(205, 75%, 80%);
   --highlight:  hsl(205, 75%, 40%);
-  --background: hsl(205, 75%, 20%);
-  --footer:     hsl(205, 75%, 10%);
+  --background: hsl(205, 25%, 20%);
+  --footer:     hsl(205, 25%, 10%);
   --content-width: 45rem;
   --line-thickness: 1px;
   --radius: 0.5rem;
