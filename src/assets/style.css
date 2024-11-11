@@ -115,8 +115,7 @@ a:not(h1 a, h2 a, h3 a) {
 }
 
 th, strong {
-  font-weight: normal;
-  color: var(--info);
+  font-weight: bold;
 }
 
 em {
@@ -160,6 +159,10 @@ li {
 
 li:has(input[type="checkbox"]:disabled) {
   list-style-type: none;
+}
+
+ul > li:marker {
+  content: '=>'
 }
 
 img {
