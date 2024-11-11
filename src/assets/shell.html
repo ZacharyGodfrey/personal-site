@@ -22,11 +22,13 @@
     </style>
   </head>
   <body>
+    {{^meta.noHeader}}
     <header>
       <h1 class="text-center">
         <a href="/">Zachary Godfrey</a>
       </h1>
     </header>
+    {{/meta.noHeader}}
 
     <article>
       {{>content}}
