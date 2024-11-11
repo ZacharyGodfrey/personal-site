@@ -27,7 +27,6 @@
 :last-child  {   margin-block-end: 0 !important; }
 
 ::selection {
-  color: var(--background);
   background: var(--highlight);
 }
 
@@ -129,7 +128,6 @@ code {
 p > code {
   display: inline-block;
   padding: calc(var(--padding) / 4);
-  color: var(--background);
   background: var(--highlight);
   border-radius: var(--radius);
 }
