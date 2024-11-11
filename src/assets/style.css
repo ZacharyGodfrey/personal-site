@@ -4,8 +4,9 @@
   --action:     hsl(  0, 90%, 45%);
   --highlight:  hsl( 55, 90%, 60%);
   --info:       hsl(205, 90%, 45%);
-  --text:       hsl(  0,  0%, 10%);
-  --background: hsl(  0,  0%, 90%);
+  --text:       hsl(  0,  0%,  5%);
+  --background: hsl(  0,  0%, 95%);
+  --footer:     hsl(  0,  0%, 75%);
   --content-width: 45rem;
   --line-thickness: 1px;
   --radius: 0.5rem;
