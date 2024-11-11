@@ -3,10 +3,10 @@
 :root {
   --text:       black;
   --background: white;
-  --action:     hsl( 85, 45%, 45%);
   --highlight:  hsl( 55, 90%, 60%);
-  --info:       hsl(205, 90%, 45%);
-  --footer:     hsl(205, 90%, 15%);
+  --action:     hsl( 85, 60%, 45%);
+  --info:       hsl(205, 60%, 45%);
+  --footer:     hsl(205, 45%, 15%);
   --content-width: 45rem;
   --line-thickness: 1px;
   --radius: 0.5rem;
