@@ -3,7 +3,7 @@
 :root {
   --primary:    hsl(200, 45%, 45%);
   --accent:     hsl(150, 60%, 60%);
-  --text:       hsl(200, 30%, 90%);
+  --text:       hsla(200, 0%, 100%, 75%);
   --background: hsl(200, 45%, 30%);
   --content-width: 45rem;
   --line-thickness: 2px;
@@ -54,8 +54,8 @@ header {
 
 article {
   flex: 1;
-  color: var(--text);
-  background: var(--background);
+  /* color: var(--text); */
+  /* background: var(--background); */
 }
 
 section {
