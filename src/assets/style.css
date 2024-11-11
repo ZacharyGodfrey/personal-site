@@ -44,9 +44,9 @@ body {
   flex-direction: column;
 }
 
-header, footer {
+/* header, footer {
   background: var(--primary);
-}
+} */
 
 header {
   padding: var(--padding);
@@ -62,9 +62,9 @@ section {
   padding: calc(4 * var(--padding)) var(--padding);
 }
 
-section:nth-child(even) {
+/* section:nth-child(even) {
   background: hsla(0, 0%, 100%, 4%);
-}
+} */
 
 footer {
   padding: calc(2 * var(--padding)) var(--padding);
