@@ -116,7 +116,7 @@ a:not(h1 a, h2 a, h3 a) {
 }
 
 th, strong {
-  font-weight: bold;
+  font-weight: normal;
   color: var(--info);
 }
 
