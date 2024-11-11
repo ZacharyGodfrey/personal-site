@@ -1,11 +1,11 @@
 /* Pseudo Elements */
 
 :root {
-  --text:       white;
-  --action:     hsl(205, 75%, 80%);
-  --highlight:  hsl(205, 75%, 40%);
-  --background: hsl(205, 25%, 20%);
-  --footer:     hsl(205, 25%, 10%);
+  --text:       black;
+  --background: white;
+  --action:     hsl(  0, 90%, 45%);
+  --highlight:  hsl(205, 90%, 45%);
+  --footer:     hsl(  0,  0%, 30%);
   --content-width: 45rem;
   --line-thickness: 1px;
   --radius: 0.5rem;
