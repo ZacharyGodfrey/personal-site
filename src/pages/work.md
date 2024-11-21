@@ -16,7 +16,13 @@ section)
 
 *Aug 2021 - Present* at [The Knot](https://theknot.com)
 
-**Tech Stack:** NodeJS, GraphQL, Elasticsearch, Redis, RabbitMQ
+**Tech Stack:**
+
+- NodeJS
+- GraphQL
+- Elasticsearch
+- Redis
+- RabbitMQ
 
 section)
 
