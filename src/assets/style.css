@@ -4,8 +4,8 @@
   --text:      white;
   --primary:   hsl(85, 15%, 40%);
   --alternate: hsl(85, 15%, 45%);
-  --accent:    hsl(185, 75%, 60%);
-  --highlight: hsl(55, 90%, 60%);
+  --accent:    hsl(85, 60%, 60%);
+  --highlight: hsl(85, 90%, 75%);
   --light:     hsl(55,  5%, 98%);
   --medium:    hsl(55,  5%, 90%);
   --dark:      hsl(85,  5%, 30%);
@@ -30,7 +30,7 @@
 :last-child  {   margin-block-end: 0 !important; }
 
 ::selection {
-  color: var(--text);
+  color: black;
   background: var(--highlight);
 }
 
