@@ -28,7 +28,7 @@ section)
 
 `Angular` `TypeScript` `NodeJS` `PostgreSQL`
 
-**AWS Services:** `Lambda`, `S3`, `RDS`, `Elasticsearch`, `Step Functions`, `SES`
+**AWS Services:** `Lambda` `S3` `RDS` `Elasticsearch` `Step Functions` `SES`
 
 - Transitioned an existing government web application away from a Microsoft technology stack (C#, MSSQL) and onto a platform-agnostic technology stack (Angular, TypeScript, NodeJS, PostgreSQL) to prevent vendor-lock and enable a transition into the cloud
 - Facilitated the transition of the web application out of a government datacenter and into AWS GovCloud
