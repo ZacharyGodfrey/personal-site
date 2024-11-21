@@ -38,6 +38,16 @@ Here is some *emphasis text*. Here is some **bold text**. Here is some `inline c
 
 (~
 
+(card
+
+This is a card!
+
+card)
+
+~)
+
+(~
+
 ![alt text here](/trees.jpg)
 
 ~)

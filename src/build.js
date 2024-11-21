@@ -1,5 +1,5 @@
 import { readFile, listFiles, emptyFolder, copyFolder, writeFile } from '../lib/file.js';
-import { renderMD, renderSections, minifyCSS, parseMetadata, renderMustache } from '../lib/transform.js';
+import { renderMD, renderCustomTags, renderSections, minifyCSS, parseMetadata, renderMustache } from '../lib/transform.js';
 import { renderEmoji } from '../lib/emoji.js';
 import { byAscending } from '../lib/misc.js';
 
@@ -35,8 +35,10 @@ pages.forEach(({ uri, meta, content: rawContent }) => {
   const data = { meta, posts };
   const content = renderEmoji(
     renderSections(
-      renderMD(
-        renderMustache(rawContent, data, partials)
+      renderCustomTags(
+        renderMD(
+          renderMustache(rawContent, data, partials)
+        )
       )
     )
   );
