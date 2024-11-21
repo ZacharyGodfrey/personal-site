@@ -68,14 +68,8 @@ section {
   padding: calc(4 * var(--padding)) var(--padding);
 }
 
-article > section:nth-child(odd) {
-  /* background: var(--primary); */
-  background: hsla(0, 0%, 0%, 3%);
-}
-
-article > section:nth-child(even) {
-  /* background: var(--alternate); */
-  background: hsla(0, 0%, 100%, 3%);
+article > section {
+  background: linear-gradient(180deg, hsla(0, 0%, 0%, 3%), hsla(0, 0%, 100%, 3%));
 }
 
 header > *, section > *, footer > * {
