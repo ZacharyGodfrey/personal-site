@@ -16,8 +16,6 @@ My personal projects rarely see the light of day. The projects listed here are t
 
 ### Axe Charts
 
-(card
-
 I created [Axe Charts](https://axecharts.com) to supplement the official stats website for IATF axe throwing. In addition to providing in-depth performance statistics for Premier axe throwers, the site also implements some key feature requests from the axe throwing community:
 
 - [Badges](https://axecharts.com/badges) provide fun performance milestones to work toward while chasing down that elusive 81 score.
@@ -27,15 +25,11 @@ With this site, I wanted to explore using SQLite to store the scraped data in a 
 
 View the code on [GitHub](https://github.com/ZacharyGodfrey/axe-charts).
 
-card)
-
 ~)
 
 (~
 
 ### Pub Subs
-
-(card
 
 I made this [simple page](https://pubsubs.netlify.app) to display whether Publix Chicken Tender Subs are on sale. They're a local favorite item, and I thought it would be a fun little project that makes use of a publicly available API.
 
@@ -44,7 +38,5 @@ The project uses a GitHub action triggered on a cron schedule to hit the API end
 When the GitHub action pushes the JSON file change back to the repository, it triggers a new build of the site in Netlify. The site keeps itself up to date with no manual intervention, costs me nothing, and is as simple as a single static web page.
 
 View the code on [GitHub](https://github.com/ZacharyGodfrey/pubsubs).
-
-card)
 
 ~)
