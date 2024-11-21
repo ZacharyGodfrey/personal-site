@@ -4,10 +4,10 @@
   --text:      white;
   --primary:   hsl( 85, 15%, 40%);
   --alternate: hsl( 85, 15%, 45%);
-  --accent:    hsl( 85, 60%, 60%);
+  --accent:    hsl( 55, 75%, 60%);
   --highlight: hsl(185, 90%, 75%);
-  --light:     hsl( 55,  5%, 98%);
-  --medium:    hsl( 55,  5%, 90%);
+  --light:     hsl( 85,  5%, 98%);
+  --medium:    hsl( 85,  5%, 90%);
   --dark:      hsl( 85,  5%, 30%);
   --content-width: 45rem;
   --line-thickness: 1px;
