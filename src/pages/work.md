@@ -12,13 +12,17 @@ description: ""
 
 (~
 
+(card
+
 ### Senior Software Engineer
 
 *Aug 2021 - Present* at [The Knot](https://theknot.com)
 
 **Tech Stack:** NodeJS, GraphQL, Elasticsearch, Redis, RabbitMQ
 
----
+card)
+
+(card
 
 ### Senior Software Engineer
 
@@ -37,7 +41,9 @@ description: ""
 - Regularly conducted meetings with government stakeholders to demonstrate new features, gather feedback, and propose future changes
 - Met with non-government partner companies (and often their third-party development companies) to assist with getting their data into our system -->
 
----
+card)
+
+(card
 
 ### Application Developer
 
@@ -48,7 +54,9 @@ description: ""
 <!-- - Designed, developed, and tested new features and bug fixes for clients' websites
 - Communicated directly with clients daily via email and phone to gather requirements, discuss project timelines, and provide status updates -->
 
----
+card)
+
+(card
 
 ### Application Developer
 
@@ -62,7 +70,9 @@ description: ""
 - Developed and maintained pages for several clients including the New York Times
 - Ran A/B split tests on clients' websites -->
 
----
+card)
+
+(card
 
 ### Quality Assurance Specialist
 
@@ -73,5 +83,7 @@ description: ""
 <!-- - Performed manual user-acceptance testing of web applications
 - Audited the configuration of site analytics tools and A/B split tests
 - Created an automated testing tool and wrote a suite of automated user-acceptance tests using Selenium/WebDriver -->
+
+card)
 
 ~)

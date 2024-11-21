@@ -15,11 +15,13 @@ I write blog posts *very infrequently*. Still, I hope you find some value in the
 
 {{#posts}}
 
+(card
+
 ### {{meta.title}}
 
 {{meta.date}} [Read](/{{{uri}}})
 
-<br>
+card)
 
 {{/posts}}
 
