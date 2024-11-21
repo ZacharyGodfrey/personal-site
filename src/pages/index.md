@@ -8,11 +8,13 @@ description: "The personal website of Zachary Godfrey"
 
 ![hero](data:image/png;base64,{{>hero}})
 
-## :wave: Hey, I'm Zach.
+## Hey, I'm Zach.
+
+:wave: Senior Software Engineer at [The Knot](https://theknot.com)
 
 :earth_americas: Florida, USA
 
-I'm a Senior Software Engineer at [The Knot](https://theknot.com). I'm also a husband, father, and competitive axe thrower.
+I'm also a husband, father, and competitive axe thrower.
 
 section)
 
