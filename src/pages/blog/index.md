@@ -11,18 +11,14 @@ I write blog posts *very infrequently*. Still, I hope you find some value in the
 
 section)
 
-(section
-
 {{#posts}}
 
-(card
+(section
 
 ### [{{meta.title}}](/{{{uri}}})
 
 {{meta.date}}
 
-card)
+section)
 
 {{/posts}}
-
-section)
