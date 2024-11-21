@@ -69,7 +69,7 @@ section {
 }
 
 article > section {
-  background: linear-gradient(180deg, hsla(0, 0%, 0%, 3%), transparent);
+  background: linear-gradient(180deg, hsla(0, 0%, 0%, 5%), transparent);
 }
 
 header > *, section > *, footer > * {
