@@ -10,10 +10,9 @@ description: "The personal website of Zachary Godfrey"
 
 ## Hey, I'm Zach.
 
-:earth_americas: Florida, USA\
-:desktop_computer: Senior Software Engineer at [The Knot](https://theknot.com)\
-:heart: Husband and father\
-:axe: Competitive axe thrower
+:desktop_computer: Senior Software Engineer at [The Knot](https://theknot.com)
+
+:earth_americas: :us: :round_pushpin: Florida, USA
 
 section)
 
