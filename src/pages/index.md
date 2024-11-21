@@ -10,11 +10,10 @@ description: "The personal website of Zachary Godfrey"
 
 ## Hey, I'm Zach.
 
-:wave: Senior Software Engineer at [The Knot](https://theknot.com)
-
-:earth_americas: Florida, USA
-
-I'm also a husband, father, and competitive axe thrower.
+:earth_americas: Florida, USA\
+:desktop_computer: Senior Software Engineer at [The Knot](https://theknot.com)\
+:heart: Husband and father\
+:axe: Competitive axe thrower
 
 section)
 
@@ -22,7 +21,7 @@ section)
 
 ### Work
 
-:computer: I have more than *a decade* of [experience](/work) building and maintaining software in a variety of languages and technology stacks.
+:desktop_computer: I have more than *a decade* of [experience](/work) building and maintaining software in a variety of languages and technology stacks.
 
 :sunny: Most of my work has either been on internal systems that cannot be shared or on back-end systems that aren't visible. Because of this, I don't have a pretty portfolio of work to show. However, you can check out my [personal projects](/projects) to see what I've built outside of work.
 
