@@ -2,8 +2,8 @@
 
 :root {
   --text:      white;
-  --primary:   hsl(85, 15%, 45%);
-  --alternate: hsl(85, 15%, 40%);
+  --primary:   hsl(85, 15%, 40%);
+  --alternate: hsl(85, 15%, 45%);
   --accent:    hsl( 0, 45%, 45%);
   --highlight: hsl(55, 90%, 60%);
   --light:     hsl(55,  5%, 98%);
