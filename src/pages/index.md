@@ -14,7 +14,7 @@ description: "The personal website of Zachary Godfrey"
 
 :wave: **Hey, I'm Zach.** I'm a Senior Software Engineer at [The Knot](https://theknot.com).
 
-I'm also a husband and father and a competitive axe thrower.
+I'm also a husband, father, and competitive axe thrower.
 
 card)
 
