@@ -68,12 +68,8 @@ section {
   padding: calc(4 * var(--padding)) var(--padding);
 }
 
-article > section:nth-child(odd) {
-  background: var(--primary);
-}
-
-article > section:nth-child(even) {
-  background: var(--alternate);
+article > section {
+  background: linear-gradient(180deg, hsla(0, 0%, 0%, 5%), transparent);
 }
 
 header > *, section > *, footer > * {
@@ -104,6 +100,15 @@ h1 {
   letter-spacing: 1px;
   font-weight: normal;
   font-family: 'satisfy', sans-serif;
+}
+
+h2 {
+  text-shadow:
+    -1px -1px var(--dark),
+    1px -1px var(--dark),
+    -1px 1px var(--dark),
+    1px 1px var(--dark),
+    -4px 4px var(--accent);
 }
 
 a {
