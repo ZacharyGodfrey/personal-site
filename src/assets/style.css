@@ -102,6 +102,10 @@ h1 {
   font-family: 'satisfy', sans-serif;
 }
 
+h2, h3 {
+  text-shadow: 1px 1px var(--primary), 2px 2px var(--accent);
+}
+
 a {
   color: inherit;
   text-decoration: underline;
