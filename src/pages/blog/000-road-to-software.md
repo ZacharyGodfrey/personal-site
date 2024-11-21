@@ -5,15 +5,15 @@ order: "000"
 date: "May 30, 2024"
 ---
 
-(~
+(section
 
 ## {{meta.title}}
 
 *Posted on {{meta.date}}*
 
-~)
+section)
 
-(~
+(section
 
 When I graduated from high school, I had a lot of interests but didn't know which one I wanted to focus on in college. I decided to take a year off from school to figure it out. During that year, I had lunch with a few of my dad's coworkers who were web developers to ask them what it's like to do their job every day. I had an interest in programming, but I wanted to know what the job was really like. I loved what I heard and decided that was the career for me.
 
@@ -25,4 +25,4 @@ Ten months after being hired as a QA, I was interviewing for my first web develo
 
 I never went to college. My career was off to a great start, and I'd proved to myself that I can learn anything I'll need to know for free online. After several years at that first company, I moved on to other positions elsewhere. I'm still friends with many of the amazing people I met in those early days, and I'll always be thankful for the opportunities and help they gave me.
 
-~)
+section)

@@ -4,15 +4,15 @@ title: "Freddie the Forklift"
 description: "An original bedtime story."
 ---
 
-(~
+(section
 
 ## {{meta.title}}
 
 A [bedtime story](/bedtime-stories)
 
-~)
+section)
 
-(~
+(section
 
 **Once upon a time...**
 
@@ -36,4 +36,4 @@ Freddie held the crate of forks over his head and carried it to the shelf as he 
 
 **The end.**
 
-~)
+section)

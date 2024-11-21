@@ -4,15 +4,15 @@ title: "Gary the Grader"
 description: "An original bedtime story."
 ---
 
-(~
+(section
 
 ## {{meta.title}}
 
 A [bedtime story](/bedtime-stories)
 
-~)
+section)
 
-(~
+(section
 
 :warning: This story has not been written down yet.
 
@@ -20,4 +20,4 @@ A [bedtime story](/bedtime-stories)
 
 **The end.** -->
 
-~)
+section)

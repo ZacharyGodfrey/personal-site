@@ -4,15 +4,15 @@ title: "Personal Projects"
 description: ""
 ---
 
-(~
+(section
 
 ## {{meta.title}}
 
 My personal projects rarely see the light of day. The projects listed here are the exceptions. These aren't necessarily the best things I've ever built - just the ones that demonstrate the sort of thing I like to do with my spare time: running in the opposite direction of the current industry trend to see if there's wisdom to be found where nobody else is looking.
 
-~)
+section)
 
-(~
+(section
 
 ### Axe Charts
 
@@ -25,9 +25,9 @@ With this site, I wanted to explore using SQLite to store the scraped data in a 
 
 View the code on [GitHub](https://github.com/ZacharyGodfrey/axe-charts).
 
-~)
+section)
 
-(~
+(section
 
 ### Pub Subs
 
@@ -39,4 +39,4 @@ When the GitHub action pushes the JSON file change back to the repository, it tr
 
 View the code on [GitHub](https://github.com/ZacharyGodfrey/pubsubs).
 
-~)
+section)

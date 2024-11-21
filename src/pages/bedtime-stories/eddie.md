@@ -4,15 +4,15 @@ title: "Eddie the Excavator"
 description: "An original bedtime story."
 ---
 
-(~
+(section
 
 ## {{meta.title}}
 
 A [bedtime story](/bedtime-stories)
 
-~)
+section)
 
-(~
+(section
 
 **Once upon a time...**
 
@@ -36,4 +36,4 @@ With the help of all his friends, Eddie was able to get out of the deep hole, "T
 
 **The end.**
 
-~)
+section)

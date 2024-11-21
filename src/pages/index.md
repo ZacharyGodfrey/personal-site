@@ -4,7 +4,7 @@ title: ""
 description: "The personal website of Zachary Godfrey"
 ---
 
-(~
+(section
 
 ![hero](data:image/png;base64,{{>hero}})
 
@@ -14,9 +14,9 @@ description: "The personal website of Zachary Godfrey"
 
 I'm also a husband, father, and competitive axe thrower.
 
-~)
+section)
 
-(~
+(section
 
 ### Work
 
@@ -24,9 +24,9 @@ I'm also a husband, father, and competitive axe thrower.
 
 :sunny: You can check out my [personal projects](/projects) to see what I've built outside of work.
 
-~)
+section)
 
-(~
+(section
 
 ### Fun
 
@@ -38,4 +38,4 @@ I'm also a husband, father, and competitive axe thrower.
 
 :axe: I [throw axes](https://axescores.com/player/1207260) competitively in the IATF. In my first year in the sport, I qualified for and competed in the *2023 International Axe Throwing Championship*. From more than 20,000 throwers worldwide, the top 256 were selected to compete in the event. I placed 97th overall, which is in the top half for the tournament and the top 0.5% globally.
 
-~)
+section)
