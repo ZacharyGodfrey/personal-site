@@ -103,7 +103,7 @@ h1 {
 }
 
 h2, h3 {
-  text-shadow: -1px -1px var(--dark), -2px -2px var(--highlight);
+  text-shadow: -1px 1px var(--dark), -2px 2px var(--highlight);
 }
 
 a {
