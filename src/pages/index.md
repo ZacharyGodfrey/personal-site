@@ -20,7 +20,7 @@ section)
 
 (section
 
-### Work :desktop_computer:
+### Work
 
 I have more than *a decade* of [experience](/work) building and maintaining software in a variety of languages and technology stacks.
 
@@ -30,7 +30,7 @@ section)
 
 (section
 
-### Writing :speech_balloon:
+### Writing
 
 - I write [blog posts](/blog) *very infrequently*.
 - I've made up a few original [bedtime stories](/bedtime-stories) for my kids.
@@ -40,7 +40,7 @@ section)
 
 (section
 
-### Fun :axe:
+### Fun
 
 I [throw axes](https://axescores.com/player/1207260) competitively in the IATF. In my first year in the sport, I qualified for and competed in the *2023 International Axe Throwing Championship*. From more than 20,000 throwers worldwide, the top 256 were selected to compete in the event. I placed 97th overall, which is in the top half for the tournament and the top 0.5% globally.
 
