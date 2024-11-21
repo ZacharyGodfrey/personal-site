@@ -102,7 +102,7 @@ h1 {
   font-family: 'satisfy', sans-serif;
 }
 
-h2, h3 {
+h2 {
   text-shadow:
     -1px -1px var(--dark),
     1px -1px var(--dark),
