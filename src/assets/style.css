@@ -108,7 +108,7 @@ h2, h3 {
     1px -1px var(--dark),
     -1px 1px var(--dark),
     1px 1px var(--dark),
-    -2px 2px var(--highlight);
+    -4px 4px var(--accent);
 }
 
 a {
