@@ -17,9 +17,9 @@ I write blog posts *very infrequently*. Still, I hope you find some value in the
 
 (card
 
-### {{meta.title}}
+### [{{meta.title}}](/{{{uri}}})
 
-{{meta.date}} [Read](/{{{uri}}})
+{{meta.date}}
 
 card)
 
