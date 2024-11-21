@@ -4,15 +4,15 @@ title: "Style Guide"
 description: "This page demonstrates the styling of all available elements."
 ---
 
-(~
+(section
 
 ## {{meta.title}}
 
 {{meta.description}}
 
-~)
+section)
 
-(~
+(section
 
 # H1 Site Name
 
@@ -26,41 +26,53 @@ description: "This page demonstrates the styling of all available elements."
 
 ###### H6 Not Used
 
-~)
+section)
 
-(~
+(section
+
+Hamburger Menu Icon: ===
 
 Here is some *emphasis text*. Here is some **bold text**. Here is some `inline code`. Here is an [internal link](/) and an [external link](https://github.com). This is some more text that will hopefully be long enough to cause some wrapping and show off how a paragraph of text will look on the website.
 
-~)
+section)
 
-(~
+(section
+
+(card
+
+This is a card!
+
+card)
+
+section)
+
+(section
 
 ![alt text here](/trees.jpg)
 
-~)
+section)
 
-(~
+(section
 
 ```js
 
 const test = () => {
-  console.log('it works!');
+  console.log(1 <= 2); // true
 };
 
 ```
 
-~)
+section)
 
-(~
+(section
 
 > "You can't believe everything you read on the internet."
 >
 > \- Abraham Lincoln
 
-~)
+section)
 
-(~
+(section
 
 - Item One
 - Item Two
@@ -77,16 +89,16 @@ const test = () => {
 - [x] Complete item
 - [ ] Incomplete item
 
-~)
+section)
 
-(~
+(section
 
 [Emoji](https://github.com/ricealexander/emoji-list):
 :sunglasses: :white_check_mark: :100: :signal_strength: :+1: :tada:
 
-~)
+section)
 
-(~
+(section
 
 |Column A | Column B | Column C |
 |:--------|:--------:|---------:|
@@ -109,4 +121,4 @@ Here is a table without a header row:
 | 1 | &#9814; | &#9816; | &#9815; | &#9813; | &#9812; | &#9815; | &#9816; | &#9814; | 1 |
 |   |    A    |    B    |    C    |    D    |    E    |    F    |    G    |    H    |   |
 
-~)
+section)

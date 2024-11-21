@@ -1,5 +1,5 @@
 import { readFile, listFiles, emptyFolder, copyFolder, writeFile } from '../lib/file.js';
-import { renderMD, renderSections, minifyCSS, parseMetadata, renderMustache } from '../lib/transform.js';
+import { renderMD, renderCustomTags, minifyCSS, parseMetadata, renderMustache } from '../lib/transform.js';
 import { renderEmoji } from '../lib/emoji.js';
 import { byAscending } from '../lib/misc.js';
 
@@ -10,6 +10,7 @@ const shell = readFile('src/assets/shell.html');
 const partials = {
   favicon: readFile('src/assets/terminal.png', 'base64'),
   fontFancy: readFile('src/assets/satisfy.ttf', 'base64'),
+  fontMono: readFile('src/assets/fira-code-variable.ttf', 'base64'),
   style: await minifyCSS(readFile('src/assets/style.css')),
   hero: readFile('src/static/animated.png', 'base64')
 };
@@ -33,7 +34,7 @@ pages.forEach(({ uri, meta, content: rawContent }) => {
   const fileName = `dist/${uri}.html`;
   const data = { meta, posts };
   const content = renderEmoji(
-    renderSections(
+    renderCustomTags(
       renderMD(
         renderMustache(rawContent, data, partials)
       )

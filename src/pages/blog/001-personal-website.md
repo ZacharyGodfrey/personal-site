@@ -5,7 +5,7 @@ order: "001"
 date: "June 10, 2024"
 ---
 
-(~
+(section
 
 ## {{meta.title}}
 
@@ -13,17 +13,17 @@ date: "June 10, 2024"
 
 My personal website is intentionally simple; it's also fast, free, and portable. In short, what I've built is a statically generated website, hosted on a CDN, and authored using Markdown. The rest of this post will explain each of those parts and how they work together to achieve the listed benefits.
 
-~)
+section)
 
-(~
+(section
 
 ### Nothing Fancy
 
 First, a quick aside. When I'm building software, simplicity is my top priority. I prefer to use small, single-purpose tools over heavy, all-in-one frameworks. With these small tools, I can compose a solution that is just big enough to solve the problem at hand without introducing any unnecessary complexity. If my requirements change in the future, I can swap out each individual tool as needed without having to reconfigure the entire project.
 
-~)
+section)
 
-(~
+(section
 
 ### Authoring Content
 
@@ -35,9 +35,9 @@ The main content is written in Markdown, which is so much faster than writing th
 
 The combination of Frontmatter, Markdown, and Mustache make authoring content incredibly fast and easy.
 
-~)
+section)
 
-(~
+(section
 
 ### Static Site Generation
 
@@ -51,9 +51,9 @@ I could have used an existing static site generator to do the build, but most of
 - [marked](https://github.com/markedjs/marked) renders Markdown content into HTML
 - [mustache](https://github.com/janl/mustache.js) composes HTML templates and JSON data together
 
-~)
+section)
 
-(~
+(section
 
 ### CDN Hosting
 
@@ -61,9 +61,9 @@ Because my website is just a collection of static HTML documents, hosting my web
 
 I'm hosting my website on [Netlify](https://www.netlify.com)'s CDN. I'm not sponsored by them in any way, I just really enjoy using their service. The setup is extremely easy as well: connect to your GitHub repository, specify a build command and the expected output directory, and choose which branch to deploy. When you push a change to that branch in GitHub, Netlify will automatically pull the latest code, run the build command, upload the files in the output directory to the CDN, and your updates are live!
 
-~)
+section)
 
-(~
+(section
 
 ### Fast
 
@@ -82,9 +82,9 @@ With the first three points optimized, let's talk about that last point: renderi
 
 In summary: short trip to the server, zero computation, short trip back to the browser, no additional requests, fast rendering.
 
-~)
+section)
 
-(~
+(section
 
 ### Free
 
@@ -92,9 +92,9 @@ Because my content is authored in Markdown, which is basically plaintext, I can 
 
 I'm hosting my website for free using [Netlify](https://www.netlify.com)'s CDN. That's right, in addition to offering simplicity and a massive speed benefit, they will also host static websites like mine at absolutely no cost! Like I said, they aren't sponsoring this content, I just can't believe that companies like them have such a great free tier.
 
-~)
+section)
 
-(~
+(section
 
 ### Portable
 
@@ -102,9 +102,9 @@ In my previous jobs, I've seen the negative effects of vendor-lock: you want to 
 
 Having an entirely portable website is great for my peace of mind. If, for example, Netlify goes out of business or removes their free tier, I can easily and quickly get my website up and running with a different hosting provider.
 
-~)
+section)
 
-(~
+(section
 
 ### Conclusion
 
@@ -114,4 +114,4 @@ All of the code for my website is available on [GitHub](https://github.com/Zacha
 
 This was a long post; if you made it this far, thanks so much for reading!
 
-~)
+section)
