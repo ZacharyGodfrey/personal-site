@@ -39,6 +39,6 @@ section)
 
 ### Fun
 
-I [throw axes](https://axescores.com/player/1207260) competitively in the IATF. In my first year in the sport, I qualified for and competed in the *2023 International Axe Throwing Championship*. From more than 20,000 throwers worldwide, the top 256 were selected to compete in the event. I placed 97th overall, which is in the top half for the tournament and the top 0.5% globally.
+I throw axes competitively in the IATF. In my first year in the sport, I qualified for and competed in the *2023 International Axe Throwing Championship*. From more than 20,000 throwers worldwide, the top 256 were selected to compete in the event. I placed 97th overall, which is in the top half for the tournament and the top 0.5% globally.
 
 section)
