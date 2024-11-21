@@ -218,6 +218,7 @@ thead tr:not(:has(th:not(:empty))) {
 /* Specific Styles */
 
 img[alt="hero"] {
+  border: 4px solid white;
   border-radius: 50%;
   max-width: 12rem;
   filter: saturate(60%);
