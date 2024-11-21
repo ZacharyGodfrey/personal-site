@@ -5,7 +5,7 @@
   --primary:   hsl( 85, 15%, 40%);
   --alternate: hsl( 85, 15%, 45%);
   --accent:    hsl( 55, 75%, 60%);
-  --highlight: hsl(185, 60%, 60%);
+  --highlight: hsl(  0, 60%, 45%);
   --light:     hsl( 85,  5%, 98%);
   --medium:    hsl( 85,  5%, 90%);
   --dark:      hsl( 85,  5%, 30%);
@@ -218,7 +218,7 @@ thead tr:not(:has(th:not(:empty))) {
 /* Specific Styles */
 
 img[alt="hero"] {
-  border: 4px solid var(--dark);
+  border: 4px solid var(--accent);
   border-radius: 50%;
   max-width: 12rem;
   filter: saturate(60%);
