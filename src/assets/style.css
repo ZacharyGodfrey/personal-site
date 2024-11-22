@@ -127,6 +127,8 @@ button, a.button {
   font-weight: normal;
   text-align: center;
   text-decoration: none;
+  font-family: 'fira', monospace;
+  font-size: 1rem;
   line-height: inherit;
   filter: drop-shadow(-4px 4px hsla(0, 0%, 0%, 25%));
   cursor: pointer;
