@@ -33,7 +33,7 @@ section)
 
 I throw axes competitively in the IATF. In my first year in the sport, I qualified for and competed in the *2023 International Axe Throwing Championship*. From more than 20,000 throwers worldwide, the top 256 were selected to compete in the event. I placed 97th overall, which is in the top half for the tournament and the top 0.5% globally.
 
-I enjoy writing, though it's not something I do often. I like to write [Haiku](/haiku) poems to share topics that I find interesting, I've made up a few original [bedtime stories](/bedtime-stories) for my kids, and I write [blog posts](#blog-posts) *very infrequently*.
+I enjoy writing, but it's not something I do often. I like to write [Haiku](/haiku) poems to share topics that I find interesting, I've made up a few original [bedtime stories](/bedtime-stories) for my kids, and I write [blog posts](#blog-posts) *very infrequently*.
 
 section)
 
@@ -43,7 +43,8 @@ section)
 
 {{#posts}}
 
-[{{meta.title}}](/{{{uri}}}) | *{{meta.date}}*
+[{{meta.title}}](/{{{uri}}})\
+*{{meta.date}}*
 
 {{/posts}}
 
