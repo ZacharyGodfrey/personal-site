@@ -5,7 +5,7 @@
   --primary:   hsl(85, 15%, 40%);
   --alternate: hsl(85, 15%, 45%);
   --accent:    hsl(55, 75%, 60%);
-  --highlight: hsl(85, 60%, 45%);
+  /* --highlight: hsl(85, 60%, 45%); */
   --light:     hsl(85,  5%, 98%);
   --medium:    hsl(85,  5%, 90%);
   --dark:      hsl(85,  5%, 30%);
@@ -30,8 +30,8 @@
 :last-child  {   margin-block-end: 0 !important; }
 
 ::selection {
-  color: black;
-  background: var(--highlight);
+  color: var(--dark);
+  background: var(--accent);
 }
 
 /* Layout */
@@ -126,7 +126,7 @@ button, a.button {
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
-  color: black;
+  color: var(--dark);
   background: var(--accent);
   border: 1px solid var(--dark);
   font-size: 1rem;
@@ -230,7 +230,7 @@ thead tr:not(:has(th:not(:empty))) {
 .card {
   padding: var(--padding);
   border-radius: var(--radius);
-  color: black;
+  color: var(--dark);
   background: white;
   filter: drop-shadow(-4px 4px hsla(0, 0%, 0%, 25%));
 }
