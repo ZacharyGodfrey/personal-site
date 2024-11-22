@@ -10,7 +10,9 @@ description: "The personal website of Zachary Godfrey"
 
 ## Hello!
 
-:wave: Hey, I'm **Zach**. I'm a **Senior Software Engineer** based in **Florida**. I'm currently working at [The Knot](https://theknot.com). I'm also a husband, father, and competitive axe thrower.
+:wave: Hey, I'm **Zach**. I'm a **Senior Software Engineer** based in **Florida**. I'm also a husband, father, and competitive axe thrower.
+
+I'm currently working at [The Knot](https://theknot.com).
 
 section)
 
