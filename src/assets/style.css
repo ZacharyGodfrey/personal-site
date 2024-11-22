@@ -135,6 +135,8 @@ button, a.button {
 }
 
 button:hover, a.button:hover {
+  color: var(--accent);
+  background: var(--dark);
   filter: drop-shadow(-4px 4px hsla(0, 0%, 0%, 5%));
 }
 
