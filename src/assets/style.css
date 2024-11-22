@@ -48,8 +48,13 @@ main {
   background: var(--main);
 }
 
-header, footer {
+header {
   padding: var(--padding);
+  background: var(--dark);
+}
+
+footer {
+  padding: calc(2 * var(--padding)) var(--padding) calc(4 * var(--padding)) var(--padding);
   background: var(--dark);
 }
 
