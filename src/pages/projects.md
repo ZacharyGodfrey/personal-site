@@ -8,7 +8,7 @@ description: ""
 
 ## {{meta.title}}
 
-My personal projects rarely see the light of day. The projects listed here are the exceptions. These aren't necessarily the best things I've ever built - just the ones that demonstrate the sort of thing I like to do with my spare time: running in the opposite direction of the current industry trend to see if there's wisdom to be found where nobody else is looking.
+I'm primarily a back-end engineer, so my UI design in these projects likely won't impress you. I built these projects either to solve an interesing problem or to explore a new concept (new to me, anyway).
 
 section)
 
@@ -33,7 +33,7 @@ section)
 
 I made this [simple page](https://pubsubs.netlify.app) to display whether Publix Chicken Tender Subs are on sale. They're a local favorite item, and I thought it would be a fun little project that makes use of a publicly available API.
 
-The project uses a GitHub action triggered on a cron schedule to hit the API endpoint once a week when the sales week starts. The JSON response from the API endpoint is stored as a file in the repository.
+The UI is nothing to be impressed by, but I thought the method of getting the data was pretty cool. The project uses a GitHub action triggered on a cron schedule to hit the API endpoint once a week when the sales week starts. The JSON response from the API endpoint is stored as a file in the repository.
 
 When the GitHub action pushes the JSON file change back to the repository, it triggers a new build of the site in Netlify. The site keeps itself up to date with no manual intervention, costs me nothing, and is as simple as a single static web page.
 
