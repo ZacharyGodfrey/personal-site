@@ -5,11 +5,10 @@
   --main:   hsl(85, 15%, 40%);
   --accent: hsl(55, 75%, 60%);
   --dark:   hsl(85,  5%, 30%);
-  --content-width: 45rem;
-  --line-thickness: 1px;
-  --radius: 0.5rem;
   --margin: 2rem;
   --padding: 1rem;
+  --radius: 0.5rem;
+  --content-width: 45rem;
   font-size: 18px;
   font-family: 'fira', monospace;
   color: var(--text);
@@ -167,13 +166,13 @@ pre, blockquote {
 
 pre {
   font-size: 1rem;
-  border-top: var(--line-thickness) solid var(--text);
-  border-bottom: var(--line-thickness) solid var(--text);
+  border-top: 1px solid var(--text);
+  border-bottom: 1px solid var(--text);
 }
 
 blockquote {
-  border-left: var(--line-thickness) solid var(--text);
-  border-right: var(--line-thickness) solid var(--text);
+  border-left: 1px solid var(--text);
+  border-right: 1px solid var(--text);
 }
 
 ul, ol {
@@ -201,7 +200,7 @@ img {
 
 hr {
   width: 100%;
-  height: var(--line-thickness);
+  height: 1px;
   border: none;
   outline: none;
   background: var(--text);
@@ -213,12 +212,12 @@ table, th, td {
 
 table {
   width: 100%;
-  border: var(--line-thickness) solid var(--text);
+  border: 1px solid var(--text);
 }
 
 th, td {
   padding: calc(var(--padding) / 2);
-  border: var(--line-thickness) solid var(--text);
+  border: 1px solid var(--text);
 }
 
 thead tr:not(:has(th:not(:empty))) {
