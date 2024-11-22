@@ -43,7 +43,7 @@ section)
 
 {{#posts}}
 
-[{{meta.title}}](/{{{uri}}}) *{{meta.date}}*
+[{{meta.title}}](/{{{uri}}}) | *{{meta.date}}*
 
 {{/posts}}
 
