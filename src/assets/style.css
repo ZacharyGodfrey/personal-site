@@ -49,15 +49,8 @@ main {
 }
 
 header, footer {
-  background: var(--dark);
-}
-
-header {
   padding: var(--padding);
-}
-
-footer {
-  padding: calc(2 * var(--padding)) var(--padding);
+  background: var(--dark);
 }
 
 section {
