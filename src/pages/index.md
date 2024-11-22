@@ -23,6 +23,11 @@ I have more than *a decade* of experience building and maintaining software in a
 - See my specific [work experience](/work)
 - Checkout out my [personal projects](/projects)
 
+<p>
+  <a class="button" href="/work">Work Experience</a>
+  <a class="button" href="/projects">Personal Projects</a>
+</p>
+
 section)
 
 (section
