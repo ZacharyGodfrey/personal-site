@@ -14,7 +14,7 @@ section)
 
 ### Senior Software Engineer
 
-*Aug 2021 - Present* at [The Knot](https://theknot.com)
+[The Knot](https://theknot.com) | *Aug 2021 - Present*
 
 `NodeJS` `GraphQL` `Elasticsearch` `Redis` `RabbitMQ`
 
@@ -24,7 +24,7 @@ section)
 
 ### Senior Software Engineer
 
-*Oct 2018 - Jul 2021* at [BAM Technologies](https://bamtech.net)
+[BAM Technologies](https://bamtech.net) | *Oct 2018 - Jul 2021*
 
 `Angular` `TypeScript` `NodeJS` `PostgreSQL`
 
@@ -47,7 +47,7 @@ section)
 
 ### Application Developer
 
-*Oct 2017 - Oct 2018* at [Oyova Software](https://oyova.com)
+[Oyova Software](https://oyova.com) | *Oct 2017 - Oct 2018*
 
 `C#` `ASP.NET MVC and WebAPI` `Dapper ORM` `HTML5` `CSS3` `JavaScript` `jQuery`
 
@@ -60,7 +60,7 @@ section)
 
 ### Application Developer
 
-*Nov 2013 - Oct 2017* at [MECLABS](https://meclabs.com)
+[MECLABS](https://meclabs.com) | *Nov 2013 - Oct 2017*
 
 `C#` `ASP.NET MVC and WebAPI` `Entity Framework` `MSSQL` `HTML5` `CSS3` `JavaScript` `Angular` `PHP`
 
@@ -76,7 +76,7 @@ section)
 
 ### Quality Assurance Specialist
 
-*Jan 2013 - Nov 2013* at [MECLABS](https://meclabs.com)
+[MECLABS](https://meclabs.com) | *Jan 2013 - Nov 2013*
 
 `Java` `Selenium` `WebDriver`
 
