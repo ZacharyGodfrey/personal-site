@@ -14,9 +14,9 @@ section)
 
 (section
 
-[Funny status code][418]\
-Four eighteen I'm a teapot\
-Will not brew coffee
+> [Funny status code][418]\
+> Four eighteen I'm a teapot\
+> Will not brew coffee
 
 *July, 08 2024*
 
@@ -26,9 +26,9 @@ section)
 
 (section
 
-[Final transmission][oppy]\
-My battery is now low\
-And it's getting dark
+> [Final transmission][oppy]\
+> My battery is now low\
+> And it's getting dark
 
 *July 09, 2024*
 
@@ -38,9 +38,9 @@ section)
 
 (section
 
-[Hippopotamus][hippo]\
-A majestic river horse\
-Great chess opening
+> [Hippopotamus][hippo]\
+> A majestic river horse\
+> Great chess opening
 
 *July 10, 2024*
 
@@ -50,9 +50,9 @@ section)
 
 (section
 
-[Microservice app][monolith]\
-Longing for a monolith\
-Simplicity missed
+> [Microservice app][monolith]\
+> Longing for a monolith\
+> Simplicity missed
 
 *July 16, 2024*
 
@@ -62,9 +62,9 @@ section)
 
 (section
 
-[The first rule of holes][holes]:\
-If you're in one, stop digging.\
-Cool quote, sage advice.
+> [The first rule of holes][holes]:\
+> If you're in one, stop digging.\
+> Cool quote, sage advice.
 
 *July 17, 2024*
 
