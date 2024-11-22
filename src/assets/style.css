@@ -239,9 +239,10 @@ thead tr:not(:has(th:not(:empty))) {
 }
 
 .grid > * {
-  width: 100%;
   margin: 0 !important;
 }
+
+.grid.x-pinch { justify-content: space-around; }
 
 .grid.items-x-center { justify-items: center; }
 .grid.items-y-center { align-items: center; }
