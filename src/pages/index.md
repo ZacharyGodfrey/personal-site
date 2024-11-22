@@ -10,13 +10,15 @@ description: "The personal website of Zachary Godfrey"
 
 ## Hello!
 
-Hey, I'm **Zach**. I'm a **Senior Software Engineer** based in **Florida**. I'm also a husband, father, and competitive [axe thrower](#fun). I'm currently working at [The Knot](https://theknot.com).
+Hey, I'm **Zach**. I'm a **Senior Software Engineer** based in **Florida**. I'm also a husband, father, and competitive [axe thrower](#fun).
 
 section)
 
 (section
 
 ### Work
+
+I'm currently working at [The Knot](https://theknot.com) where I'm focused on our marketplace search platform.
 
 I have more than *a decade* of experience building and maintaining software in a variety of languages and technology stacks. Most of my work has either been on internal systems that cannot be shared or on back-end systems that aren't visible. Because of this, I don't have a pretty portfolio of work to show. However, you can check out my personal projects to see what I've built outside of work.
 

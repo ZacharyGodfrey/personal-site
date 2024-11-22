@@ -22,10 +22,6 @@ section)
 
 [418]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418
 
-section)
-
-(section
-
 > [Final transmission][oppy]\
 > My battery is now low\
 > And it's getting dark
@@ -33,10 +29,6 @@ section)
 *July 09, 2024*
 
 [oppy]: https://en.wikipedia.org/wiki/Opportunity_(rover)#Legacy_and_honors
-
-section)
-
-(section
 
 > [Hippopotamus][hippo]\
 > A majestic river horse\
@@ -46,10 +38,6 @@ section)
 
 [hippo]: https://www.youtube.com/watch?v=pdAthyBbN7c
 
-section)
-
-(section
-
 > [Microservice app][monolith]\
 > Longing for a monolith\
 > Simplicity missed
@@ -57,10 +45,6 @@ section)
 *July 16, 2024*
 
 [monolith]: https://world.hey.com/dhh/how-to-recover-from-microservices-ce3803cc
-
-section)
-
-(section
 
 > [The first rule of holes][holes]:\
 > If you're in one, stop digging.\
