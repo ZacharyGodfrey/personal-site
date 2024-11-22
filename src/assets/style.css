@@ -13,7 +13,7 @@
   font-size: 18px;
   font-family: 'fira', monospace;
   color: var(--text);
-  background: var(--main);
+  background: var(--dark);
 }
 
 * {
@@ -58,6 +58,10 @@ header {
 
 footer {
   padding: calc(2 * var(--padding)) var(--padding);
+}
+
+article {
+  background: var(--main);
 }
 
 section {
