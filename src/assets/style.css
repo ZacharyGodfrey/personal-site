@@ -231,7 +231,7 @@ thead tr:not(:has(th:not(:empty))) {
 .grid {
   display: grid;
   column-gap: var(--padding);
-  row-gap: var(--padding);
+  row-gap: var(--margin);
   justify-items: stretch; /* cell content X */
   align-items: start; /* cell content Y */
   justify-content: stretch; /* column spacing X */
@@ -245,6 +245,10 @@ thead tr:not(:has(th:not(:empty))) {
 
 .grid.items-x-center { justify-items: center; }
 .grid.items-y-center { align-items: center; }
+
+.grid.x-spread { justify-content: space-between; }
+
+.grid.x-pinch { justify-content: space-around; }
 
 .grid.fill-2 { grid-template-columns: repeat(2, 1fr); }
 
