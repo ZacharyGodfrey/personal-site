@@ -45,6 +45,7 @@ body {
 
 main {
   flex: 1;
+  background: var(--main);
 }
 
 header, footer {
@@ -57,10 +58,6 @@ header {
 
 footer {
   padding: calc(2 * var(--padding)) var(--padding);
-}
-
-article {
-  background: var(--main);
 }
 
 section {
