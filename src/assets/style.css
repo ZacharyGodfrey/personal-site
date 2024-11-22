@@ -9,7 +9,7 @@
   --padding: 1rem;
   --radius: 0.5rem;
   --content-width: 45rem;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'fira', monospace;
   color: var(--text);
   background: var(--dark);
@@ -161,13 +161,11 @@ pre, blockquote {
 
 pre {
   font-size: 1rem;
-  border-top: 1px solid var(--text);
-  border-bottom: 1px solid var(--text);
+  border-block: 1px solid var(--text);
 }
 
 blockquote {
-  border-left: 1px solid var(--text);
-  border-right: 1px solid var(--text);
+  border-inline-start: 0.25rem solid var(--accent);
 }
 
 ul, ol {
