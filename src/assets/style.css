@@ -246,5 +246,5 @@ img[alt="hero"] {
   border: 2px solid var(--accent);
   border-radius: 50%;
   max-width: 12rem;
-  filter: saturate(60%);
+  filter: sepia(50%);
 }
