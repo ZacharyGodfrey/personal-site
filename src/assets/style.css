@@ -228,34 +228,6 @@ thead tr:not(:has(th:not(:empty))) {
   filter: drop-shadow(-4px 4px hsla(0, 0%, 0%, 25%));
 }
 
-.grid {
-  display: grid;
-  column-gap: var(--padding);
-  row-gap: var(--margin);
-  justify-items: stretch; /* cell content X */
-  align-items: start; /* cell content Y */
-  justify-content: stretch; /* column spacing X */
-  align-content: start; /* row spacing Y */
-}
-
-.grid > * {
-  margin: 0 !important;
-}
-
-.grid.x-pinch { justify-content: space-around; }
-
-.grid.items-x-center { justify-items: center; }
-.grid.items-y-center { align-items: center; }
-
-.grid.fill-2 { grid-template-columns: repeat(2, 1fr); }
-
-@media screen and (max-width: 400px) {
-  .grid.stack {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-}
-
 /* Helper Classes */
 
 .text-center { text-align: center; }
