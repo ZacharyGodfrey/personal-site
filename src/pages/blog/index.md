@@ -11,14 +11,13 @@ I write blog posts *very infrequently*. Still, I hope you find some value in the
 
 section)
 
-{{#posts}}
-
 (section
 
-### [{{meta.title}}](/{{{uri}}})
+{{#posts}}
 
-{{meta.date}}
-
-section)
+[{{meta.title}}](/{{{uri}}})\
+*{{meta.date}}*
 
 {{/posts}}
+
+section)
