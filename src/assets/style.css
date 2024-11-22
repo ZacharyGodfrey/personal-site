@@ -132,7 +132,7 @@ button, a.button {
 
 button:hover, a.button:hover {
   color: var(--accent);
-  background: var(--dark);
+  background: var(--main);
   border: 1px solid var(--accent);
 }
 
