@@ -122,6 +122,22 @@ a:not(h1 a):hover {
   color: var(--accent);
 }
 
+button, a.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  color: black;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  font-size: 1rem;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+button:hover, a.button:hover {
+  filter: drop-shadow(-4px 4px hsla(0, 0%, 0%, 5%));
+}
+
 th, strong {
   font-weight: bold;
 }
