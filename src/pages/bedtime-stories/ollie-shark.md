@@ -26,6 +26,10 @@ Ollie grew bigger and stronger than all the other sharks because he was catching
 
 Ollie left the group of sharks to live and hunt alone in a different part of the ocean. One day, while he was hunting, Ollie detected something in front of him. He thought it was a large fish, so he opened his mouth and swam toward it but then he heard, "Ollie, wait! I'm a shark!" Ollie stopped and closed his mouth. He turned his head to see who was there. Ollie never hunted fish with another shark nearby, so he never had to worry about accidentally biting someone.
 
+As he turned, he saw that it was a tiny hammerhead. The shark introduced himself, "I'm Toby. I don't know how to hunt yet, and I don't have anyone to teach me. I don't want to be all alone. Could I follow you and see how you do it?" Ollie remembered what it was like to be small, and hungry, and alone. He wanted to help Toby, so he said, "Yes. Stay by my side, so we can always see each other, and I will teach you."
+
+Ollie taught Toby how to move his head side to side and use his shark sense to find fish hiding in the sand. They hunted together and became good friends.
+
 **The end.**
 
 section)
