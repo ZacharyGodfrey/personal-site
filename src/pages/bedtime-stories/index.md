@@ -19,12 +19,12 @@ section)
 - [Freddie the Forklift](/bedtime-stories/freddie-forklift)
 - [Eddie the Excavator](/bedtime-stories/eddie-excavator)
 - [Ollie the Shark](/bedtime-stories/ollie-shark)
+- [The Apple Tree](/bedtime-stories/apple-tree)
 
 <!--
 - [Gary the Grader](/bedtime-stories/gary)
 - [The Animals and the Tractor](/bedtime-stories/tractor)
 - [The Vacuum and the Dog](/bedtime-stories/vacuum)
-- [The Apple Tree](/bedtime-stories/apple-tree)
 -->
 
 section)
