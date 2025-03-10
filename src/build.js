@@ -31,6 +31,8 @@ emptyFolder('dist');
 copyFolder('src/static', 'dist');
 
 pages.forEach(({ uri, meta, content: rawContent }) => {
+  if (meta.published === false) return;
+
   const fileName = `dist/${uri}.html`;
   const data = { meta, posts };
   const content = renderEmoji(

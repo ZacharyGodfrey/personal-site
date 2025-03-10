@@ -1,8 +1,7 @@
 ---
 type: "page"
-title: "Vacuum and the Dog"
+title: "The Apple Tree"
 description: "An original bedtime story."
-published: false
 ---
 
 (section
@@ -15,10 +14,10 @@ section)
 
 (section
 
-:warning: This story has not been written down yet.
+**Once upon a time...**
 
-<!-- **Once upon a time...**
+TBD
 
-**The end.** -->
+**The end.**
 
 section)

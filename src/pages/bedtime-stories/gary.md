@@ -2,6 +2,7 @@
 type: "page"
 title: "Gary the Grader"
 description: "An original bedtime story."
+published: false
 ---
 
 (section

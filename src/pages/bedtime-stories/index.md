@@ -16,11 +16,16 @@ section)
 
 ### The Stories
 
-- [Freddie the Forklift](/bedtime-stories/freddie)
-- [Eddie the Excavator](/bedtime-stories/eddie)
+- [Freddie the Forklift](/bedtime-stories/freddie-forklift)
+- [Eddie the Excavator](/bedtime-stories/eddie-excavator)
+
+<!--
 - [Gary the Grader](/bedtime-stories/gary)
 - [The Animals and the Tractor](/bedtime-stories/tractor)
 - [The Vacuum and the Dog](/bedtime-stories/vacuum)
+- [The Apple Tree](/bedtime-stories/apple-tree)
+- [Ollie the Shark](/bedtime-stories/ollie-shark)
+-->
 
 section)
 

@@ -1,6 +1,6 @@
 ---
 type: "page"
-title: "Vacuum and the Dog"
+title: "Ant Tony and the Sugar"
 description: "An original bedtime story."
 published: false
 ---
@@ -10,15 +10,5 @@ published: false
 ## {{meta.title}}
 
 A [bedtime story](/bedtime-stories)
-
-section)
-
-(section
-
-:warning: This story has not been written down yet.
-
-<!-- **Once upon a time...**
-
-**The end.** -->
 
 section)
