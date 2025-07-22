@@ -1,10 +1,10 @@
 ---
-
 layout: "../components/page.astro"
 title: ""
 description: ""
-
 ---
+
+import BlogList from '../components/blog-list.astro';
 
 ![hero](/animated.png)
 
@@ -26,9 +26,4 @@ I enjoy writing, but it's not something I do often. I like to write [Haiku](/hai
 
 ### Blog Posts
 
-{{#posts}}
-
-[{{meta.title}}](/{{{uri}}})\
-*{{meta.date}}*
-
-{{/posts}}
+<BlogList />

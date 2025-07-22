@@ -1,9 +1,7 @@
 ---
-
 layout: "../components/page.astro"
 title: "Style Guide"
 description: "This page demonstrates the styling of all available elements."
-
 ---
 
 ## {frontmatter.title}
