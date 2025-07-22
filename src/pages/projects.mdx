@@ -1,18 +1,12 @@
 ---
-type: "page"
+layout: "../components/page.astro"
 title: "Personal Projects"
 description: ""
 ---
 
-(section
-
-## {{meta.title}}
+## {frontmatter.title}
 
 I'm primarily a back-end engineer, so my UI design in these projects likely won't impress you. I built these projects either to solve an interesing problem or to explore a new concept (new to me, anyway).
-
-section)
-
-(section
 
 ### Axe Charts
 
@@ -25,10 +19,6 @@ With this site, I wanted to explore using SQLite to store the scraped data in a 
 
 View the code on [GitHub](https://github.com/ZacharyGodfrey/axe-charts).
 
-section)
-
-(section
-
 ### Pub Subs
 
 I made this [simple page](https://pubsubs.netlify.app) to display whether Publix Chicken Tender Subs are on sale. They're a local favorite item, and I thought it would be a fun little project that makes use of a publicly available API.
@@ -38,5 +28,3 @@ The UI is nothing to be impressed by, but I thought the method of getting the da
 When the GitHub action pushes the JSON file change back to the repository, it triggers a new build of the site in Netlify. The site keeps itself up to date with no manual intervention, costs me nothing, and is as simple as a single static web page.
 
 View the code on [GitHub](https://github.com/ZacharyGodfrey/pubsubs).
-
-section)
