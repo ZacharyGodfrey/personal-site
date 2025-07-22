@@ -1,18 +1,12 @@
 ---
-type: "page"
+layout: "../components/page.astro"
 title: "Haiku"
 description: "A handful of ramblings in the 5-7-5 syllable format."
 ---
 
-(section
-
-## {{meta.title}}
+## {frontmatter.title}
 
 I like to use Haiku poems to introduce topics that I find interesting. Each one is a 17 syllable summary in the 5-7-5 format with a link to learn more about the subject.
-
-section)
-
-(section
 
 > [Funny status code][418]\
 > Four eighteen I'm a teapot\
@@ -53,5 +47,3 @@ section)
 *July 17, 2024*
 
 [holes]: https://en.wikipedia.org/wiki/Law_of_holes
-
-section)
