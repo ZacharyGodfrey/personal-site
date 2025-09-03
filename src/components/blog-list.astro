@@ -13,12 +13,10 @@ const posts = Object
 
 ---
 
-{posts.length > 0 ? (<ul>
-  {posts.map((post: any) => (
-    <li>
-      <a href={post.url}>{post.frontmatter.title}</a>
-    </li>
-  ))}
-</ul>) : (
-  <p>No posts have been published yet.</p>
-)}
+{posts.length && posts.map((post: any) => (<p>
+  <a href={post.url}>{post.frontmatter.title}</a>
+  <br />
+  <em>{post.date}</em>
+</p>))}
+
+{!posts.length && (<p>No posts have been published yet.</p>)}
