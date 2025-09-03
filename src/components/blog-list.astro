@@ -1,13 +1,23 @@
 ---
 
-const allPosts = Object.values(import.meta.glob('../pages/blog/**/*.mdx', { eager: true }));
+const sortBy = (fn) => (left, right) => {
+  const l = fn(left), r = fn(right);
+
+  return l < r ? -1 : l > r ? 1 : 0;
+};
+
+const posts = Object
+  .values(import.meta.glob('../pages/blog/**/*.mdx', { eager: true }))
+  .filter(post => post.frontmatter.order !== 'TBD')
+  .sort(sortBy(x => x.frontmatter.order));
 
 ---
 
-<ul>
-  {allPosts.map((post: any) => (
+{posts.length > 0 ? (<ul>
+  {posts.map((post: any) => (
     <li>
       <a href={post.url}>{post.frontmatter.title}</a>
     </li>
   ))}
-</ul>
+</ul>) : (<p>No posts have been published yet.</p>)}
+
