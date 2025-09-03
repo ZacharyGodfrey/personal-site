@@ -16,7 +16,7 @@ const posts = Object
 {posts.length && posts.map((post: any) => (<p>
   <a href={post.url}>{post.frontmatter.title}</a>
   <br />
-  <em>{post.date}</em>
+  <em>{post.frontmatter.date}</em>
 </p>))}
 
 {!posts.length && (<p>No posts have been published yet.</p>)}
