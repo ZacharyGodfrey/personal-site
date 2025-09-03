@@ -157,6 +157,13 @@ button:hover, a.button:hover {
 	border: 1px solid var(--accent);
 }
 
+button + button,
+button + a.button,
+a.button + button,
+a.button + a.button {
+	margin-inline-start: 1rem;
+}
+
 th, strong {
 	font-weight: bold;
 }
