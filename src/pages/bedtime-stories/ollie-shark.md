@@ -1,18 +1,12 @@
 ---
-type: "page"
+layout: "../../components/page.astro"
 title: "Ollie the Shark"
 description: "An original bedtime story."
 ---
 
-(section
-
-## {{meta.title}}
+## {frontmatter.title}
 
 A [bedtime story](/bedtime-stories)
-
-section)
-
-(section
 
 **Once upon a time...**
 
@@ -31,5 +25,3 @@ As he turned, he saw that it was a tiny hammerhead. The shark introduced himself
 Ollie taught Toby how to move his head side to side and use his shark sense to find fish hiding in the sand. They hunted together and became good friends. Now when Ollie looks around, all he sees is his friend Toby who wants to be there with him.
 
 **The end.**
-
-section)
