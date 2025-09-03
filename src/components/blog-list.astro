@@ -8,7 +8,7 @@ const sortBy = (fn) => (left, right) => {
 
 const posts = Object
   .values(import.meta.glob('../pages/blog/**/*.mdx', { eager: true }))
-  .filter(post => post.frontmatter.order !== 'TBD')
+  .filter(post => post.frontmatter.order)
   .sort(sortBy(x => x.frontmatter.order));
 
 ---
@@ -19,5 +19,6 @@ const posts = Object
       <a href={post.url}>{post.frontmatter.title}</a>
     </li>
   ))}
-</ul>) : (<p>No posts have been published yet.</p>)}
-
+</ul>) : (
+  <p>No posts have been published yet.</p>
+)}
