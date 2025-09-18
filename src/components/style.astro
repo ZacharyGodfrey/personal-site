@@ -20,7 +20,7 @@
 :root {
 	--text:       hsl(0, 0%, 10%);
 	--background: hsl(0, 0%, 98%);
-	--accent:     hsl(205, 75%, 50%);
+	--accent:     hsl(0, 90%, 45%);
 	--highlight:  hsl(205, 50%, 75%);
 	--content-width: 50rem;
 	--margin: 2rem;
@@ -102,18 +102,7 @@ h3 { font-size: 1.75rem; }
 h4, h5, h6 { font-size: 1rem; }
 
 h1 {
-	letter-spacing: 1px;
-	font-weight: normal;
-	font-family: 'satisfy', sans-serif;
-}
-
-h2 {
-	text-shadow:
-		-1px -1px var(--dark),
-		1px -1px var(--dark),
-		-1px 1px var(--dark),
-		1px 1px var(--dark),
-		-4px 4px var(--accent);
+	text-align: center;
 }
 
 a {
@@ -251,14 +240,4 @@ thead tr:not(:has(th:not(:empty))) {
 
 .text-center { text-align: center; }
 .text-right { text-align: right; }
-.text-fancy { font-family: 'satisfy', sans-serif; }
-
-/* Specific Styles */
-
-img[alt="hero"] {
-	border: 2px solid var(--accent);
-	border-radius: 50%;
-	max-width: 12rem;
-	filter: sepia(50%);
-}
 </style>
