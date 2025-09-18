@@ -3,7 +3,7 @@
 import Style from '../components/style.astro';
 
 const { frontmatter } = Astro.props;
-const { title, description } = frontmatter;
+const { title, description, showHeader = true } = frontmatter;
 const header = 'Zachary Godfrey';
 
 ---
@@ -20,11 +20,15 @@ const header = 'Zachary Godfrey';
 	</head>
 	<body>
 		<main>
-			<header class="text-center">
-				<h1>
-					<a href="/">{header}</a>
-				</h1>
-			</header>
+			{ showHeader && (
+				<header class="text-center">
+					<section>
+						<h1>
+							<a href="/">{header}</a>
+						</h1>
+					</section>
+				</header>
+			) }
 
 			<article>
 				<section>
@@ -34,17 +38,19 @@ const header = 'Zachary Godfrey';
 		</main>
 
 		<footer class="text-center">
-			<p>
-				<strong>{header}</strong>
-			</p>
+			<section>
+				<p>
+					<strong>{header}</strong>
+				</p>
 
-			<p>
-				<a href="https://github.com/ZacharyGodfrey">GitHub</a>
-				<span>|</span>
-				<a href="mailto:contact@zacharygodfrey.dev">Email</a>
-				<span>|</span>
-				<a href="https://linkedin.com/in/zachary-godfrey">LinkedIn</a>
-			</p>
+				<p>
+					<a href="https://github.com/ZacharyGodfrey">GitHub</a>
+					<span>|</span>
+					<a href="mailto:contact@zacharygodfrey.dev">Email</a>
+					<span>|</span>
+					<a href="https://linkedin.com/in/zachary-godfrey">LinkedIn</a>
+				</p>
+			</section>
 		</footer>
 
 		<script type="text/javascript" is:inline>

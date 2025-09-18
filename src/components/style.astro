@@ -18,18 +18,17 @@
 /* Pseudo Elements */
 
 :root {
-	--text:   white;
-	--main:   hsl(85, 15%, 40%);
-	--accent: hsl(55, 75%, 60%);
-	--dark:   hsl(85,  5%, 30%);
+	--text:       hsl(0, 0%, 5%);
+	--background: hsl(0, 0%, 95%);
+	--accent:     hsl(205, 75%, 50%);
+	--highlight:  hsl(50, 75%, 75%);
+	--content-width: 50rem;
 	--margin: 2rem;
 	--padding: 1rem;
-	--radius: 0.5rem;
-	--content-width: 45rem;
 	font-size: 16px;
 	font-family: 'fira', monospace;
-	color: hsl(0, 0, 5%);
-	background: hsl(0, 0, 95%);
+	color: var(--text);
+	background: var(--background);
 }
 
 * {
@@ -42,8 +41,8 @@
 :last-child  {   margin-block-end: 0 !important; }
 
 ::selection {
-	color: var(--dark);
-	background: var(--accent);
+	color: var(--text);
+	background: var(--highlight);
 }
 
 /* Layout */
@@ -62,30 +61,25 @@ body {
 
 main {
 	flex: 1;
-	background: var(--main);
 }
 
 header {
 	padding: var(--padding);
-	background: var(--dark);
+	border-bottom: 1px solid var(--text);
+}
+
+article {
+	padding: calc(4 * var(--padding)) var(--padding);
+}
+
+section {
+	max-width: var(--content-width);
+	margin-inline: auto;
 }
 
 footer {
 	padding: calc(4 * var(--padding)) var(--padding);
-	background: var(--dark);
-}
-
-section {
-	padding: calc(4 * var(--padding)) var(--padding);
-}
-
-article > section {
-	background: linear-gradient(180deg, hsla(0, 0%, 0%, 5%), transparent);
-}
-
-header > *, section > *, footer > * {
-	max-width: var(--content-width);
-	margin-inline: auto;
+	border-top: 1px solid var(--text);
 }
 
 /* Elements */
