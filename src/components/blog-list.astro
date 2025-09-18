@@ -1,0 +1,22 @@
+---
+
+const sortBy = (fn) => (left, right) => {
+  const l = fn(left), r = fn(right);
+
+  return l < r ? -1 : l > r ? 1 : 0;
+};
+
+const posts = Object
+  .values(import.meta.glob('../pages/blog/**/*.mdx', { eager: true }))
+  .filter(post => post.frontmatter.order)
+  .sort(sortBy(x => x.frontmatter.order));
+
+---
+
+{posts.length && posts.map((post: any) => (<p>
+  <a href={post.url}>{post.frontmatter.title}</a>
+  <br />
+  <em>{post.frontmatter.date}</em>
+</p>))}
+
+{!posts.length && (<p>No posts have been published yet.</p>)}

@@ -5,7 +5,7 @@ My personal website: https://zacharygodfrey.dev
 ## Running Locally
 
 - `npm i` to install dependencies
-- `npm run watch` to build and start the local server
+- `npm run dev` to build and start the local server
 - The site will run at `http://localhost:8080`
 - The site will rebuild on file changes
 

@@ -1,0 +1,58 @@
+---
+
+import Style from '../components/style.astro';
+
+const { frontmatter } = Astro.props;
+const { title, description } = frontmatter;
+const header = 'Zachary Godfrey';
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content={description ?? 'The personal website of Zachary Godfrey'} />
+		<title>{title ? `${title} | ${header}` : header}</title>
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<Style />
+	</head>
+	<body>
+		<main>
+			<header class="text-center">
+				<h1>
+					<a href="/">{header}</a>
+				</h1>
+			</header>
+
+			<article>
+				<section>
+					<slot />
+				</section>
+			</article>
+		</main>
+
+		<footer class="text-center">
+			<p>
+				<strong>{header}</strong>
+			</p>
+
+			<p>
+				<a href="https://github.com/ZacharyGodfrey">GitHub</a>
+				<span>|</span>
+				<a href="mailto:contact@zacharygodfrey.dev">Email</a>
+				<span>|</span>
+				<a href="https://linkedin.com/in/zachary-godfrey">LinkedIn</a>
+			</p>
+		</footer>
+
+		<script type="text/javascript" is:inline>
+			document.addEventListener('DOMContentLoaded', () => {
+				document.querySelectorAll('a[href^="http"], a[href^="mailto"]').forEach((link) => {
+					link.setAttribute('target', '_blank');
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -1,18 +1,12 @@
 ---
-type: "page"
+layout: "../../components/page.astro"
 title: "Freddie the Forklift"
 description: "An original bedtime story."
 ---
 
-(section
-
-## {{meta.title}}
+## {frontmatter.title}
 
 A [bedtime story](/bedtime-stories)
-
-section)
-
-(section
 
 **Once upon a time...**
 
@@ -35,5 +29,3 @@ Then, on a random Tuesday morning, Freddie came into the warehouse and told the 
 Freddie held the crate of forks over his head and carried it to the shelf as he continued to shout, "I know I can! I know I can! I know I can!" He placed the crate on the shelf and let out a big, deep breath. The shelf creaked under the weight. The other forklifts cheered and congratulated him. Freddie had done it, his dream had come true!
 
 **The end.**
-
-section)

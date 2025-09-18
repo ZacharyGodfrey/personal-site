@@ -1,18 +1,12 @@
 ---
-type: "page"
+layout: "../../components/page.astro"
 title: "The Apple Tree"
 description: "An original bedtime story."
 ---
 
-(section
-
-## {{meta.title}}
+## {frontmatter.title}
 
 A [bedtime story](/bedtime-stories)
-
-section)
-
-(section
 
 **Once upon a time...**
 
@@ -29,5 +23,3 @@ The tree had become old, and it stopped producing apples. The man chopped the tr
 Over time, the man got married and the couple began to have children of their own. When the children were ready, the man let them go and watched as they went out to start families of their own. The man smiled as he watched his children grow up into a whole generation of new families.
 
 **The end.**
-
-section)
