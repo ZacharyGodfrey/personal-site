@@ -20,14 +20,18 @@ const header = 'Zachary Godfrey';
 	</head>
 	<body>
 		<main>
-			<article>
-				<section>
-					{ showHeader && (
+			{ showHeader && (
+				<header>
+					<section>
 						<h1>
 							<a href="/">{header}</a>
 						</h1>
-					) }
+					</section>
+				</header>
+			) }
 
+			<article>
+				<section>
 					<slot />
 				</section>
 			</article>
