@@ -106,7 +106,6 @@ a {
 	color: inherit;
 	text-decoration: underline;
 	text-decoration-color: var(--accent);
-	/* text-decoration-thickness: 2px; */
 }
 
 a:not(h1 a):hover {
@@ -157,8 +156,8 @@ code {
 p > code {
 	display: inline-block;
 	padding: calc(var(--padding) / 4);
-	background: var(--dark);
-	border-radius: var(--radius);
+	background: var(--accent);
+	border-radius: calc(var(--padding) / 4);
 }
 
 pre, blockquote {
