@@ -8,16 +8,13 @@ description: ""
 
 I'm primarily a back-end engineer, so my UI design in these projects likely won't impress you. I built these projects either to solve an interesing problem or to explore a new concept (new to me, anyway).
 
-### Axe Charts
+### AxeDB
 
-I created [Axe Charts](https://axecharts.com) to supplement the official stats website for IATF axe throwing. In addition to providing in-depth performance statistics for Premier axe throwers, the site also implements some key feature requests from the axe throwing community:
+I created [AxeDB](https://axedb.netlify.app) to supplement the official stats website for IATF axe throwing. In addition to providing in-depth performance statistics for Premier axe throwers, the site also implements an alternative rating system based on overall accuracy rather than wins and losses.
 
-- [Badges](https://axecharts.com/badges) provide fun performance milestones to work toward while chasing down that elusive 81 score.
-- The [Axe Charts Rating (ACR)](https://axecharts.com/rating-system) is an alternative rating system based on overall accuracy rather than wins and losses.
+With this site, I wanted to explore using SQLite to store the scraped data in files in the repository so that all of the code and data can be downloaded together with a single command and run locally with no dependencies on external services. Other than GitHub's 50MB file size limitation, this implementation actually went really well. However, as the number of competitors grew it became cumbersome to have thousands of database files in the repo.
 
-With this site, I wanted to explore using SQLite to store the scraped data in a file in the repository so that all of the code and data can be downloaded together with a single command and run locally with no dependencies on external services. Other than GitHub's 50MB file size limitation, this implementation actually went really well.
-
-View the code on [GitHub](https://github.com/ZacharyGodfrey/axe-charts).
+View the code on [GitHub](https://github.com/ZacharyGodfrey/axedb).
 
 ### Pub Subs
 
