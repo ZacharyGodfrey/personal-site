@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.1",
+    "@astrojs/netlify": "^6.5.11",
     "astro": "^5.6.0"
   }
 }

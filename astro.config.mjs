@@ -3,21 +3,24 @@ import { defineConfig } from 'astro/config';
 
 import mdx from '@astrojs/mdx';
 
+import netlify from '@astrojs/netlify';
+
 // https://astro.build/config
 export default defineConfig({
-	output: 'static',
-	outDir: './dist',
-	compressHTML: false,
-	trailingSlash: 'ignore',
+  output: 'static',
+  outDir: './dist',
+  compressHTML: false,
+  trailingSlash: 'ignore',
 
-	server: {
-			port: 8080,
-			open: '/'
+  server: {
+          port: 8080,
+          open: '/'
 	},
 
-	devToolbar: {
-			enabled: false
+  devToolbar: {
+          enabled: false
 	},
 
-	integrations: [mdx()]
+  integrations: [mdx()],
+  adapter: netlify()
 });
