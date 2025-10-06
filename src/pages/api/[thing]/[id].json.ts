@@ -1,5 +1,7 @@
 import type { APIRoute } from 'astro';
 
+export const prerender = false;
+
 const toJson = (value: any) => {
 	return JSON.stringify(value, null, 2);
 };
