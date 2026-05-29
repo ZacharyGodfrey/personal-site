@@ -30,6 +30,7 @@
 	--content-width: 50rem;
 	--margin: 2rem;
 	--padding: 1rem;
+	--padding-lg: 4rem;
 	font-size: 16px;
 	font-family: 'fira', monospace;
 	color: var(--text-dark);
@@ -76,7 +77,7 @@ header {
 }
 
 article {
-	padding: calc(4 * var(--padding)) var(--padding);
+	padding: var(--padding-lg) var(--padding);
 }
 
 section {
@@ -85,9 +86,8 @@ section {
 }
 
 footer {
-	padding: calc(4 * var(--padding)) var(--padding);
-	color: var(--text-light);
-	background: var(--bg-dark);
+	padding: var(--padding-lg) var(--padding);
+	border-top: 1px solid var(--text-dark);
 }
 
 /* Elements */
