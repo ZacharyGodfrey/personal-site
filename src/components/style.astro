@@ -18,13 +18,13 @@
 /* Pseudo Elements */
 
 :root {
-	--text-light: hsl(0, 0%, 90%);
+	--text-light: hsl(0, 0%, 95%);
 	--text-dark:  hsl(0, 0%, 20%);
 
-	--bg-light:   hsl(45, 45%, 95%);
-	--bg-dark:    hsl( 0,  0%, 20%);
+	--bg-light:   hsl(0, 0%, 95%);
+	--bg-dark:    hsl(0, 0%, 20%);
 
-	--accent:     hsl(105, 25%, 50%);
+	--primary:    hsl(105, 25%, 50%);
 	--highlight:  hsl(105, 25%, 75%);
 
 	--content-width: 50rem;
@@ -111,10 +111,10 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2.25rem; }
-h3 { font-size: 1.75rem; }
-h4, h5, h6 { font-size: 1.25rem; }
+h1 { font-size: 4rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2rem; }
+h4, h5, h6 { font-size: 1.5rem; }
 
 h1 {
 	font-weight: normal;
@@ -123,11 +123,11 @@ h1 {
 a {
 	color: inherit;
 	text-decoration: underline;
-	text-decoration-color: var(--accent);
+	text-decoration-color: var(--primary);
 }
 
 a:hover {
-	color: var(--accent);
+	color: var(--primary);
 }
 
 button, a.button {
@@ -135,7 +135,7 @@ button, a.button {
 	padding: 0.5rem 1rem;
 	border-radius: 0.25rem;
 	color: var(--text-dark);
-	background: var(--accent);
+	background: var(--primary);
 	border: 1px solid var(--text-dark);
 	font-size: 1rem;
 	font-weight: normal;
@@ -149,9 +149,9 @@ button, a.button {
 }
 
 button:hover, a.button:hover {
-	color: var(--accent);
+	color: var(--primary);
 	background: var(--bg-light);
-	border: 1px solid var(--accent);
+	border: 1px solid var(--primary);
 }
 
 button + button, button + a.button,
@@ -175,7 +175,7 @@ p > code {
 	display: inline-block;
 	padding: calc(var(--padding) / 4);
 	color: var(--text-dark);
-	background: var(--accent);
+	background: var(--primary);
 	border-radius: calc(var(--padding) / 4);
 }
 
@@ -188,7 +188,7 @@ pre {
 }
 
 blockquote {
-	border-inline-start: 0.25rem solid var(--accent);
+	border-inline-start: 0.25rem solid var(--primary);
 }
 
 ul, ol {
