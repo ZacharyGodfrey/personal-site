@@ -18,17 +18,24 @@
 /* Pseudo Elements */
 
 :root {
-	--text:       hsl(0, 0%, 30%);
-	--background: hsl(105, 10%, 95%);
-	--accent:     hsl(105, 25%, 50%);
-	--highlight:  hsl(105, 25%, 75%);
+	--text-light: white;
+	--text-dark:  hsl(0, 0%, 20%);
+
+	--bg-light:   hsl(105, 20%, 95%);
+	--bg-dark:    hsl(105, 20%, 30%);
+
+	--primary:    hsl(105, 25%, 50%);
+	--accent:     hsl(  0, 45%, 50%);
+	--highlight:  hsl( 50, 75%, 75%);
+
 	--content-width: 50rem;
 	--margin: 2rem;
 	--padding: 1rem;
+	--padding-lg: 4rem;
 	font-size: 16px;
 	font-family: 'fira', monospace;
-	color: var(--text);
-	background: var(--background);
+	color: var(--text-dark);
+	background: var(--bg-light);
 	text-align: start;
 }
 
@@ -42,7 +49,7 @@
 :last-child  {   margin-block-end: 0 !important; }
 
 ::selection {
-	color: var(--text);
+	color: var(--text-dark);
 	background: var(--highlight);
 }
 
@@ -66,12 +73,14 @@ main {
 
 header {
 	padding: var(--padding);
-	color: var(--background);
-	background: var(--text);
+}
+
+header a, footer a {
+	color: inherit;
 }
 
 article {
-	padding: calc(4 * var(--padding)) var(--padding);
+	padding: var(--padding-lg) var(--padding);
 }
 
 section {
@@ -80,9 +89,9 @@ section {
 }
 
 footer {
-	padding: calc(4 * var(--padding)) var(--padding);
-	color: var(--background);
-	background: var(--text);
+	padding: var(--padding-lg) var(--padding);
+	color: var(--text-light);
+	background: var(--bg-dark);
 }
 
 /* Elements */
@@ -99,33 +108,28 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2.25rem; }
-h3 { font-size: 1.75rem; }
-h4, h5, h6 { font-size: 1rem; }
+h1 { font-size: 3.5rem; }
+h2 { font-size: 3rem; }
+h3 { font-size: 2.5rem; }
+h4, h5, h6 { font-size: 2rem; }
 
 h1 {
 	font-weight: normal;
-	text-align: center;
 }
 
 a {
-	color: inherit;
-	text-decoration: underline;
-	text-decoration-color: var(--accent);
-}
-
-a:not(h1 a):hover {
 	color: var(--accent);
+	text-decoration: underline;
+	text-decoration-color: inherit;
 }
 
 button, a.button {
 	display: inline-block;
 	padding: 0.5rem 1rem;
 	border-radius: 0.25rem;
-	color: var(--dark);
-	background: var(--accent);
-	border: 1px solid var(--dark);
+	color: var(--text-dark);
+	background: var(--primary);
+	border: 1px solid var(--text-dark);
 	font-size: 1rem;
 	font-weight: normal;
 	text-align: center;
@@ -138,9 +142,9 @@ button, a.button {
 }
 
 button:hover, a.button:hover {
-	color: var(--accent);
-	background: var(--main);
-	border: 1px solid var(--accent);
+	color: var(--primary);
+	background: var(--bg-light);
+	border: 1px solid var(--primary);
 }
 
 button + button, button + a.button,
@@ -163,8 +167,8 @@ code {
 p > code {
 	display: inline-block;
 	padding: calc(var(--padding) / 4);
-	color: var(--background);
-	background: var(--accent);
+	color: var(--text-dark);
+	background: var(--primary);
 	border-radius: calc(var(--padding) / 4);
 }
 
@@ -177,7 +181,7 @@ pre {
 }
 
 blockquote {
-	border-inline-start: 0.25rem solid var(--accent);
+	border-inline-start: 0.25rem solid var(--primary);
 }
 
 ul, ol {
@@ -208,7 +212,7 @@ hr {
 	height: 2px;
 	border: none;
 	outline: none;
-	background: var(--text);
+	background: var(--text-dark);
 }
 
 table, th, td {
@@ -217,12 +221,12 @@ table, th, td {
 
 table {
 	width: 100%;
-	border: 1px solid var(--text);
+	border: 1px solid var(--text-dark);
 }
 
 th, td {
 	padding: calc(var(--padding) / 2);
-	border: 1px solid var(--text);
+	border: 1px solid var(--text-dark);
 }
 
 thead tr:not(:has(th:not(:empty))) {
@@ -234,8 +238,8 @@ thead tr:not(:has(th:not(:empty))) {
 .card {
 	padding: var(--padding);
 	border-radius: var(--radius);
-	color: var(--dark);
-	background: white;
+	color: var(--text-dark);
+	background: var(--bg-light);
 	filter: drop-shadow(-4px 4px hsla(0, 0%, 0%, 25%));
 }
 
@@ -245,8 +249,13 @@ thead tr:not(:has(th:not(:empty))) {
 .text-right { text-align: right; }
 .text-fancy { font-family: 'fancy'; }
 
+.text-fancy a {
+	text-decoration-color: var(--accent);
+	text-decoration-thickness: 3px;
+}
+
 img[alt='hero'] {
-	border: 2px solid var(--text);
+	border: 2px solid var(--text-dark);
 	border-radius: 50%;
 	max-width: 12rem;
 	filter: sepia(50%);
