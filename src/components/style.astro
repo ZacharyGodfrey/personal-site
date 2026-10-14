@@ -114,11 +114,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 3.5rem; }
-h2 { font-size: 3rem; }
-h3 { font-size: 2.5rem; }
-h4, h5, h6 { font-size: 2rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.5rem; }
+h4, h5, h6 { font-size: 1.25rem; }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'nunito';
 	font-weight: normal;
 }
@@ -188,6 +188,10 @@ pre {
 
 blockquote {
 	border-inline-start: 0.25rem solid var(--primary);
+}
+
+blockquote > p {
+	margin-block: calc(var(--margin) / 2);
 }
 
 ul, ol {
